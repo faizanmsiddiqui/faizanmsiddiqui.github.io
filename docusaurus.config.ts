@@ -1,13 +1,13 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Faizan Siddiqui',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: "img/favicon.svg",
+  title: "Faizan Siddiqui",
+  tagline: "Dinosaurs are cool",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -15,128 +15,144 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://faizansiddiqui.me',
+  url: "https://faizansiddiqui.me",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'imfsiddiqui', // Usually your GitHub org/user name.
-  projectName: 'imfsiddiqui.github.io', // Usually your repo name.
+  organizationName: "imfsiddiqui", // Usually your GitHub org/user name.
+  projectName: "imfsiddiqui.github.io", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        docs: false,
+        blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "articles",
+        path: "writings/articles",
+        routeBasePath: "writings/articles",
+        sidebarPath: require.resolve("./config/sidebars/articles.ts"),
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "blog",
+        path: "writings/blog",
+        routeBasePath: "writings/blog",
+        showReadingTime: true,
+        feedOptions: {
+          type: ["rss", "atom"],
+          xslt: true,
+        },
+        onInlineTags: "warn",
+        onInlineAuthors: "warn",
+        onUntruncatedBlogPosts: "warn",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "notes",
+        path: "writings/notes",
+        routeBasePath: "writings/notes",
+        sidebarPath: require.resolve("./config/sidebars/notes.ts"),
+      },
+    ],
+  ],
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/social-card.png",
     navbar: {
-      title: 'Faizan Siddiqui',
+      title: "Faizan Siddiqui",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "faizan siddiqui website logo",
+        src: "img/logo.svg",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          position: "left",
+          label: "About",
+          to: "/about",
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/imfsiddiqui',
-          label: 'GitHub',
-          position: 'right',
+          position: "left",
+          label: "Projects",
+          to: "/projects",
+        },
+        {
+          position: "left",
+          label: "Publications",
+          to: "/publications",
+        },
+        {
+          position: "left",
+          label: "Resume",
+          to: "/resume",
+        },
+        {
+          type: "dropdown",
+          position: "left",
+          label: "Writings",
+          to: "/writings",
+          items: [
+            {
+              label: "Articles",
+              to: "/writings/articles",
+            },
+            {
+              label: "Blog",
+              to: "/writings/blog",
+            },
+            {
+              label: "Notes",
+              to: "/writings/notes",
+            },
+          ],
+        },
+        {
+          position: "right",
+          label: "Links",
+          to: "/links",
+        },
+        {
+          position: "right",
+          label: "Email",
+          href: "mailto://imfsiddiqui@yahoo.com",
+        },
+        {
+          position: "right",
+          label: "LinkedIn",
+          href: "https://www.linkedin.com/in/imfsiddiqui",
         },
       ],
     },
     footer: {
-      style: 'dark',
-      // links: [
-      //   {
-      //     title: 'Docs',
-      //     items: [
-      //       {
-      //         label: 'Tutorial',
-      //         to: '/docs/intro',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Community',
-      //     items: [
-      //       {
-      //         label: 'Stack Overflow',
-      //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-      //       },
-      //       {
-      //         label: 'Discord',
-      //         href: 'https://discordapp.com/invite/docusaurus',
-      //       },
-      //       {
-      //         label: 'X',
-      //         href: 'https://x.com/docusaurus',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'More',
-      //     items: [
-      //       {
-      //         label: 'Blog',
-      //         to: '/blog',
-      //       },
-      //       {
-      //         label: 'GitHub',
-      //         href: 'https://github.com/facebook/docusaurus',
-      //       },
-      //     ],
-      //   },
-      // ],
-      // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      style: "dark",
       copyright: `Copyright © ${new Date().getFullYear()} Faizan Siddiqui.`,
     },
     prism: {
