@@ -51,20 +51,16 @@ const config: Config = {
 
   plugins: [
     [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "articles",
-        path: "writings/articles",
-        routeBasePath: "writings/articles",
-        sidebarPath: require.resolve("./config/sidebars/articles.ts"),
-      },
-    ],
-    [
       "@docusaurus/plugin-content-blog",
       {
-        id: "blog",
-        path: "writings/blog",
-        routeBasePath: "writings/blog",
+        id: "writings",
+        path: "writings",
+        routeBasePath: "/writings",
+        blogTitle: "Writings",
+        blogDescription: "Writings by Faizan Siddiqui",
+        blogSidebarTitle: "Writings",
+        blogSidebarCount: "ALL",
+        postsPerPage: 10,
         showReadingTime: true,
         feedOptions: {
           type: ["rss", "atom"],
@@ -75,17 +71,13 @@ const config: Config = {
         onUntruncatedBlogPosts: "warn",
       },
     ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "notes",
-        path: "writings/notes",
-        routeBasePath: "writings/notes",
-        sidebarPath: require.resolve("./config/sidebars/notes.ts"),
-      },
-    ],
   ],
   themeConfig: {
+    colorMode: {
+      defaultMode: "dark",
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     image: "img/social-card.png",
     navbar: {
       title: "Faizan Siddiqui",
@@ -98,6 +90,11 @@ const config: Config = {
           position: "left",
           label: "About",
           to: "/about",
+        },
+        {
+          position: "left",
+          label: "Links",
+          to: "/links",
         },
         {
           position: "left",
@@ -115,34 +112,14 @@ const config: Config = {
           to: "/resume",
         },
         {
-          type: "dropdown",
           position: "left",
           label: "Writings",
           to: "/writings",
-          items: [
-            {
-              label: "Articles",
-              to: "/writings/articles",
-            },
-            {
-              label: "Blog",
-              to: "/writings/blog",
-            },
-            {
-              label: "Notes",
-              to: "/writings/notes",
-            },
-          ],
-        },
-        {
-          position: "right",
-          label: "Links",
-          to: "/links",
         },
         {
           position: "right",
           label: "Email",
-          href: "mailto://imfsiddiqui@yahoo.com",
+          href: "mailto:imfsiddiqui@yahoo.com",
         },
         {
           position: "right",
