@@ -119,7 +119,7 @@ const config: Config = {
         {
           position: "right",
           label: "Email",
-          href: "mailto://imfsiddiqui@yahoo.com",
+          href: "mailto:imfsiddiqui@yahoo.com",
         },
         {
           position: "right",
