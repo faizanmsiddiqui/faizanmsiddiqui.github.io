@@ -29,14 +29,26 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.markdown img {
-  margin: auto;
-  display: block;
-  border-radius: 10px;
-}
-
 .markdown .center {
   text-align: center;
+}
+
+.markdown p {
+  text-align: justify;
+}
+
+.markdown img {
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+.markdown .caption p {
+  color: var(--ifm-color-emphasis-400);
+  font-style: italic;
+  margin-top: -1rem;
+  text-align: center;
+  text-transform: lowercase;
 }
 
 .markdown .center table {
