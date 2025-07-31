@@ -1,0 +1,9 @@
+motivation:
+  label: Motivation
+  permalink: /motivation
+  description: Contents related to motivation and inspiration.
+
+personal-note:
+  label: Personal Note
+  permalink: /personal-note
+  description: Contents related to personal notes, reflections, and thoughts.

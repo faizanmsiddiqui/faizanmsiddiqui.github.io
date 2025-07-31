@@ -86,31 +86,31 @@ const config: Config = {
         src: "img/logo.png",
       },
       items: [
-        {
-          position: "left",
-          label: "About",
-          to: "/about",
-        },
-        {
-          position: "left",
-          label: "Links",
-          to: "/links",
-        },
-        {
-          position: "left",
-          label: "Projects",
-          to: "/projects",
-        },
-        {
-          position: "left",
-          label: "Publications",
-          to: "/publications",
-        },
-        {
-          position: "left",
-          label: "Resume",
-          to: "/resume",
-        },
+        // {
+        //   position: "left",
+        //   label: "About",
+        //   to: "/about",
+        // },
+        // {
+        //   position: "left",
+        //   label: "Links",
+        //   to: "/links",
+        // },
+        // {
+        //   position: "left",
+        //   label: "Projects",
+        //   to: "/projects",
+        // },
+        // {
+        //   position: "left",
+        //   label: "Publications",
+        //   to: "/publications",
+        // },
+        // {
+        //   position: "left",
+        //   label: "Resume",
+        //   to: "/resume",
+        // },
         {
           position: "left",
           label: "Writings",
