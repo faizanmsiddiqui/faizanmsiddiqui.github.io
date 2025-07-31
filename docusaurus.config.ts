@@ -83,7 +83,7 @@ const config: Config = {
       title: "Faizan Siddiqui",
       logo: {
         alt: "faizan siddiqui website logo",
-        src: "img/logo.svg",
+        src: "img/logo.png",
       },
       items: [
         {
