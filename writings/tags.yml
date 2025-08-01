@@ -1,3 +1,13 @@
+how-to:
+  label: How To
+  permalink: /how-to
+  description: Contents related to how-to guides and tutorials.
+
+hypervisor:
+  label: Hypervisor
+  permalink: /hypervisor
+  description: Contents related to hypervisors.
+
 motivation:
   label: Motivation
   permalink: /motivation
@@ -7,3 +17,24 @@ personal-note:
   label: Personal Note
   permalink: /personal-note
   description: Contents related to personal notes, reflections, and thoughts.
+
+tutorial:
+  label: Tutorial
+  permalink: /tutorial
+  description: Contents related to tutorials and step-by-step guides.
+
+virtualbox:
+  label: VirtualBox
+  permalink: /virtualbox
+  description:
+    Contents related to VirtualBox, a popular virtualization software.
+
+virtualization:
+  label: Virtualization
+  permalink: /virtualization
+  description: Contents related to virtualization technologies.
+
+windows-11:
+  label: Windows 11
+  permalink: /windows-11
+  description: Contents related to Windows 11 operating system.
