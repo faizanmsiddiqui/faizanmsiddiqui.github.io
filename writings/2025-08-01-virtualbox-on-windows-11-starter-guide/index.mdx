@@ -14,8 +14,8 @@ tags:
   - windows-11
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
 # VirtualBox on Windows 11: Beginner's Guide
 
@@ -40,10 +40,11 @@ virtualization might interest you.
 
 ## What is Virtualization?
 
-Virtualization is a technology that allows you to create virtual machines
-(also known as VMs)[^vm] that can run different operating systems and applications on a single
-physical machine. This means you can run multiple operating systems on the same
-machine, switch between them easily, and keep them isolated from each other.
+Virtualization is a technology that allows you to create virtual machines (also
+known as VMs)[^vm] that can run different operating systems and applications on
+a single physical machine. This means you can run multiple operating systems on
+the same machine, switch between them easily, and keep them isolated from each
+other.
 
 The essence of virtualization is that it allows you to create a self-contained
 environment that behaves like a separate computer but runs on top of your
@@ -156,14 +157,18 @@ following command to install the required packages:
 
 <Tabs>
   <TabItem value="powershell" label="PowerShell" default>
+
     ```powershell title="Windows Terminal / Windows PowerShell"
     pip install pywin32
     ```
+
   </TabItem>
-  <TabItem value="batch" label="Batch" default>
+  <TabItem value="batch" label="Batch">
+
     ```batch title="Windows Terminal / Command Prompt"
     pip install pywin32
     ```
+
   </TabItem>
 </Tabs>
 
@@ -174,14 +179,18 @@ command:
 
 <Tabs>
   <TabItem value="powershell" label="PowerShell" default>
+
     ```powershell title="Windows Terminal / Windows PowerShell"
     python -c "import win32api; print(win32api.GetVersion())"
     ```
+
   </TabItem>
-  <TabItem value="batch" label="Batch" default>
+  <TabItem value="batch" label="Batch">
+
     ```batch title="Windows Terminal / Command Prompt"
     python -c "import win32api; print(win32api.GetVersion())"
     ```
+
   </TabItem>
 </Tabs>
 
