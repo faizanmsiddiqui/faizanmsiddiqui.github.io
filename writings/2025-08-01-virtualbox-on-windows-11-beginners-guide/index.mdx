@@ -1,5 +1,5 @@
 ---
-title: "VirtualBox on Windows 11: Starter Guide"
+title: "VirtualBox on Windows 11: Beginner's Guide"
 description:
   A beginner's guide to setting up and using VirtualBox on Windows 11.
 image: ./featured-image.png
@@ -12,10 +12,12 @@ tags:
   - virtualbox
   - virtualization
   - windows-11
-draft: false
 ---
 
-# VirtualBox on Windows 11: Starter Guide
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# VirtualBox on Windows 11: Beginner's Guide
 
 :::info
 
@@ -27,7 +29,7 @@ you have experience with virtualization, you might find this guide too basic.
 
 :::
 
-![featured image](./featured-image.png "featured image")
+![featured-image.png](./featured-image.png)
 
 Have you ever wanted to run multiple operating systems on your computer without
 installing them on your physical machine? Or maybe you wanted to test some
@@ -38,10 +40,11 @@ virtualization might interest you.
 
 ## What is Virtualization?
 
-Virtualization is a technology that allows you to create virtual machines
-(VMs)[^vm] that can run different operating systems and applications on a single
-physical machine. This means you can run multiple operating systems on the same
-machine, switch between them easily, and keep them isolated from each other.
+Virtualization is a technology that allows you to create virtual machines (also
+known as VMs)[^vm] that can run different operating systems and applications on
+a single physical machine. This means you can run multiple operating systems on
+the same machine, switch between them easily, and keep them isolated from each
+other.
 
 The essence of virtualization is that it allows you to create a self-contained
 environment that behaves like a separate computer but runs on top of your
@@ -91,7 +94,7 @@ To install VirtualBox on Windows 11, follow these steps:
 Go to the [VirtualBox download page](https://www.virtualbox.org/wiki/Downloads)
 and download the latest version of VirtualBox for Windows hosts.
 
-![](./001-download-virtualbox.png)
+![001-download-virtualbox.png](./001-download-virtualbox.png)
 
 ### Run the Installer
 
@@ -101,23 +104,23 @@ through the process. You can choose the default options (which are usually
 sufficient for most users) or customize the installation according to your
 preferences. Here, I am going to use the default options.
 
-![](./002-run-the-installer.png)
+![002-run-the-installer.png](./002-run-the-installer.png)
 
-![](./003-run-the-installer.png)
+![003-run-the-installer.png](./003-run-the-installer.png)
 
-![](./004-run-the-installer.png)
+![004-run-the-installer.png](./004-run-the-installer.png)
 
-![](./005-run-the-installer.png)
+![005-run-the-installer.png](./005-run-the-installer.png)
 
-![](./006-run-the-installer.png)
+![006-run-the-installer.png](./006-run-the-installer.png)
 
-![](./007-run-the-installer.png)
+![007-run-the-installer.png](./007-run-the-installer.png)
 
-![](./008-run-the-installer.png)
+![008-run-the-installer.png](./008-run-the-installer.png)
 
-![](./009-run-the-installer.png)
+![009-run-the-installer.png](./009-run-the-installer.png)
 
-![](./010-run-the-installer.png)
+![010-run-the-installer.png](./010-run-the-installer.png)
 
 ### Complete the Installation
 
@@ -125,16 +128,16 @@ After the installation is complete, you will see a confirmation screen. You can
 choose to start VirtualBox immediately or close the installer. If you choose to
 start VirtualBox, you will see the main window of the application.
 
-![](./011-complete-the-installation.png)
+![011-complete-the-installation.png](./011-complete-the-installation.png)
 
-![](./012-complete-the-installation.png)
+![012-complete-the-installation.png](./012-complete-the-installation.png)
 
 ### Fixing Missing Dependencies: Python Core / win32api
 
 You might encounter a warning related to missing dependencies: Python Core /
 win32api when you try to run VirtualBox, as shown in the screenshot.
 
-![](./007-run-the-installer.png)
+![007-run-the-installer.png](./007-run-the-installer.png)
 
 This is not an error but a warning and can be ignored unless you want to control
 VirtualBox using Python scripts. If you want to remove this warning, you can
@@ -149,23 +152,49 @@ your system.
 
 :::
 
-Open Command Prompt or Windows PowerShell as an administrator and run the
+Open Windows PowerShell or Command Prompt as an administrator and run the
 following command to install the required packages:
 
-```console
-pip install pywin32
-```
+<Tabs>
+  <TabItem value="powershell" label="PowerShell" default>
 
-![](./013-fixing-missing-dependencies-python.png)
+    ```powershell title="Windows Terminal / Windows PowerShell"
+    pip install pywin32
+    ```
+
+  </TabItem>
+  <TabItem value="batch" label="Batch">
+
+    ```batch title="Windows Terminal / Command Prompt"
+    pip install pywin32
+    ```
+
+  </TabItem>
+</Tabs>
+
+![013-fixing-missing-dependencies-python.png](./013-fixing-missing-dependencies-python.png)
 
 After the installation is complete, you can verify it by running the following
 command:
 
-```console
-python -c "import win32api; print(win32api.GetVersion())"
-```
+<Tabs>
+  <TabItem value="powershell" label="PowerShell" default>
 
-![](./014-fixing-missing-dependencies-python.png)
+    ```powershell title="Windows Terminal / Windows PowerShell"
+    python -c "import win32api; print(win32api.GetVersion())"
+    ```
+
+  </TabItem>
+  <TabItem value="batch" label="Batch">
+
+    ```batch title="Windows Terminal / Command Prompt"
+    python -c "import win32api; print(win32api.GetVersion())"
+    ```
+
+  </TabItem>
+</Tabs>
+
+![014-fixing-missing-dependencies-python.png](./014-fixing-missing-dependencies-python.png)
 
 If you see the version number printed, the installation was successful.
 
@@ -182,23 +211,38 @@ You can download the Extension Pack from the
 install it by double-clicking the downloaded file. Follow the prompts to
 complete the installation.
 
-![](./015-virtualbox-extension-pack.png)
+![015-virtualbox-extension-pack.png](./015-virtualbox-extension-pack.png)
 
-![](./016-virtualbox-extension-pack.png)
+![016-virtualbox-extension-pack.png](./016-virtualbox-extension-pack.png)
 
-![](./017-virtualbox-extension-pack.png)
+![017-virtualbox-extension-pack.png](./017-virtualbox-extension-pack.png)
 
-![](./018-virtualbox-extension-pack.png)
+![018-virtualbox-extension-pack.png](./018-virtualbox-extension-pack.png)
 
-![](./019-virtualbox-extension-pack.png)
+![019-virtualbox-extension-pack.png](./019-virtualbox-extension-pack.png)
 
 To verify the installation, follow these steps in the VirtualBox application:
 
-![](./020-virtualbox-extension-pack.png)
+![020-virtualbox-extension-pack.png](./020-virtualbox-extension-pack.png)
 
-![](./021-virtualbox-extension-pack.png)
+![021-virtualbox-extension-pack.png](./021-virtualbox-extension-pack.png)
 
-![](./022-virtualbox-extension-pack.png)
+![022-virtualbox-extension-pack.png](./022-virtualbox-extension-pack.png)
+
+### Back to Welcome Screen
+
+The most important screen in VirtualBox is the Welcome screen, where you can see
+all your virtual machines, create new ones, and manage existing ones. After the
+verification of the Extension Pack installation, you can return to the Welcome
+screen from the Tools menu as shown below:
+
+![023-back-to-welcome-screen.png](./023-back-to-welcome-screen.png)
+
+![024-back-to-welcome-screen.png](./024-back-to-welcome-screen.png)
+
+![025-back-to-welcome-screen.png](./025-back-to-welcome-screen.png)
+
+![026-back-to-welcome-screen.png](./026-back-to-welcome-screen.png)
 
 ## Final Words
 

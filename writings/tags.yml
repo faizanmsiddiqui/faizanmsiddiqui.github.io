@@ -1,3 +1,8 @@
+announcement:
+  label: Announcement
+  permalink: /announcement
+  description: Contents related to announcements and important updates.
+
 how-to:
   label: How To
   permalink: /how-to
@@ -12,6 +17,11 @@ motivation:
   label: Motivation
   permalink: /motivation
   description: Contents related to motivation and inspiration.
+
+news:
+  label: News
+  permalink: /news
+  description: Contents related to news and updates.
 
 personal-note:
   label: Personal Note
