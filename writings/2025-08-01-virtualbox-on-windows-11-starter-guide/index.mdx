@@ -14,6 +14,9 @@ tags:
   - windows-11
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # VirtualBox on Windows 11: Beginner's Guide
 
 :::info
@@ -151,18 +154,36 @@ your system.
 Open Command Prompt or Windows PowerShell as an administrator and run the
 following command to install the required packages:
 
-```console
-pip install pywin32
-```
+<Tabs>
+  <TabItem value="powershell" label="PowerShell" default>
+    ```powershell title="Windows Terminal / Windows PowerShell"
+    pip install pywin32
+    ```
+  </TabItem>
+  <TabItem value="batch" label="Batch" default>
+    ```batch title="Windows Terminal / Command Prompt"
+    pip install pywin32
+    ```
+  </TabItem>
+</Tabs>
 
 ![013 fixing missing dependencies python](./013-fixing-missing-dependencies-python.png "013 fixing missing dependencies python")
 
 After the installation is complete, you can verify it by running the following
 command:
 
-```console
-python -c "import win32api; print(win32api.GetVersion())"
-```
+<Tabs>
+  <TabItem value="powershell" label="PowerShell" default>
+    ```powershell title="Windows Terminal / Windows PowerShell"
+    python -c "import win32api; print(win32api.GetVersion())"
+    ```
+  </TabItem>
+  <TabItem value="batch" label="Batch" default>
+    ```batch title="Windows Terminal / Command Prompt"
+    python -c "import win32api; print(win32api.GetVersion())"
+    ```
+  </TabItem>
+</Tabs>
 
 ![fixing missing dependencies python](./014-fixing-missing-dependencies-python.png "fixing missing dependencies python")
 
