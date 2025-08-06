@@ -147,6 +147,17 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "git",
+        path: "books/git",
+        routeBasePath: "/writings/books/git",
+        sidebarPath: require.resolve("./books/git/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "markdown",
         path: "books/markdown",
         routeBasePath: "/writings/books/markdown",
