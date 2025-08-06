@@ -51,17 +51,113 @@ const config: Config = {
 
   plugins: [
     [
-      "@docusaurus/plugin-content-blog",
+      "@docusaurus/plugin-content-pages",
+      {
+        id: "home",
+        path: "sections/home",
+        routeBasePath: "/",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-pages",
+      {
+        id: "about",
+        path: "sections/about",
+        routeBasePath: "/about",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-pages",
+      {
+        id: "links",
+        path: "sections/links",
+        routeBasePath: "/links",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-pages",
+      {
+        id: "projects",
+        path: "sections/projects",
+        routeBasePath: "/projects",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-pages",
+      {
+        id: "publications",
+        path: "sections/publications",
+        routeBasePath: "/publications",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-pages",
+      {
+        id: "resume",
+        path: "sections/resume",
+        routeBasePath: "/resume",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-pages",
       {
         id: "writings",
-        path: "writings",
+        path: "sections/writings",
         routeBasePath: "/writings",
-        blogTitle: "Writings",
-        blogDescription: "Writings by Faizan Siddiqui",
-        blogSidebarTitle: "Writings",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "docker",
+        path: "books/docker",
+        routeBasePath: "/writings/books/docker",
+        sidebarPath: require.resolve(
+          "./books/docker/sidebar.ts"
+        ),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "markdown",
+        path: "books/markdown",
+        routeBasePath: "/writings/books/markdown",
+        sidebarPath: require.resolve(
+          "./books/markdown/sidebar.ts"
+        ),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "rust",
+        path: "books/rust",
+        routeBasePath: "/writings/books/rust",
+        sidebarPath: require.resolve(
+          "./books/rust/sidebar.ts"
+        ),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "pages",
+        path: "pages",
+        routeBasePath: "/writings/pages",
+        blogTitle: "Pages",
+        blogDescription: "Pages by Faizan Siddiqui",
+        blogSidebarTitle: "Pages",
         blogSidebarCount: "ALL",
         postsPerPage: 10,
         showReadingTime: true,
+        showLastUpdateTime: true,
         feedOptions: {
           type: ["rss", "atom"],
           xslt: true,
@@ -86,35 +182,46 @@ const config: Config = {
         src: "img/logo.png",
       },
       items: [
-        // {
-        //   position: "left",
-        //   label: "About",
-        //   to: "/about",
-        // },
-        // {
-        //   position: "left",
-        //   label: "Links",
-        //   to: "/links",
-        // },
-        // {
-        //   position: "left",
-        //   label: "Projects",
-        //   to: "/projects",
-        // },
-        // {
-        //   position: "left",
-        //   label: "Publications",
-        //   to: "/publications",
-        // },
-        // {
-        //   position: "left",
-        //   label: "Resume",
-        //   to: "/resume",
-        // },
+        {
+          position: "left",
+          label: "About",
+          to: "/about",
+        },
+        {
+          position: "left",
+          label: "Links",
+          to: "/links",
+        },
+        {
+          position: "left",
+          label: "Projects",
+          to: "/projects",
+        },
+        {
+          position: "left",
+          label: "Publications",
+          to: "/publications",
+        },
+        {
+          position: "left",
+          label: "Resume",
+          to: "/resume",
+        },
         {
           position: "left",
           label: "Writings",
           to: "/writings",
+          type: "dropdown",
+          items: [
+            {
+              label: "Books",
+              to: "/writings/books",
+            },
+            {
+              label: "Pages",
+              to: "/writings/pages",
+            },
+          ],
         },
         {
           position: "right",
@@ -135,7 +242,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['bash', 'batch', 'powershell', 'shell-session'],
+      additionalLanguages: ["bash", "batch", "powershell", "shell-session"],
     },
   } satisfies Preset.ThemeConfig,
 };
