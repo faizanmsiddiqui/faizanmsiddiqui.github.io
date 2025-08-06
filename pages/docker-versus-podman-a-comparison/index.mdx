@@ -66,6 +66,10 @@ means that the Docker daemon must be running for any container operations to
 succeed.
 
 ```mermaid
+---
+config:
+  look: handDrawn
+---
 graph LR
     A(Docker Client) --> B(Docker Daemon)
     B --> C(Containerd)
@@ -88,11 +92,6 @@ graph LR
         D
         E
     end
-
-    style A fill:#cce5ff,stroke:#333,stroke-width:1px
-    style B fill:#d4edda,stroke:#333,stroke-width:1px
-    style D fill:#fff3cd,stroke:#333,stroke-width:1px
-    style E fill:#f8d7da,stroke:#333,stroke-width:1px
 ```
 
 - **Docker Client (CLI or REST API):** The interface used to communicate with
@@ -142,6 +141,10 @@ for managing containers, similar to Docker, but it does not require a daemon to
 manage them.
 
 ```mermaid
+---
+config:
+  look: handDrawn
+---
 graph LR
     A(Podman CLI) --> B(Podman Libpod Library)
     B --> C("Container Runtimes (runc/crun)")
@@ -167,16 +170,6 @@ graph LR
         H
         I
     end
-
-    style A fill:#cce5ff,stroke:#333,stroke-width:1px
-    style B fill:#d4edda,stroke:#333,stroke-width:1px
-    style C fill:#f0f0f0,stroke:#333,stroke-width:1px
-    style D fill:#fff3cd,stroke:#333,stroke-width:1px
-    style E fill:#e2e3e5,stroke:#333,stroke-width:1px
-    style F fill:#d1ecf1,stroke:#333,stroke-width:1px
-    style G fill:#f8d7da,stroke:#333,stroke-width:1px
-    style H fill:#f5c6cb,stroke:#333,stroke-width:1px
-    style I fill:#bee5eb,stroke:#333,stroke-width:1px
 ```
 
 - **Daemon-less:** Podman does not require a background service like Docker.
