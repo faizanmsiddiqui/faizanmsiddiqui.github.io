@@ -43,16 +43,17 @@ article svg {
 }
 
 .markdown img {
-  border-radius: 5.5px;
+  max-width: 90%;
   display: block;
   margin: auto;
+  border-radius: 5.5px;
 }
 
 .markdown .caption p {
-  color: var(--ifm-color-emphasis-400);
-  font-style: italic;
   margin-top: -1rem;
   text-align: center;
+  font-style: italic;
+  color: var(--ifm-color-emphasis-400);
 }
 
 .markdown .center table {
