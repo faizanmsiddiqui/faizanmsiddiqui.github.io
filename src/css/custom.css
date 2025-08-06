@@ -29,6 +29,11 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+article svg {
+  display: block;
+  margin: auto;
+}
+
 .markdown .center {
   text-align: center;
 }
