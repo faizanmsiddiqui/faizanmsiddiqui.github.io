@@ -43,9 +43,9 @@ article svg {
 }
 
 .markdown img {
+  max-width: 90%;
   display: block;
   margin: auto;
-  max-width: 90%;
   border-radius: 5.5px;
 }
 
