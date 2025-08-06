@@ -30,7 +30,6 @@
 }
 
 article svg {
-  border-radius: 5.5px;
   display: block;
   margin: auto;
 }
@@ -39,7 +38,7 @@ article svg {
   text-align: center;
 }
 
-.markdown p {
+.markdown p:not(svg *) {
   text-align: justify;
 }
 

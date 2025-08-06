@@ -36,6 +36,11 @@ const config: Config = {
     locales: ["en"],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ["@docusaurus/theme-mermaid"],
+
   presets: [
     [
       "classic",
@@ -112,9 +117,7 @@ const config: Config = {
         id: "docker",
         path: "books/docker",
         routeBasePath: "/writings/books/docker",
-        sidebarPath: require.resolve(
-          "./books/docker/sidebar.ts"
-        ),
+        sidebarPath: require.resolve("./books/docker/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -125,9 +128,7 @@ const config: Config = {
         id: "markdown",
         path: "books/markdown",
         routeBasePath: "/writings/books/markdown",
-        sidebarPath: require.resolve(
-          "./books/markdown/sidebar.ts"
-        ),
+        sidebarPath: require.resolve("./books/markdown/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -138,9 +139,7 @@ const config: Config = {
         id: "rust",
         path: "books/rust",
         routeBasePath: "/writings/books/rust",
-        sidebarPath: require.resolve(
-          "./books/rust/sidebar.ts"
-        ),
+        sidebarPath: require.resolve("./books/rust/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },

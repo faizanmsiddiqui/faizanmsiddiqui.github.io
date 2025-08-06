@@ -3,6 +3,22 @@ announcement:
   permalink: /announcement
   description: Contents related to announcements and important updates.
 
+comparison:
+  label: Comparison
+  permalink: /comparison
+  description:
+    Contents related to comparisons between different technologies or tools.
+
+containerization:
+  label: Containerization
+  permalink: /containerization
+  description: Contents related to containerization technologies.
+
+docker:
+  label: Docker
+  permalink: /docker
+  description: Contents related to Docker, a popular containerization platform.
+
 how-to:
   label: How To
   permalink: /how-to
@@ -27,6 +43,11 @@ personal-note:
   label: Personal Note
   permalink: /personal-note
   description: Contents related to personal notes, reflections, and thoughts.
+
+podman:
+  label: Podman
+  permalink: /podman
+  description: Contents related to Podman, a container management tool.
 
 tutorial:
   label: Tutorial
