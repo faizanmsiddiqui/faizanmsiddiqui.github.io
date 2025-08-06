@@ -35,6 +35,10 @@ article svg {
   margin: auto;
 }
 
+article p:not(svg *) {
+  text-align: justify;
+}
+
 .markdown .center {
   text-align: center;
 }
