@@ -116,6 +116,7 @@ const config: Config = {
           "./books/docker/sidebar.ts"
         ),
         breadcrumbs: false,
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -128,6 +129,7 @@ const config: Config = {
           "./books/markdown/sidebar.ts"
         ),
         breadcrumbs: false,
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -140,6 +142,7 @@ const config: Config = {
           "./books/rust/sidebar.ts"
         ),
         breadcrumbs: false,
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -155,7 +158,6 @@ const config: Config = {
         postsPerPage: 10,
         showReadingTime: true,
         showLastUpdateTime: true,
-        showLastUpdateAuthor: true,
         feedOptions: {
           type: ["rss", "atom"],
           xslt: true,
