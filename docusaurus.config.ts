@@ -125,6 +125,17 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "devops",
+        path: "books/devops",
+        routeBasePath: "/writings/books/devops",
+        sidebarPath: require.resolve("./books/devops/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "docker",
         path: "books/docker",
         routeBasePath: "/writings/books/docker",
