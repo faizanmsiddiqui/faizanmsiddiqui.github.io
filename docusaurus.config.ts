@@ -114,6 +114,17 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "bash",
+        path: "books/bash",
+        routeBasePath: "/writings/books/bash",
+        sidebarPath: require.resolve("./books/bash/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "docker",
         path: "books/docker",
         routeBasePath: "/writings/books/docker",
