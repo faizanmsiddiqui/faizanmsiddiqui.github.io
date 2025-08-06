@@ -136,10 +136,10 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "rust",
-        path: "books/rust",
-        routeBasePath: "/writings/books/rust",
-        sidebarPath: require.resolve("./books/rust/sidebar.ts"),
+        id: "python",
+        path: "books/python",
+        routeBasePath: "/writings/books/python",
+        sidebarPath: require.resolve("./books/python/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },

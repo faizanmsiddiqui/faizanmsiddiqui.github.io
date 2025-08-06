@@ -4,7 +4,7 @@ const sidebar: SidebarsConfig = {
   seriesSidebar: [
     {
       type: "category",
-      label: "Rust",
+      label: "Python",
       link: {
         type: "doc",
         id: "index",
