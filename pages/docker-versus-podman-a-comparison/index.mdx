@@ -21,7 +21,7 @@ tags:
 
 This article expects readers to have some knowledge of containerization and
 virtualization in general. If you are new to the topic, consider reading
-introductory materials. You can also check my detailed writings on
+introductory materials. You can also check out my detailed writings on
 [Docker](/writings/books/docker/) and [Podman](/writings/books/podman/).
 
 :::
@@ -30,9 +30,9 @@ introductory materials. You can also check my detailed writings on
 
 [Docker](https://www.docker.com) and [Podman](https://podman.io) are two popular
 containerization tools that have gained significant traction in the software
-development and deployment landscape. Both tools provide containers, to create,
-manage, and deploy applications, but they have different architectures and
-philosophies. In this article, we will compare them both, highlighting their key
+development and deployment landscape. Both tools provide the ability to create,
+manage, and deploy containers, but they have different architectures and
+philosophies. In this article, we will compare them, highlighting their key
 differences, advantages, and disadvantages.
 
 {/* truncate */}
@@ -43,17 +43,17 @@ Containerization is a lightweight form of virtualization[^virtualization] that
 allows developers to package applications and their dependencies into isolated
 environments called containers. This approach ensures that applications run
 consistently across different environments, such as development, testing, and
-production as well as across different operating systems. Containers share the
+production, as well as across different operating systems. Containers share the
 host operating system's kernel, making them more efficient than traditional
 virtual machines[^vm].
 
 ## Docker
 
-Docker is a platform the provides a set of tools for building, running, and
+Docker is a platform that provides a set of tools for building, running, and
 managing containers. It was first released in 2013 and has since become the de
-facto standard for containerization. Docker provides a user-friendly command
-line interface (CLI) and a graphical user interface (GUI) called Docker Desktop,
-which makes it easy to manage containers and images.
+facto standard for containerization. Docker offers a user-friendly command-line
+interface (CLI) and a graphical user interface (GUI) called Docker Desktop,
+which make it easy to manage containers and images.
 
 ### Architecture
 
@@ -95,12 +95,12 @@ graph LR
     style E fill:#f8d7da,stroke:#333,stroke-width:1px
 ```
 
-- **Docker Client (CLI or REST API):** Interface to communicate with the Docker
-  daemon.
-- **Docker Daemon (`dockerd`):** Main service that manages containers, images,
-  and more.
-- **Containerd:** A container runtime Docker uses under the hood.
-- **Docker Objects:** Images, containers, volumes, and networks.
+- **Docker Client (CLI or REST API):** The interface used to communicate with
+  the Docker daemon.
+- **Docker Daemon (`dockerd`):** The main service that manages containers,
+  images, and more.
+- **Containerd:** The container runtime Docker uses under the hood.
+- **Docker Objects:** Includes images, containers, volumes, and networks.
 - **Docker Registry:** Stores Docker images (e.g., Docker Hub or private
   registries).
 
@@ -125,21 +125,21 @@ graph LR
 
 ## Podman
 
-Podman is a container management tool that was developed by Red Hat and released
-in 2018. It is designed to be a drop-in replacement for Docker, providing a
-similar command line interface and functionality. However, Podman has a key
-difference: it does not require a daemon to run. Instead, Podman uses a
-daemon-less architecture, which means that each Podman command runs as a
-separate process. This approach provides better security and allows users to run
-containers without requiring root privileges.
+Podman is a container management tool developed by Red Hat and released in 2018.
+It is designed to be a drop-in replacement for Docker, providing a similar
+command-line interface and functionality. However, Podman has a key difference:
+it does not require a daemon to run. Instead, Podman uses a daemon-less
+architecture, meaning each Podman command runs as a separate process. This
+approach provides better security and allows users to run containers without
+requiring root privileges.
 
 ### Architecture
 
 Podman's architecture is simpler than Docker's, as it does not rely on a central
-daemon. Each Podman command runs as a separate process, which means that users
-can run containers without requiring a long-running service. Podman uses the
-`containerd` runtime for managing containers, similar to Docker, but it does not
-require a daemon to manage them.
+daemon. Each Podman command runs as a separate process, allowing users to run
+containers without a long-running service. Podman uses the `containerd` runtime
+for managing containers, similar to Docker, but it does not require a daemon to
+manage them.
 
 ```mermaid
 graph LR
@@ -180,8 +180,9 @@ graph LR
 ```
 
 - **Daemon-less:** Podman does not require a background service like Docker.
-- **Rootless Support:** Containers can be run by non-root users securely.
-- **Libpod Library:** Core library that manages pods, containers, and images.
+- **Rootless Support:** Containers can be run securely by non-root users.
+- **Libpod Library:** The core library that manages pods, containers, and
+  images.
 - **runc/crun:** OCI-compliant container runtimes used to run containers.
 - **CNI:** Container Network Interface plugins for networking.
 - **containers/image & containers/common:** Libraries for image handling and
@@ -190,7 +191,7 @@ graph LR
 ### Advantages of Podman
 
 - **Daemon-less Architecture:** Podman does not require a long-running daemon,
-  which reduces complexity and potential security risks.
+  reducing complexity and potential security risks.
 - **Rootless Containers:** Podman allows users to run containers without root
   privileges, enhancing security in multi-tenant environments.
 - **Compatibility with Docker:** Podman provides a Docker-compatible CLI, making
@@ -228,19 +229,19 @@ graph LR
 
 ## Conclusion
 
-When choosing between Docker and Podman, there is no one-size-fits-all solution,
-consider your specific use case and requirements. Both tools have their
+When choosing between Docker and Podman, there is no one-size-fits-all solution.
+Consider your specific use case and requirements. Both tools have their
 strengths and weaknesses, and the best choice depends on your needs. Here are
 some scenarios where each tool might be more suitable:
 
-**Choose Docker if**:
+**Choose Docker if:**
 
 - You need a mature ecosystem with extensive community support.
 - You prefer a user-friendly CLI and GUI for managing containers.
 - You are already using Docker in your development workflow and want to maintain
   compatibility.
 
-**Choose Podman if**:
+**Choose Podman if:**
 
 - You prioritize security and want to run containers without root privileges.
 - You prefer a simpler, daemon-less architecture.
