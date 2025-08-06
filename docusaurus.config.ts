@@ -169,6 +169,17 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "podman",
+        path: "books/podman",
+        routeBasePath: "/writings/books/podman",
+        sidebarPath: require.resolve("./books/podman/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "python",
         path: "books/python",
         routeBasePath: "/writings/books/python",
