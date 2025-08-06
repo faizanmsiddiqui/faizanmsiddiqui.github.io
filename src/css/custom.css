@@ -39,7 +39,7 @@ article svg {
   text-align: center;
 }
 
-.markdown p {
+.markdown p:not(svg *) {
   text-align: justify;
 }
 
