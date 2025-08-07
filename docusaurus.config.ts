@@ -213,6 +213,17 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "random",
+        path: "books/random",
+        routeBasePath: "/writings/books/random",
+        sidebarPath: require.resolve("./books/random/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "wonders",
         path: "books/wonders",
         routeBasePath: "/writings/books/wonders",
