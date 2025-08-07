@@ -169,6 +169,17 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "linux",
+        path: "books/linux",
+        routeBasePath: "/writings/books/linux",
+        sidebarPath: require.resolve("./books/linux/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "markdown",
         path: "books/markdown",
         routeBasePath: "/writings/books/markdown",
