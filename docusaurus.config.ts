@@ -125,6 +125,17 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "cloud",
+        path: "books/cloud",
+        routeBasePath: "/writings/books/cloud",
+        sidebarPath: require.resolve("./books/cloud/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "devops",
         path: "books/devops",
         routeBasePath: "/writings/books/devops",
@@ -158,6 +169,17 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "linux",
+        path: "books/linux",
+        routeBasePath: "/writings/books/linux",
+        sidebarPath: require.resolve("./books/linux/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "markdown",
         path: "books/markdown",
         routeBasePath: "/writings/books/markdown",
@@ -184,6 +206,28 @@ const config: Config = {
         path: "books/python",
         routeBasePath: "/writings/books/python",
         sidebarPath: require.resolve("./books/python/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "random",
+        path: "books/random",
+        routeBasePath: "/writings/books/random",
+        sidebarPath: require.resolve("./books/random/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "wonders",
+        path: "books/wonders",
+        routeBasePath: "/writings/books/wonders",
+        sidebarPath: require.resolve("./books/wonders/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
