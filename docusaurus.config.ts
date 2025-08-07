@@ -114,10 +114,65 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "bash",
+        path: "books/bash",
+        routeBasePath: "/writings/books/bash",
+        sidebarPath: require.resolve("./books/bash/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "cloud",
+        path: "books/cloud",
+        routeBasePath: "/writings/books/cloud",
+        sidebarPath: require.resolve("./books/cloud/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "devops",
+        path: "books/devops",
+        routeBasePath: "/writings/books/devops",
+        sidebarPath: require.resolve("./books/devops/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "docker",
         path: "books/docker",
         routeBasePath: "/writings/books/docker",
         sidebarPath: require.resolve("./books/docker/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "git",
+        path: "books/git",
+        routeBasePath: "/writings/books/git",
+        sidebarPath: require.resolve("./books/git/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "linux",
+        path: "books/linux",
+        routeBasePath: "/writings/books/linux",
+        sidebarPath: require.resolve("./books/linux/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -136,10 +191,43 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "rust",
-        path: "books/rust",
-        routeBasePath: "/writings/books/rust",
-        sidebarPath: require.resolve("./books/rust/sidebar.ts"),
+        id: "podman",
+        path: "books/podman",
+        routeBasePath: "/writings/books/podman",
+        sidebarPath: require.resolve("./books/podman/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "python",
+        path: "books/python",
+        routeBasePath: "/writings/books/python",
+        sidebarPath: require.resolve("./books/python/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "random",
+        path: "books/random",
+        routeBasePath: "/writings/books/random",
+        sidebarPath: require.resolve("./books/random/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "wonders",
+        path: "books/wonders",
+        routeBasePath: "/writings/books/wonders",
+        sidebarPath: require.resolve("./books/wonders/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
