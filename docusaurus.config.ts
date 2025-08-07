@@ -211,6 +211,17 @@ const config: Config = {
       },
     ],
     [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "wonders",
+        path: "books/wonders",
+        routeBasePath: "/writings/books/wonders",
+        sidebarPath: require.resolve("./books/wonders/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
       "@docusaurus/plugin-content-blog",
       {
         id: "pages",
