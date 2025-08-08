@@ -23,7 +23,7 @@ import TabItem from "@theme/TabItem";
 :::info
 
 This is a beginner's guide to setting up and using VirtualBox on Windows 11 for
-getting started with virtualization. The expected audience is anyone with no
+getting started with virtualization. The intended audience is anyone with no
 experience in virtualization. This guide covers basic concepts of virtualization
 and provides step-by-step instructions to install VirtualBox on Windows 11. If
 you have experience with virtualization, you might find this guide too basic.
@@ -41,11 +41,11 @@ virtualization might interest you.
 
 ## What is Virtualization?
 
-Virtualization is a technology that allows you to create virtual machines (also
-known as VMs)[^vm] that can run different operating systems and applications on
-a single physical machine. This means you can run multiple operating systems on
-the same machine, switch between them easily, and keep them isolated from each
-other.
+Virtualization is a technology that allows you to create **virtual machines
+(also known as VMs)**[^vm] that can run different operating systems and
+applications on a single physical machine. This means you can run multiple
+operating systems on the same machine, switch between them easily, and keep them
+isolated from each other.
 
 The essence of virtualization is that it allows you to create a self-contained
 environment that behaves like a separate computer but runs on top of your
@@ -59,14 +59,15 @@ on Windows 11.
 
 ## What is VirtualBox?
 
-[VirtualBox](https://www.virtualbox.org) is a free and open-source
-hypervisor[^hypervisor] that allows you to create and manage virtual machines on
-your computer. It is developed by [Oracle](https://www.oracle.com) and supports
-various operating systems, including Windows, Linux, macOS, and Solaris.
-VirtualBox is easy to use and has a user-friendly interface that makes it simple
-to create, configure, and run virtual machines. It also supports advanced
-features such as snapshots, shared folders, and network configurations, making
-it a powerful tool for virtualization.
+[**VirtualBox**](https://www.virtualbox.org) is a free and open-source
+**hypervisor**[^hypervisor] that allows you to create and manage virtual
+machines on your computer. It is developed by
+[**Oracle**](https://www.oracle.com) and supports various operating systems,
+including Windows, Linux, macOS, and Solaris. VirtualBox is easy to use and has
+a user-friendly interface that makes it simple to create, configure, and run
+virtual machines. It also supports advanced features such as snapshots, shared
+folders, and network configurations, making it a powerful tool for
+virtualization.
 
 ## Environment Details
 
@@ -92,8 +93,9 @@ To install VirtualBox on Windows 11, follow these steps:
 
 ### Download VirtualBox
 
-Go to the [VirtualBox download page](https://www.virtualbox.org/wiki/Downloads)
-and download the latest version of VirtualBox for Windows hosts.
+Go to the
+[**VirtualBox download page**](https://www.virtualbox.org/wiki/Downloads) and
+download the latest version of VirtualBox for Windows hosts.
 
 ![001-download-virtualbox.png](./001-download-virtualbox.png)
 
@@ -136,20 +138,21 @@ start VirtualBox, you will see the main window of the application.
 ### Fixing Missing Dependencies: Python Core / win32api
 
 You might encounter a warning related to missing dependencies: Python Core /
-win32api when you try to run VirtualBox, as shown in the screenshot.
+win32api during the installation of the VirtualBox, as shown in the screenshot.
 
 ![007-run-the-installer.png](./007-run-the-installer.png)
 
-This is not an error but a warning and can be ignored unless you want to control
-VirtualBox using Python scripts. If you want to remove this warning, you can
-install the Python dependencies.
+This is not an error but a warning and can be ignored during the installation
+process, and VirtualBox will work fine without it. However, if you want to use
+Python scripts to control VirtualBox, you will need to install the required
+Python dependencies as described below.
 
 :::info
 
 Consider installing Python if you haven't already. You can download it from
-[Python.org](https://www.python.org/downloads/). As Python installation is not
-within the scope of this article, I assume you already have Python installed on
-your system.
+[**Python.org**](https://www.python.org/downloads/). As Python installation is
+not within the scope of this article, I assume you already have Python installed
+on your system.
 
 :::
 
@@ -205,10 +208,10 @@ After installing VirtualBox, it is recommended to install the VirtualBox
 Extension Pack, which provides additional features and support for USB devices,
 remote desktop, and other functionalities. Check this video for more
 information:
-[What is VirtualBox Extension Pack?](https://www.youtube.com/watch?v=vG8FkEjyE4E).
+[**What is VirtualBox Extension Pack?**](https://www.youtube.com/watch?v=vG8FkEjyE4E).
 
 You can download the Extension Pack from the
-[VirtualBox download page](https://www.virtualbox.org/wiki/Downloads) and
+[**VirtualBox download page**](https://www.virtualbox.org/wiki/Downloads) and
 install it by double-clicking the downloaded file. Follow the prompts to
 complete the installation.
 
@@ -248,8 +251,8 @@ screen from the Tools menu as shown below:
 ## Final Words
 
 Now you have successfully installed VirtualBox on your Windows 11 machine and
-are ready to create and run virtual machines. In the next articles, I will cover
-how to create a virtual machine and install an operating system on it.
+are ready to create and run virtual machines. In the future articles, I will
+cover how to create a virtual machine and install an operating system on it.
 
 ## Future Articles
 
@@ -269,6 +272,6 @@ In the future articles, I will cover the following related topics:
     A hypervisor is software that creates and manages virtual machines.
 
 [^vm]:
-    A Virtual Machine (VM) is a software emulation of a physical computer that
-    can run its own operating system and applications independently of the host
-    system.
+    A Virtual Machine also known as VM is a software emulation of a physical
+    computer that can run its own operating system and applications
+    independently of the host system.
