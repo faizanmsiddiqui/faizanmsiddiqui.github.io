@@ -32,7 +32,7 @@
 article
   > .markdown:not(#__blog-post-container)
   > p:not(svg *)
-  > .hide-footnote-link {
+  > .hide-footnote-mark {
   display: none;
 }
 
