@@ -29,6 +29,13 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+article
+  > .markdown:not(#__blog-post-container)
+  > p:not(svg *)
+  > .hide-footnote-link {
+  display: none;
+}
+
 article svg {
   max-width: 100%;
   height: auto;
