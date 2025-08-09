@@ -4,11 +4,11 @@
    id="Crystal-Ball--Streamline-Noto-Emoji"
    x="0"
    y="0"
-   viewBox="0 0 97.520002 120.00001"
+   viewBox="0 0 114 150"
    xml:space="preserve"
    enable-background="new 0 0 128 128"
-   height="360"
-   width="292.56"
+   height="375"
+   width="285"
    sodipodi:docname="crystal-ball-streamline-noto-emojis.svg"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    inkscape:export-filename="crystal-ball-streamline-noto-emojis.png"
@@ -27,9 +27,9 @@
    inkscape:pageopacity="0.0"
    inkscape:pagecheckerboard="0"
    inkscape:deskcolor="#d1d1d1"
-   inkscape:zoom="0.27863046"
-   inkscape:cx="-337.36441"
-   inkscape:cy="733.94704"
+   inkscape:zoom="1.1145218"
+   inkscape:cx="161.50424"
+   inkscape:cy="205.02066"
    inkscape:window-width="1920"
    inkscape:window-height="1009"
    inkscape:window-x="-8"
@@ -42,7 +42,8 @@
   </desc>
   <g
    id="g26"
-   transform="translate(-15.24,-4)">
+   transform="translate(-7,19)"
+   inkscape:label="g26">
     <g
    id="g9">
       <g
