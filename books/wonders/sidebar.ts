@@ -9,7 +9,9 @@ const sidebar: SidebarsConfig = {
         type: "doc",
         id: "index",
       },
-      items: [],
+      items: [
+        "text-editors/index",
+      ],
     },
   ],
 };
