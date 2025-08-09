@@ -1,0 +1,28 @@
+development-tools:
+  label: Development Tools
+  permalink: /development-tools
+  description: Contents related to various development tools and environments.
+
+productivity:
+  label: Productivity
+  permalink: /productivity
+  description: Contents related to productivity tools, techniques, and tips.
+
+programming:
+  label: Programming
+  permalink: /programming
+  description:
+    Contents related to programming languages, paradigms, best practices, and
+    tools.
+
+software-development:
+  label: Software Development
+  permalink: /software-development
+  description:
+    Contents related to software development practices, methodologies, and
+    tools.
+
+text-editors:
+  label: Text Editors
+  permalink: /text-editors
+  description: Contents related to text editors and their usage.
