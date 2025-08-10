@@ -72,3 +72,7 @@ article p:not(svg *) {
 .markdown .center table {
   display: inline-block;
 }
+
+.reference-text {
+  color: var(--ifm-font-color-base);
+}
