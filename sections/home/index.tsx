@@ -5,7 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
-import AnimatedBars from '@site/src/components/AnimatedBars';
+import BarsAnimation from '@site/src/components/BarsAnimation';
 
 import styles from './styles.module.css';
 
@@ -40,7 +40,7 @@ export default function Home(): ReactNode {
       <main>
         {/* <HomepageFeatures /> */}
       </main>
-      <AnimatedBars />
+      <BarsAnimation />
     </Layout>
   );
 }

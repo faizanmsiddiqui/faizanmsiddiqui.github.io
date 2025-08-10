@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 
-export default function AnimatedBars() {
+export default function BarsAnimation() {
   const bars = [
     "#FFB3BA", // Pastel Red
     "#FFDFBA", // Pastel Orange

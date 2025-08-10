@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import ConstructionAnimation from "./constructionAnimation.svg";
-import AnimatedBars from "@site/src/components/AnimatedBars";
+import BarsAnimation from "@site/src/components/BarsAnimation";
 import "./styles.module.css";
 
 type ConstructionPageProps = {
@@ -21,7 +21,7 @@ export default function ConstructionPage({
       <main>
         <ConstructionAnimation />
       </main>
-      <AnimatedBars />
+      <BarsAnimation />
     </Layout>
   );
 }
