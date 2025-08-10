@@ -3,6 +3,16 @@
  * and scoped locally.
  */
 
+#__docusaurus {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
