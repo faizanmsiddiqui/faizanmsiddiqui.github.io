@@ -239,7 +239,7 @@ const config: Config = {
         path: "pages",
         routeBasePath: "/writings/pages",
         blogTitle: "Pages",
-        blogDescription: "Pages by Faizan Siddiqui",
+        blogDescription: "A collection of pages on various topics.",
         blogSidebarTitle: "Pages",
         blogSidebarCount: "ALL",
         postsPerPage: 10,
