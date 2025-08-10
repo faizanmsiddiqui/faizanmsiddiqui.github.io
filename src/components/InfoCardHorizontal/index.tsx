@@ -2,14 +2,14 @@ import React from "react";
 import Link from "@docusaurus/Link";
 import styles from "./styles.module.css";
 
-interface SectionLinkProps {
+interface InfoCardHorizontalProps {
   emoji: string;
   title: string;
   description: string;
   to: string;
 }
 
-const SectionLink: React.FC<SectionLinkProps> = ({
+const InfoCardHorizontal: React.FC<InfoCardHorizontalProps> = ({
   emoji,
   title,
   description,
@@ -28,4 +28,4 @@ const SectionLink: React.FC<SectionLinkProps> = ({
   );
 };
 
-export default SectionLink;
+export default InfoCardHorizontal;
