@@ -323,7 +323,7 @@ const config: Config = {
     },
     footer: {
       style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} ${title}.`,
+      copyright: `Copyright © ${new Date().getFullYear()} ${title}.<br>Made with 🤍 and <a href="/attributions">these amazing resources</a>.`,
     },
   } satisfies Preset.ThemeConfig,
 };
