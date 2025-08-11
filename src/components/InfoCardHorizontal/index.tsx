@@ -3,22 +3,22 @@ import Link from "@docusaurus/Link";
 import styles from "./styles.module.css";
 
 interface InfoCardHorizontalProps {
-  emoji: string;
+  to: string;
+  graphics: React.ReactNode;
   title: string;
   description: string;
-  to: string;
 }
 
 const InfoCardHorizontal: React.FC<InfoCardHorizontalProps> = ({
-  emoji,
+  to,
+  graphics,
   title,
   description,
-  to,
 }) => {
   return (
     <Link className={styles.card} to={to}>
       <div className={styles.content}>
-        <div className={styles.emoji}>{emoji}</div>
+        <div className={styles.graphics}>{graphics}</div>
         <div>
           <h3 className={styles.title}>{title}</h3>
           <p className={styles.description}>{description}</p>
