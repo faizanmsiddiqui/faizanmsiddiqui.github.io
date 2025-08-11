@@ -322,8 +322,8 @@ const config: Config = {
       ],
     },
     footer: {
-      style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} ${title}.<br>Made with 🤍 and <a href="/attributions">these amazing resources</a>.`,
+      style: "light",
+      copyright: `Copyright © ${new Date().getFullYear()} ${title}.<br>Made with ❤️ and <a href="/attributions"><strong>these amazing resources</strong></a>.`,
     },
   } satisfies Preset.ThemeConfig,
 };
