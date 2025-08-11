@@ -32,6 +32,7 @@ interface GraphicsWrapperProps {
   borderLeft?: string;
 
   // Styling
+  displayType?: "block" | "flex" | "inline-flex";
   background?: string;
   borderRadius?: string | number;
   style?: React.CSSProperties; // Extra custom styles
@@ -67,6 +68,7 @@ const GraphicsWrapper: React.FC<GraphicsWrapperProps> = ({
   borderBottom,
   borderLeft,
 
+  displayType = "flex", // Default to flex for better alignment
   background = "transparent",
   borderRadius = 0,
   style = {},
@@ -105,9 +107,9 @@ const GraphicsWrapper: React.FC<GraphicsWrapperProps> = ({
     <div
       className={className}
       style={{
-        display: "inline-flex",
-        alignItems: "center",
-        justifyContent: "center",
+        display: displayType,
+        alignItems: displayType !== "block" ? "center" : undefined,
+        justifyContent: displayType !== "block" ? "center" : undefined,
 
         // Dimensions
         width,
