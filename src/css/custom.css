@@ -89,3 +89,7 @@ article h6,
 .reference-text {
   color: var(--ifm-font-color-base);
 }
+
+.reference-text > p {
+  margin: 0;
+}

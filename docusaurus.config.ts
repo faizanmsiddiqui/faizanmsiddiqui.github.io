@@ -67,6 +67,14 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-pages",
       {
+        id: "attributions",
+        path: "sections/attributions",
+        routeBasePath: "/attributions",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-pages",
+      {
         id: "links",
         path: "sections/links",
         routeBasePath: "/links",
