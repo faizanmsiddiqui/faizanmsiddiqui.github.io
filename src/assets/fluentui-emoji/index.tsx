@@ -1,29 +1,31 @@
-import Books from "./books_color.svg";
-import Cloud from "./cloud_color.svg";
-import CrystalBall from "./crystal_ball_color.svg";
-import GameDie from "./game_die_color.svg";
-import Herb from "./herb_color.svg";
-import Memo from "./memo_color.svg";
-import PageFacingUp from "./page_facing_up_color.svg";
-import Penguin from "./penguin_color.svg";
-import Rocket from "./rocket_color.svg";
-import Seal from "./seal_color.svg";
-import Snake from "./snake_color.svg";
-import SpiralShell from "./spiral_shell_color.svg";
-import Whale from "./whale_color.svg";
+import BooksColor from "./books_color.svg";
+import CloudColor from "./cloud_color.svg";
+import CrystalBallColor from "./crystal_ball_color.svg";
+import GameDieColor from "./game_die_color.svg";
+import HerbColor from "./herb_color.svg";
+import MemoColor from "./memo_color.svg";
+import PageFacingUpColor from "./page_facing_up_color.svg";
+import PenguinColor from "./penguin_color.svg";
+import RocketColor from "./rocket_color.svg";
+import SealColor from "./seal_color.svg";
+import SnakeColor from "./snake_color.svg";
+import SpiralShellColor from "./spiral_shell_color.svg";
+import SpoutingWhaleColor from "./spouting_whale_color.svg";
+import WhaleColor from "./whale_color.svg";
 
 export {
-  Books,
-  Cloud,
-  CrystalBall,
-  GameDie,
-  Herb,
-  Memo,
-  PageFacingUp,
-  Penguin,
-  Rocket,
-  Seal,
-  Snake,
-  SpiralShell,
-  Whale,
+  BooksColor,
+  CloudColor,
+  CrystalBallColor,
+  GameDieColor,
+  HerbColor,
+  MemoColor,
+  PageFacingUpColor,
+  PenguinColor,
+  RocketColor,
+  SealColor,
+  SnakeColor,
+  SpiralShellColor,
+  SpoutingWhaleColor,
+  WhaleColor,
 };
