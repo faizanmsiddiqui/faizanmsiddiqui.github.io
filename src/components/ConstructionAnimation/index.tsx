@@ -1,10 +1,10 @@
-import Hammering from "./hammering.svg";
+import { Construction } from "@site/src/assets/kit";
 import styles from "./styles.module.css";
 
 export default function ConstructionAnimation() {
   return (
     <div className={styles.container}>
-      <Hammering className={styles.svg} />
+      <Construction className={styles.svg} />
     </div>
   );
 }
