@@ -6,6 +6,10 @@ description:
 ---
 
 import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
+import { BooksFlat, PageFacingUpFlat } from "@site/src/assets/fluentui-emoji";
+
+export const iconWidth = 64;
+export const iconHeight = 64;
 
 # Writings
 
@@ -31,17 +35,17 @@ narrative styles.
 ---
 
 <InfoCardHorizontal
-  emoji="📚"
+  to="/writings/books"
+  graphics={<BooksFlat width={iconWidth} height={iconHeight} />}
   title="Books"
   description="In-depth, long-form works exploring specific themes or subjects, including programming, technology, and more."
-  to="/writings/books"
 />
 
 <InfoCardHorizontal
-  emoji="📄"
+  to="/writings/pages"
+  graphics={<PageFacingUpFlat width={iconWidth} height={iconHeight} />}
   title="Pages"
   description="Concise articles, blog posts, essays, and opinions on a variety of topics and ideas."
-  to="/writings/pages"
 />
 
 ---

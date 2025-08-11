@@ -6,23 +6,41 @@ description:
 ---
 
 import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
+import {
+  CloudFlat,
+  GameDieFlat,
+  HerbFlat,
+  MemoFlat,
+  RocketFlat,
+  SealFlat,
+  SpiralShellFlat,
+  SpoutingWhaleFlat,
+} from "@site/src/assets/fluentui-emoji";
+import {
+  CrystalBall512,
+  Penguin512,
+  Snake512,
+} from "@site/src/assets/noto-emoji";
+
+export const iconWidth = 64;
+export const iconHeight = 64;
 
 # Books
 
 ## Programming & Scripting
 
 <InfoCardHorizontal
-  emoji="🐍"
+  to="/writings/books/python"
+  graphics={<Snake512 width={iconWidth} height={iconHeight} />}
   title="Python"
   description="A practical guide to Python programming, from basics to advanced topics."
-  to="/writings/books/python"
 />
 
 <InfoCardHorizontal
-  emoji="🐚"
+  to="/writings/books/bash"
+  graphics={<SpiralShellFlat width={iconWidth} height={iconHeight} />}
   title="Bash"
   description="Master automation and shell scripting with hands-on Bash examples and tips."
-  to="/writings/books/bash"
 />
 
 ---
@@ -30,24 +48,24 @@ import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 ## Software Development & Tools
 
 <InfoCardHorizontal
-  emoji="🌿"
+  to="/writings/books/git"
+  graphics={<HerbFlat width={iconWidth} height={iconHeight} />}
   title="Git"
   description="Understand version control, branching, and collaboration with Git."
-  to="/writings/books/git"
 />
 
 <InfoCardHorizontal
-  emoji="🚀"
+  to="/writings/books/devops"
+  graphics={<RocketFlat width={iconWidth} height={iconHeight} />}
   title="DevOps"
   description="Explore modern DevOps workflows, CI/CD, and infrastructure as code."
-  to="/writings/books/devops"
 />
 
 <InfoCardHorizontal
-  emoji="📝"
+  to="/writings/books/markdown"
+  graphics={<MemoFlat width={iconWidth} height={iconHeight} />}
   title="Markdown"
   description="Write beautiful documents with Markdown syntax, tools, and best practices."
-  to="/writings/books/markdown"
 />
 
 ---
@@ -55,31 +73,31 @@ import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 ## Cloud, Infrastructure & Virtualization
 
 <InfoCardHorizontal
-  emoji="🐧"
+  to="/writings/books/linux"
+  graphics={<Penguin512 width={iconWidth} height={iconHeight} />}
   title="Linux"
   description="A comprehensive guide to Linux system administration and command line skills."
-  to="/writings/books/linux"
 />
 
 <InfoCardHorizontal
-  emoji="☁️"
+  to="/writings/books/cloud"
+  graphics={<CloudFlat width={iconWidth} height={iconHeight} />}
   title="Cloud"
   description="Navigate cloud computing concepts, services, and deployment strategies."
-  to="/writings/books/cloud"
 />
 
 <InfoCardHorizontal
-  emoji="🐳"
+  to="/writings/books/docker"
+  graphics={<SpoutingWhaleFlat width={iconWidth} height={iconHeight} />}
   title="Docker"
   description="Learn containerization fundamentals and advanced Docker techniques."
-  to="/writings/books/docker"
 />
 
 <InfoCardHorizontal
-  emoji="🦭"
+  to="/writings/books/podman"
+  graphics={<SealFlat width={iconWidth} height={iconHeight} />}
   title="Podman"
   description="Manage containers securely with Podman, a Docker alternative."
-  to="/writings/books/podman"
 />
 
 ---
@@ -87,15 +105,15 @@ import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 ## Sundry
 
 <InfoCardHorizontal
-  emoji="🔮"
+  to="/writings/books/wonders"
+  graphics={<CrystalBall512 width={iconWidth} height={iconHeight} />}
   title="Wonders"
   description="List of wonderful stuff, can be apps, tools, libraries, or anything that is useful."
-  to="/writings/books/wonders"
 />
 
 <InfoCardHorizontal
-  emoji="🎲"
+  to="/writings/books/random"
+  graphics={<GameDieFlat width={iconWidth} height={iconHeight} />}
   title="Random"
   description="A grab bag of tips, tricks, insights, and other random stuff that doesn't fit anywhere else."
-  to="/writings/books/random"
 />
