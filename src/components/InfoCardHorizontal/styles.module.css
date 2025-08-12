@@ -1,0 +1,28 @@
+.card {
+  display: block;
+  border: 1px solid var(--ifm-color-gray-300);
+  border-radius: 5.5px;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 1.25rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.graphics {
+  margin-right: 1rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--ifm-link-color);
+}
+
+.description {
+  margin: 0.25rem 0 0;
+}

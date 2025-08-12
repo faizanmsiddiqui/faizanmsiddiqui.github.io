@@ -4,37 +4,30 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-const config: Config = {
-  favicon: "img/favicon.svg",
-  title: "Faizan Siddiqui",
-  tagline: "Dinosaurs are cool",
+const favicon = "img/favicon.svg";
+const logo = "img/logo.png";
+const socialCard = "img/social-card.png";
+const title = "Faizan Siddiqui";
 
+const config: Config = {
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
   url: "https://faizansiddiqui.me",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "imfsiddiqui", // Usually your GitHub org/user name.
-  projectName: "imfsiddiqui.github.io", // Usually your repo name.
+  favicon: favicon,
+  title: title,
 
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
   },
+
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "throw",
 
   markdown: {
     mermaid: true,
@@ -69,6 +62,14 @@ const config: Config = {
         id: "about",
         path: "sections/about",
         routeBasePath: "/about",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-pages",
+      {
+        id: "attributions",
+        path: "sections/attributions",
+        routeBasePath: "/attributions",
       },
     ],
     [
@@ -202,6 +203,17 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "powershell",
+        path: "books/powershell",
+        routeBasePath: "/writings/books/powershell",
+        sidebarPath: require.resolve("./books/powershell/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "python",
         path: "books/python",
         routeBasePath: "/writings/books/python",
@@ -239,7 +251,7 @@ const config: Config = {
         path: "pages",
         routeBasePath: "/writings/pages",
         blogTitle: "Pages",
-        blogDescription: "Pages by Faizan Siddiqui",
+        blogDescription: "A collection of pages on various topics.",
         blogSidebarTitle: "Pages",
         blogSidebarCount: "ALL",
         postsPerPage: 10,
@@ -255,18 +267,24 @@ const config: Config = {
       },
     ],
   ],
+
   themeConfig: {
     colorMode: {
       defaultMode: "dark",
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
-    image: "img/social-card.png",
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+      additionalLanguages: ["bash", "batch", "powershell", "shell-session"],
+    },
+    image: socialCard,
     navbar: {
-      title: "Faizan Siddiqui",
+      title: title,
       logo: {
-        alt: "faizan siddiqui website logo",
-        src: "img/logo.png",
+        alt: `${title} website logo`,
+        src: logo,
       },
       items: [
         {
@@ -323,13 +341,8 @@ const config: Config = {
       ],
     },
     footer: {
-      style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} Faizan Siddiqui.`,
-    },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-      additionalLanguages: ["bash", "batch", "powershell", "shell-session"],
+      style: "light",
+      copyright: `Copyright © ${new Date().getFullYear()} ${title}.<br>Made with ❤️ and <a href="/attributions"><strong>these amazing resources</strong></a>.`,
     },
   } satisfies Preset.ThemeConfig,
 };
