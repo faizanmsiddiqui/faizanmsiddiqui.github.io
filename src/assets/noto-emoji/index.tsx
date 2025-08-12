@@ -11,6 +11,7 @@ import Penguin from "./emoji_u1f427.svg";
 import Rocket from "./emoji_u1f680.svg";
 import Seal from "./emoji_u1f9ad.svg";
 import Snake from "./emoji_u1f40d.svg";
+import Sparkles from "./emoji_u2728.svg";
 import SpiralShell from "./emoji_u1f41a.svg";
 import SpoutingWhale from "./emoji_u1f433.svg";
 import TeddyBear from "./emoji_u1f9f8.svg";
@@ -31,6 +32,7 @@ export {
   Rocket,
   Seal,
   Snake,
+  Sparkles,
   SpiralShell,
   SpoutingWhale,
   TeddyBear,

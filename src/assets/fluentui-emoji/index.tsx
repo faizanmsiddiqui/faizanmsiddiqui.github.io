@@ -11,6 +11,7 @@ import PenguinFlat from "./penguin_flat.svg";
 import RocketFlat from "./rocket_flat.svg";
 import SealFlat from "./seal_flat.svg";
 import SnakeFlat from "./snake_flat.svg";
+import SparklesFlat from "./sparkles_flat.svg";
 import SpiralShellFlat from "./spiral_shell_flat.svg";
 import SpoutingWhaleFlat from "./spouting_whale_flat.svg";
 import TeddyBearFlat from "./teddy_bear_flat.svg";
@@ -31,6 +32,7 @@ export {
   RocketFlat,
   SealFlat,
   SnakeFlat,
+  SparklesFlat,
   SpiralShellFlat,
   SpoutingWhaleFlat,
   TeddyBearFlat,
