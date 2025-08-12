@@ -19,6 +19,11 @@ graphics:
   permalink: /graphics
   description: Contents related to graphics design, tools, and techniques.
 
+icons:
+  label: Icons
+  permalink: /icons
+  description: Contents related to icons, their design, libraries, and usage.
+
 productivity:
   label: Productivity
   permalink: /productivity
