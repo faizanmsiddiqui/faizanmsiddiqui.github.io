@@ -11,6 +11,7 @@ import Seal from "./emoji_u1f9ad.svg";
 import Snake from "./emoji_u1f40d.svg";
 import SpiralShell from "./emoji_u1f41a.svg";
 import SpoutingWhale from "./emoji_u1f433.svg";
+import Trophy from "./emoji_u1f3c6.svg";
 import Whale from "./emoji_u1f40b.svg";
 
 export {
@@ -27,5 +28,6 @@ export {
   Snake,
   SpiralShell,
   SpoutingWhale,
+  Trophy,
   Whale,
 };

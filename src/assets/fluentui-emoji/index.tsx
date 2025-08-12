@@ -11,6 +11,7 @@ import SealFlat from "./seal_flat.svg";
 import SnakeFlat from "./snake_flat.svg";
 import SpiralShellFlat from "./spiral_shell_flat.svg";
 import SpoutingWhaleFlat from "./spouting_whale_flat.svg";
+import TrophyFlat from "./trophy_flat.svg";
 import WhaleFlat from "./whale_flat.svg";
 
 export {
@@ -27,5 +28,6 @@ export {
   SnakeFlat,
   SpiralShellFlat,
   SpoutingWhaleFlat,
+  TrophyFlat,
   WhaleFlat,
 };
