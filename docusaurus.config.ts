@@ -203,6 +203,17 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "powershell",
+        path: "books/powershell",
+        routeBasePath: "/writings/books/powershell",
+        sidebarPath: require.resolve("./books/powershell/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "python",
         path: "books/python",
         routeBasePath: "/writings/books/python",
