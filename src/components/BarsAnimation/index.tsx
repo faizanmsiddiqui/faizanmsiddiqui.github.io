@@ -12,19 +12,17 @@ export default function BarsAnimation() {
   ];
 
   return (
-    <>
-      <div className={styles.barContainer}>
-        {bars.map((color, idx) => (
-          <div
-            key={idx}
-            className={styles.bar}
-            style={{
-              backgroundColor: color,
-              animationDelay: `${idx * 0.3}s`,
-            }}
-          />
-        ))}
-      </div>
-    </>
+    <div className={styles.barContainer}>
+      {bars.map((color, idx) => (
+        <div
+          key={idx}
+          className={styles.bar}
+          style={{
+            backgroundColor: color,
+            animationDelay: `${idx * 0.3}s`,
+          }}
+        />
+      ))}
+    </div>
   );
 }
