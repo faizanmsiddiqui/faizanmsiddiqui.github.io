@@ -16,7 +16,7 @@ export default function ConstructionPage({
   const { siteConfig } = useDocusaurusContext();
 
   return (
-    <Layout title={title || `${siteConfig.title}`} description={description}>
+    <Layout title={title || siteConfig.title} description={description}>
       <main>
         <ConstructionAnimation />
       </main>
