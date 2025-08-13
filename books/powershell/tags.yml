@@ -24,7 +24,7 @@ scripting:
   description: Resources and guides for scripting.
 
 sysadmin:
-  label: Sysadmin
+  label: System Administration
   permalink: /sysadmin
   description: System administration resources and tools.
 
