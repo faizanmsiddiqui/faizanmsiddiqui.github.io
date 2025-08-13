@@ -29,6 +29,12 @@ hypervisor:
   permalink: /hypervisor
   description: Contents related to hypervisors.
 
+installation-guide:
+  label: Installation Guide
+  permalink: /installation-guide
+  description:
+    Contents related to installation guides for various software and systems.
+
 motivation:
   label: Motivation
   permalink: /motivation
@@ -38,6 +44,13 @@ news:
   label: News
   permalink: /news
   description: Contents related to news and updates.
+
+open-rmf:
+  label: Open-RMF
+  permalink: /open-rmf
+  description:
+    Contents related to Open-RMF (Robot Middleware Framework), a framework for
+    managing fleets of robots.
 
 personal-note:
   label: Personal Note
@@ -49,10 +62,29 @@ podman:
   permalink: /podman
   description: Contents related to Podman, a container management tool.
 
+robotics:
+  label: Robotics
+  permalink: /robotics
+  description:
+    Contents related to robotics, including technologies, frameworks, and
+    applications.
+
+ros2:
+  label: ROS 2
+  permalink: /ros2
+  description:
+    Contents related to ROS 2 (Robot Operating System), a flexible framework for
+    writing robot software.
+
 tutorial:
   label: Tutorial
   permalink: /tutorial
   description: Contents related to tutorials and step-by-step guides.
+
+ubuntu:
+  label: Ubuntu
+  permalink: /ubuntu
+  description: Contents related to Ubuntu, a popular Linux distribution.
 
 virtualbox:
   label: VirtualBox
