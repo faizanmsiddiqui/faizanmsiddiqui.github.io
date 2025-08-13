@@ -1,0 +1,24 @@
+bash:
+  label: Bash
+  permalink: /bash
+  description: A collection of Bash related resources.
+
+cheat-sheet:
+  label: Cheat Sheet
+  permalink: /cheat-sheet
+  description: Quick reference guides for various commands and tasks.
+
+productivity:
+  label: Productivity
+  permalink: /productivity
+  description: Tips and tools to enhance productivity.
+
+scripting:
+  label: Scripting
+  permalink: /scripting
+  description: Resources and guides for scripting.
+
+sysadmin:
+  label: Sysadmin
+  permalink: /sysadmin
+  description: System administration resources and tools.
