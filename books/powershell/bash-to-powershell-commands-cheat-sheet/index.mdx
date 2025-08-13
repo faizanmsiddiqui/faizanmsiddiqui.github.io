@@ -67,7 +67,7 @@ PowerShell equivalents.
 | :----------------- | :---------------------------- | :---------------------------------------------- | :------------------------- |
 | Find files by name | `find . -name <name/pattern>` | `Get-ChildItem -Recurse -Filter <name/pattern>` |                            |
 | Search inside file | `grep <pattern> <file>`       | `Select-String <pattern> <file>`                | Supports regex by default. |
-| Search recursively | `grep -r <pattern> .`         | `Select-String -Recurse <pattern> -Path . `     |                            |
+| Search recursively | `grep -r <pattern> .`         | `Select-String -Recurse <pattern> -Path .`      |                            |
 
 </div>
 
@@ -100,11 +100,11 @@ PowerShell equivalents.
 
 <div className="center">
 
-| **Description**                 | **Bash Command**           | **PowerShell Equivalent**            | **Notes**                                           |
-| :------------------------------ | :------------------------- | :----------------------------------- | :-------------------------------------------------- |
-| Pipe output to file (overwrite) | `<command> > <file>`       | `<command> \| Out-File <file>`       |                                                     |
+| **Description**                 | **Bash Command**           | **PowerShell Equivalent**              | **Notes**                                           |
+| :------------------------------ | :------------------------- | :------------------------------------- | :-------------------------------------------------- |
+| Pipe output to file (overwrite) | `<command> > <file>`       | `<command> \| Out-File <file>`         |                                                     |
 | Pipe output to file (append)    | `<command> >> <file>`      | `<command> \| Out-File -Append <file>` |                                                     |
-| Pipe to another command         | `<command1> \| <command2>` | `<command1> \| <command2>`           | Works the same, but passes objects instead of text. |
+| Pipe to another command         | `<command1> \| <command2>` | `<command1> \| <command2>`             | Works the same, but passes objects instead of text. |
 
 </div>
 
