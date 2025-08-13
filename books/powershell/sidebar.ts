@@ -9,7 +9,7 @@ const sidebar: SidebarsConfig = {
         type: "doc",
         id: "index",
       },
-      items: [],
+      items: ["bash-to-powershell-commands-cheat-sheet/index"],
     },
   ],
 };
