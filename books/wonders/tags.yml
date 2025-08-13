@@ -1,7 +1,28 @@
+design:
+  label: Design
+  permalink: /design
+  description: Contents related to design principles, tools, and methodologies.
+
 development-tools:
   label: Development Tools
   permalink: /development-tools
   description: Contents related to various development tools and environments.
+
+emojis:
+  label: Emojis
+  permalink: /emojis
+  description:
+    A collection of emojis suites that can be used in various contexts.
+
+graphics:
+  label: Graphics
+  permalink: /graphics
+  description: Contents related to graphics design, tools, and techniques.
+
+icons:
+  label: Icons
+  permalink: /icons
+  description: Contents related to icons, their design, libraries, and usage.
 
 productivity:
   label: Productivity
@@ -26,3 +47,14 @@ text-editors:
   label: Text Editors
   permalink: /text-editors
   description: Contents related to text editors and their usage.
+
+user-experience:
+  label: User Experience
+  permalink: /user-experience
+  description:
+    Contents related to user experience design, research, and methodologies.
+
+user-interface:
+  label: User Interface
+  permalink: /user-interface
+  description: Contents related to user interface design, principles, and tools.

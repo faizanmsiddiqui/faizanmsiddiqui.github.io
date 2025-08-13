@@ -1,3 +1,4 @@
+import ArtistFlatDefault from "./artist_flat_default.svg";
 import BooksFlat from "./books_flat.svg";
 import CloudFlat from "./cloud_flat.svg";
 import CrystalBallFlat from "./crystal_ball_flat.svg";
@@ -12,10 +13,12 @@ import SealFlat from "./seal_flat.svg";
 import SnakeFlat from "./snake_flat.svg";
 import SpiralShellFlat from "./spiral_shell_flat.svg";
 import SpoutingWhaleFlat from "./spouting_whale_flat.svg";
+import TeddyBearFlat from "./teddy_bear_flat.svg";
 import TrophyFlat from "./trophy_flat.svg";
 import WhaleFlat from "./whale_flat.svg";
 
 export {
+  ArtistFlatDefault,
   BooksFlat,
   CloudFlat,
   CrystalBallFlat,
@@ -30,6 +33,7 @@ export {
   SnakeFlat,
   SpiralShellFlat,
   SpoutingWhaleFlat,
+  TeddyBearFlat,
   TrophyFlat,
   WhaleFlat,
 };

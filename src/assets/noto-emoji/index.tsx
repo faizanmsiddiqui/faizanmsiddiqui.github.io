@@ -1,3 +1,4 @@
+import ArtistDefault from "./emoji_u1f9d1_200d_1f3a8.svg";
 import Books from "./emoji_u1f4da.svg";
 import Cloud from "./emoji_u2601.svg";
 import CrystalBall from "./emoji_u1f52e.svg";
@@ -12,10 +13,12 @@ import Seal from "./emoji_u1f9ad.svg";
 import Snake from "./emoji_u1f40d.svg";
 import SpiralShell from "./emoji_u1f41a.svg";
 import SpoutingWhale from "./emoji_u1f433.svg";
+import TeddyBear from "./emoji_u1f9f8.svg";
 import Trophy from "./emoji_u1f3c6.svg";
 import Whale from "./emoji_u1f40b.svg";
 
 export {
+  ArtistDefault,
   Books,
   Cloud,
   CrystalBall,
@@ -30,6 +33,7 @@ export {
   Snake,
   SpiralShell,
   SpoutingWhale,
+  TeddyBear,
   Trophy,
   Whale,
 };
