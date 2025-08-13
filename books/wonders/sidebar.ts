@@ -10,7 +10,7 @@ const sidebar: SidebarsConfig = {
         id: "index",
       },
       items: [
-        "emojis/index",
+        "emoji-sets/index",
         "text-editors/index",
       ],
     },

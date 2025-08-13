@@ -11,8 +11,7 @@ development-tools:
 emojis:
   label: Emojis
   permalink: /emojis
-  description:
-    A collection of emojis suites that can be used in various contexts.
+  description: A collection of emoji sets that can be used in various contexts.
 
 graphics:
   label: Graphics
