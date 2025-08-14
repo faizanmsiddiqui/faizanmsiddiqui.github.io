@@ -1,6 +1,6 @@
 # imfsiddiqui.github.io
 
-![Social card](/static/img/social-card.png)
+![Social card](/static/images/social-card.png)
 
 This repository contains the source code for my personal website, featuring my
 portfolio, blog, and contact information. It serves as a platform to showcase my
