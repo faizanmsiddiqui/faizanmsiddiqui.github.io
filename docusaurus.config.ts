@@ -4,9 +4,9 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-const favicon = "img/favicon.svg";
-const logo = "img/logo.png";
-const socialCard = "img/social-card.png";
+const favicon = "images/favicon.svg";
+const logo = "images/logo.png";
+const socialCard = "images/social-card.png";
 const title = "Faizan Siddiqui";
 
 const config: Config = {
