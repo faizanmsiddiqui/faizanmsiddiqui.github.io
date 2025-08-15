@@ -13,6 +13,11 @@ emojis:
   permalink: /emojis
   description: A collection of emoji sets that can be used in various contexts.
 
+fonts:
+  label: Fonts
+  permalink: /fonts
+  description: Contents related to typography, font design, and usage.
+
 graphics:
   label: Graphics
   permalink: /graphics
