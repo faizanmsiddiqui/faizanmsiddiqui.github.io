@@ -9,7 +9,7 @@ const sidebar: SidebarsConfig = {
         type: "doc",
         id: "index",
       },
-      items: ["emoji-sets/index", "text-editors/index"],
+      items: ["design-resources/index", "development-tools/index"],
     },
   ],
 };
