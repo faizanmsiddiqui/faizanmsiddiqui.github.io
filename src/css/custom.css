@@ -113,6 +113,10 @@ article h6,
   display: inline-block;
 }
 
+.no-ligatures {
+  font-variant-ligatures: none;
+}
+
 .reference-text {
   color: var(--ifm-font-color-base);
 }
