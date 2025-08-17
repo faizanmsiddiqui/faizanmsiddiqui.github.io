@@ -88,11 +88,11 @@ PowerShell equivalents.
 
 <div className="center">
 
-| **Description**       | **Bash Command** | **PowerShell Equivalent**        | **Notes**                         |
-| :-------------------- | ---------------- | :------------------------------- | :-------------------------------- |
-| Show command help     | `man <command>`  | `Get-Help <command>`             | Add `-Online` to open in browser. |
-| Show command history  | `history`        | `Get-History`                    |                                   |
-| Clear terminal screen | `clear`          | `Clear-Host` or `clear` or `cls` | `clear` and `cls` are aliases.    |
+| **Description**       | **Bash Command** | **PowerShell Equivalent**                                             | **Notes**                                                                                                                                   |
+| :-------------------- | ---------------- | :-------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| Show command help     | `man <command>`  | `Get-Help <command>`                                                  | Add `-Online` to open in browser.                                                                                                           |
+| Show command history  | `history`        | `Get-History` or `Get-Content (Get-PSReadlineOption).HistorySavePath` | `Get-History` shows current session history while `Get-Content (Get-PSReadlineOption).HistorySavePath` shows saved history of all sessions. |
+| Clear terminal screen | `clear`          | `Clear-Host` or `clear` or `cls`                                      | `clear` and `cls` are aliases.                                                                                                              |
 
 </div>
 
