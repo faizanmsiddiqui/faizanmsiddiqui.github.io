@@ -75,12 +75,12 @@ PowerShell equivalents.
 
 <div className="center">
 
-| **Description**                  | **Bash Command**          | **PowerShell Equivalent**                       | **Notes**                   |
-| :------------------------------- | :------------------------ | :---------------------------------------------- | :-------------------------- |
-| Show command path                | `which <command>`         | `Get-Command <command> \| Select-Object Source` | Shows full path to command. |
-| Show environment variables       | `printenv`                | `Get-ChildItem Env:`                            |                             |
-| Set environment variable         | `export <name>="<value>"` | `$Env:<name> = "<value>"`                       |                             |
-| Show single environment variable | `echo $<name>`            | `$Env:<name>`                                   |                             |
+| **Description**                  | **Bash Command**                                                                                                 | **PowerShell Equivalent**                       | **Notes**                   |
+| :------------------------------- | :--------------------------------------------------------------------------------------------------------------- | :---------------------------------------------- | :-------------------------- |
+| Show command path                | `which <command>`                                                                                                | `Get-Command <command> \| Select-Object Source` | Shows full path to command. |
+| Show environment variables       | `printenv`                                                                                                       | `Get-ChildItem Env:`                            |                             |
+| Set environment variable         | <span style={{ fontVariantLigatures: "none" }}><code>export &lt;name&gt;=&quot;&lt;value&gt;&quot;</code></span> | `$Env:<name> = "<value>"`                       |                             |
+| Show single environment variable | `echo $<name>`                                                                                                   | `$Env:<name>`                                   |                             |
 
 </div>
 
