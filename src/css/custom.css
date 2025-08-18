@@ -43,6 +43,62 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Custom styles for details elements */
+details.note {
+  --docusaurus-details-decoration-color: var(--ifm-color-secondary-dark);
+  --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
+  margin: 0 0 var(--ifm-spacing-vertical);
+  border: 1px solid var(--ifm-color-secondary-dark);
+  background-color: var(--ifm-color-secondary-contrast-background);
+  a {
+    text-decoration-color: var(--ifm-color-secondary-dark);
+  }
+}
+
+details.tip {
+  --docusaurus-details-decoration-color: var(--ifm-color-success-dark);
+  --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
+  margin: 0 0 var(--ifm-spacing-vertical);
+  border: 1px solid var(--ifm-color-success-dark);
+  background-color: var(--ifm-color-success-contrast-background);
+  a {
+    text-decoration-color: var(--ifm-color-success-dark);
+  }
+}
+
+details.info {
+  --docusaurus-details-decoration-color: var(--ifm-color-info-dark);
+  --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
+  margin: 0 0 var(--ifm-spacing-vertical);
+  border: 1px solid var(--ifm-color-info-dark);
+  background-color: var(--ifm-color-info-contrast-background);
+  a {
+    text-decoration-color: var(--ifm-color-info-dark);
+  }
+}
+
+details.warning {
+  --docusaurus-details-decoration-color: var(--ifm-color-warning-dark);
+  --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
+  margin: 0 0 var(--ifm-spacing-vertical);
+  border: 1px solid var(--ifm-color-warning-dark);
+  background-color: var(--ifm-color-warning-contrast-background);
+  a {
+    text-decoration-color: var(--ifm-color-warning-dark);
+  }
+}
+
+details.danger {
+  --docusaurus-details-decoration-color: var(--ifm-color-danger-dark);
+  --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
+  margin: 0 0 var(--ifm-spacing-vertical);
+  border: 1px solid var(--ifm-color-danger-dark);
+  background-color: var(--ifm-color-danger-contrast-background);
+  a {
+    text-decoration-color: var(--ifm-color-danger-dark);
+  }
+}
+
 article
   > .markdown:not(#__blog-post-container)
   > p:not(svg *)
