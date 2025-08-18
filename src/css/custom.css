@@ -99,6 +99,19 @@ details.danger {
   }
 }
 
+/* Custom column widths for blog layout */
+aside.col--3 {
+  --ifm-col-width: 18%;
+}
+
+main.col--7 {
+  --ifm-col-width: 62%;
+}
+
+div.col--2 {
+  --ifm-col-width: 20%;
+}
+
 article
   > .markdown:not(#__blog-post-container)
   > p:not(svg *)
