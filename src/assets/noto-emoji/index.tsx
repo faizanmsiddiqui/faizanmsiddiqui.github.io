@@ -4,6 +4,7 @@ import Cloud from "./emoji_u2601.svg";
 import CrystalBall from "./emoji_u1f52e.svg";
 import DesktopComputer from "./emoji_u1f5a5.svg";
 import GameDie from "./emoji_u1f3b2.svg";
+import GlowingStar from "./emoji_u1f31f.svg";
 import Herb from "./emoji_u1f33f.svg";
 import LightBulb from "./emoji_u1f4a1.svg";
 import Memo from "./emoji_u1f4dd.svg";
@@ -31,6 +32,7 @@ export {
   CrystalBall,
   DesktopComputer,
   GameDie,
+  GlowingStar,
   Herb,
   LightBulb,
   Memo,
