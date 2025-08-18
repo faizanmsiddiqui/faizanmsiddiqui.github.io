@@ -4,6 +4,7 @@ import CloudFlat from "./cloud_flat.svg";
 import CrystalBallFlat from "./crystal_ball_flat.svg";
 import DesktopComputerFlat from "./desktop_computer_flat.svg";
 import GameDieFlat from "./game_die_flat.svg";
+import GlowingStarFlat from "./glowing_star_flat.svg";
 import HerbFlat from "./herb_flat.svg";
 import LightBulbFlat from "./light_bulb_flat.svg";
 import MemoFlat from "./memo_flat.svg";
@@ -31,6 +32,7 @@ export {
   CrystalBallFlat,
   DesktopComputerFlat,
   GameDieFlat,
+  GlowingStarFlat,
   HerbFlat,
   LightBulbFlat,
   MemoFlat,
