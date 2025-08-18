@@ -8,7 +8,7 @@
 @import url("fonts/noto-sans.css");
 @import url("fonts/jetbrains-mono.css");
 
-/* You can override the default Infima variables here. */
+/* Override the default Infima variables here. */
 :root {
   /* Infima default colors */
   --ifm-color-primary: #2e8555;
@@ -30,7 +30,7 @@
   --ifm-code-font-size: 100%;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* For readability concerns, choose a lighter palette in dark mode. */
 [data-theme="dark"] {
   /* Infima default colors for dark mode */
   --ifm-color-primary: #25c2a0;
@@ -75,7 +75,7 @@ article h6,
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  text-align: initial; /* or left, whichever you prefer */
+  text-align: initial; /* or left, whichever prefer */
 }
 
 .markdown .center {
