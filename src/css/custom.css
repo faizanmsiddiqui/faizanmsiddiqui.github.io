@@ -75,7 +75,7 @@ article h6,
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  text-align: initial; /* or left, whichever prefer */
+  text-align: left;
 }
 
 .markdown .center {
