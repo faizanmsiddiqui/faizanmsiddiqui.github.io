@@ -2,9 +2,9 @@ import React from "react";
 
 type InlineIconProps = {
   Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-  size?: string | number;
-  marginLeft?: string | number;
-  marginRight?: string | number;
+  size?: string;
+  marginLeft?: string;
+  marginRight?: string;
   style?: React.CSSProperties;
 };
 
