@@ -11,16 +11,16 @@
 /* Override the default Infima variables here. */
 :root {
   /* Infima default colors */
-  --ifm-color-primary: #20a98c;
-  --ifm-color-primary-dark: #1c967d;
-  --ifm-color-primary-darker: #198c75;
-  --ifm-color-primary-darkest: #14715f;
-  --ifm-color-primary-light: #24bc9c;
-  --ifm-color-primary-lighter: #2ac0a0;
-  --ifm-color-primary-lightest: #46c9ad;
+  --ifm-color-primary: #197c65;
+  --ifm-color-primary-dark: #166d59;
+  --ifm-color-primary-darker: #125c4d;
+  --ifm-color-primary-darkest: #0d4539;
+  --ifm-color-primary-light: #1f8f74;
+  --ifm-color-primary-lighter: #27a386;
+  --ifm-color-primary-lightest: #3cb598;
 
   /* Highlighted code line background */
-  --docusaurus-highlighted-code-line-bg: rgba(32, 169, 140, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(25, 124, 101, 0.15);
 
   /* Infima default font families */
   --ifm-font-family-base: "Noto Sans", sans-serif;
