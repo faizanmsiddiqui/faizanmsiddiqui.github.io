@@ -3,12 +3,16 @@ import React from "react";
 type InlineIconProps = {
   Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   size?: string | number;
+  marginLeft?: string | number;
+  marginRight?: string | number;
   style?: React.CSSProperties;
 };
 
 const InlineIcon: React.FC<InlineIconProps> = ({
   Icon,
   size = "1em",
+  marginLeft = "0.5em",
+  marginRight = "0.5em",
   style,
 }) => {
   const mergedStyle: React.CSSProperties = {
@@ -16,8 +20,8 @@ const InlineIcon: React.FC<InlineIconProps> = ({
     width: size,
     height: size,
     verticalAlign: "middle",
-    marginRight: "0.5em",
-    marginLeft: "0.5em",
+    marginLeft,
+    marginRight,
     ...style,
   };
 
