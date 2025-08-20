@@ -43,7 +43,7 @@ websites.
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
 
-  /* Highlighted code line background */
+  /* Highlighted code line background for dark mode */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
