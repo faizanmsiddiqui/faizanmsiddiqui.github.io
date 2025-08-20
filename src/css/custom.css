@@ -11,13 +11,13 @@ websites.
 /* Override the default Infima variables here. */
 :root {
   /* Infima default colors */
-  --ifm-color-primary: #1e6fd9;
-  --ifm-color-primary-dark: #185ab8;
-  --ifm-color-primary-darker: #144a91;
-  --ifm-color-primary-darkest: #0f3564;
-  --ifm-color-primary-light: #3a81e3;
-  --ifm-color-primary-lighter: #5a9cf0;
-  --ifm-color-primary-lightest: #7fb4f7;
+  --ifm-color-primary: #20a98c;
+  --ifm-color-primary-dark: #1c967d;
+  --ifm-color-primary-darker: #198c75;
+  --ifm-color-primary-darkest: #14715f;
+  --ifm-color-primary-light: #24bc9c;
+  --ifm-color-primary-lighter: #2ac0a0;
+  --ifm-color-primary-lightest: #46c9ad;
 
   /* Highlighted code line background */
   --docusaurus-highlighted-code-line-bg: rgba(30, 111, 217, 0.1);
