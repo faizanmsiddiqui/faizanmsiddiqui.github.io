@@ -15,7 +15,7 @@ const InlineIcon: React.FC<InlineIconProps> = ({
     display: "inline-block",
     width: size,
     height: size,
-    verticalAlign: "baseline",
+    verticalAlign: "middle",
     marginRight: "0.5em",
     marginLeft: "0.5em",
     ...style,
