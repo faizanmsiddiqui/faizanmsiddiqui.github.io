@@ -1,8 +1,8 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/*
+Any CSS included here will be global. Docusaurus classic template bundles Infima
+by default. Infima is a CSS framework designed to work well for content-centric
+websites.
+*/
 
 /* Import font files */
 @import url("fonts/noto-sans.css");
@@ -18,6 +18,8 @@
   --ifm-color-primary-light: #3a81e3;
   --ifm-color-primary-lighter: #5a9cf0;
   --ifm-color-primary-lightest: #7fb4f7;
+
+  /* Highlighted code line background */
   --docusaurus-highlighted-code-line-bg: rgba(30, 111, 217, 0.1);
 
   /* Infima default font families */
@@ -40,6 +42,8 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+
+  /* Highlighted code line background */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
