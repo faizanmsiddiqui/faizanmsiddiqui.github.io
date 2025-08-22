@@ -9,7 +9,12 @@ const sidebar: SidebarsConfig = {
         type: "doc",
         id: "index",
       },
-      items: [],
+      items: [
+        "docker-versus-podman-a-comparison/index",
+        "guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/index",
+        "guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/index",
+        "virtualbox-on-windows-11-beginners-guide/index",
+      ],
     },
   ],
 };
