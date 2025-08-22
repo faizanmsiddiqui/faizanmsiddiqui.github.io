@@ -13,9 +13,12 @@ import {
   SpiralShellFlat,
   SpoutingWhaleFlat,
 } from "@site/src/assets/fluentui-emoji";
-import { CrystalBall, Penguin, Snake } from "@site/src/assets/noto-emoji";
-
-import styles from "./styles.module.css";
+import {
+  Books as BooksEmoji,
+  CrystalBall,
+  Penguin,
+  Snake,
+} from "@site/src/assets/noto-emoji";
 
 export const iconWidth = 64;
 export const iconHeight = 64;
@@ -26,7 +29,13 @@ export default function Books(): ReactNode {
       title="Books"
       description="A collection of writings covering various topics in programming, software development, and more."
     >
-      <main className={clsx("container margin-vert--lg", styles.content)}>
+      <main
+        className={clsx("container margin-vert--lg")}
+        style={{ maxWidth: "880px", textAlign: "justify" }}
+      >
+        <div style={{ textAlign: "center" }}>
+          <BooksEmoji width="256" height="256" />
+        </div>
         <h1>Books</h1>
         <h2>Programming & Scripting</h2>
         <InfoCardHorizontal
