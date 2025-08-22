@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import clsx from "clsx";
 import Layout from "@theme/Layout";
 import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 import {
@@ -14,6 +15,8 @@ import {
 } from "@site/src/assets/fluentui-emoji";
 import { CrystalBall, Penguin, Snake } from "@site/src/assets/noto-emoji";
 
+import styles from "./styles.module.css";
+
 export const iconWidth = 64;
 export const iconHeight = 64;
 
@@ -23,10 +26,7 @@ export default function Books(): ReactNode {
       title="Books"
       description="A collection of writings covering various topics in programming, software development, and more."
     >
-      <main
-        className="container margin-vert--lg"
-        style={{ maxWidth: "880px", textAlign: "justify" }}
-      >
+      <main className={clsx("container margin-vert--lg", styles.content)}>
         <h1>Books</h1>
         <h2>Programming & Scripting</h2>
         <InfoCardHorizontal
@@ -103,7 +103,7 @@ export default function Books(): ReactNode {
           to="/writings/books/wonders"
           graphics={<CrystalBall width={iconWidth} height={iconHeight} />}
           title="Wonders"
-          description="List of wonderful stuff, can be apps, tools, libraries, or anything that is useful."
+          description="A list of wonderful apps, tools, libraries, and other useful resources."
         />
         <InfoCardHorizontal
           to="/writings/books/random"
