@@ -106,9 +106,9 @@ export default function Books(): ReactNode {
           description="A list of wonderful apps, tools, libraries, and other useful resources."
         />
         <InfoCardHorizontal
-          to="/writings/books/random"
+          to="/writings/books/basement"
           graphics={<GameDieFlat width={iconWidth} height={iconHeight} />}
-          title="Random"
+          title="Basement"
           description="A grab bag of tips, tricks, insights, and other random stuff that doesn't fit anywhere else."
         />
       </main>
