@@ -266,6 +266,33 @@ const config: Config = {
         onUntruncatedBlogPosts: "warn",
       },
     ],
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            to: "/writings/books/basement/docker-versus-podman-a-comparison/",
+            from: ["/writings/pages/docker-versus-podman-a-comparison/"],
+          },
+          {
+            to: "/writings/books/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
+            from: [
+              "/writings/pages/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
+            ],
+          },
+          {
+            to: "/writings/books/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
+            from: [
+              "/writings/pages/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
+            ],
+          },
+          {
+            to: "/writings/books/basement/virtualbox-on-windows-11-beginners-guide/",
+            from: ["/writings/pages/virtualbox-on-windows-11-beginners-guide/"],
+          },
+        ],
+      },
+    ],
   ],
 
   themeConfig: {
