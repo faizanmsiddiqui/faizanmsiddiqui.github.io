@@ -3,38 +3,6 @@ announcement:
   permalink: /announcement
   description: Contents related to announcements and important updates.
 
-comparison:
-  label: Comparison
-  permalink: /comparison
-  description:
-    Contents related to comparisons between different technologies or tools.
-
-containerization:
-  label: Containerization
-  permalink: /containerization
-  description: Contents related to containerization technologies.
-
-docker:
-  label: Docker
-  permalink: /docker
-  description: Contents related to Docker, a popular containerization platform.
-
-how-to:
-  label: How To
-  permalink: /how-to
-  description: Contents related to how-to guides and tutorials.
-
-hypervisor:
-  label: Hypervisor
-  permalink: /hypervisor
-  description: Contents related to hypervisors.
-
-installation-guide:
-  label: Installation Guide
-  permalink: /installation-guide
-  description:
-    Contents related to installation guides for various software and systems.
-
 motivation:
   label: Motivation
   permalink: /motivation
@@ -45,59 +13,7 @@ news:
   permalink: /news
   description: Contents related to news and updates.
 
-open-rmf:
-  label: Open-RMF
-  permalink: /open-rmf
-  description:
-    Contents related to Open-RMF (Robot Middleware Framework), a framework for
-    managing fleets of robots.
-
 personal-note:
   label: Personal Note
   permalink: /personal-note
   description: Contents related to personal notes, reflections, and thoughts.
-
-podman:
-  label: Podman
-  permalink: /podman
-  description: Contents related to Podman, a container management tool.
-
-robotics:
-  label: Robotics
-  permalink: /robotics
-  description:
-    Contents related to robotics, including technologies, frameworks, and
-    applications.
-
-ros2:
-  label: ROS 2
-  permalink: /ros2
-  description:
-    Contents related to ROS 2 (Robot Operating System), a flexible framework for
-    writing robot software.
-
-tutorial:
-  label: Tutorial
-  permalink: /tutorial
-  description: Contents related to tutorials and step-by-step guides.
-
-ubuntu:
-  label: Ubuntu
-  permalink: /ubuntu
-  description: Contents related to Ubuntu, a popular Linux distribution.
-
-virtualbox:
-  label: VirtualBox
-  permalink: /virtualbox
-  description:
-    Contents related to VirtualBox, a popular virtualization software.
-
-virtualization:
-  label: Virtualization
-  permalink: /virtualization
-  description: Contents related to virtualization technologies.
-
-windows-11:
-  label: Windows 11
-  permalink: /windows-11
-  description: Contents related to Windows 11 operating system.
