@@ -115,6 +115,17 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "basement",
+        path: "books/basement",
+        routeBasePath: "/writings/books/basement",
+        sidebarPath: require.resolve("./books/basement/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "bash",
         path: "books/bash",
         routeBasePath: "/writings/books/bash",
@@ -218,17 +229,6 @@ const config: Config = {
         path: "books/python",
         routeBasePath: "/writings/books/python",
         sidebarPath: require.resolve("./books/python/sidebar.ts"),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "random",
-        path: "books/random",
-        routeBasePath: "/writings/books/random",
-        sidebarPath: require.resolve("./books/random/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },

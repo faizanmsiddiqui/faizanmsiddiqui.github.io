@@ -4,7 +4,7 @@ const sidebar: SidebarsConfig = {
   seriesSidebar: [
     {
       type: "category",
-      label: "Random",
+      label: "Basement",
       link: {
         type: "doc",
         id: "index",
