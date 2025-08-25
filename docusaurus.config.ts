@@ -51,16 +51,8 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-pages",
       {
-        id: "home",
-        path: "sections/home",
-        routeBasePath: "/",
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-pages",
-      {
         id: "about",
-        path: "sections/about",
+        path: "pages/about",
         routeBasePath: "/about",
       },
     ],
@@ -68,23 +60,31 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "attributions",
-        path: "sections/attributions",
+        path: "pages/attributions",
         routeBasePath: "/attributions",
       },
     ],
     [
       "@docusaurus/plugin-content-pages",
       {
-        id: "links",
-        path: "sections/links",
-        routeBasePath: "/links",
+        id: "home",
+        path: "pages/home",
+        routeBasePath: "/",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-pages",
+      {
+        id: "notes",
+        path: "pages/notes",
+        routeBasePath: "/notes",
       },
     ],
     [
       "@docusaurus/plugin-content-pages",
       {
         id: "projects",
-        path: "sections/projects",
+        path: "pages/projects",
         routeBasePath: "/projects",
       },
     ],
@@ -92,7 +92,7 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "publications",
-        path: "sections/publications",
+        path: "pages/publications",
         routeBasePath: "/publications",
       },
     ],
@@ -100,25 +100,25 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "resume",
-        path: "sections/resume",
+        path: "pages/resume",
         routeBasePath: "/resume",
       },
     ],
     [
       "@docusaurus/plugin-content-pages",
       {
-        id: "writings",
-        path: "sections/writings",
-        routeBasePath: "/writings",
+        id: "socials",
+        path: "pages/socials",
+        routeBasePath: "/socials",
       },
     ],
     [
       "@docusaurus/plugin-content-docs",
       {
         id: "basement",
-        path: "books/basement",
-        routeBasePath: "/writings/books/basement",
-        sidebarPath: require.resolve("./books/basement/sidebar.ts"),
+        path: "notes/basement",
+        routeBasePath: "/notes/basement",
+        sidebarPath: require.resolve("./notes/basement/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -127,9 +127,9 @@ const config: Config = {
       "@docusaurus/plugin-content-docs",
       {
         id: "bash",
-        path: "books/bash",
-        routeBasePath: "/writings/books/bash",
-        sidebarPath: require.resolve("./books/bash/sidebar.ts"),
+        path: "notes/bash",
+        routeBasePath: "/notes/bash",
+        sidebarPath: require.resolve("./notes/bash/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -138,9 +138,9 @@ const config: Config = {
       "@docusaurus/plugin-content-docs",
       {
         id: "cloud",
-        path: "books/cloud",
-        routeBasePath: "/writings/books/cloud",
-        sidebarPath: require.resolve("./books/cloud/sidebar.ts"),
+        path: "notes/cloud",
+        routeBasePath: "/notes/cloud",
+        sidebarPath: require.resolve("./notes/cloud/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -149,9 +149,9 @@ const config: Config = {
       "@docusaurus/plugin-content-docs",
       {
         id: "devops",
-        path: "books/devops",
-        routeBasePath: "/writings/books/devops",
-        sidebarPath: require.resolve("./books/devops/sidebar.ts"),
+        path: "notes/devops",
+        routeBasePath: "/notes/devops",
+        sidebarPath: require.resolve("./notes/devops/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -160,9 +160,9 @@ const config: Config = {
       "@docusaurus/plugin-content-docs",
       {
         id: "docker",
-        path: "books/docker",
-        routeBasePath: "/writings/books/docker",
-        sidebarPath: require.resolve("./books/docker/sidebar.ts"),
+        path: "notes/docker",
+        routeBasePath: "/notes/docker",
+        sidebarPath: require.resolve("./notes/docker/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -171,9 +171,9 @@ const config: Config = {
       "@docusaurus/plugin-content-docs",
       {
         id: "git",
-        path: "books/git",
-        routeBasePath: "/writings/books/git",
-        sidebarPath: require.resolve("./books/git/sidebar.ts"),
+        path: "notes/git",
+        routeBasePath: "/notes/git",
+        sidebarPath: require.resolve("./notes/git/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -182,9 +182,9 @@ const config: Config = {
       "@docusaurus/plugin-content-docs",
       {
         id: "linux",
-        path: "books/linux",
-        routeBasePath: "/writings/books/linux",
-        sidebarPath: require.resolve("./books/linux/sidebar.ts"),
+        path: "notes/linux",
+        routeBasePath: "/notes/linux",
+        sidebarPath: require.resolve("./notes/linux/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -193,9 +193,9 @@ const config: Config = {
       "@docusaurus/plugin-content-docs",
       {
         id: "markdown",
-        path: "books/markdown",
-        routeBasePath: "/writings/books/markdown",
-        sidebarPath: require.resolve("./books/markdown/sidebar.ts"),
+        path: "notes/markdown",
+        routeBasePath: "/notes/markdown",
+        sidebarPath: require.resolve("./notes/markdown/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -204,9 +204,9 @@ const config: Config = {
       "@docusaurus/plugin-content-docs",
       {
         id: "podman",
-        path: "books/podman",
-        routeBasePath: "/writings/books/podman",
-        sidebarPath: require.resolve("./books/podman/sidebar.ts"),
+        path: "notes/podman",
+        routeBasePath: "/notes/podman",
+        sidebarPath: require.resolve("./notes/podman/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -215,9 +215,9 @@ const config: Config = {
       "@docusaurus/plugin-content-docs",
       {
         id: "powershell",
-        path: "books/powershell",
-        routeBasePath: "/writings/books/powershell",
-        sidebarPath: require.resolve("./books/powershell/sidebar.ts"),
+        path: "notes/powershell",
+        routeBasePath: "/notes/powershell",
+        sidebarPath: require.resolve("./notes/powershell/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -226,9 +226,9 @@ const config: Config = {
       "@docusaurus/plugin-content-docs",
       {
         id: "python",
-        path: "books/python",
-        routeBasePath: "/writings/books/python",
-        sidebarPath: require.resolve("./books/python/sidebar.ts"),
+        path: "notes/python",
+        routeBasePath: "/notes/python",
+        sidebarPath: require.resolve("./notes/python/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -237,9 +237,9 @@ const config: Config = {
       "@docusaurus/plugin-content-docs",
       {
         id: "wonders",
-        path: "books/wonders",
-        routeBasePath: "/writings/books/wonders",
-        sidebarPath: require.resolve("./books/wonders/sidebar.ts"),
+        path: "notes/wonders",
+        routeBasePath: "/notes/wonders",
+        sidebarPath: require.resolve("./notes/wonders/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -247,12 +247,12 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-blog",
       {
-        id: "pages",
-        path: "pages",
-        routeBasePath: "/writings/pages",
-        blogTitle: "Pages",
-        blogDescription: "A collection of pages on various topics.",
-        blogSidebarTitle: "Pages",
+        id: "blog",
+        path: "blog",
+        routeBasePath: "/blog",
+        blogTitle: "Blog",
+        blogDescription: "A collection of my personal blog posts.",
+        blogSidebarTitle: "Blog",
         blogSidebarCount: "ALL",
         postsPerPage: 10,
         showReadingTime: true,
@@ -271,23 +271,23 @@ const config: Config = {
       {
         redirects: [
           {
-            to: "/writings/books/basement/docker-versus-podman-a-comparison/",
+            to: "/notes/basement/docker-versus-podman-a-comparison/",
             from: ["/writings/pages/docker-versus-podman-a-comparison/"],
           },
           {
-            to: "/writings/books/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
+            to: "/notes/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
             from: [
               "/writings/pages/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
             ],
           },
           {
-            to: "/writings/books/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
+            to: "/notes/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
             from: [
               "/writings/pages/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
             ],
           },
           {
-            to: "/writings/books/basement/virtualbox-on-windows-11-beginners-guide/",
+            to: "/notes/basement/virtualbox-on-windows-11-beginners-guide/",
             from: ["/writings/pages/virtualbox-on-windows-11-beginners-guide/"],
           },
         ],
@@ -321,8 +321,13 @@ const config: Config = {
         },
         {
           position: "left",
-          label: "Links",
-          to: "/links",
+          label: "Blog",
+          to: "/blog",
+        },
+        {
+          position: "left",
+          label: "Notes",
+          to: "/notes",
         },
         {
           position: "left",
@@ -340,22 +345,6 @@ const config: Config = {
           to: "/resume",
         },
         {
-          position: "left",
-          label: "Writings",
-          to: "/writings",
-          type: "dropdown",
-          items: [
-            {
-              label: "Books",
-              to: "/writings/books",
-            },
-            {
-              label: "Pages",
-              to: "/writings/pages",
-            },
-          ],
-        },
-        {
           position: "right",
           label: "Email",
           href: "mailto:imfsiddiqui@yahoo.com",
@@ -364,6 +353,11 @@ const config: Config = {
           position: "right",
           label: "LinkedIn",
           href: "https://www.linkedin.com/in/imfsiddiqui",
+        },
+        {
+          position: "right",
+          label: "Socials",
+          to: "/socials",
         },
       ],
     },
