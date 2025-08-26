@@ -1,6 +1,9 @@
 import React, { type ReactNode } from "react";
 import { GlowingStar } from "@site/src/assets/noto-emoji";
+import { IconExtraSmall } from "@site/src/components/IconSize";
 
 export default function AdmonitionIconTip(): ReactNode {
-  return <GlowingStar width={16} height={16} />;
+  return (
+    <GlowingStar width={IconExtraSmall.width} height={IconExtraSmall.height} />
+  );
 }

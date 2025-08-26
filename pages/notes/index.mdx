@@ -23,94 +23,99 @@ import {
   Penguin,
   Snake,
 } from "@site/src/assets/noto-emoji";
+import { IconExtraLarge } from "@site/src/components/IconSize";
+import { IconMedium } from "@site/src/components/IconSize";
 
-export const iconWidth = 64;
-export const iconHeight = 64;
-
-<Books width="256" height="256" />
+<Books width={IconExtraLarge.width} height={IconExtraLarge.height} />
 
 # Notes
 
 <InfoCardHorizontal
   to="/notes/basement"
-  graphics={<GameDieFlat width={iconWidth} height={iconHeight} />}
+  graphics={<GameDieFlat width={IconMedium.width} height={IconMedium.height} />}
   title="Basement"
   description="A grab bag of tips, tricks, insights, and other random stuff that doesn't fit anywhere else."
 />
 
 <InfoCardHorizontal
   to="/notes/bash"
-  graphics={<SpiralShellFlat width={iconWidth} height={iconHeight} />}
+  graphics={
+    <SpiralShellFlat width={IconMedium.width} height={IconMedium.height} />
+  }
   title="Bash"
   description="Master automation and shell scripting with hands-on Bash examples and tips."
 />
 
 <InfoCardHorizontal
   to="/notes/cloud"
-  graphics={<CloudFlat width={iconWidth} height={iconHeight} />}
+  graphics={<CloudFlat width={IconMedium.width} height={IconMedium.height} />}
   title="Cloud"
   description="Navigate cloud computing concepts, services, and deployment strategies."
 />
 
 <InfoCardHorizontal
   to="/notes/devops"
-  graphics={<RocketFlat width={iconWidth} height={iconHeight} />}
+  graphics={<RocketFlat width={IconMedium.width} height={IconMedium.height} />}
   title="DevOps"
   description="Explore modern DevOps workflows, CI/CD, and infrastructure as code."
 />
 
 <InfoCardHorizontal
   to="/notes/docker"
-  graphics={<SpoutingWhaleFlat width={iconWidth} height={iconHeight} />}
+  graphics={
+    <SpoutingWhaleFlat width={IconMedium.width} height={IconMedium.height} />
+  }
   title="Docker"
   description="Learn containerization fundamentals and advanced Docker techniques."
 />
 
 <InfoCardHorizontal
   to="/notes/git"
-  graphics={<HerbFlat width={iconWidth} height={iconHeight} />}
+  graphics={<HerbFlat width={IconMedium.width} height={IconMedium.height} />}
   title="Git"
   description="Understand version control, branching, and collaboration with Git."
 />
 
 <InfoCardHorizontal
   to="/notes/linux"
-  graphics={<Penguin width={iconWidth} height={iconHeight} />}
+  graphics={<Penguin width={IconMedium.width} height={IconMedium.height} />}
   title="Linux"
   description="A comprehensive guide to Linux system administration and command line skills."
 />
 
 <InfoCardHorizontal
   to="/notes/markdown"
-  graphics={<MemoFlat width={iconWidth} height={iconHeight} />}
+  graphics={<MemoFlat width={IconMedium.width} height={IconMedium.height} />}
   title="Markdown"
   description="Write beautiful documents with Markdown syntax, tools, and best practices."
 />
 
 <InfoCardHorizontal
   to="/notes/podman"
-  graphics={<SealFlat width={iconWidth} height={iconHeight} />}
+  graphics={<SealFlat width={IconMedium.width} height={IconMedium.height} />}
   title="Podman"
   description="Manage containers securely with Podman, a Docker alternative."
 />
 
 <InfoCardHorizontal
   to="/notes/powershell"
-  graphics={<DesktopComputerFlat width={iconWidth} height={iconHeight} />}
+  graphics={
+    <DesktopComputerFlat width={IconMedium.width} height={IconMedium.height} />
+  }
   title="PowerShell"
   description="PowerShell scripting covering cmdlets, scripts, and automation."
 />
 
 <InfoCardHorizontal
   to="/notes/python"
-  graphics={<Snake width={iconWidth} height={iconHeight} />}
+  graphics={<Snake width={IconMedium.width} height={IconMedium.height} />}
   title="Python"
   description="A practical guide to Python programming, from basics to advanced topics."
 />
 
 <InfoCardHorizontal
   to="/notes/wonders"
-  graphics={<CrystalBall width={iconWidth} height={iconHeight} />}
+  graphics={<CrystalBall width={IconMedium.width} height={IconMedium.height} />}
   title="Wonders"
   description="A list of wonderful apps, tools, libraries, and other useful resources."
 />
