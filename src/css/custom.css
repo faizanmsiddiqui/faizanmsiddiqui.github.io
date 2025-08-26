@@ -93,13 +93,6 @@ details.danger {
   }
 }
 
-article svg {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
-}
-
 .markdown .center {
   text-align: center;
   table {
@@ -112,6 +105,12 @@ article svg {
     display: block;
     margin: auto;
     border-radius: 0.5rem;
+  }
+  svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
   }
   text-align: center;
   color: var(--ifm-color-emphasis-400);
