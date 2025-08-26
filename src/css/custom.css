@@ -128,8 +128,7 @@ article svg {
 
 .reference-text {
   color: var(--ifm-font-color-base);
-}
-
-.reference-text > p {
-  margin: 0;
+  p {
+    margin: 0;
+  }
 }
