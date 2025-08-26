@@ -102,24 +102,19 @@ article svg {
 
 .markdown .center {
   text-align: center;
+  table {
+    display: inline-block;
+  }
 }
 
-.markdown img {
-  max-width: 90%;
-  display: block;
-  margin: auto;
-  border-radius: 5.5px;
-}
-
-.markdown .caption p {
-  margin-top: -1rem;
+.markdown .center-image-with-caption {
+  img {
+    display: block;
+    margin: auto;
+    border-radius: 0.5rem;
+  }
   text-align: center;
-  font-style: italic;
   color: var(--ifm-color-emphasis-400);
-}
-
-.markdown .center table {
-  display: inline-block;
 }
 
 .no-ligatures {
