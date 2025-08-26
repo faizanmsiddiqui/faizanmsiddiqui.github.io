@@ -114,6 +114,28 @@ const config: Config = {
       },
     ],
     [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "blog",
+        path: "blog",
+        routeBasePath: "/blog",
+        blogTitle: "Blog",
+        blogDescription: "A collection of my personal blog posts.",
+        blogSidebarTitle: "Blog",
+        blogSidebarCount: "ALL",
+        postsPerPage: 10,
+        showReadingTime: true,
+        showLastUpdateTime: true,
+        feedOptions: {
+          type: ["rss", "atom"],
+          xslt: true,
+        },
+        onInlineTags: "warn",
+        onInlineAuthors: "warn",
+        onUntruncatedBlogPosts: "warn",
+      },
+    ],
+    [
       "@docusaurus/plugin-content-docs",
       {
         id: "basement",
@@ -238,33 +260,11 @@ const config: Config = {
       "@docusaurus/plugin-content-docs",
       {
         id: "wonders",
-        path: "notes/wonders",
-        routeBasePath: "/notes/wonders",
-        sidebarPath: require.resolve("./notes/wonders/sidebar.ts"),
+        path: "wonders",
+        routeBasePath: "/wonders",
+        sidebarPath: require.resolve("./wonders/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-blog",
-      {
-        id: "blog",
-        path: "blog",
-        routeBasePath: "/blog",
-        blogTitle: "Blog",
-        blogDescription: "A collection of my personal blog posts.",
-        blogSidebarTitle: "Blog",
-        blogSidebarCount: "ALL",
-        postsPerPage: 10,
-        showReadingTime: true,
-        showLastUpdateTime: true,
-        feedOptions: {
-          type: ["rss", "atom"],
-          xslt: true,
-        },
-        onInlineTags: "warn",
-        onInlineAuthors: "warn",
-        onUntruncatedBlogPosts: "warn",
       },
     ],
     [
@@ -350,6 +350,11 @@ const config: Config = {
           position: "left",
           label: "Resume",
           to: "/resume",
+        },
+        {
+          position: "left",
+          label: "Wonders",
+          to: "/wonders",
         },
         {
           position: "right",
