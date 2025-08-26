@@ -93,13 +93,6 @@ details.danger {
   }
 }
 
-article
-  > .markdown:not(#__blog-post-container)
-  > p:not(svg *)
-  > .hide-footnote-mark {
-  display: none;
-}
-
 article svg {
   max-width: 100%;
   height: auto;
