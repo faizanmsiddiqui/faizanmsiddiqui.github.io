@@ -93,14 +93,12 @@ details.danger {
   }
 }
 
-.markdown .center {
-  text-align: center;
-  table {
-    display: inline-block;
-  }
+.center-content {
+  max-width: 848px;
+  margin: 0 auto;
 }
 
-.markdown .center-image-with-caption {
+.center-image-with-caption {
   img {
     display: block;
     margin: auto;
@@ -112,6 +110,16 @@ details.danger {
   }
   text-align: center;
   color: var(--ifm-color-emphasis-400);
+}
+
+.center-table {
+  table {
+    display: inline-block;
+  }
+}
+
+.center-text {
+  text-align: center;
 }
 
 .no-ligatures {
