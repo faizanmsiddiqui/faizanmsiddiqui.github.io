@@ -50,9 +50,7 @@
 /* Custom styles for details elements */
 details.note {
   --docusaurus-details-decoration-color: var(--ifm-color-secondary-dark);
-  --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
-  margin: 0 0 var(--ifm-spacing-vertical);
-  border: 1px solid var(--ifm-color-secondary-dark);
+  border-color: var(--ifm-color-secondary-dark);
   background-color: var(--ifm-color-secondary-contrast-background);
   a {
     text-decoration-color: var(--ifm-color-secondary-dark);
@@ -61,9 +59,7 @@ details.note {
 
 details.tip {
   --docusaurus-details-decoration-color: var(--ifm-color-success-dark);
-  --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
-  margin: 0 0 var(--ifm-spacing-vertical);
-  border: 1px solid var(--ifm-color-success-dark);
+  border-color: var(--ifm-color-success-dark);
   background-color: var(--ifm-color-success-contrast-background);
   a {
     text-decoration-color: var(--ifm-color-success-dark);
@@ -72,9 +68,7 @@ details.tip {
 
 details.info {
   --docusaurus-details-decoration-color: var(--ifm-color-info-dark);
-  --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
-  margin: 0 0 var(--ifm-spacing-vertical);
-  border: 1px solid var(--ifm-color-info-dark);
+  border-color: var(--ifm-color-info-dark);
   background-color: var(--ifm-color-info-contrast-background);
   a {
     text-decoration-color: var(--ifm-color-info-dark);
@@ -83,9 +77,7 @@ details.info {
 
 details.warning {
   --docusaurus-details-decoration-color: var(--ifm-color-warning-dark);
-  --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
-  margin: 0 0 var(--ifm-spacing-vertical);
-  border: 1px solid var(--ifm-color-warning-dark);
+  border-color: var(--ifm-color-warning-dark);
   background-color: var(--ifm-color-warning-contrast-background);
   a {
     text-decoration-color: var(--ifm-color-warning-dark);
@@ -94,70 +86,40 @@ details.warning {
 
 details.danger {
   --docusaurus-details-decoration-color: var(--ifm-color-danger-dark);
-  --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
-  margin: 0 0 var(--ifm-spacing-vertical);
-  border: 1px solid var(--ifm-color-danger-dark);
+  border-color: var(--ifm-color-danger-dark);
   background-color: var(--ifm-color-danger-contrast-background);
   a {
     text-decoration-color: var(--ifm-color-danger-dark);
   }
 }
 
-article
-  > .markdown:not(#__blog-post-container)
-  > p:not(svg *)
-  > .hide-footnote-mark {
-  display: none;
+.center-content {
+  max-width: 848px;
+  margin: 0 auto;
 }
 
-article svg {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
-}
-
-article,
-.markdown {
-  text-align: justify;
-}
-
-/* Keep headings inside article and .markdown unchanged */
-article h1,
-article h2,
-article h3,
-article h4,
-article h5,
-article h6,
-.markdown h1,
-.markdown h2,
-.markdown h3,
-.markdown h4,
-.markdown h5,
-.markdown h6 {
-  text-align: left;
-}
-
-.markdown .center {
+.center-image-and-caption {
+  img {
+    display: block;
+    margin: auto;
+    border-radius: 0.5rem;
+  }
+  svg {
+    display: block;
+    margin: auto;
+  }
   text-align: center;
-}
-
-.markdown img {
-  max-width: 90%;
-  display: block;
-  margin: auto;
-  border-radius: 5.5px;
-}
-
-.markdown .caption p {
-  margin-top: -1rem;
-  text-align: center;
-  font-style: italic;
   color: var(--ifm-color-emphasis-400);
 }
 
-.markdown .center table {
-  display: inline-block;
+.center-table {
+  table {
+    display: inline-block;
+  }
+}
+
+.center-text {
+  text-align: center;
 }
 
 .no-ligatures {
@@ -165,9 +127,8 @@ article h6,
 }
 
 .reference-text {
-  color: var(--ifm-font-color-base);
-}
-
-.reference-text > p {
-  margin: 0;
+  p {
+    margin: 0;
+    color: var(--ifm-font-color-base);
+  }
 }

@@ -14,7 +14,11 @@ tags:
 
 # Docker versus Podman: A Comparison
 
+<div className="center-image-and-caption">
+
 ![Docker versus Podman](./featured-image.png)
+
+</div>
 
 :::info
 
@@ -60,6 +64,8 @@ them. This architecture allows for easy management of containers, but it also
 means that the Docker daemon must be running for any container operations to
 succeed.
 
+<div className="center-image-and-caption">
+
 ```mermaid
 ---
 config:
@@ -88,6 +94,8 @@ graph LR
         E
     end
 ```
+
+</div>
 
 - **Docker Client (CLI or REST API):** The interface used to communicate with
   the Docker daemon.
@@ -135,6 +143,8 @@ containers without a long-running service. Podman uses the `containerd` runtime
 for managing containers, similar to Docker, but it does not require a daemon to
 manage them.
 
+<div className="center-image-and-caption">
+
 ```mermaid
 ---
 config:
@@ -167,6 +177,8 @@ graph LR
     end
 ```
 
+</div>
+
 - **Daemon-less:** Podman does not require a background service like Docker.
 - **Rootless Support:** Containers can be run securely by non-root users.
 - **Libpod Library:** The core library that manages pods, containers, and
@@ -196,6 +208,8 @@ graph LR
 
 ## Comparison
 
+<div className="center-text center-table">
+
 | **Feature**             | **Docker**                                 | **Podman**                                                 |
 | :---------------------- | :----------------------------------------- | :--------------------------------------------------------- |
 | **What it is**          | Container engine                           | Container engine (daemon-less)                             |
@@ -214,6 +228,8 @@ graph LR
 | **Rootless containers** | Available                                  | Default / preferred mode                                   |
 | **User namespaces**     | Optional                                   | Used extensively                                           |
 | **SELinux support**     | Limited                                    | Native SELinux integration                                 |
+
+</div>
 
 ## Conclusion
 

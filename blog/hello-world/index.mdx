@@ -16,13 +16,15 @@ tags:
 
 import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 import { Books, WritingHandDefault } from "@site/src/assets/noto-emoji";
-
-export const iconWidth = 64;
-export const iconHeight = 64;
+import { IconMedium } from "@site/src/components/IconSize";
 
 # Hello, World!
 
+<div className="center-image-and-caption">
+
 ![Hello, World!](./featured-image.png)
+
+</div>
 
 :::info
 
@@ -65,18 +67,21 @@ practical ways.
 
 You can expect a mix of technical and non-technical articles, blog-style posts,
 how-to guides, personal notes (which I think might help others too), opinions,
-tips, tricks, and tutorials. You can find my writings in following two places on this site:
+tips, tricks, and tutorials. You can find my writings in following two places on
+this site:
 
 <InfoCardHorizontal
   to="/blog"
-  graphics={<WritingHandDefault width={iconWidth} height={iconHeight} />}
+  graphics={
+    <WritingHandDefault width={IconMedium.width} height={IconMedium.height} />
+  }
   title="Blog"
   description="Thoughts, stories, opinions, and ideas on a variety of topics."
 />
 
 <InfoCardHorizontal
   to="/notes"
-  graphics={<Books width={iconWidth} height={iconHeight} />}
+  graphics={<Books width={IconMedium.width} height={IconMedium.height} />}
   title="Notes"
   description="Technical articles, how-to guides, tips, tricks, and tutorials."
 />
