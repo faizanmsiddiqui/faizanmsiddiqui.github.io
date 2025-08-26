@@ -48,6 +48,7 @@ const config: Config = {
   ],
 
   plugins: [
+    "plugin-image-zoom",
     [
       "@docusaurus/plugin-content-pages",
       {
@@ -305,6 +306,12 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
       additionalLanguages: ["bash", "batch", "powershell", "shell-session"],
+    },
+    imageZoom: {
+      selector: ".markdown img",
+      options: {
+        background: "var(--ifm-background-color)",
+      },
     },
     image: socialCard,
     navbar: {
