@@ -2,5 +2,10 @@
   "defaultViewMode": "preview",
   "livePreview": false,
   "strictLineBreaks": true,
-  "tabSize": 2
+  "tabSize": 2,
+  "trashOption": "local",
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "./"
 }
