@@ -9,5 +9,6 @@
   "useMarkdownLinks": true,
   "attachmentFolderPath": "./",
   "showInlineTitle": false,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "readableLineLength": true
 }
