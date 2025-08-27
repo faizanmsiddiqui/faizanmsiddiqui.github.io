@@ -1,1 +1,7 @@
-{}
+{
+  "cssTheme": "Typora-Vue",
+  "textFontFamily": "JetBrains Mono",
+  "monospaceFontFamily": "JetBrains Mono",
+  "showViewHeader": false,
+  "showRibbon": false
+}
