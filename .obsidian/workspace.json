@@ -149,6 +149,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
       "iconic:Open rulebook": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
