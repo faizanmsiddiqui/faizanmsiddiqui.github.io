@@ -8,9 +8,9 @@
   "includePaths": [],
   "shouldChangeNoteBacklinksDisplayText": true,
   "shouldCollectAttachmentsAutomatically": false,
-  "shouldDeleteAttachmentsWithNote": false,
+  "shouldDeleteAttachmentsWithNote": true,
   "shouldDeleteExistingFilesWhenMovingNote": false,
-  "shouldMoveAttachmentsWithNote": false,
+  "shouldMoveAttachmentsWithNote": true,
   "shouldShowBackupWarning": false,
   "shouldUpdateLinks": true,
   "treatAsAttachmentExtensions": [
