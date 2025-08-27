@@ -151,5 +151,13 @@
       ],
       "key": "."
     }
+  ],
+  "editor:toggle-readable-line-length": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "="
+    }
   ]
 }
