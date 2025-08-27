@@ -8,5 +8,6 @@
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
   "attachmentFolderPath": "./",
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "showLineNumber": true
 }
