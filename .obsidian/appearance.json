@@ -7,5 +7,6 @@
   "enabledCssSnippets": [
     "canvas-candy",
     "custom-css"
-  ]
+  ],
+  "baseFontSize": 19
 }

@@ -6,6 +6,7 @@ body {
 /* viewer font */
 .markdown-rendered {
   font-family: "Noto Sans" !important;
+  font-size: 16px !important;
 }
 
 /* reading mode text justification */
