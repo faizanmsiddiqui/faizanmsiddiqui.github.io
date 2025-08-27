@@ -310,7 +310,7 @@ const config: Config = {
     imageZoom: {
       selector: ".markdown img",
       options: {
-        background: "var(--ifm-background-color)",
+        background: "#1b1b1d",
       },
     },
     image: socialCard,
