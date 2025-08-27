@@ -1,1 +1,12 @@
-{}
+{
+  "cssTheme": "Typora-Vue",
+  "textFontFamily": "JetBrains Mono",
+  "monospaceFontFamily": "JetBrains Mono",
+  "showViewHeader": false,
+  "showRibbon": false,
+  "enabledCssSnippets": [
+    "canvas-candy",
+    "custom-css"
+  ],
+  "baseFontSize": 19
+}
