@@ -149,6 +149,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "drawio:Open draw.io editor": false,
       "obsidian42-brat:BRAT": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "iconic:Open rulebook": false,
