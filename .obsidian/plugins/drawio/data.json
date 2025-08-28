@@ -1,0 +1,9 @@
+{
+  "port": "17171",
+  "centeringDiagram": true,
+  "percentSize": true,
+  "interactiveDiagram": true,
+  "useMarkdownLinks": true,
+  "Folder": "/",
+  "diagramSize": ""
+}

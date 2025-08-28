@@ -26,10 +26,9 @@
   "editor:toggle-source": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Mod"
       ],
-      "key": "E"
+      "key": "R"
     }
   ],
   "editor:toggle-highlight": [
@@ -262,6 +261,23 @@
         "Alt"
       ],
       "key": "PageUp"
+    }
+  ],
+  "editor:delete-paragraph": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "D"
+    }
+  ],
+  "drawio:drawio-create-or-edit": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "D"
     }
   ]
 }

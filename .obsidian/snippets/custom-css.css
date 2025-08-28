@@ -21,6 +21,27 @@ body {
   text-justify: inter-word;
 }
 
+/* align image to the left */
+img[alt*="left"] {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* align image to the center */
+img[alt*="center"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* align image to the right */
+img[alt*="right"] {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
 /* table centering */
 table {
   width: 100%;
