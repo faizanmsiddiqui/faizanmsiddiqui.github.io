@@ -26,10 +26,9 @@
   "editor:toggle-source": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Mod"
       ],
-      "key": "E"
+      "key": "R"
     }
   ],
   "editor:toggle-highlight": [
