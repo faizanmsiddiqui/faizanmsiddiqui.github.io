@@ -9,7 +9,7 @@ const sidebar: SidebarsConfig = {
         type: "doc",
         id: "index",
       },
-      items: ["what-is-git/index"],
+      items: ["what-is-git/index", "glossary/index"],
     },
   ],
 };
