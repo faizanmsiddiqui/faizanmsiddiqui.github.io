@@ -1,0 +1,80 @@
+---
+title: Commands Cheat Sheet
+description: A quick reference guide of common Git commands.
+date: 2025-08-31T09:12:31Z
+---
+
+# Commands Cheat Sheet
+
+This cheat sheet provides a quick reference of common Git commands.
+
+## Initialization & Cloning
+
+<div className="center-text center-table">
+
+| **Description**               | **Command**                   | **Notes**                                                                                                         |
+| :---------------------------- | :---------------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| Initialize a new repository   | `git init <name>`             | Creates a new Git repository.<br /><br />Example: `git init hello`                                                |
+| Clone a repository            | `git clone <url>`             | Clones an existing repository.<br /><br />Example: `git clone https://github.com/github/docs.git`                 |
+| Clone with SSH                | `git clone <url>`             | Clones using SSH for authentication.<br /><br />Example: `git clone git@github.com:github/docs.git`               |
+| Clone into specific directory | `git clone <url> <directory>` | Clones into a specified directory.<br /><br />Example: `git clone https://github.com/github/docs.git github-docs` |
+
+</div>
+
+:::info
+
+HTTPS is the most common method for cloning repositories, while SSH is often
+used for contributors with write access. There is also a difference in URL
+format between the two methods.
+
+<div className="center-text center-table">
+
+| **Protocol** | **Format**                               | **Example**                          |
+| :----------- | :--------------------------------------- | :----------------------------------- |
+| HTTPS        | `https://<host>/<user>/<repository>.git` | `https://github.com/github/docs.git` |
+| SSH          | `git@<host>:<user>/<repository>.git`     | `git@github.com:github/docs.git`     |
+
+</div>
+
+:::
+
+## Configuration
+
+:::info
+
+`--global` applies the setting for all repositories for the current user. Omit
+it to set the configuration for the current repository only, but requires being
+inside a Git repository.
+
+:::
+
+<div className="center-text center-table">
+
+| **Description**            | **Command**                                     | **Notes**                                                                                                            |
+| :------------------------- | :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------- |
+| Set user name              | `git config --global user.name "<name>"`        | Sets the global username for commits.<br /><br />Example: `git config --global user.name "adam"`                     |
+| Set user email             | `git config --global user.email "<email>"`      | Sets the global email for commits.<br /><br />Example: `git config --global user.email "adam@example.com"`           |
+| Set default text editor    | `git config --global core.editor <editor>`      | Sets the default text editor for Git.<br /><br />Example: `git config --global core.editor /usr/bin/vim`             |
+| Set default branch name    | `git config --global init.defaultBranch <name>` | Sets the default branch name for new repositories.<br /><br />Example: `git config --global init.defaultBranch main` |
+| Set alias                  | `git config --global alias.<alias> <command>`   | Creates a shortcut for a Git command.<br /><br />Example: `git config --global alias.cl clone`                       |
+| Remove alias               | `git config --global --unset alias.<alias>`     | Removes a previously set alias.<br /><br />Example: `git config --global --unset alias.cl`                           |
+| View specific config value | `git config --global user.name`                 | Displays the value of a specific configuration setting.                                                              |
+| View configuration         | `git config --global --list`                    | Lists all Git configuration settings.                                                                                |
+| Edit configuration file    | `git config --global --edit`                    | Opens the global config file in the default editor.                                                                  |
+
+</div>
+
+## Staging & Committing
+
+<div className="center-text center-table">
+
+| **Description**       | **Command**                         | **Notes**                                                                                                       |
+| :-------------------- | :---------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
+| Check status          | `git status`                        | Displays the status of the working directory and staging area.                                                  |
+| Stage specific file   | `git add <file>`                    | Stages a specific file.<br /><br />Example: `git add README.md`                                                 |
+| Stage specific files  | `git add <file1> <file2>`           | Stages multiple specific files.<br /><br />Example: `git add README.md index.html`                              |
+| Stage all changes     | `git add .`                         | Stages all modified and new files.                                                                              |
+| Commit staged changes | `git commit -m "<message>"`         | Commits staged changes with a message.<br /><br />Example: `git commit -m "Initial commit"`                     |
+| Amend last commit     | `git commit --amend -m "<message>"` | Amends the last commit with a new message.<br /><br />Example: `git commit --amend -m "Updated commit message"` |
+
+</div>
