@@ -52,8 +52,8 @@
   "editor:add-cursor-above": [
     {
       "modifiers": [
-        "Alt",
-        "Mod"
+        "Mod",
+        "Shift"
       ],
       "key": "ArrowUp"
     }
@@ -61,8 +61,8 @@
   "editor:add-cursor-below": [
     {
       "modifiers": [
-        "Alt",
-        "Mod"
+        "Mod",
+        "Shift"
       ],
       "key": "ArrowDown"
     }
@@ -283,8 +283,8 @@
   "table-editor-obsidian:center-align-column": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Mod"
       ],
       "key": "/"
     }
@@ -292,8 +292,8 @@
   "table-editor-obsidian:left-align-column": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Mod"
       ],
       "key": ","
     }
@@ -310,8 +310,8 @@
   "table-editor-obsidian:right-align-column": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Mod"
       ],
       "key": "."
     }
@@ -319,8 +319,8 @@
   "table-editor-obsidian:sort-rows-ascending": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Mod"
       ],
       "key": "'"
     }
@@ -337,8 +337,8 @@
   "table-editor-obsidian:move-column-left": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Mod"
       ],
       "key": "ArrowLeft"
     }
@@ -346,8 +346,8 @@
   "table-editor-obsidian:move-column-right": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Mod"
       ],
       "key": "ArrowRight"
     }
@@ -355,8 +355,8 @@
   "table-editor-obsidian:move-row-down": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Mod"
       ],
       "key": "ArrowDown"
     }
@@ -364,8 +364,8 @@
   "table-editor-obsidian:move-row-up": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Mod"
       ],
       "key": "ArrowUp"
     }
@@ -373,8 +373,8 @@
   "table-editor-obsidian:insert-column": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Mod"
       ],
       "key": "C"
     }
@@ -382,8 +382,8 @@
   "table-editor-obsidian:insert-row": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt",
+        "Mod"
       ],
       "key": "R"
     }
@@ -394,7 +394,7 @@
         "Alt",
         "Mod"
       ],
-      "key": "C"
+      "key": "D"
     }
   ],
   "table-editor-obsidian:delete-row": [
@@ -403,7 +403,7 @@
         "Alt",
         "Mod"
       ],
-      "key": "R"
+      "key": "F"
     }
   ],
   "table-editor-obsidian:format-all-tables": [
