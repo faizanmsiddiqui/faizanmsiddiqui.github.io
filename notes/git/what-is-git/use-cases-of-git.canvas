@@ -1,29 +1,15 @@
 {
 	"nodes":[
 		{
-			"id":"c08fc5686c55419d",
-			"type":"text",
-			"text":"Source Code Management",
-			"styleAttributes":{
-				"textAlign":"right",
-				"border":null
-			},
-			"x":40,
-			"y":-240,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
 			"id":"7cec8de4a6b5aa92",
 			"type":"text",
-			"text":"Collaboration",
+			"text":"Experimentation",
 			"styleAttributes":{
 				"textAlign":"right",
 				"border":null
 			},
-			"x":40,
-			"y":-160,
+			"x":20,
+			"y":-40,
 			"width":260,
 			"height":60,
 			"color":"2"
@@ -36,39 +22,39 @@
 				"textAlign":"right",
 				"border":null
 			},
-			"x":40,
-			"y":-80,
+			"x":20,
+			"y":40,
 			"width":260,
 			"height":60,
 			"color":"3"
 		},
 		{
-			"id":"eda159aef13c3cd5",
+			"id":"c08fc5686c55419d",
 			"type":"text",
-			"text":"Experimentation",
+			"text":"Source Code Management",
 			"styleAttributes":{
 				"textAlign":"right",
 				"border":null
 			},
-			"x":40,
-			"y":0,
+			"x":20,
+			"y":-120,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"eda159aef13c3cd5",
+			"type":"text",
+			"text":"Collaboration",
+			"styleAttributes":{
+				"textAlign":"right",
+				"border":null
+			},
+			"x":20,
+			"y":120,
 			"width":260,
 			"height":60,
 			"color":"5"
-		},
-		{
-			"id":"40f79504b7a97ee0",
-			"type":"text",
-			"text":"Documentation",
-			"styleAttributes":{
-				"textAlign":"right",
-				"border":null
-			},
-			"x":40,
-			"y":80,
-			"width":260,
-			"height":60,
-			"color":"6"
 		},
 		{
 			"id":"ad143324db1dc292",
@@ -78,8 +64,8 @@
 				"textAlign":null,
 				"border":null
 			},
-			"x":-440,
-			"y":-80,
+			"x":-360,
+			"y":0,
 			"width":260,
 			"height":60,
 			"color":"4"
@@ -94,7 +80,8 @@
 			"fromNode":"ad143324db1dc292",
 			"fromSide":"right",
 			"toNode":"c08fc5686c55419d",
-			"toSide":"left"
+			"toSide":"left",
+			"color":"6"
 		},
 		{
 			"id":"8667428e6ac9865f",
@@ -103,7 +90,8 @@
 			"fromNode":"ad143324db1dc292",
 			"fromSide":"right",
 			"toNode":"7cec8de4a6b5aa92",
-			"toSide":"left"
+			"toSide":"left",
+			"color":"6"
 		},
 		{
 			"id":"d8bdd37bcde82b3d",
@@ -112,7 +100,8 @@
 			"fromNode":"ad143324db1dc292",
 			"fromSide":"right",
 			"toNode":"9ce13898da5ea979",
-			"toSide":"left"
+			"toSide":"left",
+			"color":"6"
 		},
 		{
 			"id":"6dcb4e45b41cacdd",
@@ -121,16 +110,8 @@
 			"fromNode":"ad143324db1dc292",
 			"fromSide":"right",
 			"toNode":"eda159aef13c3cd5",
-			"toSide":"left"
-		},
-		{
-			"id":"c5d2b18a6732f3b8",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"ad143324db1dc292",
-			"fromSide":"right",
-			"toNode":"40f79504b7a97ee0",
-			"toSide":"left"
+			"toSide":"left",
+			"color":"6"
 		}
 	],
 	"metadata":{
