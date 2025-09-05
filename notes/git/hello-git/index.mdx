@@ -1,0 +1,224 @@
+---
+title: "Hello, Git!"
+description: An introductory guide to getting started with Git.
+date: 2025-09-04T15:43:25Z
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Hello, Git!
+
+In the previous section, it is being explained what Git is and its key features.
+Now, let's try to do some hands-on with Git. This guide will walk through the
+basics of getting started with Git, including installation, configuration, and
+some fundamental commands.
+
+## Installation
+
+To get started with Git, the first step is to install it on machine. Git is
+available for various operating systems, including Windows, macOS, and Linux.
+
+### Linux
+
+On many Linux distributions, Git comes pre-installed. If not, it can be
+installed using the package manager specific to the distribution.
+
+Here is how to install Git on some common Linux distributions by using terminal:
+
+<Tabs>
+  <TabItem value="ubuntu" label="Ubuntu" default>
+
+    ```shell title="Terminal"
+    sudo apt-get update
+    sudo apt-get install git
+    ```
+
+  </TabItem>
+  <TabItem value="debian" label="Debian">
+
+    ```shell title="Terminal"
+    sudo apt-get update
+    sudo apt-get install git
+    ```
+
+  </TabItem>
+  <TabItem value="fedora" label="Fedora">
+
+    ```shell title="Terminal"
+    sudo dnf install git
+    ```
+
+  </TabItem>
+  <TabItem value="arch-linux" label="Arch Linux">
+
+    ```shell title="Terminal"
+    sudo pacman -S git
+    ```
+
+  </TabItem>
+</Tabs>
+
+### macOS
+
+On macOS, git can be installed using Homebrew, a popular package manager for
+macOS.
+
+:::info
+
+If Homebrew is not already installed on the system then it can be installed by
+following the instructions on the official Homebrew website:
+[**https://brew.sh/**](https://brew.sh/).
+
+:::
+
+If Homebrew is already installed then Git can be installed by running the
+following command in the terminal:
+
+<TabItem value="macos" label="macOS" default>
+
+```shell title="Terminal"
+brew install git
+```
+
+</TabItem>
+
+### Windows
+
+On Windows, the easiest way to install Git is by using the official installer.
+Download the installer from the official Git website:
+[**https://git-scm.com/download/win**](https://git-scm.com/download/win) and
+follow the installation instructions.
+
+## Verification for Installation
+
+After installation, it can be verified that Git is installed correctly by
+running following command in the terminal in case of Linux and macOS:
+
+```shell title="Terminal"
+git --version
+```
+
+While in case of Windows, Git can be verified by opening "Git Bash" (which is
+installed along with Git) and running the same command.
+
+This should display the installed version of Git.
+
+:::info
+
+There are various GUI tools available for Git, such as GitKraken, SourceTree,
+and GitHub Desktop. However, Git is primarily a command-line tool, and for
+learning it is recommended to get familiar with the command line interface
+first.
+
+Git CLI can used with terminal applications like terminal emulators on Linux and
+macOS or using Git Bash, Command Prompt, or PowerShell on Windows.
+
+:::
+
+## Configuration
+
+Before using Git, it is recommended to configure some basic settings, such as
+the user name and email address. This information will be associated with the
+commits made using Git.
+
+The user name and email address can be configured by running the following
+command:
+
+```shell title="Terminal"
+git config --global user.name "Adam"
+git config --global user.email "adam@example.com"
+```
+
+The `--global` flag ensures that these settings apply to all repositories on the
+system. If it is required to set different user name and email address for a
+specific repository, this can be done by running the same commands without the
+`--global` flag while being inside that repository.
+
+The configuration settings can be verified by running the following command:
+
+```shell title="Terminal"
+git config --list
+```
+
+This will display a list of all the configuration settings, including the user
+name and email address.
+
+## Editing Configuration
+
+Configuration settings can be changed at any time by running the `git config`
+command with the desired values. For example, to change the user name and email
+address, the following commands can be run:
+
+```shell title="Terminal"
+git config --global user.name "Bob"
+git config --global user.email "bob@example.com"
+```
+
+Editing configuration can also be done by running following config editing
+command:
+
+```shell title="Terminal"
+git config --global --edit
+```
+
+Again, the `--global` flag ensures that these settings apply to all repositories
+on the system. If it is required to set different user name, email address, or
+any other settings for a specific repository, this can be done by running the
+same commands without the `--global` flag while being inside that repository.
+
+Another possible way to edit the configuration is to edit the Git configuration
+file directly. The global configuration file is located at `~/.gitconfig` on
+Linux and macOS, and at `%USERPROFILE%\.gitconfig` on Windows for global
+settings. Each repository also has its own configuration file located at
+`.git/config` within the repository directory for repository-specific settings.
+
+It is important to note that changes made to the configuration file directly
+will not be reflected in the output of `git config --list` until the file is
+saved.
+
+:::info
+
+Check [**Commands Cheat Sheet**](/notes/git/commands-cheat-sheet) for more
+information about Git commands and configuration options.
+
+:::
+
+## Hello (Initializing a Repository)
+
+To start using Git for version control, a new repository needs to be
+initialized. This can be done by navigating to the project directory in the
+terminal and running the following command:
+
+```shell title="Terminal"
+git init
+```
+
+This will create a new Git repository in the current directory, allowing to
+start tracking changes to the files in the project.
+
+### Example
+
+Here is an example of initializing a new Git repository:
+
+```shell title="Terminal"
+mkdir my-project
+cd my-project
+git init
+```
+
+## Status Check
+
+After initializing a repository, the status of the repository can be checked by
+running the following command:
+
+```shell title="Terminal"
+git status
+```
+
+## Summary
+
+This section provided an introduction to getting started with Git, including
+installation, configuration, and initializing a repository. With these basics in
+place, it is now possible to start using Git for version control. In the next
+sections, some fundamental Git commands and workflows will be covered.
