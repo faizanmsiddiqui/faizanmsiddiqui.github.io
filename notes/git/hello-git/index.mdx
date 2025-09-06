@@ -17,7 +17,7 @@ some fundamental commands.
 ## Installation
 
 To get started with Git, the first step is to install it on machine. Git is
-available for various operating systems, including Windows, macOS, and Linux.
+available for various operating systems, including Linux, macOS, and Windows.
 
 ### Linux
 
@@ -59,9 +59,17 @@ Here is how to install Git on some common Linux distributions by using terminal:
   </TabItem>
 </Tabs>
 
+:::info
+
+For other Linux distributions and methods, refer to
+[**Download for Linux and Unix**](https://git-scm.com/downloads/linux) page on
+the official Git website for detailed instructions.
+
+:::
+
 ### macOS
 
-On macOS, git can be installed using Homebrew, a popular package manager for
+On macOS, Git can be installed using Homebrew, a popular package manager for
 macOS.
 
 :::info
@@ -75,13 +83,17 @@ following the instructions on the official Homebrew website:
 If Homebrew is already installed then Git can be installed by running the
 following command in the terminal:
 
-<TabItem value="macos" label="macOS" default>
-
 ```shell title="Terminal"
 brew install git
 ```
 
-</TabItem>
+:::info
+
+Alternatively, Git can also be installed on macOS by a variery of other methods.
+Refer to [**Download for macOS**](https://git-scm.com/download/mac) page on the
+official Git website for more information.
+
+:::
 
 ### Windows
 
@@ -89,6 +101,13 @@ On Windows, the easiest way to install Git is by using the official installer.
 Download the installer from the official Git website:
 [**https://git-scm.com/download/win**](https://git-scm.com/download/win) and
 follow the installation instructions.
+
+:::info
+
+Similarly, Git can also be installed on Windows by a variery of other methods.
+All these methods are explained on the same page linked above.
+
+:::
 
 ## Verification for Installation
 
@@ -106,13 +125,16 @@ This should display the installed version of Git.
 
 :::info
 
-There are various GUI tools available for Git, such as GitKraken, SourceTree,
-and GitHub Desktop. However, Git is primarily a command-line tool, and for
-learning it is recommended to get familiar with the command line interface
-first.
+There are various GUI tools available for Git, such as
+[**GitKraken**](https://www.gitkraken.com),
+[**SourceTree**](https://www.sourcetreeapp.com),
+[**GitHub Desktop**](https://github.com/apps/desktop), and others as listed on
+[**GUI Clients**](https://git-scm.com/downloads/guis) page on the official Git
+website . However, Git is primarily a command-line tool, and for learning it is
+recommended to get familiar with the command line interface first.
 
 Git CLI can used with terminal applications like terminal emulators on Linux and
-macOS or using Git Bash, Command Prompt, or PowerShell on Windows.
+macOS or using Git Bash on Windows.
 
 :::
 
@@ -177,7 +199,7 @@ It is important to note that changes made to the configuration file directly
 will not be reflected in the output of `git config --list` until the file is
 saved.
 
-:::info
+:::tip
 
 Check [**Commands Cheat Sheet**](/notes/git/commands-cheat-sheet) for more
 information about Git commands and configuration options.
@@ -202,15 +224,15 @@ start tracking changes to the files in the project.
 Here is an example of initializing a new Git repository:
 
 ```shell title="Terminal"
-mkdir my-project
-cd my-project
+mkdir hello-world
+cd hello-world
 git init
 ```
 
 ## Status Check
 
 After initializing a repository, the status of the repository can be checked by
-running the following command:
+running the following command inside the repository directory:
 
 ```shell title="Terminal"
 git status
@@ -221,4 +243,4 @@ git status
 This section provided an introduction to getting started with Git, including
 installation, configuration, and initializing a repository. With these basics in
 place, it is now possible to start using Git for version control. In the next
-sections, some fundamental Git commands and workflows will be covered.
+sections, some fundamental scenarios will be covered.
