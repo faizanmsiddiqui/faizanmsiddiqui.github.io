@@ -11,6 +11,7 @@ const sidebar: SidebarsConfig = {
       },
       items: [
         "what-is-git/index",
+        "hello-git/index",
         "commands-cheat-sheet/index",
         "glossary/index",
       ],
