@@ -7,6 +7,15 @@ const sidebar: SidebarsConfig = {
       label: "Programming and Development",
       id: "index",
     },
+    {
+      type: "category",
+      label: "PowerShell",
+      link: {
+        type: "doc",
+        id: "powershell/index",
+      },
+      items: ["powershell/bash-to-powershell-commands-cheat-sheet/index"],
+    },
   ],
 };
 
