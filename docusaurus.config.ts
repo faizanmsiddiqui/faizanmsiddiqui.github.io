@@ -149,10 +149,10 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "bash",
-        path: "notes/bash",
-        routeBasePath: "/notes/bash",
-        sidebarPath: require.resolve("./notes/bash/sidebar.ts"),
+        id: "documentation-tools",
+        path: "notes/documentation-tools",
+        routeBasePath: "/notes/documentation-tools",
+        sidebarPath: require.resolve("./notes/documentation-tools/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -160,10 +160,12 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "cloud",
-        path: "notes/cloud",
-        routeBasePath: "/notes/cloud",
-        sidebarPath: require.resolve("./notes/cloud/sidebar.ts"),
+        id: "programming-and-development",
+        path: "notes/programming-and-development",
+        routeBasePath: "/notes/programming-and-development",
+        sidebarPath: require.resolve(
+          "./notes/programming-and-development/sidebar.ts"
+        ),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -171,87 +173,12 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "devops",
-        path: "notes/devops",
-        routeBasePath: "/notes/devops",
-        sidebarPath: require.resolve("./notes/devops/sidebar.ts"),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "docker",
-        path: "notes/docker",
-        routeBasePath: "/notes/docker",
-        sidebarPath: require.resolve("./notes/docker/sidebar.ts"),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "git",
-        path: "notes/git",
-        routeBasePath: "/notes/git",
-        sidebarPath: require.resolve("./notes/git/sidebar.ts"),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "linux",
-        path: "notes/linux",
-        routeBasePath: "/notes/linux",
-        sidebarPath: require.resolve("./notes/linux/sidebar.ts"),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "markdown",
-        path: "notes/markdown",
-        routeBasePath: "/notes/markdown",
-        sidebarPath: require.resolve("./notes/markdown/sidebar.ts"),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "podman",
-        path: "notes/podman",
-        routeBasePath: "/notes/podman",
-        sidebarPath: require.resolve("./notes/podman/sidebar.ts"),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "powershell",
-        path: "notes/powershell",
-        routeBasePath: "/notes/powershell",
-        sidebarPath: require.resolve("./notes/powershell/sidebar.ts"),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "python",
-        path: "notes/python",
-        routeBasePath: "/notes/python",
-        sidebarPath: require.resolve("./notes/python/sidebar.ts"),
+        id: "software-and-system-engineering",
+        path: "notes/software-and-system-engineering",
+        routeBasePath: "/notes/software-and-system-engineering",
+        sidebarPath: require.resolve(
+          "./notes/software-and-system-engineering/sidebar.ts"
+        ),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
