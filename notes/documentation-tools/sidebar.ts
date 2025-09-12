@@ -7,6 +7,15 @@ const sidebar: SidebarsConfig = {
       label: "Documentation Tools",
       id: "index",
     },
+    {
+      type: "category",
+      label: "Markdown",
+      link: {
+        type: "doc",
+        id: "markdown/index",
+      },
+      items: [],
+    },
   ],
 };
 
