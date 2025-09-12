@@ -3,15 +3,18 @@ import BooksFlat from "./books_flat.svg";
 import CloudFlat from "./cloud_flat.svg";
 import CrystalBallFlat from "./crystal_ball_flat.svg";
 import DesktopComputerFlat from "./desktop_computer_flat.svg";
+import DizzyFlat from "./dizzy_flat.svg";
 import GameDieFlat from "./game_die_flat.svg";
 import GlowingStarFlat from "./glowing_star_flat.svg";
 import HerbFlat from "./herb_flat.svg";
+import LaptopFlat from "./laptop_flat.svg";
 import LightBulbFlat from "./light_bulb_flat.svg";
 import MemoFlat from "./memo_flat.svg";
 import PageFacingUpFlat from "./page_facing_up_flat.svg";
 import PenguinFlat from "./penguin_flat.svg";
 import PoliceCarLightFlat from "./police_car_light_flat.svg";
 import PushpinFlat from "./pushpin_flat.svg";
+import PuzzlePieceFlat from "./puzzle_piece_flat.svg";
 import RadioactiveFlat from "./radioactive_flat.svg";
 import RocketFlat from "./rocket_flat.svg";
 import SealFlat from "./seal_flat.svg";
@@ -31,15 +34,18 @@ export {
   CloudFlat,
   CrystalBallFlat,
   DesktopComputerFlat,
+  DizzyFlat,
   GameDieFlat,
   GlowingStarFlat,
   HerbFlat,
+  LaptopFlat,
   LightBulbFlat,
   MemoFlat,
   PageFacingUpFlat,
   PenguinFlat,
   PoliceCarLightFlat,
   PushpinFlat,
+  PuzzlePieceFlat,
   RadioactiveFlat,
   RocketFlat,
   SealFlat,

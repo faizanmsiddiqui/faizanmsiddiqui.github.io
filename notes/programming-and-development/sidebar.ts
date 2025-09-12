@@ -3,13 +3,18 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 const sidebar: SidebarsConfig = {
   seriesSidebar: [
     {
+      type: "doc",
+      label: "Programming and Development",
+      id: "index",
+    },
+    {
       type: "category",
-      label: "Docker",
+      label: "PowerShell",
       link: {
         type: "doc",
-        id: "index",
+        id: "powershell/index",
       },
-      items: [],
+      items: ["powershell/bash-to-powershell-commands-cheat-sheet/index"],
     },
   ],
 };

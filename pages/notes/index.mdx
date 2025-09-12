@@ -6,20 +6,16 @@ description:
 hide_table_of_contents: true
 ---
 
-import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 import {
-  CloudFlat,
-  DesktopComputerFlat,
-  GameDieFlat,
-  HerbFlat,
-  MemoFlat,
-  RocketFlat,
-  SealFlat,
-  SpiralShellFlat,
-  SpoutingWhaleFlat,
-} from "@site/src/assets/fluentui-emoji";
-import { Books, Penguin, Snake } from "@site/src/assets/noto-emoji";
+  Books,
+  Dizzy,
+  GameDie,
+  Laptop,
+  Memo,
+  TechnologistDefault,
+} from "@site/src/assets/noto-emoji";
 import { IconExtraLarge, IconMedium } from "@site/src/components/IconSize";
+import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 
 <div className="center-content">
 
@@ -32,86 +28,33 @@ import { IconExtraLarge, IconMedium } from "@site/src/components/IconSize";
 # Notes
 
 <InfoCardHorizontal
+  to="/notes/software-and-system-engineering"
+  graphics={
+    <TechnologistDefault width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="Software and System Engineering"
+  description="Principles, methodologies, best practices, and tools for designing, building, and maintaining software systems."
+/>
+
+<InfoCardHorizontal
+  to="/notes/programming-and-development"
+  graphics={<Laptop width={IconMedium.width} height={IconMedium.height} />}
+  title="Programming and Development"
+  description="Languages, frameworks, concepts, and tools for writing, testing, and maintaining code."
+/>
+
+<InfoCardHorizontal
+  to="/notes/documentation-tools"
+  graphics={<Memo width={IconMedium.width} height={IconMedium.height} />}
+  title="Documentation Tools"
+  description="Tools, techniques, and best practices for creating and maintaining documentation."
+/>
+
+<InfoCardHorizontal
   to="/notes/basement"
-  graphics={<GameDieFlat width={IconMedium.width} height={IconMedium.height} />}
+  graphics={<GameDie width={IconMedium.width} height={IconMedium.height} />}
   title="Basement"
   description="A grab bag of tips, tricks, insights, and other random stuff that doesn't fit anywhere else."
 />
-
-{/* <InfoCardHorizontal
-  to="/notes/bash"
-  graphics={
-    <SpiralShellFlat width={IconMedium.width} height={IconMedium.height} />
-  }
-  title="Bash"
-  description="Master automation and shell scripting with hands-on Bash examples and tips."
-/>
-
-<InfoCardHorizontal
-  to="/notes/cloud"
-  graphics={<CloudFlat width={IconMedium.width} height={IconMedium.height} />}
-  title="Cloud"
-  description="Navigate cloud computing concepts, services, and deployment strategies."
-/>
-
-<InfoCardHorizontal
-  to="/notes/devops"
-  graphics={<RocketFlat width={IconMedium.width} height={IconMedium.height} />}
-  title="DevOps"
-  description="Explore modern DevOps workflows, CI/CD, and infrastructure as code."
-/>
-
-<InfoCardHorizontal
-  to="/notes/docker"
-  graphics={
-    <SpoutingWhaleFlat width={IconMedium.width} height={IconMedium.height} />
-  }
-  title="Docker"
-  description="Learn containerization fundamentals and advanced Docker techniques."
-/> */}
-
-<InfoCardHorizontal
-  to="/notes/git"
-  graphics={<HerbFlat width={IconMedium.width} height={IconMedium.height} />}
-  title="Git"
-  description="Understand version control, branching, and collaboration with Git."
-/>
-
-{/* <InfoCardHorizontal
-  to="/notes/linux"
-  graphics={<Penguin width={IconMedium.width} height={IconMedium.height} />}
-  title="Linux"
-  description="A comprehensive guide to Linux system administration and command line skills."
-/>
-
-<InfoCardHorizontal
-  to="/notes/markdown"
-  graphics={<MemoFlat width={IconMedium.width} height={IconMedium.height} />}
-  title="Markdown"
-  description="Write beautiful documents with Markdown syntax, tools, and best practices."
-/>
-
-<InfoCardHorizontal
-  to="/notes/podman"
-  graphics={<SealFlat width={IconMedium.width} height={IconMedium.height} />}
-  title="Podman"
-  description="Manage containers securely with Podman, a Docker alternative."
-/> */}
-
-<InfoCardHorizontal
-  to="/notes/powershell"
-  graphics={
-    <DesktopComputerFlat width={IconMedium.width} height={IconMedium.height} />
-  }
-  title="PowerShell"
-  description="PowerShell scripting covering cmdlets, scripts, and automation."
-/>
-
-{/* <InfoCardHorizontal
-  to="/notes/python"
-  graphics={<Snake width={IconMedium.width} height={IconMedium.height} />}
-  title="Python"
-  description="A practical guide to Python programming, from basics to advanced topics."
-/> */}
 
 </div>

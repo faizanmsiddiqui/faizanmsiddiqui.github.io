@@ -3,17 +3,22 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 const sidebar: SidebarsConfig = {
   seriesSidebar: [
     {
+      type: "doc",
+      label: "Software and System Engineering",
+      id: "index",
+    },
+    {
       type: "category",
       label: "Git",
       link: {
         type: "doc",
-        id: "index",
+        id: "git/index",
       },
       items: [
-        "what-is-git/index",
-        "hello-git/index",
-        "commands-cheat-sheet/index",
-        "glossary/index",
+        "git/what-is-git/index",
+        "git/hello-git/index",
+        "git/commands-cheat-sheet/index",
+        "git/glossary/index",
       ],
     },
   ],
