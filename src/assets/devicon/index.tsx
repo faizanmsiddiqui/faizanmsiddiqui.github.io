@@ -1,10 +1,21 @@
-import Bash from "./bash-original.svg";
-import Docker from "./docker-original.svg";
-import Git from "./git-original.svg";
-import Linux from "./linux-original.svg";
-import Markdown from "./markdown-original.svg";
-import Podman from "./podman-original.svg";
-import PowerShell from "./powershell-original.svg";
-import Python from "./python-original.svg";
+import BashOriginal from "./bash-original.svg";
+import DockerOriginal from "./docker-original.svg";
+import GitOriginal from "./git-original.svg";
+import GoOriginalWordmark from "./go-original-wordmark.svg";
+import LinuxOriginal from "./linux-original.svg";
+import MarkdownOriginal from "./markdown-original.svg";
+import PodmanOriginal from "./podman-original.svg";
+import PowerShellOriginal from "./powershell-original.svg";
+import PythonOriginal from "./python-original.svg";
 
-export { Bash, Docker, Git, Linux, Markdown, Podman, PowerShell, Python };
+export {
+  BashOriginal,
+  DockerOriginal,
+  GitOriginal,
+  GoOriginalWordmark,
+  LinuxOriginal,
+  MarkdownOriginal,
+  PodmanOriginal,
+  PowerShellOriginal,
+  PythonOriginal,
+};
