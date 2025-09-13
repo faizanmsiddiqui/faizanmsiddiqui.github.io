@@ -149,10 +149,10 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "documentation-tools",
-        path: "notes/documentation-tools",
-        routeBasePath: "/notes/documentation-tools",
-        sidebarPath: require.resolve("./notes/documentation-tools/sidebar.ts"),
+        id: "documentation-and-writing",
+        path: "notes/documentation-and-writing",
+        routeBasePath: "/notes/documentation-and-writing",
+        sidebarPath: require.resolve("./notes/documentation-and-writing/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },

@@ -4,7 +4,7 @@ const sidebar: SidebarsConfig = {
   seriesSidebar: [
     {
       type: "doc",
-      label: "Documentation Tools",
+      label: "Documentation and Writing",
       id: "index",
     },
     {
