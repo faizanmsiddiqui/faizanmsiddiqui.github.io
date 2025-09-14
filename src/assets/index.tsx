@@ -1,5 +1,6 @@
 export * as ColouredIcons from "./coloured-icons";
 export * as Devicon from "./devicon";
 export * as FluentUIEmoji from "./fluentui-emoji";
+export * as Icons8 from "./icons8";
 export * as Kit from "./kit";
 export * as NotoEmoji from "./noto-emoji";
