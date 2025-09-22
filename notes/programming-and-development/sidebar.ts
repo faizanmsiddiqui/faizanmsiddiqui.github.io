@@ -3,18 +3,50 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 const sidebar: SidebarsConfig = {
   seriesSidebar: [
     {
-      type: "doc",
-      label: "Programming and Development",
-      id: "index",
-    },
-    {
       type: "category",
-      label: "PowerShell",
+      label: "Programming and Development",
       link: {
         type: "doc",
-        id: "powershell/index",
+        id: "index",
       },
-      items: ["powershell/bash-to-powershell-commands-cheat-sheet/index"],
+      items: [
+        {
+          type: "category",
+          label: "Go (Golang)",
+          link: {
+            type: "doc",
+            id: "go/index",
+          },
+          items: [],
+        },
+        {
+          type: "category",
+          label: "PowerShell",
+          link: {
+            type: "doc",
+            id: "powershell/index",
+          },
+          items: ["powershell/bash-to-powershell-commands-cheat-sheet/index"],
+        },
+        {
+          type: "category",
+          label: "Python",
+          link: {
+            type: "doc",
+            id: "python/index",
+          },
+          items: [],
+        },
+        {
+          type: "category",
+          label: "Rust",
+          link: {
+            type: "doc",
+            id: "rust/index",
+          },
+          items: [],
+        },
+      ],
     },
   ],
 };
