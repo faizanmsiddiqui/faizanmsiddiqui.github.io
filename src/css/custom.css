@@ -5,6 +5,7 @@
  */
 
 /* Import font files */
+@import url("fonts/fira-sans.css");
 @import url("fonts/noto-sans.css");
 @import url("fonts/jetbrains-mono.css");
 
@@ -23,12 +24,12 @@
   --docusaurus-highlighted-code-line-bg: rgba(25, 124, 101, 0.15);
 
   /* Infima default font families */
-  --ifm-font-family-base: "Noto Sans", sans-serif;
-  --ifm-heading-font-family: "Noto Sans", sans-serif;
+  --ifm-font-family-base: "Fira Sans", sans-serif;
+  --ifm-heading-font-family: "Fira Sans", sans-serif;
   --ifm-font-family-monospace: "JetBrains Mono", monospace;
 
   /* Infima default font sizes */
-  --ifm-font-size-base: 16px;
+  --ifm-font-size-base: 17.5px;
   --ifm-code-font-size: 100%;
 }
 
