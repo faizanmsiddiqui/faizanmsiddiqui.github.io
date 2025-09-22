@@ -3,18 +3,23 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 const sidebar: SidebarsConfig = {
   seriesSidebar: [
     {
-      type: "doc",
-      label: "Documentation and Writing",
-      id: "index",
-    },
-    {
       type: "category",
-      label: "Markdown",
+      label: "Documentation and Writing",
       link: {
         type: "doc",
-        id: "markdown/index",
+        id: "index",
       },
-      items: [],
+      items: [
+        {
+          type: "category",
+          label: "Markdown",
+          link: {
+            type: "doc",
+            id: "markdown/index",
+          },
+          items: [],
+        },
+      ],
     },
   ],
 };
