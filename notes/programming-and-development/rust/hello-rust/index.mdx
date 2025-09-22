@@ -1,0 +1,115 @@
+---
+title: "Hello, Rust!"
+description: How to install Rust, write first program, and compile and run it.
+date: 2025-09-22T16:46:13Z
+---
+
+# Hello, Rust!
+
+Rust is a systems programming language that runs blazingly fast, prevents
+segfaults, and guarantees thread safety. It is designed to be a safe,
+concurrent, and practical language (as discussed
+[**previously**](/notes/programming-and-development/rust/what-is-rust/) as well)
+that supports functional and imperative-procedural paradigms.
+
+## Setting Up Rust Environment
+
+### Installation
+
+To get started with Rust, we need to install it on our system. The recommended
+way to install Rust is through `rustup`, a command-line tool for managing Rust
+versions and associated tools.
+
+#### Linux, macOS, and Windows Subsystem for Linux (WSL)
+
+In Linux, macOS, and Windows Subsystem for Linux (WSL), Rust can be installed by
+running following command in the terminal.
+
+```shell title="Terminal"
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+#### Other Platforms and Installation Methods
+
+To install Rust on other platforms like Windows or Unix, or using different
+methods, official installation guide
+[**Other Rust Installation Methods**](https://forge.rust-lang.org/infra/other-installation-methods.html)
+can be referred.
+
+### Toolchain management with `rustup`
+
+Rust installation comes with `rustup`, a toolchain installer for Rust. `rustup`
+allows managing multiple Rust toolchains (stable, beta, nightly) and switching
+between them easily. It also helps in keeping Rust and its tools up to date.
+
+Rust can be updated to the latest version using the following command:
+
+```shell title="Terminal"
+rustup update
+```
+
+More information about `rustup` can be found in the
+[**`rustup` official documentation**](https://rust-lang.github.io/rustup/).
+
+### Configuring the `PATH` environment variable
+
+In the Rust development environment, all the tools are install in the user's
+home directory. `rustc` and `cargo` are under `~/.cargo`, while `rustup` is
+installed in `~/.rustup`.
+
+The `rustup`, `rustc`, `cargo`, and other commands will be added to
+Cargo's bin directory, located at `~/.cargo/bin`.
+
+- `rustup` is the Rust toolchain installer.
+- `rustc` is the Rust compiler.
+- `cargo` is Rust's package manager and build system.
+
+After installation, these tools need to be accessible from the command line.
+This is usually done automatically by the installer, but if not, then need to
+add the following line to shell configuration file (e.g., `~/.bashrc`,
+`~/.zshrc`):
+
+```shell title="Terminal"
+export PATH="$HOME/.cargo/bin:$PATH"
+```
+
+### Verifying Installation
+
+To verify that Rust is installed correctly, the following commands can be run in
+the terminal to check the versions of `rustc`, `cargo`, and `rustup`
+respectively:
+
+```shell title="Terminal"
+rustup --version
+```
+
+```shell title="Terminal"
+rustc --version
+```
+
+```shell title="Terminal"
+cargo --version
+```
+
+If the installation was successful, these commands will display the installed
+versions of Rustup, Rust compiler, and Cargo.
+
+### Uninstalling Rust
+
+Rust can be uninstalled using the following command:
+
+```shell title="Terminal"
+rustup self uninstall
+```
+
+## Useful Links
+
+- [**Official Rust Programming Language Website**](https://www.rust-lang.org)
+- [**Rust Installation Guide**](https://www.rust-lang.org/tools/install)
+- [**Rust Playground**](https://play.rust-lang.org)
+- [**Rust by Example**](https://doc.rust-lang.org/rust-by-example)
+- [**Rust Standard Library Documentation**](https://doc.rust-lang.org/std)
+- [**The Rust Programming Language Book**](https://doc.rust-lang.org/book)
+- [**The `rustup` Book**](https://rust-lang.github.io/rustup)
+- [**The Cargo Book**](https://doc.rust-lang.org/cargo)
+- [**Crates.io: Rust Package Registry**](https://crates.io)
