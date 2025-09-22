@@ -3,9 +3,13 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 const sidebar: SidebarsConfig = {
   seriesSidebar: [
     {
-      type: "doc",
+      type: "category",
       label: "Information System and Security",
-      id: "index",
+      link: {
+        type: "doc",
+        id: "index",
+      },
+      items: [],
     },
   ],
 };

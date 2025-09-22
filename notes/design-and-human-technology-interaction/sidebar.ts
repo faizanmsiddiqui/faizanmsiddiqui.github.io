@@ -3,9 +3,13 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 const sidebar: SidebarsConfig = {
   seriesSidebar: [
     {
-      type: "doc",
+      type: "category",
       label: "Design and Human-Technology Interaction",
-      id: "index",
+      link: {
+        type: "doc",
+        id: "index",
+      },
+      items: [],
     },
   ],
 };
