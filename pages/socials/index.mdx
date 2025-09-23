@@ -1,0 +1,74 @@
+---
+title: Socials
+description:
+  Connect with me on various social media platforms and professional networks.
+date: 2025-09-23T14:31:15Z
+hide_table_of_contents: true
+---
+
+import { Email, Handshake } from "@site/src/assets/noto-emoji-unicode-16";
+import {
+  Bluesky,
+  LinkedIn,
+  Mastodon,
+  X,
+} from "@site/src/assets/coloured-icons";
+import { GithubOriginal } from "@site/src/assets/devicon";
+import { IconExtraLarge, IconMedium } from "@site/src/components/IconSize";
+import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
+
+<div className="center-content">
+
+<div className="center-image-and-caption">
+
+<Handshake width={IconExtraLarge.width} height={IconExtraLarge.height} />
+
+</div>
+
+# Socials
+
+<InfoCardHorizontal
+  to="mailto:imfsiddiqui@yahoo.com"
+  graphics={<Email width={IconMedium.width} height={IconMedium.height} />}
+  title="Email (preferred)"
+  description="imfsiddiqui@yahoo.com"
+/>
+
+<InfoCardHorizontal
+  to="https://bsky.app/profile/imfsiddiqui.bsky.social"
+  graphics={<Bluesky width={IconMedium.width} height={IconMedium.height} />}
+  title="Bluesky"
+  description="@imfsiddiqui.bsky.social"
+/>
+
+<InfoCardHorizontal
+  to="https://github.com/imfsiddiqui"
+  graphics={
+    <GithubOriginal width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="GitHub"
+  description="@imfsiddiqui"
+/>
+
+<InfoCardHorizontal
+  to="https://www.linkedin.com/in/imfsiddiqui/"
+  graphics={<LinkedIn width={IconMedium.width} height={IconMedium.height} />}
+  title="LinkedIn"
+  description="in/imfsiddiqui"
+/>
+
+<InfoCardHorizontal
+  to="https://mastodon.social/@imfsiddiqui"
+  graphics={<Mastodon width={IconMedium.width} height={IconMedium.height} />}
+  title="Mastodon"
+  description="@imfsiddiqui@mastodon.social"
+/>
+
+<InfoCardHorizontal
+  to="https://x.com/imfsiddiqui"
+  graphics={<X width={IconMedium.width} height={IconMedium.height} />}
+  title="X (formerly Twitter)"
+  description="@imfsiddiqui"
+/>
+
+</div>
