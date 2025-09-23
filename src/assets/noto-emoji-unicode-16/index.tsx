@@ -16,6 +16,7 @@ import LightBulb from "./emoji_u1f4a1.svg";
 import Memo from "./emoji_u1f4dd.svg";
 import PageFacingUp from "./emoji_u1f4c4.svg";
 import Penguin from "./emoji_u1f427.svg";
+import PersonDefault from "./emoji_u1f9d1.svg";
 import PoliceCarLight from "./emoji_u1f6a8.svg";
 import Pushpin from "./emoji_u1f4cc.svg";
 import PuzzlePiece from "./emoji_u1f9e9.svg";
@@ -55,6 +56,7 @@ export {
   Memo,
   PageFacingUp,
   Penguin,
+  PersonDefault,
   PoliceCarLight,
   Pushpin,
   PuzzlePiece,

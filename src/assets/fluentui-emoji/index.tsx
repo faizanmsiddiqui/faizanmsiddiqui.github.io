@@ -16,6 +16,7 @@ import LightBulbFlat from "./light_bulb_flat.svg";
 import MemoFlat from "./memo_flat.svg";
 import PageFacingUpFlat from "./page_facing_up_flat.svg";
 import PenguinFlat from "./penguin_flat.svg";
+import PersonFlatDefault from "./person_flat_default.svg";
 import PoliceCarLightFlat from "./police_car_light_flat.svg";
 import PushpinFlat from "./pushpin_flat.svg";
 import PuzzlePieceFlat from "./puzzle_piece_flat.svg";
@@ -55,6 +56,7 @@ export {
   MemoFlat,
   PageFacingUpFlat,
   PenguinFlat,
+  PersonFlatDefault,
   PoliceCarLightFlat,
   PushpinFlat,
   PuzzlePieceFlat,
