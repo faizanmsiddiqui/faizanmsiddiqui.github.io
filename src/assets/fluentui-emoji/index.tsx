@@ -11,6 +11,7 @@ import EmailFlat from "./e-mail_flat.svg";
 import GameDieFlat from "./game_die_flat.svg";
 import GlobeWithMeridiansFlat from "./globe_with_meridians_flat.svg";
 import GlowingStarFlat from "./glowing_star_flat.svg";
+import HandshakeFlat from "./handshake_flat.svg";
 import HerbFlat from "./herb_flat.svg";
 import LaptopFlat from "./laptop_flat.svg";
 import LightBulbFlat from "./light_bulb_flat.svg";
@@ -52,6 +53,7 @@ export {
   GameDieFlat,
   GlobeWithMeridiansFlat,
   GlowingStarFlat,
+  HandshakeFlat,
   HerbFlat,
   LaptopFlat,
   LightBulbFlat,

@@ -11,6 +11,7 @@ import Email from "./emoji_u1f4e7.svg";
 import GameDie from "./emoji_u1f3b2.svg";
 import GlobeWithMeridians from "./emoji_u1f310.svg";
 import GlowingStar from "./emoji_u1f31f.svg";
+import Handshake from "./emoji_u1f91d.svg";
 import Herb from "./emoji_u1f33f.svg";
 import Laptop from "./emoji_u1f4bb.svg";
 import LightBulb from "./emoji_u1f4a1.svg";
@@ -52,6 +53,7 @@ export {
   GameDie,
   GlobeWithMeridians,
   GlowingStar,
+  Handshake,
   Herb,
   Laptop,
   LightBulb,
