@@ -7,6 +7,7 @@ import CrystalBall from "./emoji_u1f52e.svg";
 import DesktopComputer from "./emoji_u1f5a5.svg";
 import DetectiveDefault from "./emoji_u1f575.svg";
 import Dizzy from "./emoji_u1f4ab.svg";
+import Email from "./emoji_u1f4e7.svg";
 import GameDie from "./emoji_u1f3b2.svg";
 import GlobeWithMeridians from "./emoji_u1f310.svg";
 import GlowingStar from "./emoji_u1f31f.svg";
@@ -47,6 +48,7 @@ export {
   DesktopComputer,
   DetectiveDefault,
   Dizzy,
+  Email,
   GameDie,
   GlobeWithMeridians,
   GlowingStar,

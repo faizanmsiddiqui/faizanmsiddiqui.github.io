@@ -7,6 +7,7 @@ import CrystalBallFlat from "./crystal_ball_flat.svg";
 import DesktopComputerFlat from "./desktop_computer_flat.svg";
 import DetectiveFlatDefault from "./detective_flat_default.svg";
 import DizzyFlat from "./dizzy_flat.svg";
+import EmailFlat from "./e-mail_flat.svg";
 import GameDieFlat from "./game_die_flat.svg";
 import GlobeWithMeridiansFlat from "./globe_with_meridians_flat.svg";
 import GlowingStarFlat from "./glowing_star_flat.svg";
@@ -47,6 +48,7 @@ export {
   DesktopComputerFlat,
   DetectiveFlatDefault,
   DizzyFlat,
+  EmailFlat,
   GameDieFlat,
   GlobeWithMeridiansFlat,
   GlowingStarFlat,
