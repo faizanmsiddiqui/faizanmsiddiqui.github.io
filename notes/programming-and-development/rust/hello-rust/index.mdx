@@ -9,21 +9,21 @@ date: 2025-09-22T16:46:13Z
 Rust is a systems programming language that runs blazingly fast, prevents
 segfaults, and guarantees thread safety. It is designed to be a safe,
 concurrent, and practical language (as discussed
-[**previously**](/notes/programming-and-development/rust/what-is-rust/) as well)
-that supports functional and imperative-procedural paradigms.
+[**previously**](/notes/programming-and-development/rust/what-is-rust/)), and
+supports both functional and imperative-procedural paradigms.
 
 ## Setting Up Rust Environment
 
 ### Installation
 
-To get started with Rust, we need to install it on our system. The recommended
-way to install Rust is through `rustup`, a command-line tool for managing Rust
-versions and associated tools.
+To get started with Rust, installation is required. The recommended way is
+through `rustup`, a command-line tool for managing Rust versions and associated
+tools.
 
 #### Linux, macOS, and Windows Subsystem for Linux (WSL)
 
-In Linux, macOS, and Windows Subsystem for Linux (WSL), Rust can be installed by
-running following command in the terminal.
+On Linux, macOS, and Windows Subsystem for Linux (WSL), Rust can be installed by
+running the following command in the terminal:
 
 ```shell title="Terminal"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -31,33 +31,31 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 #### Other Platforms and Installation Methods
 
-To install Rust on other platforms like Windows or Unix, or using different
-methods, official installation guide
-[**Other Rust Installation Methods**](https://forge.rust-lang.org/infra/other-installation-methods.html)
-can be referred.
+For other platforms like Windows or Unix, or for different installation methods,
+refer to the official guide:
+[**Other Rust Installation Methods**](https://forge.rust-lang.org/infra/other-installation-methods.html).
 
-### Toolchain management with `rustup`
+### Toolchain Management with `rustup`
 
-Rust installation comes with `rustup`, a toolchain installer for Rust. `rustup`
-allows managing multiple Rust toolchains (stable, beta, nightly) and switching
-between them easily. It also helps in keeping Rust and its tools up to date.
+Rust installation includes `rustup`, a toolchain installer for Rust. `rustup`
+manages multiple Rust toolchains (stable, beta, nightly) and allows switching
+between them easily. It also helps keep Rust and its tools up to date.
 
-Rust can be updated to the latest version using the following command:
+Rust can be updated to the latest version with:
 
 ```shell title="Terminal"
 rustup update
 ```
 
-More information about `rustup` can be found in the
+More information about `rustup` is available in the
 [**`rustup` official documentation**](https://rust-lang.github.io/rustup/).
 
-### Configuring the `PATH` environment variable
+### Configuring the `PATH` Environment Variable
 
-In the Rust development environment, all the tools are install in the user's
-home directory. `rustc` and `cargo` are under `~/.cargo`, while `rustup` is
-installed in `~/.rustup`.
+In the Rust development environment, all tools are installed in the user's home
+directory under `~/.rustup` and `~/.cargo`.
 
-The `rustup`, `rustc`, `cargo`, and other commands will be added to Cargo's bin
+The `rustup`, `rustc`, `cargo`, and other commands are added to Cargo's bin
 directory, located at `~/.cargo/bin`.
 
 - `rustup` is the Rust toolchain installer.
@@ -65,9 +63,8 @@ directory, located at `~/.cargo/bin`.
 - `cargo` is Rust's package manager and build system.
 
 After installation, these tools need to be accessible from the command line.
-This is usually done automatically by the installer, but if not, then need to
-add the following line to shell configuration file (e.g., `~/.bashrc`,
-`~/.zshrc`):
+This is usually done automatically by the installer, but if not, add the
+following line to the shell configuration file (e.g., `~/.bashrc`, `~/.zshrc`):
 
 ```shell title="Terminal"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -75,9 +72,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 ### Verifying Installation
 
-To verify that Rust is installed correctly, the following commands can be run in
-the terminal to check the versions of `rustc`, `cargo`, and `rustup`
-respectively:
+To verify that Rust is installed correctly, run the following commands in the
+terminal to check the versions of `rustup`, `rustc`, and `cargo`:
 
 ```shell title="Terminal"
 rustup --version
@@ -91,12 +87,12 @@ rustc --version
 cargo --version
 ```
 
-If the installation was successful, these commands will display the installed
-versions of Rustup, Rust compiler, and Cargo.
+If installation was successful, these commands display the installed versions of
+Rustup, Rust compiler, and Cargo.
 
 ### Uninstalling Rust
 
-Rust can be uninstalled using the following command:
+Rust can be uninstalled with:
 
 ```shell title="Terminal"
 rustup self uninstall
@@ -107,7 +103,7 @@ rustup self uninstall
 ### Writing Code
 
 To write a simple "Hello, World!" program in Rust, create a new file named
-`main.rs` and add the following code:
+`main.rs` and add:
 
 ```rust title="main.rs"
 fn main() {
@@ -115,29 +111,29 @@ fn main() {
 }
 ```
 
-The file name can be anything, but it is common to use `main.rs` while the main
-entry point of the program should always be `main` function.
+The file name can be anything, but it is common to use `main.rs`. The main entry
+point of the program should always be the `main` function.
 
 ### Compiling
 
-Following Rust compiler `rustc` command can be used to compile the Rust program:
+The Rust compiler `rustc` can be used to compile the program:
 
 ```shell title="Terminal"
 rustc main.rs
 ```
 
-This will generate an executable file named `main` (or `main.exe` on Windows) in
-the same directory.
+This generates an executable file named `main` (or `main.exe` on Windows) in the
+same directory.
 
 ### Running
 
-Finally, the compiled program can be run using the following command:
+The compiled program can be run with:
 
 ```shell title="Terminal"
 ./main
 ```
 
-And it will print `Hello, World!` to the terminal.
+This prints `Hello, World!` to the terminal.
 
 ## Useful Links
 
