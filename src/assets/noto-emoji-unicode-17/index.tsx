@@ -34,6 +34,7 @@ import SpiralShell from "./emoji_u1f41a.svg";
 import SpoutingWhale from "./emoji_u1f433.svg";
 import TechnologistDefault from "./emoji_u1f9d1_200d_1f4bb.svg";
 import TeddyBear from "./emoji_u1f9f8.svg";
+import Telephone from "./emoji_u260e.svg";
 import Trophy from "./emoji_u1f3c6.svg";
 import VideoGame from "./emoji_u1f3ae.svg";
 import Whale from "./emoji_u1f40b.svg";
@@ -76,6 +77,7 @@ export {
   SpoutingWhale,
   TechnologistDefault,
   TeddyBear,
+  Telephone,
   Trophy,
   VideoGame,
   Whale,

@@ -34,6 +34,7 @@ import SpiralShellFlat from "./spiral_shell_flat.svg";
 import SpoutingWhaleFlat from "./spouting_whale_flat.svg";
 import TechnologistFlatDefault from "./technologist_flat_default.svg";
 import TeddyBearFlat from "./teddy_bear_flat.svg";
+import TelephoneFlat from "./telephone_flat.svg";
 import TrophyFlat from "./trophy_flat.svg";
 import VideoGameFlat from "./video_game_flat.svg";
 import WhaleFlat from "./whale_flat.svg";
@@ -76,6 +77,7 @@ export {
   SpoutingWhaleFlat,
   TechnologistFlatDefault,
   TeddyBearFlat,
+  TelephoneFlat,
   TrophyFlat,
   VideoGameFlat,
   WhaleFlat,
