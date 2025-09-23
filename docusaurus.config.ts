@@ -55,6 +55,7 @@ const config: Config = {
         id: "about",
         path: "pages/about",
         routeBasePath: "/about",
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -63,6 +64,7 @@ const config: Config = {
         id: "attributions",
         path: "pages/attributions",
         routeBasePath: "/attributions",
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -71,6 +73,7 @@ const config: Config = {
         id: "home",
         path: "pages/home",
         routeBasePath: "/",
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -79,6 +82,7 @@ const config: Config = {
         id: "notes",
         path: "pages/notes",
         routeBasePath: "/notes",
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -87,6 +91,7 @@ const config: Config = {
         id: "projects",
         path: "pages/projects",
         routeBasePath: "/projects",
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -95,6 +100,7 @@ const config: Config = {
         id: "publications",
         path: "pages/publications",
         routeBasePath: "/publications",
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -103,6 +109,7 @@ const config: Config = {
         id: "resume",
         path: "pages/resume",
         routeBasePath: "/resume",
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -111,6 +118,7 @@ const config: Config = {
         id: "socials",
         path: "pages/socials",
         routeBasePath: "/socials",
+        showLastUpdateTime: true,
       },
     ],
     [
