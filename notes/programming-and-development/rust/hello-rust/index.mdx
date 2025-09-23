@@ -14,6 +14,13 @@ supports both functional and imperative-procedural paradigms.
 
 ## Setting Up Rust Environment
 
+:::tip[Documentation]
+
+- [**The Rust Programming Language: Installation**](https://doc.rust-lang.org/book/ch01-01-installation.html)
+- [**Rust Forge: Other Installation Methods**](https://forge.rust-lang.org/infra/other-installation-methods.html)
+
+:::
+
 ### Installation
 
 To get started with Rust, installation is required. The recommended way is
@@ -100,6 +107,12 @@ rustup self uninstall
 
 ## First Program
 
+:::tip[Documentation]
+
+- [**The Rust Programming Language: Hello, World!**](https://doc.rust-lang.org/book/ch01-02-hello-world.html)
+
+:::
+
 ### Writing Code
 
 To write a simple "Hello, World!" program in Rust, create a new file named
@@ -134,6 +147,43 @@ The compiled program can be run with:
 ```
 
 This prints `Hello, World!` to the terminal.
+
+## Basic Comments
+
+:::tip[Documentation]
+
+- [**The Rust Programming Language: Comments**](https://doc.rust-lang.org/book/ch03-04-comments.html)
+
+:::
+
+:::info
+
+This section provides a brief overview of comments (non-doc comments) in Rust. A
+detailed explanation of the syntax and usage of comments will be covered later.
+
+:::
+
+Comments in Rust are similar to those in C, C++, and Java. Single-line comments
+start with `//`, and multi-line comments are enclosed between `/*` and `*/`.
+
+### Single-Line Comment
+
+```rust title="main.rs"
+// This is a single-line comment
+fn main() {
+    println!("Hello, World!"); // This prints to the console
+}
+```
+
+### Multi-Line Comment
+
+```rust title="main.rs"
+/* This is a multi-line comment
+   It can span multiple lines */
+fn main() {
+    println!("Hello, World!");
+}
+```
 
 ## Useful Links
 
