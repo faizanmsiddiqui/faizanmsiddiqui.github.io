@@ -9,7 +9,7 @@
    sodipodi:docname="x.svg"
    width="128"
    height="128"
-   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -27,11 +27,11 @@
    showgrid="false"
    inkscape:zoom="3.1701954"
    inkscape:cx="17.664526"
-   inkscape:cy="83.433343"
+   inkscape:cy="83.591062"
    inkscape:window-width="1920"
-   inkscape:window-height="1009"
-   inkscape:window-x="-8"
-   inkscape:window-y="-8"
+   inkscape:window-height="1011"
+   inkscape:window-x="0"
+   inkscape:window-y="32"
    inkscape:window-maximized="1"
    inkscape:current-layer="Layer_1" />
  <metadata
@@ -51,11 +51,11 @@
  <g
    id="g1"
    transform="matrix(2.4096386,0,0,2.4096386,3.9999989,9.7831315)"
-   style="stroke-width:0.415;stroke:#ffffff;stroke-opacity:1">
+   style="stroke-width:0.82999998;stroke:#ffffff;stroke-opacity:1;stroke-dasharray:none">
   <path
    d="m 39.2,0 h 7.6 L 30.2,19.1 49.8,45 H 34.4 L 22.4,29.3 8.6,45 H 1 L 18.8,24.6 0,0 h 15.8 l 10.9,14.4 z m -2.7,40.4 h 4.2 L 13.5,4.3 H 8.9 Z"
    id="path1"
-   style="stroke-width:0.415;stroke:#ffffff;stroke-opacity:1">
+   style="stroke-width:0.82999998;stroke:#ffffff;stroke-opacity:1;stroke-dasharray:none">
   </path>
  </g>
 </svg>

@@ -7,15 +7,18 @@ import CrystalBall from "./emoji_u1f52e.svg";
 import DesktopComputer from "./emoji_u1f5a5.svg";
 import DetectiveDefault from "./emoji_u1f575.svg";
 import Dizzy from "./emoji_u1f4ab.svg";
+import Email from "./emoji_u1f4e7.svg";
 import GameDie from "./emoji_u1f3b2.svg";
 import GlobeWithMeridians from "./emoji_u1f310.svg";
 import GlowingStar from "./emoji_u1f31f.svg";
+import Handshake from "./emoji_u1f91d.svg";
 import Herb from "./emoji_u1f33f.svg";
 import Laptop from "./emoji_u1f4bb.svg";
 import LightBulb from "./emoji_u1f4a1.svg";
 import Memo from "./emoji_u1f4dd.svg";
 import PageFacingUp from "./emoji_u1f4c4.svg";
 import Penguin from "./emoji_u1f427.svg";
+import PersonDefault from "./emoji_u1f9d1.svg";
 import PoliceCarLight from "./emoji_u1f6a8.svg";
 import Pushpin from "./emoji_u1f4cc.svg";
 import PuzzlePiece from "./emoji_u1f9e9.svg";
@@ -31,6 +34,7 @@ import SpiralShell from "./emoji_u1f41a.svg";
 import SpoutingWhale from "./emoji_u1f433.svg";
 import TechnologistDefault from "./emoji_u1f9d1_200d_1f4bb.svg";
 import TeddyBear from "./emoji_u1f9f8.svg";
+import Telephone from "./emoji_u260e.svg";
 import Trophy from "./emoji_u1f3c6.svg";
 import VideoGame from "./emoji_u1f3ae.svg";
 import Whale from "./emoji_u1f40b.svg";
@@ -46,15 +50,18 @@ export {
   DesktopComputer,
   DetectiveDefault,
   Dizzy,
+  Email,
   GameDie,
   GlobeWithMeridians,
   GlowingStar,
+  Handshake,
   Herb,
   Laptop,
   LightBulb,
   Memo,
   PageFacingUp,
   Penguin,
+  PersonDefault,
   PoliceCarLight,
   Pushpin,
   PuzzlePiece,
@@ -70,6 +77,7 @@ export {
   SpoutingWhale,
   TechnologistDefault,
   TeddyBear,
+  Telephone,
   Trophy,
   VideoGame,
   Whale,
