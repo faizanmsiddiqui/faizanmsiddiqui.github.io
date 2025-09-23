@@ -102,6 +102,43 @@ Rust can be uninstalled using the following command:
 rustup self uninstall
 ```
 
+## First Program
+
+### Writing Code
+
+To write a simple "Hello, World!" program in Rust, create a new file named
+`main.rs` and add the following code:
+
+```rust title="main.rs"
+fn main() {
+    println!("Hello, World!");
+}
+```
+
+The file name can be anything, but it is common to use `main.rs` while the main
+entry point of the program should always be `main` function.
+
+### Compiling
+
+Following Rust compiler `rustc` command can be used to compile the Rust program:
+
+```shell title="Terminal"
+rustc main.rs
+```
+
+This will generate an executable file named `main` (or `main.exe` on Windows) in
+the same directory.
+
+### Running
+
+Finally, the compiled program can be run using the following command:
+
+```shell title="Terminal"
+./main
+```
+
+And it will print `Hello, World!` to the terminal.
+
 ## Useful Links
 
 - [**Official Rust Programming Language Website**](https://www.rust-lang.org)
