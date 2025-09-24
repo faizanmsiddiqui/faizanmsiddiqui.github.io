@@ -47,6 +47,7 @@ const sidebar: SidebarsConfig = {
           items: [
             "rust/what-is-rust/index",
             "rust/hello-rust/index",
+            "rust/comments/index",
             "rust/data-types/index",
           ],
         },
