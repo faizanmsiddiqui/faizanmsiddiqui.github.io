@@ -37,15 +37,15 @@ integer types in Rust are:
 - `i32`: 32-bit
 - `i64`: 64-bit
 - `i128`: 128-bit
-- `isize`: Pointer-sized depends on the architecture
+- `isize`: Pointer-sized, depends on the architecture
 
 ```rust title="main.rs"
 fn main() {
-    // 8-bit signed integer: positive
+    // 8-bit signed integer: negative
     let x: i8 = -42;
     println!("Integer: {}", x);
 
-    // 16-bit signed integer: negative
+    // 16-bit signed integer: positive
     let y: i16 = 42;
     println!("Integer: {}", y);
 }
@@ -61,7 +61,7 @@ types in Rust are:
 - `u32`: 32-bit
 - `u64`: 64-bit
 - `u128`: 128-bit
-- `usize`: Pointer-sized depends on the architecture
+- `usize`: Pointer-sized, depends on the architecture
 
 ```rust title="main.rs"
 fn main() {
@@ -132,7 +132,7 @@ fn main() {
 
 ### Character
 
-Character type represents a single unicode scalar value, denoted by the `char`
+Character type represents a single Unicode scalar value, denoted by the `char`
 type. It can represent a wide range of characters, including letters, digits,
 symbols, and emojis.
 
@@ -152,7 +152,7 @@ fn main() {
 ## Compound Types
 
 Compound types can group multiple values into one type. Rust has two primary
-compound types: Arrays and Tuples.
+compound types: arrays and tuples.
 
 ### Arrays
 
