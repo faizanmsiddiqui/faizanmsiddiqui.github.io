@@ -1,5 +1,6 @@
 import AlienMonsterFlat from "./alien_monster_flat.svg";
 import ArtistFlatDefault from "./artist_flat_default.svg";
+import BookmarkTabsFlat from "./bookmark_tabs_flat.svg";
 import BooksFlat from "./books_flat.svg";
 import BrainFlat from "./brain_flat.svg";
 import CloudFlat from "./cloud_flat.svg";
@@ -43,6 +44,7 @@ import WritingHandFlatDefault from "./writing_hand_flat_default.svg";
 export {
   AlienMonsterFlat,
   ArtistFlatDefault,
+  BookmarkTabsFlat,
   BooksFlat,
   BrainFlat,
   CloudFlat,

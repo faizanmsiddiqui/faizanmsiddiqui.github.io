@@ -1,5 +1,6 @@
 import AlienMonster from "./emoji_u1f47e.svg";
 import ArtistDefault from "./emoji_u1f9d1_200d_1f3a8.svg";
+import BookmarkTabs from "./emoji_u1f4d1.svg";
 import Books from "./emoji_u1f4da.svg";
 import Brain from "./emoji_u1f9e0.svg";
 import Cloud from "./emoji_u2601.svg";
@@ -43,6 +44,7 @@ import WritingHandDefault from "./emoji_u270d.svg";
 export {
   AlienMonster,
   ArtistDefault,
+  BookmarkTabs,
   Books,
   Brain,
   Cloud,
