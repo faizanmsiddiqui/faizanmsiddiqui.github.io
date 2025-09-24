@@ -77,7 +77,8 @@ types in Rust are:
 
 ```rust title="main.rs"
 fn main() {
-    let x: u8 = 255; // 8-bit unsigned integer
+    // 8-bit unsigned integer
+    let x: u8 = 255;
     println!("Integer: {}", x);
 }
 ```
@@ -138,9 +139,11 @@ the `bool` type.
 
 ```rust title="main.rs"
 fn main() {
+    // Boolean true
     let is_rust_fun: bool = true;
     println!("Is Rust fun? {}", is_rust_fun);
 
+    // Boolean false
     let is_sky_green: bool = false;
     println!("Is the sky green? {}", is_sky_green);
 }
@@ -154,12 +157,15 @@ symbols, and emojis.
 
 ```rust title="main.rs"
 fn main() {
+    // Character 'R' (letter)
     let letter: char = 'R';
     println!("Character: {}", letter);
 
+    // Character '😊' (emoji)
     let emoji: char = '😊';
     println!("Emoji: {}", emoji);
 
+    // Character '©' (special symbol)
     let special_char: char = '©';
     println!("Special Character: {}", special_char);
 }
@@ -183,6 +189,7 @@ created using square brackets `[]` and have a fixed length.
 
 ```rust title="main.rs"
 fn main() {
+    // Array of three 32-bit integers
     let array_var: [i32; 3] = [1, 2, 3];
     println!("Array: {:?}", array_var);
     println!("Array length: {}", array_var.len());
@@ -199,6 +206,7 @@ created using parentheses `()` and can hold a mix of types.
 
 ```rust title="main.rs"
 fn main() {
+    // Tuple containing an integer, a floating-point number, and a character
     let tuple_var: (i32, f64, char) = (42, 3.14, 'R');
     println!("Tuple: {:?}", tuple_var);
     println!("First element: {}", tuple_var.0);
@@ -206,3 +214,12 @@ fn main() {
     println!("Third element: {}", tuple_var.2);
 }
 ```
+
+:::info
+
+Rust also supports more complex data types such as structs and enums, which
+allow for more advanced data modeling. However, these are user-defined types
+rather than built-in types. Rust also provides other data types like slices,
+vectors, strings, and hash maps for more dynamic and flexible data handling.
+
+:::
