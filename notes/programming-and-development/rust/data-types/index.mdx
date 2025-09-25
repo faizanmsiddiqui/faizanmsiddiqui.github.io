@@ -198,7 +198,7 @@ fn main() {
     println!("Third element: {}", array_var[2]);
     println!("Last element: {}", array_var[array_var.len() - 1]);
 
-    // If array is empty, accessing the last element with length - 1  will cause
+    // If array is empty, accessing the last element with length - 1 will cause
     // a panic. To avoid that, we can use the `last` method with `unwrap_or` to
     // provide a default value.
     println!("Last element: {}", array_var.last().unwrap_or(&-1));

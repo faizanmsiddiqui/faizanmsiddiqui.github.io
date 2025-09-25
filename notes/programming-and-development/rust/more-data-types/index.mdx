@@ -41,7 +41,7 @@ fn main() {
     println!("Last element: {}", vector_var[vector_var.len() - 1]);
 
     // Similar to arrays, if vector is empty, accessing the last element with
-    // length - 1  will cause a panic. To avoid that, we can use the `last`
+    // length - 1 will cause a panic. To avoid that, we can use the `last`
     // method with `unwrap_or` to provide a default value.
     println!("Last element: {}", vector_var.last().unwrap_or(&-1));
 
@@ -104,7 +104,7 @@ fn main() {
     println!("Third element of slice: {}", slice_var[2]);
     println!("Last element of slice: {}", slice_var[slice_var.len() - 1]);
 
-    // If slice is empty, accessing the last element with length - 1  will cause
+    // If slice is empty, accessing the last element with length - 1 will cause
     // a panic, similar to arrays and vectors. To avoid that, we can use the
     // `last` method with `unwrap_or` to provide a default value.
     println!("Last element of slice: {}", slice_var.last().unwrap_or(&-1));
