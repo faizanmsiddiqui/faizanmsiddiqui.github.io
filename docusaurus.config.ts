@@ -354,15 +354,15 @@ const config: Config = {
           type: "dropdown",
           items: [
             {
-              label: "Software and System Engineering",
+              label: "🧑‍💻 Software and System Engineering",
               to: "/notes/software-and-system-engineering/",
             },
             {
-              label: "Programming and Development",
+              label: "💻 Programming and Development",
               to: "/notes/programming-and-development/",
             },
             {
-              label: "Basement",
+              label: "🎲 Basement",
               to: "/notes/basement/",
             },
           ],
