@@ -28,11 +28,13 @@ import RobotFlat from "./robot_flat.svg";
 import RocketFlat from "./rocket_flat.svg";
 import SatelliteAntennaFlat from "./satellite_antenna_flat.svg";
 import SealFlat from "./seal_flat.svg";
+import SmilingFaceWithSmilingEyesFlat from "./smiling_face_with_smiling_eyes_flat.svg";
 import SnakeFlat from "./snake_flat.svg";
 import SparklesFlat from "./sparkles_flat.svg";
 import SpiderWebFlat from "./spider_web_flat.svg";
 import SpiralShellFlat from "./spiral_shell_flat.svg";
 import SpoutingWhaleFlat from "./spouting_whale_flat.svg";
+import StarstruckFlat from "./star-struck_flat.svg";
 import TechnologistFlatDefault from "./technologist_flat_default.svg";
 import TeddyBearFlat from "./teddy_bear_flat.svg";
 import TelephoneFlat from "./telephone_flat.svg";
@@ -72,11 +74,13 @@ export {
   RocketFlat,
   SatelliteAntennaFlat,
   SealFlat,
+  SmilingFaceWithSmilingEyesFlat,
   SnakeFlat,
   SparklesFlat,
   SpiderWebFlat,
   SpiralShellFlat,
   SpoutingWhaleFlat,
+  StarstruckFlat,
   TechnologistFlatDefault,
   TeddyBearFlat,
   TelephoneFlat,

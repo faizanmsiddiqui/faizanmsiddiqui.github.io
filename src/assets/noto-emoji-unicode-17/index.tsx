@@ -28,11 +28,13 @@ import Robot from "./emoji_u1f916.svg";
 import Rocket from "./emoji_u1f680.svg";
 import SatelliteAntenna from "./emoji_u1f4e1.svg";
 import Seal from "./emoji_u1f9ad.svg";
+import SmilingFaceWithSmilingEyes from "./emoji_u1f60a.svg";
 import Snake from "./emoji_u1f40d.svg";
 import Sparkles from "./emoji_u2728.svg";
 import SpiderWeb from "./emoji_u1f578.svg";
 import SpiralShell from "./emoji_u1f41a.svg";
 import SpoutingWhale from "./emoji_u1f433.svg";
+import Starstruck from "./emoji_u1f929.svg";
 import TechnologistDefault from "./emoji_u1f9d1_200d_1f4bb.svg";
 import TeddyBear from "./emoji_u1f9f8.svg";
 import Telephone from "./emoji_u260e.svg";
@@ -72,11 +74,13 @@ export {
   Rocket,
   SatelliteAntenna,
   Seal,
+  SmilingFaceWithSmilingEyes,
   Snake,
   Sparkles,
   SpiderWeb,
   SpiralShell,
   SpoutingWhale,
+  Starstruck,
   TechnologistDefault,
   TeddyBear,
   Telephone,
