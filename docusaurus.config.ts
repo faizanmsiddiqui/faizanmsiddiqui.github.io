@@ -340,52 +340,52 @@ const config: Config = {
         // {
         //   position: "left",
         //   label: "About",
-        //   to: "/about",
+        //   to: "/about/",
         // },
         {
           position: "left",
           label: "Blog",
-          to: "/blog",
+          to: "/blog/",
         },
         {
           position: "left",
           label: "Notes",
-          to: "/notes",
+          to: "/notes/",
           type: "dropdown",
           items: [
             {
               label: "Software and System Engineering",
-              to: "/notes/software-and-system-engineering",
+              to: "/notes/software-and-system-engineering/",
             },
             {
               label: "Programming and Development",
-              to: "/notes/programming-and-development",
+              to: "/notes/programming-and-development/",
             },
             {
               label: "Basement",
-              to: "/notes/basement",
+              to: "/notes/basement/",
             },
           ],
         },
         // {
         //   position: "left",
         //   label: "Projects",
-        //   to: "/projects",
+        //   to: "/projects/",
         // },
         {
           position: "left",
           label: "Publications",
-          to: "/publications",
+          to: "/publications/",
         },
         // {
         //   position: "left",
         //   label: "Resume",
-        //   to: "/resume",
+        //   to: "/resume/",
         // },
         {
           position: "left",
           label: "Wonders",
-          to: "/wonders",
+          to: "/wonders/",
         },
         {
           position: "right",
@@ -400,7 +400,7 @@ const config: Config = {
         {
           position: "right",
           label: "Socials",
-          to: "/socials",
+          to: "/socials/",
         },
       ],
     },
