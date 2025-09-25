@@ -196,6 +196,12 @@ fn main() {
     println!("First element: {}", array_var[0]);
     println!("Second element: {}", array_var[1]);
     println!("Third element: {}", array_var[2]);
+    println!("Last element: {}", array_var[array_var.len() - 1]);
+
+    // If array is empty, accessing the last element with length - 1 will cause
+    // a panic. To avoid that, we can use the `last` method with `unwrap_or` to
+    // provide a default value.
+    println!("Last element: {}", array_var.last().unwrap_or(&-1));
 }
 ```
 
@@ -221,5 +227,8 @@ Rust also supports more complex data types such as structs and enums, which
 allow for more advanced data modeling. However, these are user-defined types
 rather than built-in types. Rust also provides other data types like slices,
 vectors, strings, and hash maps for more dynamic and flexible data handling.
+Details on these are in the
+[**More Data Types**](/notes/programming-and-development/rust/more-data-types/)
+section.
 
 :::
