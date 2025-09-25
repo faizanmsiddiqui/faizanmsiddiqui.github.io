@@ -1,33 +1,8 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-#__docusaurus {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
-}
-
-.heroBanner {
-  padding: 4rem 0;
+.banner {
+  border-radius: 1rem;
+  background: var(--ifm-color-primary);
   text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--ifm-background-surface-color);
 }

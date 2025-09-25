@@ -6,7 +6,10 @@ date: 2025-09-23T14:31:15Z
 hide_table_of_contents: true
 ---
 
-import { Email, Handshake } from "@site/src/assets/noto-emoji-unicode-16";
+import {
+  Email,
+  SmilingFaceWithSmilingEyes,
+} from "@site/src/assets/noto-emoji-unicode-16";
 import {
   Bluesky,
   LinkedIn,
@@ -21,7 +24,10 @@ import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 
 <div className="center-image-and-caption">
 
-<Handshake width={IconExtraLarge.width} height={IconExtraLarge.height} />
+<SmilingFaceWithSmilingEyes
+  width={IconExtraLarge.width}
+  height={IconExtraLarge.height}
+/>
 
 </div>
 
@@ -32,6 +38,15 @@ import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
   graphics={<Email width={IconMedium.width} height={IconMedium.height} />}
   title="Email (preferred)"
   description="imfsiddiqui@yahoo.com"
+  backgroundColor="var(--ifm-color-success-contrast-background)"
+/>
+
+<InfoCardHorizontal
+  to="https://www.linkedin.com/in/imfsiddiqui/"
+  graphics={<LinkedIn width={IconMedium.width} height={IconMedium.height} />}
+  title="LinkedIn (preferred)"
+  description="in/imfsiddiqui"
+  backgroundColor="var(--ifm-color-success-contrast-background)"
 />
 
 <InfoCardHorizontal
@@ -48,13 +63,6 @@ import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
   }
   title="GitHub"
   description="@imfsiddiqui"
-/>
-
-<InfoCardHorizontal
-  to="https://www.linkedin.com/in/imfsiddiqui/"
-  graphics={<LinkedIn width={IconMedium.width} height={IconMedium.height} />}
-  title="LinkedIn"
-  description="in/imfsiddiqui"
 />
 
 <InfoCardHorizontal

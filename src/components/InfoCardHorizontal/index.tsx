@@ -7,6 +7,7 @@ interface InfoCardHorizontalProps {
   graphics: React.ReactNode;
   title: string;
   description: string;
+  backgroundColor?: string;
 }
 
 const InfoCardHorizontal: React.FC<InfoCardHorizontalProps> = ({
@@ -14,9 +15,14 @@ const InfoCardHorizontal: React.FC<InfoCardHorizontalProps> = ({
   graphics,
   title,
   description,
+  backgroundColor,
 }) => {
   return (
-    <Link className={styles.card} to={to}>
+    <Link
+      className={styles.card}
+      to={to}
+      style={backgroundColor ? { backgroundColor } : undefined}
+    >
       <div className={styles.content}>
         <div className={styles.graphics}>{graphics}</div>
         <div>

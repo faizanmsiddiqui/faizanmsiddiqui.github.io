@@ -337,40 +337,66 @@ const config: Config = {
         src: logo,
       },
       items: [
-        {
-          position: "left",
-          label: "About",
-          to: "/about",
-        },
+        // {
+        //   position: "left",
+        //   label: "About",
+        //   to: "/about/",
+        // },
         {
           position: "left",
           label: "Blog",
-          to: "/blog",
+          to: "/blog/",
         },
         {
           position: "left",
           label: "Notes",
-          to: "/notes",
+          to: "/notes/",
+          type: "dropdown",
+          items: [
+            {
+              label: "🧑‍💻 Software and System Engineering",
+              to: "/notes/software-and-system-engineering/",
+            },
+            {
+              label: "💻 Programming and Development",
+              to: "/notes/programming-and-development/",
+            },
+            {
+              label: "🎲 Basement",
+              to: "/notes/basement/",
+            },
+          ],
         },
-        {
-          position: "left",
-          label: "Projects",
-          to: "/projects",
-        },
+        // {
+        //   position: "left",
+        //   label: "Projects",
+        //   to: "/projects/",
+        // },
         {
           position: "left",
           label: "Publications",
-          to: "/publications",
+          to: "/publications/",
         },
-        {
-          position: "left",
-          label: "Resume",
-          to: "/resume",
-        },
+        // {
+        //   position: "left",
+        //   label: "Resume",
+        //   to: "/resume/",
+        // },
         {
           position: "left",
           label: "Wonders",
-          to: "/wonders",
+          to: "/wonders/",
+          type: "dropdown",
+          items: [
+            {
+              label: "🧑‍🎨 Design Resources",
+              to: "/wonders/design-resources/",
+            },
+            {
+              label: "🧑‍💻 Development Tools",
+              to: "/wonders/development-tools/",
+            },
+          ],
         },
         {
           position: "right",
@@ -385,7 +411,7 @@ const config: Config = {
         {
           position: "right",
           label: "Socials",
-          to: "/socials",
+          to: "/socials/",
         },
       ],
     },
