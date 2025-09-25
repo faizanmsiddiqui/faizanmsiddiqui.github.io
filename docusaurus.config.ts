@@ -386,6 +386,17 @@ const config: Config = {
           position: "left",
           label: "Wonders",
           to: "/wonders/",
+          type: "dropdown",
+          items: [
+            {
+              label: "🧑‍🎨 Design Resources",
+              to: "/wonders/design-resources/",
+            },
+            {
+              label: "🧑‍💻 Development Tools",
+              to: "/wonders/development-tools/",
+            },
+          ],
         },
         {
           position: "right",
