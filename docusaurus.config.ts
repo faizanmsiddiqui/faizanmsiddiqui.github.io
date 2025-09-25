@@ -337,11 +337,11 @@ const config: Config = {
         src: logo,
       },
       items: [
-        {
-          position: "left",
-          label: "About",
-          to: "/about",
-        },
+        // {
+        //   position: "left",
+        //   label: "About",
+        //   to: "/about",
+        // },
         {
           position: "left",
           label: "Blog",
@@ -351,22 +351,37 @@ const config: Config = {
           position: "left",
           label: "Notes",
           to: "/notes",
+          type: "dropdown",
+          items: [
+            {
+              label: "Software and System Engineering",
+              to: "/notes/software-and-system-engineering",
+            },
+            {
+              label: "Programming and Development",
+              to: "/notes/programming-and-development",
+            },
+            {
+              label: "Basement",
+              to: "/notes/basement",
+            },
+          ],
         },
-        {
-          position: "left",
-          label: "Projects",
-          to: "/projects",
-        },
+        // {
+        //   position: "left",
+        //   label: "Projects",
+        //   to: "/projects",
+        // },
         {
           position: "left",
           label: "Publications",
           to: "/publications",
         },
-        {
-          position: "left",
-          label: "Resume",
-          to: "/resume",
-        },
+        // {
+        //   position: "left",
+        //   label: "Resume",
+        //   to: "/resume",
+        // },
         {
           position: "left",
           label: "Wonders",
