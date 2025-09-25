@@ -40,18 +40,23 @@ fn main() {
     println!("Third element: {}", vector_var[2]);
     println!("Last element: {}", vector_var[vector_var.len() - 1]);
 
+    // Similar to arrays, if vector is empty, accessing the last element with
+    // length - 1  will cause a panic. To avoid that, we can use the `last`
+    // method with `unwrap_or` to provide a default value.
+    println!("Last element: {}", vector_var.last().unwrap_or(&-1));
+
     // Removing the last element from the vector
     vector_var.pop();
     println!("Vector after pop: {:?}", vector_var);
     println!("Vector length after pop: {}", vector_var.len());
-    println!("Last element after pop: {}", vector_var[vector_var.len() - 1]);
+    println!("Last element: {}", vector_var.last().unwrap_or(&-1));
 
     // Removing an element at a specific index
     vector_var.remove(0);
     println!("Vector after removing index 0: {:?}", vector_var);
     println!("Vector length after removing index 0: {}", vector_var.len());
     println!("First element after removing index 0: {}", vector_var[0]);
-    println!("Last element after removing index 0: {}", vector_var[vector_var.len() - 1]);
+    println!("Last element: {}", vector_var.last().unwrap_or(&-1));
 }
 ```
 
@@ -64,7 +69,7 @@ fn main() {
     println!("Vector: {:?}", vector_var);
     println!("Vector length: {}", vector_var.len());
     println!("First element: {}", vector_var[0]);
-    println!("Last element: {}", vector_var[vector_var.len() - 1]);
+    println!("Last element: {}", vector_var.last().unwrap_or(&-1));
 }
 ```
 
@@ -98,6 +103,11 @@ fn main() {
     println!("Second element of slice: {}", slice_var[1]);
     println!("Third element of slice: {}", slice_var[2]);
     println!("Last element of slice: {}", slice_var[slice_var.len() - 1]);
+
+    // If slice is empty, accessing the last element with length - 1  will cause
+    // a panic, similar to arrays and vectors. To avoid that, we can use the
+    // `last` method with `unwrap_or` to provide a default value.
+    println!("Last element of slice: {}", slice_var.last().unwrap_or(&-1));
 }
 ```
 
@@ -115,7 +125,7 @@ fn main() {
     println!("First element of slice: {}", slice_var[0]);
     println!("Second element of slice: {}", slice_var[1]);
     println!("Third element of slice: {}", slice_var[2]);
-    println!("Last element of slice: {}", slice_var[slice_var.len() - 1]);
+    println!("Last element of slice: {}", slice_var.last().unwrap_or(&-1));
 }
 ```
 
