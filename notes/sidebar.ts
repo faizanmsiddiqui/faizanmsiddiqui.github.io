@@ -26,6 +26,7 @@ const sidebar: SidebarsConfig = {
             type: "doc",
             id: "software-and-system-engineering/index",
           },
+          collapsed: false,
           items: [
             {
               type: "category",
@@ -61,25 +62,26 @@ const sidebar: SidebarsConfig = {
             type: "doc",
             id: "programming-and-development/index",
           },
+          collapsed: false,
           items: [
-            {
-              type: "category",
-              label: "Go (Golang)",
-              link: {
-                type: "doc",
-                id: "programming-and-development/go/index",
-              },
-              items: [],
-            },
-            {
-              type: "category",
-              label: "Python",
-              link: {
-                type: "doc",
-                id: "programming-and-development/python/index",
-              },
-              items: [],
-            },
+            // {
+            //   type: "category",
+            //   label: "Go (Golang)",
+            //   link: {
+            //     type: "doc",
+            //     id: "programming-and-development/go/index",
+            //   },
+            //   items: [],
+            // },
+            // {
+            //   type: "category",
+            //   label: "Python",
+            //   link: {
+            //     type: "doc",
+            //     id: "programming-and-development/python/index",
+            //   },
+            //   items: [],
+            // },
             {
               type: "category",
               label: "Rust",
