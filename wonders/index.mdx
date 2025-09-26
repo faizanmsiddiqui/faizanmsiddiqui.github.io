@@ -17,8 +17,13 @@ tags:
   - user-interface
 ---
 
-import { Starstruck } from "@site/src/assets/noto-emoji-unicode-16";
-import { IconExtraLarge } from "@site/src/components/IconSize";
+import {
+  ArtistPalette,
+  Starstruck,
+  Toolbox,
+} from "@site/src/assets/noto-emoji-unicode-16";
+import { IconExtraLarge, IconMedium } from "@site/src/components/IconSize";
+import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 
 <div className="center-image-and-caption">
 
@@ -31,6 +36,18 @@ import { IconExtraLarge } from "@site/src/components/IconSize";
 Welcome to the Wonders, here you will find list of wonderful stuff, can be apps,
 tools, libraries, or anything that is useful.
 
-- [**Wonders**](/wonders/)
-  - [**Design Resources**](/wonders/design-resources/)
-  - [**Development Tools**](/wonders/development-tools/)
+<InfoCardHorizontal
+  to="/wonders/design-resources/"
+  graphics={
+    <ArtistPalette width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="Design Resources"
+  description="A collection of design resources including icons, graphics, and more."
+/>
+
+<InfoCardHorizontal
+  to="/wonders/development-tools/"
+  graphics={<Toolbox width={IconMedium.width} height={IconMedium.height} />}
+  title="Development Tools"
+  description="A collection of development tools including text editors, IDEs, and more."
+/>

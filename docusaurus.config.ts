@@ -53,7 +53,7 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "about",
-        path: "pages/about",
+        path: "about",
         routeBasePath: "/about",
         showLastUpdateTime: true,
       },
@@ -62,7 +62,7 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "attributions",
-        path: "pages/attributions",
+        path: "attributions",
         routeBasePath: "/attributions",
         showLastUpdateTime: true,
       },
@@ -71,7 +71,7 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "home",
-        path: "pages/home",
+        path: "home",
         routeBasePath: "/",
         showLastUpdateTime: true,
       },
@@ -79,17 +79,8 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-pages",
       {
-        id: "notes",
-        path: "pages/notes",
-        routeBasePath: "/notes",
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-pages",
-      {
         id: "projects",
-        path: "pages/projects",
+        path: "projects",
         routeBasePath: "/projects",
         showLastUpdateTime: true,
       },
@@ -98,7 +89,7 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "publications",
-        path: "pages/publications",
+        path: "publications",
         routeBasePath: "/publications",
         showLastUpdateTime: true,
       },
@@ -107,7 +98,7 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "resume",
-        path: "pages/resume",
+        path: "resume",
         routeBasePath: "/resume",
         showLastUpdateTime: true,
       },
@@ -116,7 +107,7 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "socials",
-        path: "pages/socials",
+        path: "socials",
         routeBasePath: "/socials",
         showLastUpdateTime: true,
       },
@@ -146,128 +137,10 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "artificial-intelligence-and-data-science",
-        path: "notes/artificial-intelligence-and-data-science",
-        routeBasePath: "/notes/artificial-intelligence-and-data-science",
-        sidebarPath: require.resolve(
-          "./notes/artificial-intelligence-and-data-science/sidebar.ts"
-        ),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "basement",
-        path: "notes/basement",
-        routeBasePath: "/notes/basement",
-        sidebarPath: require.resolve("./notes/basement/sidebar.ts"),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "communication-and-networking",
-        path: "notes/communication-and-networking",
-        routeBasePath: "/notes/communication-and-networking",
-        sidebarPath: require.resolve(
-          "./notes/communication-and-networking/sidebar.ts"
-        ),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "design-and-human-technology-interaction",
-        path: "notes/design-and-human-technology-interaction",
-        routeBasePath: "/notes/design-and-human-technology-interaction",
-        sidebarPath: require.resolve(
-          "./notes/design-and-human-technology-interaction/sidebar.ts"
-        ),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "documentation-and-writing",
-        path: "notes/documentation-and-writing",
-        routeBasePath: "/notes/documentation-and-writing",
-        sidebarPath: require.resolve(
-          "./notes/documentation-and-writing/sidebar.ts"
-        ),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "embedded-systems-internet-of-things-and-robotics",
-        path: "notes/embedded-systems-internet-of-things-and-robotics",
-        routeBasePath:
-          "/notes/embedded-systems-internet-of-things-and-robotics",
-        sidebarPath: require.resolve(
-          "./notes/embedded-systems-internet-of-things-and-robotics/sidebar.ts"
-        ),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "game-gamification-and-game-studies",
-        path: "notes/game-gamification-and-game-studies",
-        routeBasePath: "/notes/game-gamification-and-game-studies",
-        sidebarPath: require.resolve(
-          "./notes/game-gamification-and-game-studies/sidebar.ts"
-        ),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "information-system-and-security",
-        path: "notes/information-system-and-security",
-        routeBasePath: "/notes/information-system-and-security",
-        sidebarPath: require.resolve(
-          "./notes/information-system-and-security/sidebar.ts"
-        ),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "programming-and-development",
-        path: "notes/programming-and-development",
-        routeBasePath: "/notes/programming-and-development",
-        sidebarPath: require.resolve(
-          "./notes/programming-and-development/sidebar.ts"
-        ),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "software-and-system-engineering",
-        path: "notes/software-and-system-engineering",
-        routeBasePath: "/notes/software-and-system-engineering",
-        sidebarPath: require.resolve(
-          "./notes/software-and-system-engineering/sidebar.ts"
-        ),
+        id: "notes",
+        path: "notes",
+        routeBasePath: "/notes",
+        sidebarPath: require.resolve("./notes/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -317,6 +190,11 @@ const config: Config = {
       defaultMode: "dark",
       disableSwitch: false,
       respectPrefersColorScheme: true,
+    },
+    docs: {
+      sidebar: {
+        autoCollapseCategories: true,
+      },
     },
     prism: {
       theme: prismThemes.github,
@@ -389,11 +267,11 @@ const config: Config = {
           type: "dropdown",
           items: [
             {
-              label: "🧑‍🎨 Design Resources",
+              label: "🎨 Design Resources",
               to: "/wonders/design-resources/",
             },
             {
-              label: "🧑‍💻 Development Tools",
+              label: "🧰 Development Tools",
               to: "/wonders/development-tools/",
             },
           ],
