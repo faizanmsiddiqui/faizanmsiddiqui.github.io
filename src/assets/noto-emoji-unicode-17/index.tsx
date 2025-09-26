@@ -1,5 +1,6 @@
 import AlienMonster from "./emoji_u1f47e.svg";
 import ArtistDefault from "./emoji_u1f9d1_200d_1f3a8.svg";
+import ArtistPalette from "./emoji_u1f3a8.svg";
 import BookmarkTabs from "./emoji_u1f4d1.svg";
 import Books from "./emoji_u1f4da.svg";
 import Brain from "./emoji_u1f9e0.svg";
@@ -12,8 +13,10 @@ import Email from "./emoji_u1f4e7.svg";
 import GameDie from "./emoji_u1f3b2.svg";
 import GlobeWithMeridians from "./emoji_u1f310.svg";
 import GlowingStar from "./emoji_u1f31f.svg";
+import HammerAndWrench from "./emoji_u1f6e0.svg";
 import Handshake from "./emoji_u1f91d.svg";
 import Herb from "./emoji_u1f33f.svg";
+import HighVoltage from "./emoji_u26a1.svg";
 import Laptop from "./emoji_u1f4bb.svg";
 import LightBulb from "./emoji_u1f4a1.svg";
 import Memo from "./emoji_u1f4dd.svg";
@@ -38,6 +41,7 @@ import Starstruck from "./emoji_u1f929.svg";
 import TechnologistDefault from "./emoji_u1f9d1_200d_1f4bb.svg";
 import TeddyBear from "./emoji_u1f9f8.svg";
 import Telephone from "./emoji_u260e.svg";
+import Toolbox from "./emoji_u1f9f0.svg";
 import Trophy from "./emoji_u1f3c6.svg";
 import VideoGame from "./emoji_u1f3ae.svg";
 import Whale from "./emoji_u1f40b.svg";
@@ -46,6 +50,7 @@ import WritingHandDefault from "./emoji_u270d.svg";
 export {
   AlienMonster,
   ArtistDefault,
+  ArtistPalette,
   BookmarkTabs,
   Books,
   Brain,
@@ -58,8 +63,10 @@ export {
   GameDie,
   GlobeWithMeridians,
   GlowingStar,
+  HammerAndWrench,
   Handshake,
   Herb,
+  HighVoltage,
   Laptop,
   LightBulb,
   Memo,
@@ -84,6 +91,7 @@ export {
   TechnologistDefault,
   TeddyBear,
   Telephone,
+  Toolbox,
   Trophy,
   VideoGame,
   Whale,
