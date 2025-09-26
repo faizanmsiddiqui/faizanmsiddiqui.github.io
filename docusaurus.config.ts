@@ -53,7 +53,7 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "about",
-        path: "pages/about",
+        path: "about",
         routeBasePath: "/about",
         showLastUpdateTime: true,
       },
@@ -62,7 +62,7 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "attributions",
-        path: "pages/attributions",
+        path: "attributions",
         routeBasePath: "/attributions",
         showLastUpdateTime: true,
       },
@@ -71,7 +71,7 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "home",
-        path: "pages/home",
+        path: "home",
         routeBasePath: "/",
         showLastUpdateTime: true,
       },
@@ -80,7 +80,7 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "projects",
-        path: "pages/projects",
+        path: "projects",
         routeBasePath: "/projects",
         showLastUpdateTime: true,
       },
@@ -89,7 +89,7 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "publications",
-        path: "pages/publications",
+        path: "publications",
         routeBasePath: "/publications",
         showLastUpdateTime: true,
       },
@@ -98,7 +98,7 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "resume",
-        path: "pages/resume",
+        path: "resume",
         routeBasePath: "/resume",
         showLastUpdateTime: true,
       },
@@ -107,7 +107,7 @@ const config: Config = {
       "@docusaurus/plugin-content-pages",
       {
         id: "socials",
-        path: "pages/socials",
+        path: "socials",
         routeBasePath: "/socials",
         showLastUpdateTime: true,
       },
