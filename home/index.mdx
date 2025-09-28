@@ -2,16 +2,32 @@
 title: Faizan Siddiqui
 description:
   I'm Faizan Siddiqui, a passionate engineer and tech enthusiast. Welcome to my
-  personal website, where I share my thoughts, projects, writings, and more.
+  personal website, where I share my journey, thoughts, writings, and more.
   Explore the site to learn more about me and my work, and feel free to connect!
 date: 2025-09-25T16:51:47Z
 hide_table_of_contents: true
 ---
 
 import ProfilePicture from "/images/profile.png";
+import {
+  BookmarkTabs,
+  Books,
+  Email,
+  Telephone,
+  WritingHandDefault,
+} from "@site/src/assets/noto-emoji-unicode-16";
+import { LinkedIn } from "@site/src/assets/coloured-icons";
+import { IconMedium } from "@site/src/components/IconSize";
+import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 import styles from "./styles.module.css";
 
 <div className="center-content">
+
+<div className={styles.banner}>
+
+# Faizan Siddiqui
+
+</div>
 
 <div className="center-image-and-caption">
 
@@ -19,10 +35,82 @@ import styles from "./styles.module.css";
 
 </div>
 
+Hello, I'm **Faizan Siddiqui**, an engineer and researcher based in **Finland**.
+Welcome to my personal corner on the web, where I share my journey, writings,
+and thoughts on technology, life, and more. Whether you're here to explore my
+work, read my writings, or simply learn a bit about me, I hope you find
+something interesting and inspiring.
+
+With around **10 years of experience**, I've worked in Software and System
+Engineering, DevOps and Infrastructure, Full-Stack Web Development, Information
+Security, Embedded Systems, and Multimedia. I enjoy designing, building, and
+securing solutions that make a difference.
+
+I hold a **master's degree in Computer Science** and am currently pursuing a
+second **master's degree in Information Security**. I believe in learning as a
+lifelong journey, and I enjoy sharing my experience and insights along the way.
+
+Thank you for visiting. Feel free to browse around, explore about me and my
+writings: [**Blog**](/blog/) and [**Notes**](/notes/), and connect with me via
+email at **[imfsiddiqui@yahoo.com](mailto:imfsiddiqui@yahoo.com)** or on
+[**LinkedIn**](https://www.linkedin.com/in/imfsiddiqui).
+
 <div className={styles.banner}>
 
-Faizan Siddiqui
+## Navigation Guide
 
 </div>
+
+<InfoCardHorizontal
+  to="/blog/"
+  graphics={
+    <WritingHandDefault width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="Blog"
+  description="Thoughts, stories, opinions, and ideas on a variety of topics."
+/>
+
+<InfoCardHorizontal
+  to="/notes/"
+  graphics={<Books width={IconMedium.width} height={IconMedium.height} />}
+  title="Notes"
+  description="Technical articles, how-to guides, tips, tricks, and tutorials."
+/>
+
+<InfoCardHorizontal
+  to="/publications/"
+  graphics={
+    <BookmarkTabs width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="Publications"
+  description="Research papers, articles, and other scholarly works."
+/>
+
+<InfoCardHorizontal
+  to="/socials/"
+  graphics={<Telephone width={IconMedium.width} height={IconMedium.height} />}
+  title="Socials"
+  description="Connect with me on various social media platforms."
+/>
+
+<div className={styles.banner}>
+
+## Contact
+
+</div>
+
+<InfoCardHorizontal
+  to="mailto:imfsiddiqui@yahoo.com"
+  graphics={<Email width={IconMedium.width} height={IconMedium.height} />}
+  title="Email"
+  description="imfsiddiqui@yahoo.com"
+/>
+
+<InfoCardHorizontal
+  to="https://www.linkedin.com/in/imfsiddiqui/"
+  graphics={<LinkedIn width={IconMedium.width} height={IconMedium.height} />}
+  title="LinkedIn"
+  description="in/imfsiddiqui"
+/>
 
 </div>
