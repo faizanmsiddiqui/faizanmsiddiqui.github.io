@@ -165,6 +165,19 @@ const sidebar: SidebarsConfig = {
         // },
         {
           type: "category",
+          label: "Wonders",
+          link: {
+            type: "doc",
+            id: "wonders/index",
+          },
+          collapsed: false,
+          items: [
+            "wonders/design-resources/index",
+            "wonders/development-tools/index",
+          ],
+        },
+        {
+          type: "category",
           label: "Basement",
           link: {
             type: "doc",
@@ -175,18 +188,6 @@ const sidebar: SidebarsConfig = {
             "basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/index",
             "basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/index",
             "basement/virtualbox-on-windows-11-beginners-guide/index",
-          ],
-        },
-        {
-          type: "category",
-          label: "Wonders",
-          link: {
-            type: "doc",
-            id: "wonders/index",
-          },
-          items: [
-            "wonders/design-resources/index",
-            "wonders/development-tools/index",
           ],
         },
       ],
