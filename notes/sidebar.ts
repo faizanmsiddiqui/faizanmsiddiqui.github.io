@@ -165,6 +165,19 @@ const sidebar: SidebarsConfig = {
         // },
         {
           type: "category",
+          label: "Wonders",
+          link: {
+            type: "doc",
+            id: "wonders/index",
+          },
+          collapsed: false,
+          items: [
+            "wonders/design-resources/index",
+            "wonders/development-tools/index",
+          ],
+        },
+        {
+          type: "category",
           label: "Basement",
           link: {
             type: "doc",
