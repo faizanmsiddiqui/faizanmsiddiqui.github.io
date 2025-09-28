@@ -7,7 +7,9 @@ date: 2025-09-22T11:23:15Z
 ---
 
 import { TechnologistDefault } from "@site/src/assets/noto-emoji-unicode-17";
-import { IconExtraLarge } from "@site/src/components/IconSize";
+import { GitOriginal, PowerShellOriginal } from "@site/src/assets/devicon";
+import { IconExtraLarge, IconMedium } from "@site/src/components/IconSize";
+import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 
 <div className="center-image-and-caption">
 
@@ -23,10 +25,18 @@ import { IconExtraLarge } from "@site/src/components/IconSize";
 Principles, methodologies, best practices, and tools for designing, building,
 and maintaining software systems.
 
-- [**Git**](/notes/software-and-system-engineering/git/)
-  - [**What is Git?**](/notes/software-and-system-engineering/git/what-is-git/)
-  - [**Hello, Git!**](/notes/software-and-system-engineering/git/hello-git/)
-  - [**Commands Cheat Sheet**](/notes/software-and-system-engineering/git/commands-cheat-sheet/)
-  - [**Glossary**](/notes/software-and-system-engineering/git/glossary/)
-- [**PowerShell**](/notes/software-and-system-engineering/powershell/)
-  - [**Bash to PowerShell: Commands Cheat Sheet**](/notes/software-and-system-engineering/powershell/bash-to-powershell-commands-cheat-sheet/)
+<InfoCardHorizontal
+  to="/notes/software-and-system-engineering/git/"
+  graphics={<GitOriginal width={IconMedium.width} height={IconMedium.height} />}
+  title="Git"
+  description="A collection of Git resources and guides."
+/>
+
+<InfoCardHorizontal
+  to="/notes/software-and-system-engineering/powershell/"
+  graphics={
+    <PowerShellOriginal width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="PowerShell"
+  description="A collection of PowerShell resources and guides."
+/>
