@@ -1,4 +1,5 @@
 .banner {
+  margin-top: 2rem;
   border-radius: 1rem;
   background: var(--ifm-color-primary);
   text-align: center;
