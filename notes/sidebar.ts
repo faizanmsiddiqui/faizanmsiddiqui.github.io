@@ -177,6 +177,18 @@ const sidebar: SidebarsConfig = {
             "basement/virtualbox-on-windows-11-beginners-guide/index",
           ],
         },
+        {
+          type: "category",
+          label: "Wonders",
+          link: {
+            type: "doc",
+            id: "wonders/index",
+          },
+          items: [
+            "wonders/design-resources/index",
+            "wonders/development-tools/index",
+          ],
+        },
       ],
     },
   ],
