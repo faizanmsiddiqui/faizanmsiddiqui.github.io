@@ -146,17 +146,6 @@ const config: Config = {
       },
     ],
     [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "wonders",
-        path: "wonders",
-        routeBasePath: "/wonders",
-        sidebarPath: require.resolve("./wonders/sidebar.ts"),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
@@ -260,22 +249,6 @@ const config: Config = {
         //   label: "Resume",
         //   to: "/resume/",
         // },
-        {
-          position: "left",
-          label: "Wonders",
-          to: "/wonders/",
-          type: "dropdown",
-          items: [
-            {
-              label: "🎨 Design Resources",
-              to: "/wonders/design-resources/",
-            },
-            {
-              label: "🧰 Development Tools",
-              to: "/wonders/development-tools/",
-            },
-          ],
-        },
         {
           position: "right",
           label: "Email",
