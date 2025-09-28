@@ -172,8 +172,24 @@ const sidebar: SidebarsConfig = {
           },
           collapsed: false,
           items: [
-            "wonders/design-resources/index",
-            "wonders/development-tools/index",
+            {
+              type: "category",
+              label: "Design Resources",
+              link: {
+                type: "doc",
+                id: "wonders/design-resources/index",
+              },
+              items: ["wonders/design-resources/emoji-sets/index"],
+            },
+            {
+              type: "category",
+              label: "Development Tools",
+              link: {
+                type: "doc",
+                id: "wonders/development-tools/index",
+              },
+              items: ["wonders/development-tools/text-editors/index"],
+            },
           ],
         },
         {

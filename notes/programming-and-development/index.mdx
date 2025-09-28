@@ -6,12 +6,14 @@ description:
 date: 2025-09-22T10:29:40Z
 ---
 
-import { Laptop } from "@site/src/assets/noto-emoji-unicode-16";
-import { IconExtraLarge } from "@site/src/components/IconSize";
+import { LaptopFlat } from "@site/src/assets/fluentui-emoji";
+import { RustProgrammingLanguageGradient } from "@site/src/assets/icons8";
+import { IconExtraLarge, IconMedium } from "@site/src/components/IconSize";
+import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 
 <div className="center-image-and-caption">
 
-<Laptop width={IconExtraLarge.width} height={IconExtraLarge.height} />
+<LaptopFlat width={IconExtraLarge.width} height={IconExtraLarge.height} />
 
 </div>
 
@@ -20,11 +22,14 @@ import { IconExtraLarge } from "@site/src/components/IconSize";
 Languages, frameworks, concepts, and tools for writing, testing, and maintaining
 code.
 
-- [**Go (Golang)**](/notes/programming-and-development/go/)
-- [**Python**](/notes/programming-and-development/python/)
-- [**Rust**](/notes/programming-and-development/rust/)
-  - [**What is Rust?**](/notes/programming-and-development/rust/what-is-rust/)
-  - [**Hello, Rust!**](/notes/programming-and-development/rust/hello-rust/)
-  - [**Comments**](/notes/programming-and-development/rust/comments/)
-  - [**Data Types**](/notes/programming-and-development/rust/data-types/)
-  - [**More Data Types**](/notes/programming-and-development/rust/more-data-types/)
+<InfoCardHorizontal
+  to="/notes/programming-and-development/rust/"
+  graphics={
+    <RustProgrammingLanguageGradient
+      width={IconMedium.width}
+      height={IconMedium.height}
+    />
+  }
+  title="Rust"
+  description="A collection of Rust resources and guides."
+/>
