@@ -229,6 +229,10 @@ const config: Config = {
               to: "/notes/programming-and-development/",
             },
             {
+              label: "🤩 Wonders",
+              to: "/notes/wonders/",
+            },
+            {
               label: "🎲 Basement",
               to: "/notes/basement/",
             },
