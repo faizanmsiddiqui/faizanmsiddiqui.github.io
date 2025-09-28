@@ -9,19 +9,29 @@ hide_table_of_contents: true
 ---
 
 import ProfilePicture from "/images/profile.png";
+import {
+  BookmarkTabs,
+  Books,
+  Email,
+  Telephone,
+  WritingHandDefault,
+} from "@site/src/assets/noto-emoji-unicode-16";
+import { LinkedIn } from "@site/src/assets/coloured-icons";
+import { IconMedium } from "@site/src/components/IconSize";
+import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 import styles from "./styles.module.css";
 
 <div className="center-content">
 
-<div className="center-image-and-caption">
+<div className={styles.banner}>
 
-<img alt="Profile Picture" src={ProfilePicture} width="200" />
+# Faizan Siddiqui
 
 </div>
 
-<div className={styles.banner}>
+<div className="center-image-and-caption">
 
-Faizan Siddiqui
+<img alt="Profile Picture" src={ProfilePicture} width="200" />
 
 </div>
 
@@ -44,5 +54,63 @@ Thank you for visiting. Feel free to browse around, explore about me and my
 writings: [**Blog**](/blog/) and [**Notes**](/notes/), and connect with me via
 email at **[imfsiddiqui@yahoo.com](mailto:imfsiddiqui@yahoo.com)** or on
 [**LinkedIn**](https://www.linkedin.com/in/imfsiddiqui).
+
+<div className={styles.banner}>
+
+## Navigation Guide
+
+</div>
+
+<InfoCardHorizontal
+  to="/blog/"
+  graphics={
+    <WritingHandDefault width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="Blog"
+  description="Thoughts, stories, opinions, and ideas on a variety of topics."
+/>
+
+<InfoCardHorizontal
+  to="/notes/"
+  graphics={<Books width={IconMedium.width} height={IconMedium.height} />}
+  title="Notes"
+  description="Technical articles, how-to guides, tips, tricks, and tutorials."
+/>
+
+<InfoCardHorizontal
+  to="/publications/"
+  graphics={
+    <BookmarkTabs width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="Publications"
+  description="Research papers, articles, and other scholarly works."
+/>
+
+<InfoCardHorizontal
+  to="/socials/"
+  graphics={<Telephone width={IconMedium.width} height={IconMedium.height} />}
+  title="Socials"
+  description="Connect with me on various social media platforms."
+/>
+
+<div className={styles.banner}>
+
+## Contact
+
+</div>
+
+<InfoCardHorizontal
+  to="mailto:imfsiddiqui@yahoo.com"
+  graphics={<Email width={IconMedium.width} height={IconMedium.height} />}
+  title="Email"
+  description="imfsiddiqui@yahoo.com"
+/>
+
+<InfoCardHorizontal
+  to="https://www.linkedin.com/in/imfsiddiqui/"
+  graphics={<LinkedIn width={IconMedium.width} height={IconMedium.height} />}
+  title="LinkedIn"
+  description="in/imfsiddiqui"
+/>
 
 </div>
