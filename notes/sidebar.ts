@@ -117,15 +117,26 @@ const sidebar: SidebarsConfig = {
         //   },
         //   items: [],
         // },
-        // {
-        //   type: "category",
-        //   label: "Communication and Networking",
-        //   link: {
-        //     type: "doc",
-        //     id: "communication-and-networking/index",
-        //   },
-        //   items: [],
-        // },
+        {
+          type: "category",
+          label: "Communication and Networking",
+          link: {
+            type: "doc",
+            id: "communication-and-networking/index",
+          },
+          collapsed: false,
+          items: [
+            {
+              type: "category",
+              label: "Hypertext Transfer Protocol (HTTP)",
+              link: {
+                type: "doc",
+                id: "communication-and-networking/hypertext-transfer-protocol/index",
+              },
+              items: [],
+            },
+          ],
+        },
         // {
         //   type: "category",
         //   label: "Design and Human-Technology Interaction",
