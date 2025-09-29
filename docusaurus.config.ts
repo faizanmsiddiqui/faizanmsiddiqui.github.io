@@ -229,6 +229,10 @@ const config: Config = {
               to: "/notes/programming-and-development/",
             },
             {
+              label: "📡 Communication and Networking",
+              to: "/notes/communication-and-networking/",
+            },
+            {
               label: "🤩 Wonders",
               to: "/notes/wonders/",
             },
