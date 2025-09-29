@@ -133,7 +133,9 @@ const sidebar: SidebarsConfig = {
                 type: "doc",
                 id: "communication-and-networking/hypertext-transfer-protocol/index",
               },
-              items: [],
+              items: [
+                "communication-and-networking/hypertext-transfer-protocol/what-is-http/index",
+              ],
             },
           ],
         },
