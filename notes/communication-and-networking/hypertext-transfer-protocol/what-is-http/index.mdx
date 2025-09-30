@@ -10,8 +10,8 @@ Hypertext Transfer Protocol (HTTP) is the foundational communication protocol
 used on the World Wide Web. It defines how messages are formatted and
 transmitted between clients, typically web browsers, and servers hosting web
 content. HTTP is an application-layer protocol built on top of the Transmission
-Control Protocol (TCP) or in the case of HTTP/3, the QUIC transport protocol
-over UDP. Its primary purpose to make web resources like HTML pages, images,
+Control Protocol (TCP) or, in the case of HTTP/3, the QUIC transport protocol
+over UDP. Its primary purpose is to make web resources like HTML pages, images,
 scripts, APIs, and other content accessible and deliverable across networks.
 
 ## Evolution of HTTP
@@ -49,8 +49,8 @@ HTTP follows a request-response model. A client sends an HTTP request to a
 server, which processes the request and returns an HTTP response. The request
 specifies a method, such as `GET` to retrieve data or `POST` to submit data, and
 includes headers that convey metadata. The response includes a status code
-indicating the outcome e.g., `200 OK` for success, `404 Not Found` for missing
-resources along with the requested content or additional information.
+indicating the outcome, e.g., `200 OK` for success, `404 Not Found` for missing
+resources, along with the requested content or additional information.
 
 <div className="center-image-and-caption">
 
@@ -75,7 +75,7 @@ sessions, and tokens are used to preserve state across multiple requests.
 
 :::note
 
-- **Cookies:** Small data pieces stored on the client and sent with requests.
+- **Cookies:** Small pieces of data stored on the client and sent with requests.
   They can hold session identifiers or user preferences.
 - **Sessions:** Server-side tracking linked to a session identifier stored in a
   cookie. Sessions allow servers to maintain user state across multiple
@@ -96,6 +96,6 @@ modern networking.
 
 ## Summary
 
-HTTP is the protocol that powers the web. Its design make it a flexible and
+HTTP is the protocol that powers the web. Its design makes it a flexible and
 widely adopted standard. Through improvements across versions, it continues to
 provide the backbone for efficient communication across the Internet.
