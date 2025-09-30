@@ -1,3 +1,8 @@
+announcement:
+  label: Announcement
+  permalink: /announcement
+  description: Contents related to announcements and important updates.
+
 comparison:
   label: Comparison
   permalink: /comparison
@@ -60,12 +65,27 @@ installation-guide:
   description:
     Contents related to installation guides for various software and systems.
 
+motivation:
+  label: Motivation
+  permalink: /motivation
+  description: Contents related to motivation and inspiration.
+
+news:
+  label: News
+  permalink: /news
+  description: Contents related to news and updates.
+
 open-rmf:
   label: Open-RMF
   permalink: /open-rmf
   description:
     Contents related to Open-RMF (Robot Middleware Framework), a framework for
     managing fleets of robots.
+
+personal-note:
+  label: Personal Note
+  permalink: /personal-note
+  description: Contents related to personal notes, reflections, and thoughts.
 
 podman:
   label: Podman
