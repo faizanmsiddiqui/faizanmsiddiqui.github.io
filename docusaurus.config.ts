@@ -250,6 +250,11 @@ const config: Config = {
         //   to: "/resume/",
         // },
         {
+          position: "left",
+          label: "Wonders",
+          to: "/wonders/",
+        },
+        {
           position: "right",
           label: "Email",
           href: "mailto:imfsiddiqui@yahoo.com",
