@@ -218,29 +218,6 @@ const config: Config = {
           position: "left",
           label: "Notes",
           to: "/notes/",
-          type: "dropdown",
-          items: [
-            {
-              label: "🧑‍💻 Software and System Engineering",
-              to: "/notes/software-and-system-engineering/",
-            },
-            {
-              label: "💻 Programming and Development",
-              to: "/notes/programming-and-development/",
-            },
-            {
-              label: "📡 Communication and Networking",
-              to: "/notes/communication-and-networking/",
-            },
-            {
-              label: "🤩 Wonders",
-              to: "/notes/wonders/",
-            },
-            {
-              label: "🎲 Basement",
-              to: "/notes/basement/",
-            },
-          ],
         },
         // {
         //   position: "left",
