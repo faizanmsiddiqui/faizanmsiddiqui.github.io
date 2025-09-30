@@ -95,15 +95,6 @@ const config: Config = {
       },
     ],
     [
-      "@docusaurus/plugin-content-pages",
-      {
-        id: "socials",
-        path: "socials",
-        routeBasePath: "/socials",
-        showLastUpdateTime: true,
-      },
-    ],
-    [
       "@docusaurus/plugin-content-blog",
       {
         id: "blog",
@@ -143,6 +134,17 @@ const config: Config = {
         path: "publications",
         routeBasePath: "/publications",
         sidebarPath: require.resolve("./publications/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "socials",
+        path: "socials",
+        routeBasePath: "/socials",
+        sidebarPath: require.resolve("./socials/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
