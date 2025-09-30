@@ -5,7 +5,6 @@ description:
   personal website, where I share my journey, thoughts, writings, and more.
   Explore the site to learn more about me and my work, and feel free to connect!
 date: 2025-09-25T16:51:47Z
-hide_table_of_contents: true
 ---
 
 import ProfilePicture from "/images/profile.png";
@@ -13,6 +12,7 @@ import {
   BookmarkTabs,
   Books,
   Email,
+  GlowingStar,
   Telephone,
   WritingHandDefault,
 } from "@site/src/assets/noto-emoji-unicode-16";
@@ -20,8 +20,6 @@ import { LinkedIn } from "@site/src/assets/coloured-icons";
 import { IconMedium } from "@site/src/components/IconSize";
 import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 import styles from "./styles.module.css";
-
-<div className="center-content">
 
 <div className={styles.banner}>
 
@@ -61,6 +59,8 @@ email at **[imfsiddiqui@yahoo.com](mailto:imfsiddiqui@yahoo.com)** or on
 
 </div>
 
+Explore different sections of this website through the links below:
+
 <InfoCardHorizontal
   to="/blog/"
   graphics={
@@ -93,11 +93,21 @@ email at **[imfsiddiqui@yahoo.com](mailto:imfsiddiqui@yahoo.com)** or on
   description="Connect with me on various social media platforms."
 />
 
+<InfoCardHorizontal
+  to="/wonders/"
+  graphics={<GlowingStar width={IconMedium.width} height={IconMedium.height} />}
+  title="Wonders"
+  description="A collection of wonderful tools, apps, libraries, and resources."
+/>
+
 <div className={styles.banner}>
 
 ## Contact
 
 </div>
+
+Stay in touch through the following channels or check [**Socials**](/socials/)
+page for more options:
 
 <InfoCardHorizontal
   to="mailto:imfsiddiqui@yahoo.com"
@@ -112,5 +122,3 @@ email at **[imfsiddiqui@yahoo.com](mailto:imfsiddiqui@yahoo.com)** or on
   title="LinkedIn"
   description="in/imfsiddiqui"
 />
-
-</div>

@@ -27,9 +27,11 @@ const config: Config = {
   },
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "throw",
 
   markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "throw",
+    },
     mermaid: true,
   },
   themes: ["@docusaurus/theme-mermaid"],
@@ -70,15 +72,6 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-pages",
       {
-        id: "home",
-        path: "home",
-        routeBasePath: "/",
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-pages",
-      {
         id: "projects",
         path: "projects",
         routeBasePath: "/projects",
@@ -88,27 +81,9 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-pages",
       {
-        id: "publications",
-        path: "publications",
-        routeBasePath: "/publications",
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-pages",
-      {
         id: "resume",
         path: "resume",
         routeBasePath: "/resume",
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-pages",
-      {
-        id: "socials",
-        path: "socials",
-        routeBasePath: "/socials",
         showLastUpdateTime: true,
       },
     ],
@@ -137,10 +112,54 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "home",
+        path: "home",
+        routeBasePath: "/",
+        sidebarPath: require.resolve("./home/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "notes",
         path: "notes",
         routeBasePath: "/notes",
         sidebarPath: require.resolve("./notes/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "publications",
+        path: "publications",
+        routeBasePath: "/publications",
+        sidebarPath: require.resolve("./publications/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "socials",
+        path: "socials",
+        routeBasePath: "/socials",
+        sidebarPath: require.resolve("./socials/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "wonders",
+        path: "wonders",
+        routeBasePath: "/wonders",
+        sidebarPath: require.resolve("./wonders/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -218,29 +237,6 @@ const config: Config = {
           position: "left",
           label: "Notes",
           to: "/notes/",
-          type: "dropdown",
-          items: [
-            {
-              label: "🧑‍💻 Software and System Engineering",
-              to: "/notes/software-and-system-engineering/",
-            },
-            {
-              label: "💻 Programming and Development",
-              to: "/notes/programming-and-development/",
-            },
-            {
-              label: "📡 Communication and Networking",
-              to: "/notes/communication-and-networking/",
-            },
-            {
-              label: "🤩 Wonders",
-              to: "/notes/wonders/",
-            },
-            {
-              label: "🎲 Basement",
-              to: "/notes/basement/",
-            },
-          ],
         },
         // {
         //   position: "left",
@@ -257,6 +253,11 @@ const config: Config = {
         //   label: "Resume",
         //   to: "/resume/",
         // },
+        {
+          position: "left",
+          label: "Wonders",
+          to: "/wonders/",
+        },
         {
           position: "right",
           label: "Email",
