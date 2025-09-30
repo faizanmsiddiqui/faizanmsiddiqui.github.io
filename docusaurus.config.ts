@@ -150,6 +150,17 @@ const config: Config = {
       },
     ],
     [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "wonders",
+        path: "wonders",
+        routeBasePath: "/wonders",
+        sidebarPath: require.resolve("./wonders/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
