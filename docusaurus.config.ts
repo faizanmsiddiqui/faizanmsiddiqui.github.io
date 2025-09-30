@@ -70,15 +70,6 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-pages",
       {
-        id: "home",
-        path: "home",
-        routeBasePath: "/",
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-pages",
-      {
         id: "projects",
         path: "projects",
         routeBasePath: "/projects",
@@ -114,6 +105,17 @@ const config: Config = {
         onInlineTags: "warn",
         onInlineAuthors: "warn",
         onUntruncatedBlogPosts: "warn",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "home",
+        path: "home",
+        routeBasePath: "/",
+        sidebarPath: require.resolve("./home/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
       },
     ],
     [
