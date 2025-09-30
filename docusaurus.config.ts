@@ -88,15 +88,6 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-pages",
       {
-        id: "publications",
-        path: "publications",
-        routeBasePath: "/publications",
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-pages",
-      {
         id: "resume",
         path: "resume",
         routeBasePath: "/resume",
@@ -141,6 +132,17 @@ const config: Config = {
         path: "notes",
         routeBasePath: "/notes",
         sidebarPath: require.resolve("./notes/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "publications",
+        path: "publications",
+        routeBasePath: "/publications",
+        sidebarPath: require.resolve("./publications/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
