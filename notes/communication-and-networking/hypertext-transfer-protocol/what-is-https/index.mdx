@@ -55,7 +55,7 @@ sequenceDiagram
     Client->>Server: Encrypted Finished
     Server->>Client: ChangeCipherSpec
     Server->>Client: Encrypted Finished
-    Note over Client,Server: Handshake complete secure channel established
+    Note over Client,Server: Handshake completed and secure channel established
     Client->>Server: HTTPS request (encrypted HTTP)
     Server-->>Client: HTTPS response (encrypted HTTP)
 ```
@@ -104,8 +104,8 @@ flowchart TD
   between client and server.
 - **Authentication:** Certificates verify that the client communicates with the
   intended server.
-- **Trust and SEO Advantage:** Search engines favor HTTPS-enabled websites, and
-  users gain confidence when accessing them.
+- **SEO Advantage:** Search engines favor HTTPS-enabled websites.
+- **Trust:** Users gain confidence when accessing HTTPS-enabled websites.
 
 ## Modern Usage
 
