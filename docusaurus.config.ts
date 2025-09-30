@@ -52,42 +52,6 @@ const config: Config = {
   plugins: [
     "plugin-image-zoom",
     [
-      "@docusaurus/plugin-content-pages",
-      {
-        id: "about",
-        path: "about",
-        routeBasePath: "/about",
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-pages",
-      {
-        id: "attributions",
-        path: "attributions",
-        routeBasePath: "/attributions",
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-pages",
-      {
-        id: "projects",
-        path: "projects",
-        routeBasePath: "/projects",
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-pages",
-      {
-        id: "resume",
-        path: "resume",
-        routeBasePath: "/resume",
-        showLastUpdateTime: true,
-      },
-    ],
-    [
       "@docusaurus/plugin-content-blog",
       {
         id: "blog",
@@ -107,6 +71,28 @@ const config: Config = {
         onInlineTags: "warn",
         onInlineAuthors: "warn",
         onUntruncatedBlogPosts: "warn",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "about",
+        path: "about",
+        routeBasePath: "/about",
+        sidebarPath: require.resolve("./about/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "attributions",
+        path: "attributions",
+        routeBasePath: "/attributions",
+        sidebarPath: require.resolve("./attributions/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -134,10 +120,32 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "projects",
+        path: "projects",
+        routeBasePath: "/projects",
+        sidebarPath: require.resolve("./projects/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "publications",
         path: "publications",
         routeBasePath: "/publications",
         sidebarPath: require.resolve("./publications/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "resume",
+        path: "resume",
+        routeBasePath: "/resume",
+        sidebarPath: require.resolve("./resume/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
