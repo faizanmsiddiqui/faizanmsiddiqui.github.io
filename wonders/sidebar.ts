@@ -9,7 +9,6 @@ const sidebar: SidebarsConfig = {
         type: "doc",
         id: "index",
       },
-      collapsed: false,
       items: [
         {
           type: "category",
