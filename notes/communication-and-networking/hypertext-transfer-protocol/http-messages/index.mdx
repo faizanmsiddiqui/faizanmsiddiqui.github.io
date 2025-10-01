@@ -8,6 +8,19 @@ date: 2025-10-01T10:54:27Z
 
 # HTTP Messages
 
+<div className="center-image-and-caption">
+
+```mermaid
+sequenceDiagram
+  participant Client
+  participant Server
+
+  Client->>+Server: HTTP Request Message (e.g., GET /index.html)
+  Server-->>-Client: HTTP Response Message (200 OK + HTML content)
+```
+
+</div>
+
 HTTP communication relies on **messages**, which fall into two types:
 **requests** sent by clients and **responses** sent by servers. Each message
 consists of a **start line**, a set of **headers**, an optional **body**, and a
@@ -54,6 +67,23 @@ about the request. Common headers include:
 The **body** of the request is optional and is typically included in methods
 like `POST` or `PUT`, where data needs to be sent to the server such as form
 submissions or file uploads.
+
+<div className="center-image-and-caption">
+
+```mermaid
+sequenceDiagram
+  participant Client
+  participant Server
+
+  note over Client, Server: Request (single) with components breakdown
+  Client->>+Server: Request Start Line: Method + Target + Version
+  Client->>Server: Request Headers
+  Client->>Server: Request Body (Optional)
+  note over Client, Server: Response to the request
+  Server-->>-Client: Response
+```
+
+</div>
 
 ### Methods
 
@@ -225,6 +255,23 @@ about the response. Common headers include:
 
 The **body** of the response contains the actual data requested by the client,
 such as an HTML page, JSON data, or a file.
+
+<div className="center-image-and-caption">
+
+```mermaid
+sequenceDiagram
+  participant Client
+  participant Server
+
+  note over Client, Server: Request for the response
+  Client-->>+Server: Request
+  note over Server, Client: Response (single) with components breakdown
+  Server->>Client: Response Start Line: Version + Status Code + Reason Phrase
+  Server->>Client: Response Headers
+  Server->>-Client: Response Body (Optional)
+```
+
+</div>
 
 ### HTTP Version
 
