@@ -15,12 +15,12 @@ consists of a **start line**, a set of **headers**, an optional **body**, and a
 
 <div className="center-text center-table">
 
-|                          |                                                                                                                                                                                     **Description** |
-| :----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| **Start Line**           | Indicates the nature of the message. For requests, it specifies the method, target resource, and protocol version. For responses, it provides the protocol version, status code, and reason phrase. |
-| **Headers**              |                                                                   Contain key-value pairs that convey metadata, such as content type, encoding, caching directives, and authentication information. |
-| **Body**                 |                                                                                                 Carries the actual data, such as HTML, JSON, or files, if present. Not all messages include a body. |
-| **Terminating Sequence** |                                                                                                                                        Marks the end of the message, typically a blank line (CRLF). |
+|                          | **Description**                                                                                                                                                                                     |
+| -----------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|           **Start Line** | Indicates the nature of the message. For requests, it specifies the method, target resource, and protocol version. For responses, it provides the protocol version, status code, and reason phrase. |
+|              **Headers** | Contain key-value pairs that convey metadata, such as content type, encoding, caching directives, and authentication information.                                                                   |
+|                 **Body** | Carries the actual data, such as HTML, JSON, or files, if present. Not all messages include a body.                                                                                                 |
+| **Terminating Sequence** | Marks the end of the message, typically a blank line (CRLF).                                                                                                                                        |
 
 </div>
 
@@ -62,17 +62,17 @@ most common HTTP methods:
 
 <div className="center-text center-table">
 
-| **Method** |                                                         **Description** |
-| :--------- | ----------------------------------------------------------------------: |
-| `GET`      |                                          Retrieve data from the server. |
-| `HEAD`     |            Similar to `GET` but retrieve headers only without the body. |
-| `POST`     |                      Submit data to the server (e.g., form submission). |
-| `PUT`      |                              Update an existing resource on the server. |
-| `PATCH`    |                              Apply partial modifications to a resource. |
-| `DELETE`   |                                      Remove a resource from the server. |
-| `CONNECT`  |     Establish a tunnel to the server identified by the target resource. |
-| `OPTIONS`  |             Describe the communication options for the target resource. |
-| `TRACE`    | Perform a message loop-back test along the path to the target resource. |
+| **Method** | **Description**                                                         |
+| ---------: | :---------------------------------------------------------------------- |
+|      `GET` | Retrieve data from the server.                                          |
+|     `HEAD` | Similar to `GET` but retrieve headers only without the body.            |
+|     `POST` | Submit data to the server (e.g., form submission).                      |
+|      `PUT` | Update an existing resource on the server.                              |
+|    `PATCH` | Apply partial modifications to a resource.                              |
+|   `DELETE` | Remove a resource from the server.                                      |
+|  `CONNECT` | Establish a tunnel to the server identified by the target resource.     |
+|  `OPTIONS` | Describe the communication options for the target resource.             |
+|    `TRACE` | Perform a message loop-back test along the path to the target resource. |
 
 </div>
 
@@ -110,17 +110,17 @@ more. Here are some commonly used request headers:
 
 <div className="center-text center-table">
 
-| **Header**        |                                        **Description** |
-| :---------------- | -----------------------------------------------------: |
-| `Host`            |               Specifies the domain name of the server. |
-| `User-Agent`      |     Identifies the client software making the request. |
-| `Accept`          |      Indicates the media types the client can process. |
-| `Accept-Language` |    Specifies the preferred languages for the response. |
+|        **Header** | **Description**                                        |
+| ----------------: | :----------------------------------------------------- |
+|            `Host` | Specifies the domain name of the server.               |
+|      `User-Agent` | Identifies the client software making the request.     |
+|          `Accept` | Indicates the media types the client can process.      |
+| `Accept-Language` | Specifies the preferred languages for the response.    |
 | `Accept-Encoding` | Indicates the content encodings the client can handle. |
-| `Authorization`   |    Contains credentials for authenticating the client. |
-| `Cookie`          |           Sends cookies from the client to the server. |
-| `Content-Type`    |          Describes the media type of the request body. |
-| `Referer`         |               Specifies the URL of the referring page. |
+|   `Authorization` | Contains credentials for authenticating the client.    |
+|          `Cookie` | Sends cookies from the client to the server.           |
+|    `Content-Type` | Describes the media type of the request body.          |
+|         `Referer` | Specifies the URL of the referring page.               |
 
 </div>
 
@@ -182,13 +182,13 @@ Here is a summary of the main components of an HTTP request:
 
 <div className="center-text center-table">
 
-|                          |                                                                                                                                                                      **Description** |
-| :----------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| **Method**               | Defines the action to be performed. Common methods are `GET` (retrieve data), `POST` (submit data), `PUT` (update data), `DELETE` (remove data), and `HEAD` (retrieve headers only). |
-| **Request Target (URI)** |                                                                                               Identifies the resource on the server. This may be an absolute URL or a relative path. |
-| **HTTP Version**         |                                                                                                          Indicates the protocol version in use, such as HTTP/1.1, HTTP/2, or HTTP/3. |
-| **Headers**              |                 Provide additional context, such as `Host` (server domain), `User-Agent` (client software), `Accept` (preferred response format), and `Authorization` (credentials). |
-| **Body (optional)**      |                                                                                                        Contains data for the server, typically included in `POST` or `PUT` requests. |
+|                          | **Description**                                                                                                                                                                      |
+| -----------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|               **Method** | Defines the action to be performed. Common methods are `GET` (retrieve data), `POST` (submit data), `PUT` (update data), `DELETE` (remove data), and `HEAD` (retrieve headers only). |
+| **Request Target (URI)** | Identifies the resource on the server. This may be an absolute URL or a relative path.                                                                                               |
+|         **HTTP Version** | Indicates the protocol version in use, such as HTTP/1.1, HTTP/2, or HTTP/3.                                                                                                          |
+|              **Headers** | Provide additional context, such as `Host` (server domain), `User-Agent` (client software), `Accept` (preferred response format), and `Authorization` (credentials).                 |
+|      **Body (optional)** | Contains data for the server, typically included in `POST` or `PUT` requests.                                                                                                        |
 
 </div>
 
@@ -239,13 +239,13 @@ request. They are grouped into five categories:
 
 <div className="center-text center-table">
 
-| **Category**  | **Range** |                                             **Description** |
-| :------------ | :-------: | ----------------------------------------------------------: |
-| Informational |  100-199  |                    Request received, continuing processing. |
-| Successful    |  200-299  | Action was successfully received, understood, and accepted. |
-| Redirection   |  300-399  |   Further action needs to be taken to complete the request. |
-| Client Error  |  400-499  |     The request contains bad syntax or cannot be fulfilled. |
-| Server Error  |  500-599  |   The server failed to fulfill an apparently valid request. |
+|  **Category** | **Range** | **Description**                                             |
+| ------------: | :-------: | :---------------------------------------------------------- |
+| Informational |  100-199  | Request received, continuing processing.                    |
+|    Successful |  200-299  | Action was successfully received, understood, and accepted. |
+|   Redirection |  300-399  | Further action needs to be taken to complete the request.   |
+|  Client Error |  400-499  | The request contains bad syntax or cannot be fulfilled.     |
+|  Server Error |  500-599  | The server failed to fulfill an apparently valid request.   |
 
 </div>
 
@@ -253,20 +253,20 @@ Here are some common HTTP status codes:
 
 <div className="center-text center-table">
 
-| **Status Code** |                                                                                        **Description** |
-| :-------------- | -----------------------------------------------------------------------------------------------------: |
-| `200`           |                                                                            The request was successful. |
-| `201`           |                                                 The request was successful and a resource was created. |
-| `204`           |                            The request was successful but there is no content to send in the response. |
-| `301`           |                                        The requested resource has been permanently moved to a new URL. |
-| `302`           |                                      The requested resource is temporarily located at a different URL. |
-| `400`           |                                     The server could not understand the request due to invalid syntax. |
-| `401`           |                                     The client must authenticate itself to get the requested response. |
-| `403`           |                                                 The client does not have access rights to the content. |
-| `404`           |                                                        The server can not find the requested resource. |
-| `500`           |                                  The server has encountered a situation it doesn't know how to handle. |
-| `502`           | The server, while acting as a gateway or proxy, received an invalid response from the upstream server. |
-| `503`           |                   The server is not ready to handle the request, often due to maintenance or overload. |
+| **Status Code** | **Description**                                                                                        |
+| --------------: | :----------------------------------------------------------------------------------------------------- |
+|           `200` | The request was successful.                                                                            |
+|           `201` | The request was successful and a resource was created.                                                 |
+|           `204` | The request was successful but there is no content to send in the response.                            |
+|           `301` | The requested resource has been permanently moved to a new URL.                                        |
+|           `302` | The requested resource is temporarily located at a different URL.                                      |
+|           `400` | The server could not understand the request due to invalid syntax.                                     |
+|           `401` | The client must authenticate itself to get the requested response.                                     |
+|           `403` | The client does not have access rights to the content.                                                 |
+|           `404` | The server can not find the requested resource.                                                        |
+|           `500` | The server has encountered a situation it doesn't know how to handle.                                  |
+|           `502` | The server, while acting as a gateway or proxy, received an invalid response from the upstream server. |
+|           `503` | The server is not ready to handle the request, often due to maintenance or overload.                   |
 
 </div>
 
@@ -281,20 +281,20 @@ Here are some common reason phrases:
 
 <div className="center-text center-table">
 
-| **Status Code** |   **Reason Phrase**   |
-| :-------------: | :-------------------: |
-|      `200`      |          OK           |
-|      `201`      |        Created        |
-|      `204`      |      No Content       |
-|      `301`      |   Moved Permanently   |
-|      `302`      |         Found         |
-|      `400`      |      Bad Request      |
-|      `401`      |     Unauthorized      |
-|      `403`      |       Forbidden       |
-|      `404`      |       Not Found       |
-|      `500`      | Internal Server Error |
-|      `502`      |      Bad Gateway      |
-|      `503`      |  Service Unavailable  |
+| **Status Code** | **Reason Phrase**     |
+| --------------: | :-------------------- |
+|           `200` | OK                    |
+|           `201` | Created               |
+|           `204` | No Content            |
+|           `301` | Moved Permanently     |
+|           `302` | Found                 |
+|           `400` | Bad Request           |
+|           `401` | Unauthorized          |
+|           `403` | Forbidden             |
+|           `404` | Not Found             |
+|           `500` | Internal Server Error |
+|           `502` | Bad Gateway           |
+|           `503` | Service Unavailable   |
 
 </div>
 
@@ -305,20 +305,20 @@ commonly used response headers:
 
 <div className="center-text center-table">
 
-| **Header**          |                                                                      **Description** |
-| :------------------ | -----------------------------------------------------------------------------------: |
-| `Content-Type`      |                                       Indicates the media type of the response body. |
-| `Content-Length`    |                                    Specifies the size of the response body in bytes. |
-| `Set-Cookie`        |                                         Sends cookies from the server to the client. |
-| `Cache-Control`     |                    Directives for caching mechanisms in both requests and responses. |
-| `Last-Modified`     |                                Indicates the last modification date of the resource. |
-| `ETag`              |                            A unique identifier for a specific version of a resource. |
-| `Location`          |                               Used in redirection or when a new resource is created. |
-| `Server`            |                                 Identifies the server software handling the request. |
-| `Date`              |                                     The date and time at which the message was sent. |
-| `Connection`        |    Controls whether the network connection stays open after the current transaction. |
+|          **Header** | **Description**                                                                      |
+| ------------------: | :----------------------------------------------------------------------------------- |
+|      `Content-Type` | Indicates the media type of the response body.                                       |
+|    `Content-Length` | Specifies the size of the response body in bytes.                                    |
+|        `Set-Cookie` | Sends cookies from the server to the client.                                         |
+|     `Cache-Control` | Directives for caching mechanisms in both requests and responses.                    |
+|     `Last-Modified` | Indicates the last modification date of the resource.                                |
+|              `ETag` | A unique identifier for a specific version of a resource.                            |
+|          `Location` | Used in redirection or when a new resource is created.                               |
+|            `Server` | Identifies the server software handling the request.                                 |
+|              `Date` | The date and time at which the message was sent.                                     |
+|        `Connection` | Controls whether the network connection stays open after the current transaction.    |
 | `Transfer-Encoding` | Specifies the form of encoding used to safely transfer the payload body to the user. |
-| `Vary`              |       Indicates the request headers that determine how to select a response variant. |
+|              `Vary` | Indicates the request headers that determine how to select a response variant.       |
 
 </div>
 
@@ -428,12 +428,12 @@ Here is a summary of the main components of an HTTP response:
 
 <div className="center-text center-table">
 
-|                   |                                                                                                                                               **Description** |
-| :---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| **HTTP Version**  |                                                                                   Indicates the protocol version in use, such as HTTP/1.1, HTTP/2, or HTTP/3. |
-| **Status Code**   |                                                       A three-digit code indicating the result of the request (e.g., `200` for success, `404` for not found). |
-| **Reason Phrase** |                                                                                           A textual description of the status code (e.g., "OK", "Not Found"). |
-| **Headers**       | Provide additional context, such as `Content-Type` (media type of the response), `Content-Length` (size of the body), and `Set-Cookie` (cookies from server). |
-| **Body**          |                               Contains the actual data requested by the client, such as an HTML page or JSON data, or error details, depending on the status. |
+|                   | **Description**                                                                                                                                               |
+| ----------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|  **HTTP Version** | Indicates the protocol version in use, such as HTTP/1.1, HTTP/2, or HTTP/3.                                                                                   |
+|   **Status Code** | A three-digit code indicating the result of the request (e.g., `200` for success, `404` for not found).                                                       |
+| **Reason Phrase** | A textual description of the status code (e.g., "OK", "Not Found").                                                                                           |
+|       **Headers** | Provide additional context, such as `Content-Type` (media type of the response), `Content-Length` (size of the body), and `Set-Cookie` (cookies from server). |
+|          **Body** | Contains the actual data requested by the client, such as an HTML page or JSON data, or error details, depending on the status.                               |
 
 </div>
