@@ -135,7 +135,8 @@ const sidebar: SidebarsConfig = {
               },
               items: [
                 "communication-and-networking/hypertext-transfer-protocol/what-is-http/index",
-                "communication-and-networking/hypertext-transfer-protocol/what-is-https/index",
+                "communication-and-networking/hypertext-transfer-protocol/http-messages/index",
+                "communication-and-networking/hypertext-transfer-protocol/understanding-https/index",
               ],
             },
           ],
