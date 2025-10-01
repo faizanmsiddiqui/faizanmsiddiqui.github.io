@@ -215,7 +215,13 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ["bash", "batch", "powershell", "shell-session"],
+      additionalLanguages: [
+        "bash",
+        "batch",
+        "http",
+        "powershell",
+        "shell-session",
+      ],
     },
     imageZoom: {
       selector: ".markdown img",
