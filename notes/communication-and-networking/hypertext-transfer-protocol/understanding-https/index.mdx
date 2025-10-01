@@ -1,12 +1,12 @@
 ---
-title: "What is HTTPS?"
+title: Understanding HTTPS
 description:
   An in-depth look at HTTPS, its importance, and how it secures web
   communications.
 date: 2025-09-30T00:33:41Z
 ---
 
-# What is HTTPS?
+# Understanding HTTPS
 
 Hypertext Transfer Protocol Secure (HTTPS) is the secure version of HTTP, the
 protocol used to communicate and transfer data between client (typically a web
@@ -56,8 +56,8 @@ sequenceDiagram
     Server->>Client: ChangeCipherSpec
     Server->>Client: Encrypted Finished
     Note over Client,Server: Handshake completed and secure channel established
-    Client->>Server: HTTPS request (encrypted HTTP)
-    Server-->>Client: HTTPS response (encrypted HTTP)
+    Client->>+Server: HTTPS request (encrypted HTTP)
+    Server-->>-Client: HTTPS response (encrypted HTTP)
 ```
 
 </div>
@@ -112,9 +112,14 @@ Adopting HTTPS offers several advantages:
 ## Modern Usage
 
 Today, HTTPS is the standard across most of the web. Major browsers mark
-non-HTTPS websites as "Not Secure," encouraging universal adoption. Services
-such as [**Let's Encrypt**](https://letsencrypt.org) have made obtaining
-certificates free and automated, lowering barriers to implementation.
+non-HTTPS websites as "Not Secure," encouraging universal adoption.
+
+:::info
+
+Services such as [**Let's Encrypt**](https://letsencrypt.org) have made
+obtaining certificates free and automated, lowering barriers to implementation.
+
+:::
 
 ## Summary
 
