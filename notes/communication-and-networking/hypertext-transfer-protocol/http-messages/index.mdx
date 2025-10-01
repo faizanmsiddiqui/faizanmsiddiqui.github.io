@@ -65,7 +65,7 @@ about the request. Common headers include:
 - `Authorization`: Contains credentials for authenticating the client.
 
 The **body** of the request is optional and is typically included in methods
-like `POST` or `PUT`, where data needs to be sent to the server such as form
+like `POST` or `PUT`, where data needs to be sent to the server, such as form
 submissions or file uploads.
 
 <div className="center-image-and-caption">
@@ -95,7 +95,7 @@ common HTTP methods:
 | **Method** | **Description**                                                         |
 | ---------: | :---------------------------------------------------------------------- |
 |      `GET` | Retrieve data from the server.                                          |
-|     `HEAD` | Similar to `GET` but retrieve headers only without the body.            |
+|     `HEAD` | Similar to `GET` but retrieves headers only, without the body.          |
 |     `POST` | Submit data to the server (e.g., form submission).                      |
 |      `PUT` | Update an existing resource on the server.                              |
 |    `PATCH` | Apply partial modifications to a resource.                              |
@@ -158,8 +158,9 @@ more. Here are some commonly used request headers:
 The body of an HTTP request is optional and is typically included in methods
 like `POST` or `PUT`. It contains the data being sent to the server, such as
 form submissions, JSON payloads, or file uploads. The `Content-Type` header
-should be set to indicate the media type of the body content such as
-`application/json`, `application/x-www-form-urlencoded`, `multipart/form-data`.
+should be set to indicate the media type of the body content, such as
+`application/json`, `application/x-www-form-urlencoded`, or
+`multipart/form-data`.
 
 ### Examples
 
@@ -177,7 +178,7 @@ Accept: text/html,application/xhtml+xml
 :::info
 
 User-Agent strings can vary widely based on the browser and operating system. A
-list of latest user agents strings can be found at:
+list of the latest user agent strings can be found at:
 
 - [**UserAgents.io**](https://useragents.io/)
 - [**What are the latest user agents for popular web browsers?**](https://www.whatismybrowser.com/guides/the-latest-user-agent/)
@@ -200,8 +201,8 @@ name=Adam&email=adam%40example.com
 :::info
 
 [**REST Client for Visual Studio Code**](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
-is a good tool to test HTTP requests directly from code editor and work with the
-same format as shown in the examples above.
+is a good tool to test HTTP requests directly from the code editor and work with
+the same format as shown in the examples above.
 
 :::
 
@@ -309,7 +310,7 @@ Here are some common HTTP status codes:
 |           `400` | The server could not understand the request due to invalid syntax.                                     |
 |           `401` | The client must authenticate itself to get the requested response.                                     |
 |           `403` | The client does not have access rights to the content.                                                 |
-|           `404` | The server can not find the requested resource.                                                        |
+|           `404` | The server cannot find the requested resource.                                                         |
 |           `500` | The server has encountered a situation it doesn't know how to handle.                                  |
 |           `502` | The server, while acting as a gateway or proxy, received an invalid response from the upstream server. |
 |           `503` | The server is not ready to handle the request, often due to maintenance or overload.                   |
@@ -373,7 +374,7 @@ commonly used response headers:
 The body of an HTTP response contains the actual data requested by the client.
 This could be an HTML page, JSON data, an image, or any other type of content.
 The `Content-Type` header should be set to indicate the media type of the body
-content such as `text/html`, `application/json`, `image/png`.
+content, such as `text/html`, `application/json`, or `image/png`.
 
 ### Examples
 
