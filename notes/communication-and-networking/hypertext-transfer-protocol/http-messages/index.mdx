@@ -29,7 +29,7 @@ consists of a **start line**, a set of **headers**, an optional **body**, and a
 Requests are sent by clients to initiate actions on the server. An HTTP request
 typically includes: **start line**, **headers**, and an optional **body**.
 
-In a request message, the start line is called the request line and has the
+In a request message, the start line is called the **request line** and has the
 following format:
 
 ```
@@ -43,7 +43,7 @@ METHOD SP REQUEST-URI SP HTTP-VERSION CRLF
 - `SP`: A single space character.
 - `CRLF`: Carriage return and line feed characters marking the end of the line.
 
-Following the request line are the headers, which provide additional context
+Following the request line are the **headers**, which provide additional context
 about the request. Common headers include:
 
 - `Host`: Specifies the domain name of the server.
@@ -51,8 +51,8 @@ about the request. Common headers include:
 - `Accept`: Indicates the media types the client can process.
 - `Authorization`: Contains credentials for authenticating the client.
 
-The body of the request is optional and is typically included in methods like
-`POST` or `PUT`, where data needs to be sent to the server such as form
+The **body** of the request is optional and is typically included in methods
+like `POST` or `PUT`, where data needs to be sent to the server such as form
 submissions or file uploads.
 
 ### Methods
@@ -129,8 +129,8 @@ more. Here are some commonly used request headers:
 The body of an HTTP request is optional and is typically included in methods
 like `POST` or `PUT`. It contains the data being sent to the server, such as
 form submissions, JSON payloads, or file uploads. The `Content-Type` header
-should be set to indicate the media type of the body content (e.g.,
-`application/json`, `application/x-www-form-urlencoded`, `multipart/form-data`).
+should be set to indicate the media type of the body content such as
+`application/json`, `application/x-www-form-urlencoded`, `multipart/form-data`.
 
 ### Examples
 
@@ -195,8 +195,10 @@ Here is a summary of the main components of an HTTP request:
 ## Response Message
 
 Responses are sent by servers to provide the result of the client's request. An
-HTTP response typically includes: start line, headers, and an optional body. In
-a response message, the start line is called the status line and has the
+HTTP response typically includes: **start line**, **headers**, and an optional
+**body**.
+
+In a response message, the start line is called the **status line** and has the
 following format:
 
 ```
@@ -211,7 +213,7 @@ HTTP-VERSION SP STATUS-CODE SP REASON-PHRASE CRLF
 - `SP`: A single space character.
 - `CRLF`: Carriage return and line feed characters marking the end of the line.
 
-Following the status line are the headers, which provide additional context
+Following the status line are the **headers**, which provide additional context
 about the response. Common headers include:
 
 - `Content-Type`: Indicates the media type of the response body (e.g.,
@@ -221,8 +223,14 @@ about the response. Common headers include:
 - `Cache-Control`: Directives for caching mechanisms in both requests and
   responses.
 
-The body of the response contains the actual data requested by the client, such
-as an HTML page, JSON data, or a file.
+The **body** of the response contains the actual data requested by the client,
+such as an HTML page, JSON data, or a file.
+
+### HTTP Version
+
+The HTTP version indicates the protocol version being used for the response.
+Similar to requests, the most common versions are: **HTTP/1.1**, **HTTP/2**, and
+**HTTP/3**.
 
 ### Status Codes
 
@@ -245,20 +253,48 @@ Here are some common HTTP status codes:
 
 <div className="center-text center-table">
 
-| **Status Code** |   **Reason Phrase**   |                                                                                        **Description** |
-| :-------------- | :-------------------: | -----------------------------------------------------------------------------------------------------: |
-| `200`           |          OK           |                                                                            The request was successful. |
-| `201`           |        Created        |                                                 The request was successful and a resource was created. |
-| `204`           |      No Content       |                            The request was successful but there is no content to send in the response. |
-| `301`           |   Moved Permanently   |                                        The requested resource has been permanently moved to a new URL. |
-| `302`           |         Found         |                                      The requested resource is temporarily located at a different URL. |
-| `400`           |      Bad Request      |                                     The server could not understand the request due to invalid syntax. |
-| `401`           |     Unauthorized      |                                     The client must authenticate itself to get the requested response. |
-| `403`           |       Forbidden       |                                                 The client does not have access rights to the content. |
-| `404`           |       Not Found       |                                                        The server can not find the requested resource. |
-| `500`           | Internal Server Error |                                  The server has encountered a situation it doesn't know how to handle. |
-| `502`           |      Bad Gateway      | The server, while acting as a gateway or proxy, received an invalid response from the upstream server. |
-| `503`           |  Service Unavailable  |                   The server is not ready to handle the request, often due to maintenance or overload. |
+| **Status Code** |                                                                                        **Description** |
+| :-------------- | -----------------------------------------------------------------------------------------------------: |
+| `200`           |                                                                            The request was successful. |
+| `201`           |                                                 The request was successful and a resource was created. |
+| `204`           |                            The request was successful but there is no content to send in the response. |
+| `301`           |                                        The requested resource has been permanently moved to a new URL. |
+| `302`           |                                      The requested resource is temporarily located at a different URL. |
+| `400`           |                                     The server could not understand the request due to invalid syntax. |
+| `401`           |                                     The client must authenticate itself to get the requested response. |
+| `403`           |                                                 The client does not have access rights to the content. |
+| `404`           |                                                        The server can not find the requested resource. |
+| `500`           |                                  The server has encountered a situation it doesn't know how to handle. |
+| `502`           | The server, while acting as a gateway or proxy, received an invalid response from the upstream server. |
+| `503`           |                   The server is not ready to handle the request, often due to maintenance or overload. |
+
+</div>
+
+### Reason Phrase
+
+The reason phrase is a textual description that accompanies the status code in
+the status line. It provides a human-readable explanation of the status code.
+For example, the reason phrase for status code `200` is "OK", indicating that
+the request was successful. While the reason phrase is optional and can be
+customized, it is generally recommended to use standard phrases for clarity.
+Here are some common reason phrases:
+
+<div className="center-text center-table">
+
+| **Status Code** |   **Reason Phrase**   |
+| :-------------: | :-------------------: |
+|      `200`      |          OK           |
+|      `201`      |        Created        |
+|      `204`      |      No Content       |
+|      `301`      |   Moved Permanently   |
+|      `302`      |         Found         |
+|      `400`      |      Bad Request      |
+|      `401`      |     Unauthorized      |
+|      `403`      |       Forbidden       |
+|      `404`      |       Not Found       |
+|      `500`      | Internal Server Error |
+|      `502`      |      Bad Gateway      |
+|      `503`      |  Service Unavailable  |
 
 </div>
 
@@ -286,9 +322,18 @@ commonly used response headers:
 
 </div>
 
-### Example Response
+### Body
 
-A simple HTTP response to a successful GET request might look like this:
+The body of an HTTP response contains the actual data requested by the client.
+This could be an HTML page, JSON data, an image, or any other type of content.
+The `Content-Type` header should be set to indicate the media type of the body
+content such as `text/html`, `application/json`, `image/png`.
+
+### Examples
+
+#### `200` OK Response
+
+A simple HTTP response to a successful `GET` request might look like this:
 
 ```http
 HTTP/1.1 200 OK
@@ -351,6 +396,32 @@ Connection: close
 </html>
 ```
 
+#### `403` Forbidden Response
+
+An HTTP response indicating that the client does not have permission to access
+the requested resource might look like this:
+
+```http
+HTTP/1.1 403 Forbidden
+Mime-Version: 1.0
+Content-Type: text/html
+Content-Length: 375
+Cache-Control: max-age=86000
+Date: Wed, 01 Oct 2025 13:18:16 GMT
+Connection: close
+
+<HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+
+You don't have permission to access "http&#58;&#47;&#47;www&#46;example&#46;com&#47;submit" on this server.<P>
+Reference&#32;&#35;18&#46;4571e5c1&#46;1759324696&#46;1319d1f4
+<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;4571e5c1&#46;1759324696&#46;1319d1f4</P>
+</BODY>
+</HTML>
+```
+
 ### Summary
 
 Here is a summary of the main components of an HTTP response:
@@ -360,7 +431,7 @@ Here is a summary of the main components of an HTTP response:
 |                   |                                                                                                                                               **Description** |
 | :---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **HTTP Version**  |                                                                                   Indicates the protocol version in use, such as HTTP/1.1, HTTP/2, or HTTP/3. |
-| **Status Code**   |                                                           A three-digit code indicating the result of the request (e.g., 200 for success, 404 for not found). |
+| **Status Code**   |                                                       A three-digit code indicating the result of the request (e.g., `200` for success, `404` for not found). |
 | **Reason Phrase** |                                                                                           A textual description of the status code (e.g., "OK", "Not Found"). |
 | **Headers**       | Provide additional context, such as `Content-Type` (media type of the response), `Content-Length` (size of the body), and `Set-Cookie` (cookies from server). |
 | **Body**          |                               Contains the actual data requested by the client, such as an HTML page or JSON data, or error details, depending on the status. |
