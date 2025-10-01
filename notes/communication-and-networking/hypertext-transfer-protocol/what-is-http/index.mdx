@@ -59,8 +59,8 @@ sequenceDiagram
     participant Client
     participant Server
 
-    Client->>Server: HTTP Request (e.g., GET /index.html)
-    Server-->>Client: HTTP Response (200 OK + HTML content)
+    Client->>+Server: HTTP Request (e.g., GET /index.html)
+    Server-->>-Client: HTTP Response (200 OK + HTML content)
 ```
 
 </div>
