@@ -27,8 +27,10 @@ consists of a **start line**, a set of **headers**, an optional **body**, and a
 ## Request Message
 
 Requests are sent by clients to initiate actions on the server. An HTTP request
-typically includes: start line, headers, and an optional body. In a request
-message, the start line is called the request line and has the following format:
+typically includes: **start line**, **headers**, and an optional **body**.
+
+In a request message, the start line is called the request line and has the
+following format:
 
 ```
 METHOD SP REQUEST-URI SP HTTP-VERSION CRLF
@@ -44,14 +46,14 @@ METHOD SP REQUEST-URI SP HTTP-VERSION CRLF
 Following the request line are the headers, which provide additional context
 about the request. Common headers include:
 
-- `Host`: Specifies the domain name of the server (required in HTTP/1.1).
+- `Host`: Specifies the domain name of the server.
 - `User-Agent`: Identifies the client software making the request.
 - `Accept`: Indicates the media types the client can process.
 - `Authorization`: Contains credentials for authenticating the client.
 
 The body of the request is optional and is typically included in methods like
-POST or PUT, where data needs to be sent to the server (e.g., form submissions
-or file uploads).
+`POST` or `PUT`, where data needs to be sent to the server such as form
+submissions or file uploads.
 
 ### Methods
 
@@ -63,7 +65,7 @@ most common HTTP methods:
 | **Method** |                                                         **Description** |
 | :--------- | ----------------------------------------------------------------------: |
 | `GET`      |                                          Retrieve data from the server. |
-| `HEAD`     |                                Retrieve headers only, without the body. |
+| `HEAD`     |            Similar to `GET` but retrieve headers only without the body. |
 | `POST`     |                      Submit data to the server (e.g., form submission). |
 | `PUT`      |                              Update an existing resource on the server. |
 | `PATCH`    |                              Apply partial modifications to a resource. |
@@ -73,6 +75,32 @@ most common HTTP methods:
 | `TRACE`    | Perform a message loop-back test along the path to the target resource. |
 
 </div>
+
+### Request Target (URI)
+
+The request target, or URI, specifies the resource on the server that the client
+wants to interact with. It can take several forms:
+
+- **Absolute URI**: The full URL, including scheme, host, and path (e.g.,
+  `http://www.example.com/index.html`).
+- **Absolute Path**: The path component of the URL, starting with a slash (e.g.,
+  `/index.html`).
+- **Authority**: Used with the `CONNECT` method to specify the target server
+  (e.g., `www.example.com:443`).
+- **Asterisk (`*`)**: Used with the `OPTIONS` method to refer to the entire
+  server.
+
+### HTTP Version
+
+The HTTP version indicates the protocol version being used for the request. The
+most common versions are:
+
+- **HTTP/1.1**: The most widely used version, supporting persistent connections,
+  chunked transfer encoding, and additional headers.
+- **HTTP/2**: Introduces multiplexing, header compression, and improved
+  performance.
+- **HTTP/3**: The latest version, built on QUIC, offering improved speed and
+  security.
 
 ### Headers
 
@@ -92,14 +120,23 @@ more. Here are some commonly used request headers:
 | `Authorization`   |    Contains credentials for authenticating the client. |
 | `Cookie`          |           Sends cookies from the client to the server. |
 | `Content-Type`    |          Describes the media type of the request body. |
-| `Content-Length`  |       Indicates the size of the request body in bytes. |
 | `Referer`         |               Specifies the URL of the referring page. |
 
 </div>
 
-### Example Request
+### Body
 
-A simple HTTP GET request to fetch a web page might look like this:
+The body of an HTTP request is optional and is typically included in methods
+like `POST` or `PUT`. It contains the data being sent to the server, such as
+form submissions, JSON payloads, or file uploads. The `Content-Type` header
+should be set to indicate the media type of the body content (e.g.,
+`application/json`, `application/x-www-form-urlencoded`, `multipart/form-data`).
+
+### Examples
+
+#### `GET` Request
+
+A simple HTTP `GET` request to fetch a web page might look like this:
 
 ```http
 GET /index.html HTTP/1.1
@@ -118,19 +155,40 @@ list of latest user agents strings can be found at:
 
 :::
 
+#### `POST` Request
+
+A simple HTTP `POST` request to submit form data might look like this:
+
+```http
+POST /submit HTTP/1.1
+Host: www.example.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+
+name=Adam&email=adam%40example.com
+```
+
+:::info
+
+[**REST Client for Visual Studio Code**](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+is a good tool to test HTTP requests directly from your code editor and work
+with the same format as shown in the examples above.
+
+:::
+
 ### Summary
 
 Here is a summary of the main components of an HTTP request:
 
 <div className="center-text center-table">
 
-|                          |                                                                                                                                                            **Description** |
-| :----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| **Method**               | Defines the action to be performed. Common methods are GET (retrieve data), POST (submit data), PUT (update data), DELETE (remove data), and HEAD (retrieve headers only). |
-| **Request Target (URI)** |                                                                                     Identifies the resource on the server. This may be an absolute URL or a relative path. |
-| **HTTP Version**         |                                                                                                Indicates the protocol version in use, such as HTTP/1.1, HTTP/2, or HTTP/3. |
-| **Headers**              |       Provide additional context, such as `Host` (server domain), `User-Agent` (client software), `Accept` (preferred response format), and `Authorization` (credentials). |
-| **Body (optional)**      |                                                                                                  Contains data for the server, typically included in POST or PUT requests. |
+|                          |                                                                                                                                                                      **Description** |
+| :----------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| **Method**               | Defines the action to be performed. Common methods are `GET` (retrieve data), `POST` (submit data), `PUT` (update data), `DELETE` (remove data), and `HEAD` (retrieve headers only). |
+| **Request Target (URI)** |                                                                                               Identifies the resource on the server. This may be an absolute URL or a relative path. |
+| **HTTP Version**         |                                                                                                          Indicates the protocol version in use, such as HTTP/1.1, HTTP/2, or HTTP/3. |
+| **Headers**              |                 Provide additional context, such as `Host` (server domain), `User-Agent` (client software), `Accept` (preferred response format), and `Authorization` (credentials). |
+| **Body (optional)**      |                                                                                                        Contains data for the server, typically included in `POST` or `PUT` requests. |
 
 </div>
 
