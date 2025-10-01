@@ -1,6 +1,6 @@
 .banner {
   border-radius: 1rem;
-  background: var(--ifm-color-primary);
+  background: var(--ifm-color-primary-light);
   text-align: center;
   color: var(--ifm-background-surface-color);
 }
