@@ -1,0 +1,44 @@
+---
+title: Snippets
+description:
+  A collection of useful mini projects and code snippets created over time.
+date: 2025-10-03T13:19:20Z
+---
+
+import { CardIndexDividers } from "@site/src/assets/noto-emoji-unicode-16";
+import { GoOriginalWordmark, PythonOriginal } from "@site/src/assets/devicon";
+import { IconExtraLarge, IconMedium } from "@site/src/components/IconSize";
+import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
+
+<div className="center-image-and-caption">
+
+<CardIndexDividers
+  width={IconExtraLarge.width}
+  height={IconExtraLarge.height}
+/>
+
+</div>
+
+# Snippets
+
+A collection of useful mini projects and code snippets created over time. These
+cover a variety of topics and can be used as standalone solutions or as building
+blocks for larger projects to specific problems.
+
+<InfoCardHorizontal
+  to="/snippets/go/"
+  graphics={
+    <GoOriginalWordmark width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="Go (Golang)"
+  description="A collection of Go (Golang) mini projects and code snippets."
+/>
+
+<InfoCardHorizontal
+  to="/snippets/python/"
+  graphics={
+    <PythonOriginal width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="Python"
+  description="A collection of Python mini projects and code snippets."
+/>
