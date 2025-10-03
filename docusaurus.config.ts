@@ -40,6 +40,10 @@ const config: Config = {
     [
       "@easyops-cn/docusaurus-search-local",
       {
+        explicitSearchResultPath: true,
+        hashed: true,
+        highlightSearchTermsOnTargetPage: true,
+        language: "en",
         indexBlog: true,
         indexDocs: true,
         indexPages: true,
@@ -56,8 +60,6 @@ const config: Config = {
           "/wonders",
         ],
         blogRouteBasePath: ["/blog"],
-        language: "en",
-        hashed: true,
         docsDir: [
           "about",
           "attributions",
@@ -71,8 +73,6 @@ const config: Config = {
           "wonders",
         ],
         blogDir: ["blog"],
-        highlightSearchTermsOnTargetPage: true,
-        explicitSearchResultPath: true,
       },
     ],
   ],
