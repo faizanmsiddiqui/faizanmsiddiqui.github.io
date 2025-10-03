@@ -9,7 +9,28 @@ const sidebar: SidebarsConfig = {
         type: "doc",
         id: "index",
       },
-      items: [],
+      items: [
+        {
+          type: "category",
+          label: "Go (Golang)",
+          link: {
+            type: "doc",
+            id: "go/index",
+          },
+          collapsed: false,
+          items: [],
+        },
+        {
+          type: "category",
+          label: "Python",
+          link: {
+            type: "doc",
+            id: "python/index",
+          },
+          collapsed: false,
+          items: [],
+        },
+      ],
     },
   ],
 };
