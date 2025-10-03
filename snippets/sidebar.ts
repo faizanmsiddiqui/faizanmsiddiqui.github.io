@@ -9,7 +9,7 @@ const sidebar: SidebarsConfig = {
         type: "doc",
         id: "index",
       },
-      items: [],
+      items: ["physical-network-interface-status-monitor-with-flask/index"],
     },
   ],
 };
