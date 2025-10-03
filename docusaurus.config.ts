@@ -153,6 +153,17 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "snippets",
+        path: "snippets",
+        routeBasePath: "/snippets",
+        sidebarPath: require.resolve("./snippets/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "socials",
         path: "socials",
         routeBasePath: "/socials",
@@ -267,6 +278,11 @@ const config: Config = {
         //   label: "Resume",
         //   to: "/resume/",
         // },
+        {
+          position: "left",
+          label: "Snippets",
+          to: "/snippets/",
+        },
         {
           position: "left",
           label: "Wonders",
