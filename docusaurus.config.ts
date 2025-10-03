@@ -52,6 +52,42 @@ const config: Config = {
   plugins: [
     "plugin-image-zoom",
     [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        indexBlog: true,
+        indexDocs: true,
+        indexPages: true,
+        docsRouteBasePath: [
+          "/about",
+          "/attributions",
+          "/",
+          "/notes",
+          "/projects",
+          "/publications",
+          "/resume",
+          "/snippets",
+          "/socials",
+          "/wonders",
+        ],
+        blogRouteBasePath: ["/blog"],
+        language: "en",
+        hashed: true,
+        docsDir: [
+          "about",
+          "attributions",
+          "home",
+          "notes",
+          "projects",
+          "publications",
+          "resume",
+          "snippets",
+          "socials",
+          "wonders",
+        ],
+        blogDir: ["blog"],
+      },
+    ],
+    [
       "@docusaurus/plugin-content-blog",
       {
         id: "blog",
