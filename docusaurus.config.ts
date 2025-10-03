@@ -34,7 +34,48 @@ const config: Config = {
     },
     mermaid: true,
   },
-  themes: ["@docusaurus/theme-mermaid"],
+  themes: [
+    "@docusaurus/theme-mermaid",
+    "plugin-image-zoom",
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        explicitSearchResultPath: true,
+        hashed: true,
+        highlightSearchTermsOnTargetPage: true,
+        language: "en",
+        indexBlog: true,
+        indexDocs: true,
+        indexPages: true,
+        docsRouteBasePath: [
+          "/about",
+          "/attributions",
+          "/",
+          "/notes",
+          "/projects",
+          "/publications",
+          "/resume",
+          "/snippets",
+          "/socials",
+          "/wonders",
+        ],
+        blogRouteBasePath: ["/blog"],
+        docsDir: [
+          "about",
+          "attributions",
+          "home",
+          "notes",
+          "projects",
+          "publications",
+          "resume",
+          "snippets",
+          "socials",
+          "wonders",
+        ],
+        blogDir: ["blog"],
+      },
+    ],
+  ],
 
   presets: [
     [
@@ -50,7 +91,6 @@ const config: Config = {
   ],
 
   plugins: [
-    "plugin-image-zoom",
     [
       "@docusaurus/plugin-content-blog",
       {
