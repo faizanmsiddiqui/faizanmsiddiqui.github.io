@@ -34,22 +34,8 @@ const config: Config = {
     },
     mermaid: true,
   },
-  themes: ["@docusaurus/theme-mermaid"],
-
-  presets: [
-    [
-      "classic",
-      {
-        docs: false,
-        blog: false,
-        theme: {
-          customCss: "./src/css/custom.css",
-        },
-      } satisfies Preset.Options,
-    ],
-  ],
-
-  plugins: [
+  themes: [
+    "@docusaurus/theme-mermaid",
     "plugin-image-zoom",
     [
       "@easyops-cn/docusaurus-search-local",
@@ -87,6 +73,22 @@ const config: Config = {
         blogDir: ["blog"],
       },
     ],
+  ],
+
+  presets: [
+    [
+      "classic",
+      {
+        docs: false,
+        blog: false,
+        theme: {
+          customCss: "./src/css/custom.css",
+        },
+      } satisfies Preset.Options,
+    ],
+  ],
+
+  plugins: [
     [
       "@docusaurus/plugin-content-blog",
       {
