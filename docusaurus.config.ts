@@ -71,6 +71,8 @@ const config: Config = {
           "wonders",
         ],
         blogDir: ["blog"],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
       },
     ],
   ],
