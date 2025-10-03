@@ -4,6 +4,7 @@ import ArtistPalette from "./emoji_u1f3a8.svg";
 import BookmarkTabs from "./emoji_u1f4d1.svg";
 import Books from "./emoji_u1f4da.svg";
 import Brain from "./emoji_u1f9e0.svg";
+import CardIndexDividers from "./emoji_u1f5c2.svg";
 import Cloud from "./emoji_u2601.svg";
 import CrystalBall from "./emoji_u1f52e.svg";
 import DesktopComputer from "./emoji_u1f5a5.svg";
@@ -54,6 +55,7 @@ export {
   BookmarkTabs,
   Books,
   Brain,
+  CardIndexDividers,
   Cloud,
   CrystalBall,
   DesktopComputer,
