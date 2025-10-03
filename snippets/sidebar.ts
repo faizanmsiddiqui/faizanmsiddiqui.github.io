@@ -10,6 +10,7 @@ const sidebar: SidebarsConfig = {
         id: "index",
       },
       items: [
+        "hello-aioquic-quic-implementation-with-python/index",
         "physical-network-interface-status-monitor-with-flask/index",
         "physical-network-interface-status-monitor-with-pyqt5/index",
       ],
