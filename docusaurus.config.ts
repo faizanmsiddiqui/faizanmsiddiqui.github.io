@@ -330,16 +330,6 @@ const config: Config = {
         },
         {
           position: "right",
-          label: "Email",
-          href: "mailto:imfsiddiqui@yahoo.com",
-        },
-        {
-          position: "right",
-          label: "LinkedIn",
-          href: "https://www.linkedin.com/in/imfsiddiqui",
-        },
-        {
-          position: "right",
           label: "Socials",
           to: "/socials/",
         },
