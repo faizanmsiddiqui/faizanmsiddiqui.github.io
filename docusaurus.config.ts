@@ -8,6 +8,9 @@ const favicon = "images/favicon.svg";
 const logo = "images/profile.png";
 const socialCard = "images/social-card.png";
 const title = "Faizan Siddiqui";
+const author = "Faizan Siddiqui";
+const url = "https://faizansiddiqui.me";
+const baseUrl = "";
 
 const config: Config = {
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,8 +18,8 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  url: "https://faizansiddiqui.me",
-  baseUrl: "/",
+  url: url,
+  baseUrl: baseUrl + "/",
 
   favicon: favicon,
   title: title,
@@ -312,6 +315,16 @@ const config: Config = {
         },
         {
           position: "right",
+          className: "header-github-link",
+          "aria-label": "GitHub account",
+          href: "https://github.com/imfsiddiqui",
+        },
+        {
+          type: "search",
+          position: "right",
+        },
+        {
+          position: "right",
           label: "Socials",
           to: "/socials/",
         },
@@ -319,7 +332,7 @@ const config: Config = {
     },
     footer: {
       style: "light",
-      copyright: `Copyright © ${new Date().getFullYear()} ${title}.<br>Made with ❤️ and <a href="/attributions"><strong>these amazing resources</strong></a>.`,
+      copyright: `Copyright © ${new Date().getFullYear()} ${author}.<br>Made with ❤️ and <a href="${baseUrl}/attributions"><strong>these amazing resources</strong></a>.`,
     },
   } satisfies Preset.ThemeConfig,
 };
