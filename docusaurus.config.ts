@@ -57,7 +57,6 @@ const config: Config = {
           "/resume",
           "/snippets",
           "/socials",
-          "/wonders",
         ],
         blogRouteBasePath: ["/blog"],
         docsDir: [
@@ -70,7 +69,6 @@ const config: Config = {
           "resume",
           "snippets",
           "socials",
-          "wonders",
         ],
         blogDir: ["blog"],
       },
@@ -213,17 +211,6 @@ const config: Config = {
       },
     ],
     [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "wonders",
-        path: "wonders",
-        routeBasePath: "/wonders",
-        sidebarPath: require.resolve("./wonders/sidebar.ts"),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
@@ -322,11 +309,6 @@ const config: Config = {
           position: "left",
           label: "Snippets",
           to: "/snippets/",
-        },
-        {
-          position: "left",
-          label: "Wonders",
-          to: "/wonders/",
         },
         {
           position: "right",
