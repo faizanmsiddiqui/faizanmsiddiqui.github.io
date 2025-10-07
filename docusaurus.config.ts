@@ -312,6 +312,16 @@ const config: Config = {
         },
         {
           position: "right",
+          className: "header-github-link",
+          "aria-label": "GitHub account",
+          href: "https://github.com/imfsiddiqui",
+        },
+        {
+          type: "search",
+          position: "right",
+        },
+        {
+          position: "right",
           label: "Socials",
           to: "/socials/",
         },
