@@ -98,31 +98,31 @@ graph LR
 
 </div>
 
-- **Docker Client (CLI or REST API):** The interface used to communicate with
+- **Docker Client (CLI or REST API)**: The interface used to communicate with
   the Docker daemon.
-- **Docker Daemon (`dockerd`):** The main service that manages containers,
+- **Docker Daemon (`dockerd`)**: The main service that manages containers,
   images, and more.
-- **Containerd:** The container runtime Docker uses under the hood.
-- **Docker Objects:** Includes images, containers, volumes, and networks.
-- **Docker Registry:** Stores Docker images (e.g., Docker Hub or private
+- **Containerd**: The container runtime Docker uses under the hood.
+- **Docker Objects**: Includes images, containers, volumes, and networks.
+- **Docker Registry**: Stores Docker images (e.g., Docker Hub or private
   registries).
 
 ### Advantages of Docker
 
-- **Mature Ecosystem:** Docker has a large and mature ecosystem with extensive
+- **Mature Ecosystem**: Docker has a large and mature ecosystem with extensive
   documentation, community support, and third-party tools.
-- **User-Friendly:** Docker provides a user-friendly CLI and GUI, making it easy
+- **User-Friendly**: Docker provides a user-friendly CLI and GUI, making it easy
   for developers to get started with containerization.
-- **Wide Adoption:** Docker is widely adopted in the industry, making it easier
+- **Wide Adoption**: Docker is widely adopted in the industry, making it easier
   to find resources, tutorials, and community support.
 
 ### Disadvantages of Docker
 
-- **Daemon Dependency:** Docker requires the Docker daemon to be running, which
+- **Daemon Dependency**: Docker requires the Docker daemon to be running, which
   can be a single point of failure and may introduce security concerns.
-- **Root Privileges:** Docker typically requires root privileges to run, which
+- **Root Privileges**: Docker typically requires root privileges to run, which
   can pose security risks, especially in multi-tenant environments.
-- **Complexity:** Docker's architecture can be complex, especially for
+- **Complexity**: Docker's architecture can be complex, especially for
   beginners. The interaction between the Docker client, daemon, and containerd
   can be confusing.
 
@@ -180,30 +180,30 @@ graph LR
 
 </div>
 
-- **Daemon-less:** Podman does not require a background service like Docker.
-- **Rootless Support:** Containers can be run securely by non-root users.
-- **Libpod Library:** The core library that manages pods, containers, and
+- **Daemon-less**: Podman does not require a background service like Docker.
+- **Rootless Support**: Containers can be run securely by non-root users.
+- **Libpod Library**: The core library that manages pods, containers, and
   images.
-- **runc/crun:** OCI-compliant container runtimes used to run containers.
-- **CNI:** Container Network Interface plugins for networking.
-- **containers/image & containers/common:** Libraries for image handling and
+- **runc/crun**: OCI-compliant container runtimes used to run containers.
+- **CNI**: Container Network Interface plugins for networking.
+- **containers/image & containers/common**: Libraries for image handling and
   shared utilities.
 
 ### Advantages of Podman
 
-- **Daemon-less Architecture:** Podman does not require a long-running daemon,
+- **Daemon-less Architecture**: Podman does not require a long-running daemon,
   reducing complexity and potential security risks.
-- **Rootless Containers:** Podman allows users to run containers without root
+- **Rootless Containers**: Podman allows users to run containers without root
   privileges, enhancing security in multi-tenant environments.
-- **Compatibility with Docker:** Podman provides a Docker-compatible CLI, making
+- **Compatibility with Docker**: Podman provides a Docker-compatible CLI, making
   it easy for Docker users to transition to Podman without significant changes
   to their workflows.
 
 ### Disadvantages of Podman
 
-- **Less Mature Ecosystem:** Podman is newer than Docker, so its ecosystem is
+- **Less Mature Ecosystem**: Podman is newer than Docker, so its ecosystem is
   less mature, with fewer third-party tools and resources available.
-- **Compatibility Issues:** While Podman aims to be Docker-compatible, there may
+- **Compatibility Issues**: While Podman aims to be Docker-compatible, there may
   be some differences in behavior or features that can cause compatibility
   issues with existing Docker workflows.
 
@@ -239,14 +239,14 @@ Consider your specific use case and requirements. Both tools have their
 strengths and weaknesses, and the best choice depends on your needs. Here are
 some scenarios where each tool might be more suitable:
 
-**Choose Docker if:**
+**Choose Docker if**:
 
 - You need a mature ecosystem with extensive community support.
 - You prefer a user-friendly CLI and GUI for managing containers.
 - You are already using Docker in your development workflow and want to maintain
   compatibility.
 
-**Choose Podman if:**
+**Choose Podman if**:
 
 - You prioritize security and want to run containers without root privileges.
 - You prefer a simpler, daemon-less architecture.
