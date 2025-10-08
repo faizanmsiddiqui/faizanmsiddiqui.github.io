@@ -4,6 +4,7 @@ import ArtistPaletteFlat from "./artist_palette_flat.svg";
 import BookmarkTabsFlat from "./bookmark_tabs_flat.svg";
 import BooksFlat from "./books_flat.svg";
 import BrainFlat from "./brain_flat.svg";
+import BuildingConstructionFlat from "./building_construction_flat.svg";
 import CardIndexDividersFlat from "./card_index_dividers_flat.svg";
 import CloudFlat from "./cloud_flat.svg";
 import CrystalBallFlat from "./crystal_ball_flat.svg";
@@ -55,6 +56,7 @@ export {
   BookmarkTabsFlat,
   BooksFlat,
   BrainFlat,
+  BuildingConstructionFlat,
   CardIndexDividersFlat,
   CloudFlat,
   CrystalBallFlat,
