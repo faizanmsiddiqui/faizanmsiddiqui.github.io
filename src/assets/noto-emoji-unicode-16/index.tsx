@@ -5,6 +5,7 @@ import BookmarkTabs from "./emoji_u1f4d1.svg";
 import Books from "./emoji_u1f4da.svg";
 import Brain from "./emoji_u1f9e0.svg";
 import BuildingConstruction from "./emoji_u1f3d7.svg";
+import Bullseye from "./emoji_u1f3af.svg";
 import CardIndexDividers from "./emoji_u1f5c2.svg";
 import Cloud from "./emoji_u2601.svg";
 import CrystalBall from "./emoji_u1f52e.svg";
@@ -12,6 +13,7 @@ import DesktopComputer from "./emoji_u1f5a5.svg";
 import DetectiveDefault from "./emoji_u1f575.svg";
 import Dizzy from "./emoji_u1f4ab.svg";
 import Email from "./emoji_u1f4e7.svg";
+import FilmFrames from "./emoji_u1f39e.svg";
 import GameDie from "./emoji_u1f3b2.svg";
 import GlobeWithMeridians from "./emoji_u1f310.svg";
 import GlowingStar from "./emoji_u1f31f.svg";
@@ -19,9 +21,12 @@ import HammerAndWrench from "./emoji_u1f6e0.svg";
 import Handshake from "./emoji_u1f91d.svg";
 import Herb from "./emoji_u1f33f.svg";
 import HighVoltage from "./emoji_u26a1.svg";
+import HollowRedCircle from "./emoji_u2b55.svg";
+import Key from "./emoji_u1f511.svg";
 import Laptop from "./emoji_u1f4bb.svg";
 import LightBulb from "./emoji_u1f4a1.svg";
 import Memo from "./emoji_u1f4dd.svg";
+import Package from "./emoji_u1f4e6.svg";
 import PageFacingUp from "./emoji_u1f4c4.svg";
 import Penguin from "./emoji_u1f427.svg";
 import PersonDefault from "./emoji_u1f9d1.svg";
@@ -57,6 +62,7 @@ export {
   Books,
   Brain,
   BuildingConstruction,
+  Bullseye,
   CardIndexDividers,
   Cloud,
   CrystalBall,
@@ -64,6 +70,7 @@ export {
   DetectiveDefault,
   Dizzy,
   Email,
+  FilmFrames,
   GameDie,
   GlobeWithMeridians,
   GlowingStar,
@@ -71,9 +78,12 @@ export {
   Handshake,
   Herb,
   HighVoltage,
+  HollowRedCircle,
+  Key,
   Laptop,
   LightBulb,
   Memo,
+  Package,
   PageFacingUp,
   Penguin,
   PersonDefault,
