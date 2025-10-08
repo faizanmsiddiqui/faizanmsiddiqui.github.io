@@ -293,11 +293,11 @@ const config: Config = {
           label: "Notes",
           to: "/notes/",
         },
-        // {
-        //   position: "left",
-        //   label: "Projects",
-        //   to: "/projects/",
-        // },
+        {
+          position: "left",
+          label: "Projects",
+          to: "/projects/",
+        },
         {
           position: "left",
           label: "Publications",
