@@ -1,5 +1,85 @@
-import ConstructionAnimation from "@site/src/components/ConstructionAnimation";
+---
+title: Projects
+description:
+  A showcase of my projects, each designed for specific purposes and built with
+  various technologies.
+date: 2025-10-08T19:20:15Z
+---
+
+import {
+  BuildingConstruction,
+  Bullseye,
+  HollowRedCircle,
+  Key,
+  Rocket,
+  Starstruck,
+} from "@site/src/assets/noto-emoji-unicode-16";
+import { FilmFramesFlat, PackageFlat } from "@site/src/assets/fluentui-emoji";
+import { IconExtraLarge, IconMedium } from "@site/src/components/IconSize";
+import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
+
+<div className="center-image-and-caption">
+
+<Bullseye width={IconExtraLarge.width} height={IconExtraLarge.height} />
+
+</div>
 
 # Projects
 
-<ConstructionAnimation />
+A showcase of my projects, each designed for specific purposes and built with
+various technologies.
+
+<InfoCardHorizontal
+  to="/projects/brepo/"
+  graphics={
+    <BuildingConstruction width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="brepo"
+  description="A base template repository to quickly bootstrap new projects with preconfigured structure, essential files, and common workflows."
+/>
+
+<InfoCardHorizontal
+  to="/projects/centinum/"
+  graphics={
+    <HollowRedCircle width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="centinum"
+  description="A central configuration manager for multiple repositories, enabling unified settings, streamlined workflows, and simplified maintenance across projects."
+/>
+
+<InfoCardHorizontal
+  to="/projects/ipm/"
+  graphics={<PackageFlat width={IconMedium.width} height={IconMedium.height} />}
+  title="ipm"
+  description="A cross-platform tool that unifies CLI for various package managers, simplifies installation, updates, and removal of packages by standardizing commands."
+/>
+
+<InfoCardHorizontal
+  to="/projects/logkey/"
+  graphics={<Key width={IconMedium.width} height={IconMedium.height} />}
+  title="logkey"
+  description="A lightweight Python application to log user inputs into a CSV file with Docker support for easy deployment and GitHub Actions to automate key workflows."
+/>
+
+<InfoCardHorizontal
+  to="/projects/monitory/"
+  graphics={
+    <FilmFramesFlat width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="monitory"
+  description="A modular system for live video monitoring with real-time streaming and remote control capabilities."
+/>
+
+<InfoCardHorizontal
+  to="/projects/nexus/"
+  graphics={<Rocket width={IconMedium.width} height={IconMedium.height} />}
+  title="nexus"
+  description='A clean, responsive "Coming Soon" webpage template, perfect for announcing upcoming projects or products.'
+/>
+
+<InfoCardHorizontal
+  to="/projects/wonders/"
+  graphics={<Starstruck width={IconMedium.width} height={IconMedium.height} />}
+  title="wonders"
+  description="A curated collection of useful tools, apps, libraries, and resources for developers, designers, creators, and tech enthusiasts."
+/>

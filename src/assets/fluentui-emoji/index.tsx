@@ -4,6 +4,8 @@ import ArtistPaletteFlat from "./artist_palette_flat.svg";
 import BookmarkTabsFlat from "./bookmark_tabs_flat.svg";
 import BooksFlat from "./books_flat.svg";
 import BrainFlat from "./brain_flat.svg";
+import BuildingConstructionFlat from "./building_construction_flat.svg";
+import BullseyeFlat from "./bullseye_flat.svg";
 import CardIndexDividersFlat from "./card_index_dividers_flat.svg";
 import CloudFlat from "./cloud_flat.svg";
 import CrystalBallFlat from "./crystal_ball_flat.svg";
@@ -11,6 +13,7 @@ import DesktopComputerFlat from "./desktop_computer_flat.svg";
 import DetectiveFlatDefault from "./detective_flat_default.svg";
 import DizzyFlat from "./dizzy_flat.svg";
 import EmailFlat from "./e-mail_flat.svg";
+import FilmFramesFlat from "./film_frames_flat.svg";
 import GameDieFlat from "./game_die_flat.svg";
 import GlobeWithMeridiansFlat from "./globe_with_meridians_flat.svg";
 import GlowingStarFlat from "./glowing_star_flat.svg";
@@ -18,9 +21,12 @@ import HammerAndWrenchFlat from "./hammer_and_wrench_flat.svg";
 import HandshakeFlat from "./handshake_flat.svg";
 import HerbFlat from "./herb_flat.svg";
 import HighVoltageFlat from "./high_voltage_flat.svg";
+import HollowRedCircleFlat from "./hollow_red_circle_flat.svg";
+import KeyFlat from "./key_flat.svg";
 import LaptopFlat from "./laptop_flat.svg";
 import LightBulbFlat from "./light_bulb_flat.svg";
 import MemoFlat from "./memo_flat.svg";
+import PackageFlat from "./package_flat.svg";
 import PageFacingUpFlat from "./page_facing_up_flat.svg";
 import PenguinFlat from "./penguin_flat.svg";
 import PersonFlatDefault from "./person_flat_default.svg";
@@ -55,6 +61,8 @@ export {
   BookmarkTabsFlat,
   BooksFlat,
   BrainFlat,
+  BuildingConstructionFlat,
+  BullseyeFlat,
   CardIndexDividersFlat,
   CloudFlat,
   CrystalBallFlat,
@@ -62,6 +70,7 @@ export {
   DetectiveFlatDefault,
   DizzyFlat,
   EmailFlat,
+  FilmFramesFlat,
   GameDieFlat,
   GlobeWithMeridiansFlat,
   GlowingStarFlat,
@@ -69,9 +78,12 @@ export {
   HandshakeFlat,
   HerbFlat,
   HighVoltageFlat,
+  HollowRedCircleFlat,
+  KeyFlat,
   LaptopFlat,
   LightBulbFlat,
   MemoFlat,
+  PackageFlat,
   PageFacingUpFlat,
   PenguinFlat,
   PersonFlatDefault,
