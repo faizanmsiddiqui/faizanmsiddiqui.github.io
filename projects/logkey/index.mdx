@@ -132,7 +132,7 @@ docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
 
 ##### 🪟 Windows: PowerShell
 
-```powershell title="Windows Terminal"
+```powershell title="Terminal"
 docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
   python src/logkey/logkey.py --exit-key <key> --csv-file /app/data/<filename>
 ```
@@ -157,7 +157,7 @@ docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
 
 ##### 🪟 Windows: PowerShell
 
-```powershell title="Windows Terminal"
+```powershell title="Terminal"
 docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
   python src/logkey/logkey.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
@@ -188,7 +188,7 @@ docker build -t logkey:latest -f ./Dockerfile .
 
 #### 🪟 Windows: PowerShell
 
-```powershell title="Windows Terminal"
+```powershell title="Terminal"
 docker build -t logkey:latest -f .\Dockerfile .
 ```
 
@@ -205,7 +205,7 @@ docker run -it --rm -v $(pwd)/:/app/data/ logkey:latest \
 
 #### 🪟 Windows: PowerShell
 
-```powershell title="Windows Terminal"
+```powershell title="Terminal"
 docker run -it --rm -v ${PWD}/:/app/data/ logkey:latest `
   python src/logkey/logkey.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
@@ -260,7 +260,7 @@ docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
 
 #### 🪟 Windows: PowerShell
 
-```powershell title="Windows Terminal"
+```powershell title="Terminal"
 docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
   python src/logkey/logkey.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
