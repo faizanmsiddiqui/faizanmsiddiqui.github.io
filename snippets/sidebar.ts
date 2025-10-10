@@ -12,6 +12,7 @@ const sidebar: SidebarsConfig = {
       items: [
         "hello-aioquic-quic-implementation-with-python/index",
         "hello-quic-go-quic-implementation-with-go/index",
+        "linux-network-interfaces-manager-using-pyqt6/index",
         "physical-network-interface-status-monitor-with-flask/index",
         "physical-network-interface-status-monitor-with-pyqt5/index",
       ],
