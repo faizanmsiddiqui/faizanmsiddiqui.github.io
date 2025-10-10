@@ -9,7 +9,10 @@ const sidebar: SidebarsConfig = {
         type: "doc",
         id: "index",
       },
-      items: [],
+      items: [
+        "conference-papers/index",
+        "theses-research-projects/index",
+      ],
     },
   ],
 };
