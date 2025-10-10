@@ -5,8 +5,15 @@ description:
 date: 2025-10-03T13:19:20Z
 ---
 
-import { CardIndexDividers } from "@site/src/assets/noto-emoji-unicode-16";
-import { IconExtraLarge } from "@site/src/components/IconSize";
+import {
+  CardIndexDividers,
+  GlobeWithMeridians,
+  HighVoltage,
+  Rocket,
+} from "@site/src/assets/noto-emoji-unicode-16";
+import { DesktopComputerFlat } from "@site/src/assets/fluentui-emoji";
+import { IconExtraLarge, IconMedium } from "@site/src/components/IconSize";
+import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 
 <div className="center-image-and-caption">
 
@@ -23,8 +30,34 @@ A collection of useful mini projects and code snippets created over time. These
 cover a variety of topics and can be used as standalone solutions or as building
 blocks for larger projects to specific problems.
 
-- [**Snippets**](/snippets/)
-  - [**Hello, aioquic! (QUIC implementation with Python)**](/snippets/hello-aioquic-quic-implementation-with-python/)
-  - [**Hello, quic-go! (QUIC implementation with Go)**](/snippets/hello-quic-go-quic-implementation-with-go/)
-  - [**Physical Network Interface Status Monitor with Flask**](/snippets/physical-network-interface-status-monitor-with-flask/)
-  - [**Physical Network Interface Status Monitor with PyQt5**](/snippets/physical-network-interface-status-monitor-with-pyqt5/)
+<InfoCardHorizontal
+  to="/snippets/hello-aioquic-quic-implementation-with-python/"
+  graphics={<HighVoltage width={IconMedium.width} height={IconMedium.height} />}
+  title="Hello, aioquic! (QUIC implementation with Python)"
+  description="A simple example of using the aioquic library to implement a QUIC client and server in Python."
+/>
+
+<InfoCardHorizontal
+  to="/snippets/hello-quic-go-quic-implementation-with-go/"
+  graphics={<Rocket width={IconMedium.width} height={IconMedium.height} />}
+  title="Hello, quic-go! (QUIC implementation with Go)"
+  description="A simple example demonstrating QUIC communication using the quic-go library in Go."
+/>
+
+<InfoCardHorizontal
+  to="/snippets/physical-network-interface-status-monitor-with-flask/"
+  graphics={
+    <GlobeWithMeridians width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="Physical Network Interface Status Monitor with Flask"
+  description="A simple Flask web application to monitor and display the status of physical network interfaces."
+/>
+
+<InfoCardHorizontal
+  to="/snippets/physical-network-interface-status-monitor-with-pyqt5/"
+  graphics={
+    <DesktopComputerFlat width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="Physical Network Interface Status Monitor with PyQt5"
+  description="A simple PyQt5 application that monitors and displays the status of physical network interfaces on a machine."
+/>
