@@ -17,12 +17,16 @@ const ImageFloat: React.FC<ImageFloatProps> = ({
   const [isWide, setIsWide] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleResize = () => setIsWide(window.innerWidth > MOBILE_BREAKPOINT);
+    const handleResize = () => {
+      setIsWide(window.innerWidth > MOBILE_BREAKPOINT);
+    };
 
     if (typeof window !== "undefined") {
       handleResize();
       window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
     }
   }, []);
 
