@@ -1,6 +1,6 @@
 import React from "react";
 
-type InlineIconProps = {
+type IconInlineProps = {
   Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   size?: string | number;
   marginLeft?: string | number;
@@ -8,7 +8,7 @@ type InlineIconProps = {
   style?: React.CSSProperties;
 };
 
-const InlineIcon: React.FC<InlineIconProps> = ({
+const IconInline: React.FC<IconInlineProps> = ({
   Icon,
   size = "1em",
   marginLeft = "0.5em",
@@ -28,4 +28,4 @@ const InlineIcon: React.FC<InlineIconProps> = ({
   return <Icon style={mergedStyle} />;
 };
 
-export default InlineIcon;
+export default IconInline;
