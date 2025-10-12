@@ -13,14 +13,17 @@ const ImageFloat: React.FC<ImageFloatProps> = ({
   align = "right",
   width = "250px",
 }) => {
+  const MOBILE_BREAKPOINT = 450;
   const [isWide, setIsWide] = useState<boolean>(false);
 
   useEffect(() => {
-    // Set initial value after mount
-    setIsWide(window.innerWidth > 450);
+    const handleResize = () => setIsWide(window.innerWidth > MOBILE_BREAKPOINT);
 
+    // Set initial value after mount
+    handleResize();
+
+    // Add event listener only if window is defined
     if (typeof window !== "undefined") {
-      const handleResize = () => setIsWide(window.innerWidth > 450);
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
     }
