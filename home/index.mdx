@@ -19,6 +19,7 @@ import {
 } from "@site/src/assets/noto-emoji-unicode-16";
 import { LinkedIn } from "@site/src/assets/coloured-icons";
 import { IconMedium } from "@site/src/components/IconSize";
+import ImageFloat from "@site/src/components/ImageFloat";
 import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 import styles from "./styles.module.css";
 
@@ -26,13 +27,16 @@ import styles from "./styles.module.css";
 
 # Faizan Siddiqui
 
-</div>
-
-<div className="center-image-and-caption">
-
-<img alt="Profile Picture" src={ProfilePicture} width="200" />
+Engineer | Researcher | Writer
 
 </div>
+
+<ImageFloat
+  alt="Profile Picture"
+  src={ProfilePicture}
+  align="left"
+  width="300px"
+></ImageFloat>
 
 Hello, I'm **Faizan Siddiqui**, an engineer and researcher based in **Finland**.
 Welcome to my personal corner on the web, where I share my journey, writings,

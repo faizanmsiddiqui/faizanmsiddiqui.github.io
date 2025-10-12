@@ -3,4 +3,8 @@
   background: var(--ifm-color-primary-light);
   text-align: center;
   color: var(--ifm-background-surface-color);
+
+  h1 {
+    margin-bottom: 0;
+  }
 }
