@@ -21,13 +21,12 @@ const ImageFloat: React.FC<ImageFloatProps> = ({
       setIsWide(window.innerWidth > MOBILE_BREAKPOINT);
     };
 
-    if (typeof window !== "undefined") {
-      handleResize();
-      window.addEventListener("resize", handleResize);
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const style: React.CSSProperties = {
