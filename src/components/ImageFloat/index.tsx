@@ -13,14 +13,17 @@ const ImageFloat: React.FC<ImageFloatProps> = ({
   align = "right",
   width = "250px",
 }) => {
-  const [isWide, setIsWide] = useState<boolean>(
-    typeof window !== "undefined" ? window.innerWidth > 450 : true
-  );
+  const [isWide, setIsWide] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleResize = () => setIsWide(window.innerWidth > 450);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    // Set initial value after mount
+    setIsWide(window.innerWidth > 450);
+
+    if (typeof window !== "undefined") {
+      const handleResize = () => setIsWide(window.innerWidth > 450);
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }
   }, []);
 
   const style: React.CSSProperties = {
