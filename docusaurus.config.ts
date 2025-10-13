@@ -320,10 +320,6 @@ const config: Config = {
           href: "https://github.com/imfsiddiqui",
         },
         {
-          type: "search",
-          position: "right",
-        },
-        {
           position: "right",
           label: "Socials",
           to: "/socials/",
