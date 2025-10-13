@@ -51,27 +51,23 @@ const config: Config = {
         indexDocs: true,
         indexPages: true,
         docsRouteBasePath: [
-          "/about",
+          "/articles",
           "/attributions",
           "/",
           "/notes",
           "/projects",
           "/publications",
-          "/resume",
           "/snippets",
-          "/socials",
         ],
         blogRouteBasePath: ["/blog"],
         docsDir: [
-          "about",
+          "articles",
           "attributions",
           "home",
           "notes",
           "projects",
           "publications",
-          "resume",
           "snippets",
-          "socials",
         ],
         blogDir: ["blog"],
       },
@@ -117,10 +113,10 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "about",
-        path: "about",
-        routeBasePath: "/about",
-        sidebarPath: require.resolve("./about/sidebar.ts"),
+        id: "articles",
+        path: "articles",
+        routeBasePath: "/articles",
+        sidebarPath: require.resolve("./articles/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -183,32 +179,10 @@ const config: Config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "resume",
-        path: "resume",
-        routeBasePath: "/resume",
-        sidebarPath: require.resolve("./resume/sidebar.ts"),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
         id: "snippets",
         path: "snippets",
         routeBasePath: "/snippets",
         sidebarPath: require.resolve("./snippets/sidebar.ts"),
-        breadcrumbs: false,
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "socials",
-        path: "socials",
-        routeBasePath: "/socials",
-        sidebarPath: require.resolve("./socials/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -280,8 +254,8 @@ const config: Config = {
       items: [
         // {
         //   position: "left",
-        //   label: "About",
-        //   to: "/about/",
+        //   label: "Articles",
+        //   to: "/articles/",
         // },
         {
           position: "left",
@@ -303,11 +277,6 @@ const config: Config = {
           label: "Publications",
           to: "/publications/",
         },
-        // {
-        //   position: "left",
-        //   label: "Resume",
-        //   to: "/resume/",
-        // },
         {
           position: "left",
           label: "Snippets",
@@ -318,11 +287,6 @@ const config: Config = {
           className: "header-github-link",
           "aria-label": "GitHub account",
           href: "https://github.com/imfsiddiqui",
-        },
-        {
-          position: "right",
-          label: "Socials",
-          to: "/socials/",
         },
       ],
     },
