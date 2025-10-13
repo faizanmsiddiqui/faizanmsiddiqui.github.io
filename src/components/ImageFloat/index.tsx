@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import clsx from "clsx";
+import styles from "./styles.module.css";
 
 interface ImageFloatProps {
   alt: string;
@@ -13,36 +15,19 @@ const ImageFloat: React.FC<ImageFloatProps> = ({
   align = "right",
   width = "250px",
 }) => {
-  const MOBILE_BREAKPOINT = 450;
-  const [isWide, setIsWide] = useState<boolean>(() => {
-    // SSR-safe initial state
-    if (typeof window === "undefined") return true;
-    return window.innerWidth > MOBILE_BREAKPOINT;
-  });
+  const className = align === "left" ? styles.floatLeft : styles.floatRight;
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsWide(window.innerWidth > MOBILE_BREAKPOINT);
-    };
+  const style: React.CSSProperties = { width };
 
-    // Set on mount to ensure correct client-side width
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const style: React.CSSProperties = {
-    float: isWide ? align : "none",
-    display: "block",
-    margin: isWide
-      ? align === "left"
-        ? "0 1em 1em 0"
-        : "0 0 1em 1em"
-      : "1em auto",
-    width,
-  };
-
-  return <img alt={alt} src={src} style={style} loading="lazy" />;
+  return (
+    <img
+      alt={alt}
+      src={src}
+      style={style}
+      className={clsx(styles.responsiveFloat, className)}
+      loading="lazy"
+    />
+  );
 };
 
 export default ImageFloat;

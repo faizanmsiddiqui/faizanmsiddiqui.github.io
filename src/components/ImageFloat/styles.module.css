@@ -1,0 +1,24 @@
+.responsiveFloat {
+  display: block;
+  margin: 1em auto;
+}
+
+.floatLeft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+.floatRight {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+/* Disable float for narrow viewports */
+@media (max-width: 500px) {
+  .floatLeft,
+  .floatRight {
+    float: none;
+    display: block;
+    margin: 1em auto;
+  }
+}
