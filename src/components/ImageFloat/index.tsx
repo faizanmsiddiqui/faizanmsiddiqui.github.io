@@ -1,4 +1,5 @@
 import React from "react";
+import clsx from "clsx";
 import styles from "./styles.module.css";
 
 interface ImageFloatProps {
@@ -23,7 +24,7 @@ const ImageFloat: React.FC<ImageFloatProps> = ({
       alt={alt}
       src={src}
       style={style}
-      className={`${styles.responsiveFloat} ${className}`}
+      className={clsx(styles.responsiveFloat, className)}
       loading="lazy"
     />
   );
