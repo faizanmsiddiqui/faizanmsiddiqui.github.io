@@ -51,6 +51,7 @@ const config: Config = {
         indexDocs: true,
         indexPages: true,
         docsRouteBasePath: [
+          "/articles",
           "/attributions",
           "/",
           "/notes",
@@ -60,6 +61,7 @@ const config: Config = {
         ],
         blogRouteBasePath: ["/blog"],
         docsDir: [
+          "articles",
           "attributions",
           "home",
           "notes",
@@ -106,6 +108,17 @@ const config: Config = {
         onInlineTags: "warn",
         onInlineAuthors: "warn",
         onUntruncatedBlogPosts: "warn",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "articles",
+        path: "articles",
+        routeBasePath: "/articles",
+        sidebarPath: require.resolve("./articles/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
       },
     ],
     [
@@ -239,6 +252,11 @@ const config: Config = {
         src: logo,
       },
       items: [
+        {
+          position: "left",
+          label: "Articles",
+          to: "/articles/",
+        },
         {
           position: "left",
           label: "Blog",
