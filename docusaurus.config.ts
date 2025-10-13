@@ -252,11 +252,11 @@ const config: Config = {
         src: logo,
       },
       items: [
-        {
-          position: "left",
-          label: "Articles",
-          to: "/articles/",
-        },
+        // {
+        //   position: "left",
+        //   label: "Articles",
+        //   to: "/articles/",
+        // },
         {
           position: "left",
           label: "Blog",
