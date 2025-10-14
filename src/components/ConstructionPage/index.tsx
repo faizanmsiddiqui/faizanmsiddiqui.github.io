@@ -9,7 +9,7 @@ type ConstructionPageProps = {
   description: string;
 };
 
-export default function ConstructionPage({
+function ConstructionPage({
   title,
   description,
 }: ConstructionPageProps): ReactNode {
@@ -24,3 +24,5 @@ export default function ConstructionPage({
     </Layout>
   );
 }
+
+export default ConstructionPage;

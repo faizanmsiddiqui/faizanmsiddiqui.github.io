@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 
-export default function BarsAnimation() {
+function BarsAnimation() {
   const bars = [
     "#FFB3BA", // Pastel Red
     "#FFDFBA", // Pastel Orange
@@ -26,3 +26,5 @@ export default function BarsAnimation() {
     </div>
   );
 }
+
+export default BarsAnimation;
