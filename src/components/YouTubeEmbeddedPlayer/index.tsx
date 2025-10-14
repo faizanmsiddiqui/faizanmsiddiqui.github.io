@@ -9,7 +9,7 @@ const YouTubeEmbeddedPlayer = ({
   videoTitle,
   videoId,
 }: YouTubeEmbeddedPlayerProps) => {
-  const videoSrc = "https://www.youtube-nocookie.com/embed/" + videoId;
+  const videoSrc = `https://www.youtube-nocookie.com/embed/${videoId}`;
 
   return (
     <div className={styles.container}>
