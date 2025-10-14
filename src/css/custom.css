@@ -121,7 +121,7 @@ details.danger {
     display: block;
     margin: auto;
     margin-bottom: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
   }
   svg {
     display: block;
