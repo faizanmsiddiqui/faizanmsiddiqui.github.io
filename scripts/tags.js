@@ -39,11 +39,11 @@ function removeTagsFile() {
 }
 
 // --- Command-line usage ---
-//   node tags.js add
-//   node tags.js remove
+//   node tags.js --generate
+//   node tags.js --remove
 
-const action = process.argv[2];
+const arg = process.argv[2];
 
-if (action === "add") copyTagsFile();
-else if (action === "remove") removeTagsFile();
-else console.log("Usage: node tags.js [add|remove]");
+if (arg === "--generate") copyTagsFile();
+else if (arg === "--remove") removeTagsFile();
+else console.log("Usage: node tags.js [--generate|--remove]");
