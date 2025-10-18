@@ -44,28 +44,6 @@ const config: Config = {
 
   plugins: [
     [
-      "@docusaurus/plugin-content-blog",
-      {
-        id: "blog",
-        path: "blog",
-        routeBasePath: "/blog",
-        blogTitle: "Blog",
-        blogDescription: "A collection of my personal blog posts.",
-        blogSidebarTitle: "Blog",
-        blogSidebarCount: "ALL",
-        postsPerPage: 10,
-        showReadingTime: true,
-        showLastUpdateTime: true,
-        feedOptions: {
-          type: ["rss", "atom"],
-          xslt: true,
-        },
-        onInlineTags: "warn",
-        onInlineAuthors: "warn",
-        onUntruncatedBlogPosts: "warn",
-      },
-    ],
-    [
       "@docusaurus/plugin-content-docs",
       {
         id: "articles",
@@ -83,6 +61,17 @@ const config: Config = {
         path: "attributions",
         routeBasePath: "/attributions",
         sidebarPath: require.resolve("./attributions/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "blog",
+        path: "blog",
+        routeBasePath: "/blog",
+        sidebarPath: require.resolve("./blog/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
