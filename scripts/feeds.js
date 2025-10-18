@@ -13,16 +13,23 @@ const outputDir = "./static";
 const siteUrl = "https://example.com";
 
 /**
- * Recursively reads all .mdx files from a directory
+ * Recursively reads all .mdx files from subdirectories
+ * Skips .mdx files directly inside the root directory
  */
-function readMDXFilesRecursively(dir) {
+function readMDXFilesRecursively(dir, isRoot = true) {
   const files = [];
 
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const fullPath = path.join(dir, entry.name);
+
     if (entry.isDirectory()) {
-      files.push(...readMDXFilesRecursively(fullPath));
-    } else if (entry.isFile() && entry.name.endsWith(".mdx")) {
+      // Recurse into subdirectories
+      files.push(...readMDXFilesRecursively(fullPath, false));
+    } else if (
+      entry.isFile() &&
+      entry.name.endsWith(".mdx") &&
+      !isRoot // Skip .mdx in root (e.g., ./articles/article.mdx)
+    ) {
       files.push(fullPath);
     }
   }
