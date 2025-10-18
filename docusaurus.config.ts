@@ -285,7 +285,7 @@ const config: Config = {
         {
           position: "right",
           type: "search",
-        }
+        },
       ],
     },
     footer: {
