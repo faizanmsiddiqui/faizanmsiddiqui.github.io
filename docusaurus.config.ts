@@ -171,6 +171,45 @@ const config: Config = {
     ],
   ],
 
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "alternate",
+        type: "application/atom+xml",
+        href: "/articles-atom.xml",
+        title: "Faizan Siddiqui Articles Atom Feed",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "alternate",
+        type: "application/rss+xml",
+        href: "/articles-rss.xml",
+        title: "Faizan Siddiqui Articles RSS Feed",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "alternate",
+        type: "application/atom+xml",
+        href: "/blog-atom.xml",
+        title: "Faizan Siddiqui Blog Atom Feed",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "alternate",
+        type: "application/rss+xml",
+        href: "/blog-rss.xml",
+        title: "Faizan Siddiqui Blog RSS Feed",
+      },
+    },
+  ],
+
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: "throw",
@@ -286,7 +325,7 @@ const config: Config = {
         {
           position: "right",
           type: "search",
-        }
+        },
       ],
     },
     footer: {
