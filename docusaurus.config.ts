@@ -253,40 +253,38 @@ const config: Config = {
       },
       items: [
         // {
-        //   position: "left",
+        //   position: "right",
         //   label: "Articles",
         //   to: "/articles/",
         // },
         {
-          position: "left",
+          position: "right",
           label: "Blog",
           to: "/blog/",
         },
         {
-          position: "left",
+          position: "right",
           label: "Notes",
           to: "/notes/",
         },
         {
-          position: "left",
+          position: "right",
           label: "Projects",
           to: "/projects/",
         },
         {
-          position: "left",
+          position: "right",
           label: "Publications",
           to: "/publications/",
         },
         {
-          position: "left",
+          position: "right",
           label: "Snippets",
           to: "/snippets/",
         },
         {
           position: "right",
-          className: "header-github-link",
-          "aria-label": "GitHub account",
-          href: "https://github.com/imfsiddiqui",
+          type: "search",
         },
       ],
     },
