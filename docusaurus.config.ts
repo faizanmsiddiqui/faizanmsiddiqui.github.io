@@ -29,51 +29,6 @@ const config: Config = {
     locales: ["en"],
   },
 
-  onBrokenLinks: "throw",
-
-  markdown: {
-    hooks: {
-      onBrokenMarkdownLinks: "throw",
-    },
-    mermaid: true,
-  },
-  themes: [
-    "@docusaurus/theme-mermaid",
-    "plugin-image-zoom",
-    [
-      "@easyops-cn/docusaurus-search-local",
-      {
-        explicitSearchResultPath: true,
-        hashed: true,
-        highlightSearchTermsOnTargetPage: true,
-        language: "en",
-        indexBlog: true,
-        indexDocs: true,
-        indexPages: true,
-        docsRouteBasePath: [
-          "/articles",
-          "/attributions",
-          "/",
-          "/notes",
-          "/projects",
-          "/publications",
-          "/snippets",
-        ],
-        blogRouteBasePath: ["/blog"],
-        docsDir: [
-          "articles",
-          "attributions",
-          "home",
-          "notes",
-          "projects",
-          "publications",
-          "snippets",
-        ],
-        blogDir: ["blog"],
-      },
-    ],
-  ],
-
   presets: [
     [
       "classic",
@@ -88,28 +43,6 @@ const config: Config = {
   ],
 
   plugins: [
-    [
-      "@docusaurus/plugin-content-blog",
-      {
-        id: "blog",
-        path: "blog",
-        routeBasePath: "/blog",
-        blogTitle: "Blog",
-        blogDescription: "A collection of my personal blog posts.",
-        blogSidebarTitle: "Blog",
-        blogSidebarCount: "ALL",
-        postsPerPage: 10,
-        showReadingTime: true,
-        showLastUpdateTime: true,
-        feedOptions: {
-          type: ["rss", "atom"],
-          xslt: true,
-        },
-        onInlineTags: "warn",
-        onInlineAuthors: "warn",
-        onUntruncatedBlogPosts: "warn",
-      },
-    ],
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -128,6 +61,17 @@ const config: Config = {
         path: "attributions",
         routeBasePath: "/attributions",
         sidebarPath: require.resolve("./attributions/sidebar.ts"),
+        breadcrumbs: false,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "blog",
+        path: "blog",
+        routeBasePath: "/blog",
+        sidebarPath: require.resolve("./blog/sidebar.ts"),
         breadcrumbs: false,
         showLastUpdateTime: true,
       },
@@ -211,6 +155,75 @@ const config: Config = {
             to: "/notes/basement/virtualbox-on-windows-11-beginners-guide/",
             from: ["/writings/pages/virtualbox-on-windows-11-beginners-guide/"],
           },
+        ],
+      },
+    ],
+  ],
+
+  headTags: [
+    // Refactor: Add dynamic feed links generation when more content sections
+    // with feeds are added
+    {
+      tagName: "link",
+      attributes: {
+        rel: "alternate",
+        type: "application/rss+xml",
+        href: "/blog-rss.xml",
+        title: `${title} Blog RSS Feed`,
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "alternate",
+        type: "application/atom+xml",
+        href: "/blog-atom.xml",
+        title: `${title} Blog Atom Feed`,
+      },
+    },
+  ],
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "throw",
+    },
+    mermaid: true,
+  },
+
+  onBrokenLinks: "throw",
+
+  themes: [
+    "@docusaurus/theme-mermaid",
+    "plugin-image-zoom",
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        explicitSearchResultPath: true,
+        hashed: true,
+        highlightSearchTermsOnTargetPage: true,
+        language: "en",
+        indexBlog: false,
+        indexDocs: true,
+        indexPages: true,
+        docsRouteBasePath: [
+          "/articles",
+          "/blog",
+          "/attributions",
+          "/",
+          "/notes",
+          "/projects",
+          "/publications",
+          "/snippets",
+        ],
+        docsDir: [
+          "articles",
+          "attributions",
+          "blog",
+          "home",
+          "notes",
+          "projects",
+          "publications",
+          "snippets",
         ],
       },
     ],
