@@ -56,7 +56,7 @@ function parseFrontMatter(filePath) {
       path
         .relative(".", filePath)
         .replace(/\\/g, "/")
-        .replace(/\index.mdx$/, "")
+        .replace(/index.mdx$/, "")
         .replace(/\.mdx$/, ""),
   };
 }
