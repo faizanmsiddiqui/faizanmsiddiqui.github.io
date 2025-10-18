@@ -139,7 +139,7 @@ function removeFeeds() {
 function main() {
   const arg = process.argv[2];
 
-  if (arg && arg === "--generate") {
+  if (arg === "--generate") {
     for (const dir of contentDirs) {
       if (!fs.existsSync(dir)) continue;
 
@@ -150,7 +150,6 @@ function main() {
     }
   } else if (arg === "--remove") {
     removeFeeds();
-    return;
   } else {
     console.log("Usage: node feeds.js [--generate|--remove]");
   }
