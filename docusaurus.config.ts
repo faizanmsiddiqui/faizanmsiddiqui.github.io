@@ -161,22 +161,15 @@ const config: Config = {
   ],
 
   headTags: [
-    {
-      tagName: "link",
-      attributes: {
-        rel: "alternate",
-        type: "application/atom+xml",
-        href: "/articles-atom.xml",
-        title: "Faizan Siddiqui Articles Atom Feed",
-      },
-    },
+    // Refactor: Add dynamic feed links generation when more content sections
+    // with feeds are added
     {
       tagName: "link",
       attributes: {
         rel: "alternate",
         type: "application/rss+xml",
-        href: "/articles-rss.xml",
-        title: "Faizan Siddiqui Articles RSS Feed",
+        href: "/blog-rss.xml",
+        title: `${title} Blog RSS Feed`,
       },
     },
     {
@@ -185,16 +178,7 @@ const config: Config = {
         rel: "alternate",
         type: "application/atom+xml",
         href: "/blog-atom.xml",
-        title: "Faizan Siddiqui Blog Atom Feed",
-      },
-    },
-    {
-      tagName: "link",
-      attributes: {
-        rel: "alternate",
-        type: "application/rss+xml",
-        href: "/blog-rss.xml",
-        title: "Faizan Siddiqui Blog RSS Feed",
+        title: `${title} Blog Atom Feed`,
       },
     },
   ],
