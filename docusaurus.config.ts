@@ -29,51 +29,6 @@ const config: Config = {
     locales: ["en"],
   },
 
-  onBrokenLinks: "throw",
-
-  markdown: {
-    hooks: {
-      onBrokenMarkdownLinks: "throw",
-    },
-    mermaid: true,
-  },
-  themes: [
-    "@docusaurus/theme-mermaid",
-    "plugin-image-zoom",
-    [
-      "@easyops-cn/docusaurus-search-local",
-      {
-        explicitSearchResultPath: true,
-        hashed: true,
-        highlightSearchTermsOnTargetPage: true,
-        language: "en",
-        indexBlog: true,
-        indexDocs: true,
-        indexPages: true,
-        docsRouteBasePath: [
-          "/articles",
-          "/attributions",
-          "/",
-          "/notes",
-          "/projects",
-          "/publications",
-          "/snippets",
-        ],
-        blogRouteBasePath: ["/blog"],
-        docsDir: [
-          "articles",
-          "attributions",
-          "home",
-          "notes",
-          "projects",
-          "publications",
-          "snippets",
-        ],
-        blogDir: ["blog"],
-      },
-    ],
-  ],
-
   presets: [
     [
       "classic",
@@ -212,6 +167,52 @@ const config: Config = {
             from: ["/writings/pages/virtualbox-on-windows-11-beginners-guide/"],
           },
         ],
+      },
+    ],
+  ],
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "throw",
+    },
+    mermaid: true,
+  },
+
+  onBrokenLinks: "throw",
+
+  themes: [
+    "@docusaurus/theme-mermaid",
+    "plugin-image-zoom",
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        explicitSearchResultPath: true,
+        hashed: true,
+        highlightSearchTermsOnTargetPage: true,
+        language: "en",
+        indexBlog: true,
+        indexDocs: true,
+        indexPages: true,
+        docsRouteBasePath: [
+          "/articles",
+          "/attributions",
+          "/",
+          "/notes",
+          "/projects",
+          "/publications",
+          "/snippets",
+        ],
+        blogRouteBasePath: ["/blog"],
+        docsDir: [
+          "articles",
+          "attributions",
+          "home",
+          "notes",
+          "projects",
+          "publications",
+          "snippets",
+        ],
+        blogDir: ["blog"],
       },
     ],
   ],
