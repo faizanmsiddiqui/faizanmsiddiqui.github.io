@@ -74,8 +74,8 @@ function generateFeeds(dirName, posts) {
     link: siteUrl,
     language: "en",
     feedLinks: {
-      rss2: `${siteUrl}/static/${dirName}-rss.xml`,
-      atom: `${siteUrl}/static/${dirName}-atom.xml`,
+      rss2: `${siteUrl}/${dirName}-rss.xml`,
+      atom: `${siteUrl}/${dirName}-atom.xml`,
     },
   });
 
