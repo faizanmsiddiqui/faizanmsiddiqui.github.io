@@ -4,13 +4,16 @@ const matter = require("gray-matter");
 const { Feed } = require("feed");
 
 // Directories to include (extendable)
-const contentDirs = ["./articles", "./blog"];
+const contentDirs = ["./blog"];
 
 // Output directory
 const outputDir = "./static";
 
-// Base site URL (update as needed)
-const siteUrl = "https://example.com";
+// Site title
+const siteTitle = "Faizan Siddiqui";
+
+// Site base URL
+const siteUrl = "https://faizansiddiqui.me";
 
 /**
  * Recursively reads all .mdx files from subdirectories
@@ -28,7 +31,7 @@ function readMDXFilesRecursively(dir, isRoot = true) {
     } else if (
       entry.isFile() &&
       entry.name.endsWith(".mdx") &&
-      !isRoot // Skip .mdx in root (e.g., ./articles/article.mdx)
+      !isRoot // Skip .mdx in root (e.g., ./blog/index.mdx)
     ) {
       files.push(fullPath);
     }
@@ -47,8 +50,6 @@ function parseFrontMatter(filePath) {
     title: data.title ?? "Untitled",
     description: data.description ?? "",
     date: data.date ? new Date(data.date) : new Date(),
-    tags: data.tags ?? [],
-    image: data.image ?? null,
     link:
       siteUrl +
       "/" +
@@ -64,12 +65,13 @@ function parseFrontMatter(filePath) {
  */
 function generateFeeds(dirName, posts) {
   const feed = new Feed({
-    title: `${dirName.charAt(0).toUpperCase() + dirName.slice(1)} Feed`,
+    title: `${siteTitle} ${
+      dirName.charAt(0).toUpperCase() + dirName.slice(1)
+    } Feed`,
     description: `Latest ${dirName} updates`,
     id: siteUrl,
     link: siteUrl,
     language: "en",
-    favicon: `${siteUrl}/favicon.ico`,
     feedLinks: {
       rss2: `${siteUrl}/static/${dirName}-rss.xml`,
       atom: `${siteUrl}/static/${dirName}-atom.xml`,
@@ -81,12 +83,10 @@ function generateFeeds(dirName, posts) {
     .forEach((post) => {
       feed.addItem({
         title: post.title,
-        id: post.link,
-        link: post.link,
         description: post.description,
         date: post.date,
-        image: post.image ? siteUrl + "/" + post.image.replace("./", "") : null,
-        category: post.tags.map((t) => ({ name: t })),
+        id: post.link,
+        link: post.link,
       });
     });
 
@@ -102,7 +102,7 @@ function generateFeeds(dirName, posts) {
     "utf8"
   );
 
-  console.log(`✅ Generated ${dirName} RSS and Atom feeds`);
+  console.log(`Generated ${dirName} RSS and Atom feeds`);
 }
 
 /**
@@ -110,7 +110,7 @@ function generateFeeds(dirName, posts) {
  */
 function removeFeeds() {
   if (!fs.existsSync(outputDir)) {
-    console.log("ℹ️ No static directory found.");
+    console.log("No static directory found.");
     return;
   }
 
@@ -120,16 +120,16 @@ function removeFeeds() {
   );
 
   if (feedFiles.length === 0) {
-    console.log("ℹ️ No feed files found to remove.");
+    console.log("No feed files found to remove.");
     return;
   }
 
   for (const file of feedFiles) {
     fs.unlinkSync(path.join(outputDir, file));
-    console.log(`🗑️ Removed ${file}`);
+    console.log(`Removed ${file}`);
   }
 
-  console.log("✅ All feed files removed.");
+  console.log("All feed files removed.");
 }
 
 /**
