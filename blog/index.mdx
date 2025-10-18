@@ -1,5 +1,32 @@
-import ConstructionAnimation from "@site/src/components/ConstructionAnimation";
+---
+title: Blog
+description: A collection of my personal blog posts.
+date: 2025-10-18T10:59:53Z
+---
+
+import {
+  Memo,
+  WritingHandDefault,
+} from "@site/src/assets/noto-emoji-unicode-16";
+import { IconExtraLarge, IconMedium } from "@site/src/components/IconSize";
+import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
+
+<div className="center-image-and-caption">
+
+<WritingHandDefault
+  width={IconExtraLarge.width}
+  height={IconExtraLarge.height}
+/>
+
+</div>
 
 # Blog
 
-<ConstructionAnimation />
+A collection of my personal blog posts.
+
+<InfoCardHorizontal
+  to="/blog/hello-world/"
+  graphics={<Memo width={IconMedium.width} height={IconMedium.height} />}
+  title="Hello, World!"
+  description="A brief introduction to my writing journey and what to expect in future articles."
+/>
