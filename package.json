@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "prestart": "node scripts/feeds.js --generate && node scripts/tags.js --generate",
     "start": "docusaurus start",
+    "poststart": "node scripts/feeds.js --remove && node scripts/tags.js --remove",
     "prebuild": "node scripts/feeds.js --generate && node scripts/tags.js --generate",
     "build": "docusaurus build",
     "postbuild": "node scripts/feeds.js --remove && node scripts/tags.js --remove",
