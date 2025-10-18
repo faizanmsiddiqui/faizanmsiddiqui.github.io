@@ -1,10 +1,11 @@
-.banner {
-  border-radius: 1rem;
-  background: var(--ifm-color-primary-light);
-  text-align: center;
-  color: var(--ifm-background-surface-color);
-
+.title {
   h1 {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    text-align: center;
   }
 }
