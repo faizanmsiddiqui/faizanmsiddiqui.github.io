@@ -138,18 +138,20 @@ function removeFeeds() {
 function main() {
   const arg = process.argv[2];
 
-  if (arg === "--remove") {
+  if (arg && arg === "--generate") {
+    for (const dir of contentDirs) {
+      if (!fs.existsSync(dir)) continue;
+
+      const files = readMDXFilesRecursively(dir);
+      const posts = files.map(parseFrontMatter).filter(Boolean);
+      const dirName = path.basename(dir);
+      generateFeeds(dirName, posts);
+    }
+  } else if (arg === "--remove") {
     removeFeeds();
     return;
-  }
-
-  for (const dir of contentDirs) {
-    if (!fs.existsSync(dir)) continue;
-
-    const files = readMDXFilesRecursively(dir);
-    const posts = files.map(parseFrontMatter).filter(Boolean);
-    const dirName = path.basename(dir);
-    generateFeeds(dirName, posts);
+  } else {
+    console.log("Usage: node feeds.js [--generate|--remove]");
   }
 }
 
