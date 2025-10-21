@@ -1,3 +1,9 @@
+/**
+ * --- Command-line usage ---
+ * node feeds.js --generate
+ * node feeds.js --remove
+ */
+
 const fs = require("fs");
 const matter = require("gray-matter");
 const path = require("path");
@@ -125,24 +131,24 @@ function removeFeeds() {
   }
 }
 
-// --- Command-line usage ---
-//   node feeds.js --generate
-//   node feeds.js --remove
+function main() {
+  const arg = process.argv[2];
 
-const arg = process.argv[2];
+  if (arg === "--generate") {
+    for (const dir of contentDirs) {
+      if (!fs.existsSync(dir)) continue;
 
-if (arg === "--generate") {
-  for (const dir of contentDirs) {
-    if (!fs.existsSync(dir)) continue;
+      const files = readMDXFilesRecursively(dir);
+      const posts = files.map(parseFrontMatter).filter(Boolean);
+      const dirName = path.basename(dir);
 
-    const files = readMDXFilesRecursively(dir);
-    const posts = files.map(parseFrontMatter).filter(Boolean);
-    const dirName = path.basename(dir);
-
-    generateFeeds(dirName, posts);
+      generateFeeds(dirName, posts);
+    }
+  } else if (arg === "--remove") {
+    removeFeeds();
+  } else {
+    console.log("Usage: node feeds.js [--generate|--remove]");
   }
-} else if (arg === "--remove") {
-  removeFeeds();
-} else {
-  console.log("Usage: node feeds.js [--generate|--remove]");
 }
+
+main();

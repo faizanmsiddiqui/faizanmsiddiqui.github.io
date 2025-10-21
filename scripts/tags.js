@@ -1,3 +1,9 @@
+/**
+ * --- Command-line usage ---
+ * node tags.js --generate
+ * node tags.js --remove
+ */
+
 const fs = require("fs");
 const path = require("path");
 const yaml = require("js-yaml");
@@ -45,12 +51,12 @@ function removeTagsFile() {
   }
 }
 
-// --- Command-line usage ---
-//   node tags.js --generate
-//   node tags.js --remove
+function main() {
+  const arg = process.argv[2];
 
-const arg = process.argv[2];
+  if (arg === "--generate") copyTagsFile();
+  else if (arg === "--remove") removeTagsFile();
+  else console.log("Usage: node tags.js [--generate|--remove]");
+}
 
-if (arg === "--generate") copyTagsFile();
-else if (arg === "--remove") removeTagsFile();
-else console.log("Usage: node tags.js [--generate|--remove]");
+main();
