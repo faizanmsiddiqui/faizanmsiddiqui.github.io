@@ -1,23 +1,19 @@
 const fs = require("fs");
-const path = require("path");
 const matter = require("gray-matter");
+const path = require("path");
+const yaml = require("js-yaml");
 const { Feed } = require("feed");
 
-// Directories to include (extendable)
-const contentDirs = ["./blog"];
+const config = yaml.load(fs.readFileSync("site.config.yaml", "utf8"));
 
-// Output directory
-const outputDir = "./static";
-
-// Site title
-const siteTitle = "Faizan Siddiqui";
-
-// Site base URL
-const siteUrl = "https://faizansiddiqui.me";
+const title = config.title;
+const url = config.url;
+const contentDirs = config.feeds.contentDirs;
+const outputDir = config.feeds.outputDir;
 
 /**
- * Recursively reads all .mdx files from subdirectories
- * Skips .mdx files directly inside the root directory
+ * Recursively reads all `.mdx` files from subdirectories
+ * Skips `.mdx` files directly inside the root directory
  */
 function readMDXFilesRecursively(dir, isRoot = true) {
   const files = [];
@@ -31,7 +27,7 @@ function readMDXFilesRecursively(dir, isRoot = true) {
     } else if (
       entry.isFile() &&
       entry.name.endsWith(".mdx") &&
-      !isRoot // Skip .mdx in root (e.g., ./blog/index.mdx)
+      !isRoot // Skip `.mdx` in root (e.g., `./blog/index.mdx`)
     ) {
       files.push(fullPath);
     }
@@ -41,17 +37,18 @@ function readMDXFilesRecursively(dir, isRoot = true) {
 }
 
 /**
- * Extracts front matter metadata from a .mdx file
+ * Extracts front matter metadata from `.mdx` file
  */
 function parseFrontMatter(filePath) {
   const raw = fs.readFileSync(filePath, "utf8");
   const { data } = matter(raw);
+
   return {
     title: data.title ?? "Untitled",
     description: data.description ?? "",
     date: data.date ? new Date(data.date) : new Date(),
     link:
-      siteUrl +
+      url +
       "/" +
       path
         .relative(".", filePath)
@@ -66,16 +63,16 @@ function parseFrontMatter(filePath) {
  */
 function generateFeeds(dirName, posts) {
   const feed = new Feed({
-    title: `${siteTitle} ${
+    title: `${title} ${
       dirName.charAt(0).toUpperCase() + dirName.slice(1)
     } Feed`,
     description: `Latest ${dirName} updates`,
-    id: siteUrl,
-    link: siteUrl,
+    id: url,
+    link: url,
     language: "en",
     feedLinks: {
-      rss2: `${siteUrl}/${dirName}-rss.xml`,
-      atom: `${siteUrl}/${dirName}-atom.xml`,
+      rss2: `${url}/${dirName}-rss.xml`,
+      atom: `${url}/${dirName}-atom.xml`,
     },
   });
 
@@ -111,7 +108,7 @@ function generateFeeds(dirName, posts) {
  */
 function removeFeeds() {
   if (!fs.existsSync(outputDir)) {
-    console.log("No static directory found.");
+    console.log(`No ${outputDir} directory found.`);
     return;
   }
 
@@ -129,31 +126,26 @@ function removeFeeds() {
     fs.unlinkSync(path.join(outputDir, file));
     console.log(`Removed ${file}`);
   }
-
-  console.log("All feed files removed.");
 }
 
-/**
- * Main script logic
- */
-function main() {
-  const arg = process.argv[2];
+// --- Command-line usage ---
+//   node feeds.js --generate
+//   node feeds.js --remove
 
-  if (arg === "--generate") {
-    for (const dir of contentDirs) {
-      if (!fs.existsSync(dir)) continue;
+const arg = process.argv[2];
 
-      const files = readMDXFilesRecursively(dir);
-      const posts = files.map(parseFrontMatter).filter(Boolean);
-      const dirName = path.basename(dir);
-      generateFeeds(dirName, posts);
-    }
-  } else if (arg === "--remove") {
-    removeFeeds();
-  } else {
-    console.log("Usage: node feeds.js [--generate|--remove]");
+if (arg === "--generate") {
+  for (const dir of contentDirs) {
+    if (!fs.existsSync(dir)) continue;
+
+    const files = readMDXFilesRecursively(dir);
+    const posts = files.map(parseFrontMatter).filter(Boolean);
+    const dirName = path.basename(dir);
+
+    generateFeeds(dirName, posts);
   }
+} else if (arg === "--remove") {
+  removeFeeds();
+} else {
+  console.log("Usage: node feeds.js [--generate|--remove]");
 }
-
-// Run script
-main();
