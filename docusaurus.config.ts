@@ -294,13 +294,18 @@ const config: Config = {
         },
         {
           position: "right",
-          label: "Projects",
-          to: "/projects/",
+          label: "Publications",
+          to: "/publications/",
         },
         {
           position: "right",
-          label: "Publications",
-          to: "/publications/",
+          type: "html",
+          value: '<div class="navbar-separator"></div>',
+        },
+        {
+          position: "right",
+          label: "Projects",
+          to: "/projects/",
         },
         {
           position: "right",
