@@ -26,12 +26,8 @@ interface SiteConfig {
   };
 }
 
-const siteConfig: SiteConfig = yaml.load(
-  fs.readFileSync("site.config.yaml", "utf8")
-);
-
 const { title, author, url, baseUrl, favicon, logo, socialCard, feeds } =
-  siteConfig;
+  yaml.load(fs.readFileSync("site.config.yaml", "utf8")) as SiteConfig;
 
 const headTags = feeds.contentDirs.flatMap((feed) => [
   {
@@ -270,6 +266,17 @@ const config: Config = {
         background: "#1b1b1d",
       },
     },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+      additionalLanguages: [
+        "bash",
+        "batch",
+        "http",
+        "powershell",
+        "shell-session",
+      ],
+    },
     navbar: {
       title: title,
       logo: {
@@ -321,17 +328,6 @@ const config: Config = {
     footer: {
       style: "light",
       copyright: `Copyright © ${new Date().getFullYear()} ${author}.<br>Made with ❤️ and <a href="${baseUrl}/attributions"><strong>these amazing resources</strong></a>.`,
-    },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-      additionalLanguages: [
-        "bash",
-        "batch",
-        "http",
-        "powershell",
-        "shell-session",
-      ],
     },
   } satisfies Preset.ThemeConfig,
 };
