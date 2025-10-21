@@ -62,6 +62,10 @@ function parseFrontMatter(filePath) {
  * Generates RSS and Atom feeds
  */
 function generateFeeds(dirName, posts) {
+  const rssFileName = `${dirName}-rss.xml`;
+  const atomFileName = `${dirName}-atom.xml`;
+  const rssFilePath = path.join(outputDir, rssFileName);
+  const atomFilePath = path.join(outputDir, atomFileName);
   const feed = new Feed({
     title: `${title} ${
       dirName.charAt(0).toUpperCase() + dirName.slice(1)
@@ -89,18 +93,10 @@ function generateFeeds(dirName, posts) {
     });
 
   fs.mkdirSync(outputDir, { recursive: true });
-  fs.writeFileSync(
-    path.join(outputDir, `${dirName}-rss.xml`),
-    feed.rss2(),
-    "utf8"
-  );
-  fs.writeFileSync(
-    path.join(outputDir, `${dirName}-atom.xml`),
-    feed.atom1(),
-    "utf8"
-  );
-
-  console.log(`Generated ${dirName} RSS and Atom feeds`);
+  fs.writeFileSync(rssFilePath, feed.rss2(), "utf8");
+  console.log(`Generated ${dirName} RSS feed ${rssFilePath}`);
+  fs.writeFileSync(atomFilePath, feed.atom1(), "utf8");
+  console.log(`Generated ${dirName} Atom feed ${atomFilePath}`);
 }
 
 /**
@@ -123,8 +119,9 @@ function removeFeeds() {
   }
 
   for (const file of feedFiles) {
-    fs.unlinkSync(path.join(outputDir, file));
-    console.log(`Removed ${file}`);
+    const filePath = path.join(outputDir, file);
+    fs.unlinkSync(filePath);
+    console.log(`Removed ${filePath}`);
   }
 }
 
