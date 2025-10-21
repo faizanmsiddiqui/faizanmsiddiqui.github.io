@@ -7,8 +7,8 @@ const config = yaml.load(fs.readFileSync("site.config.yaml", "utf8"));
 const sourceFile = config.tags.sourceFile;
 const destinationFile = config.tags.destinationFile;
 
-const source = path.resolve(`${sourceFile}`);
-const destinationDirs = config.tags.destinationDirs.map((d) => path.resolve(d));
+const source = `${sourceFile}`;
+const destinationDirs = config.tags.destinationDirs;
 
 function copyTagsFile() {
   if (!fs.existsSync(source)) {
