@@ -1,6 +1,6 @@
 /**
  * Any CSS included here will be global. The Docusaurus classic template bundles
- * Infima by default. Infima is a CSS framework designed to work well for
+ * Infima by default which is a CSS framework designed to work well for
  * content-centric websites.
  */
 
@@ -33,7 +33,7 @@
   --ifm-code-font-size: 100%;
 }
 
-/* For readability concerns, choose a lighter palette in dark mode. */
+/* For readability concerns using lighter palette in dark mode. */
 [data-theme="dark"] {
   /* Infima default colors for dark mode */
   --ifm-color-primary: #25c2a0;
@@ -125,6 +125,12 @@ details.danger {
   text-align: center;
 }
 
+.navbar-separator {
+  width: 1px;
+  height: 24px;
+  background-color: var(--ifm-color-emphasis-300);
+}
+
 .no-ligatures {
   font-variant-ligatures: none;
 }
@@ -133,5 +139,14 @@ details.danger {
   p {
     margin: 0;
     color: var(--ifm-font-color-base);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 996px) {
+  .navbar-separator {
+    width: 100%;
+    height: 1px;
+    margin: 0.5rem 0;
   }
 }

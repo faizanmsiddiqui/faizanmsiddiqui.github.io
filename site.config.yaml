@@ -1,0 +1,23 @@
+title: "Faizan Siddiqui"
+author: "Faizan Siddiqui"
+url: "https://faizansiddiqui.me"
+baseUrl: ""
+
+favicon: "images/favicon.svg"
+logo: "images/profile.png"
+socialCard: "images/social-card.png"
+
+feeds:
+  contentDirs:
+    - "articles"
+    - "blog"
+  outputDir: "static"
+
+tags:
+  sourceFile: "tags.yaml"
+  destinationDirs:
+    - "articles"
+    - "blog"
+    - "notes"
+    - "snippets"
+  destinationFile: "tags.yml" # Must be `.yml` because of Docusaurus limitation

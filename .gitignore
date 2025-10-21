@@ -1,9 +1,9 @@
 # Dependencies
-/node_modules
+node_modules
 
 # Generated files
-.docusaurus
 .cache-loader
+.docusaurus
 
 # Logs
 npm-debug.log*
@@ -18,4 +18,4 @@ yarn-error.log*
 .env.production.local
 
 # Production
-/build
+build

@@ -1,3 +1,17 @@
+/**
+ * --- Usage example ---
+ *
+ * ```
+ * import YouTubeEmbeddedPlayer from "@site/src/components/YouTubeEmbeddedPlayer";
+ *
+ * <YouTubeEmbeddedPlayer
+ *   videoTitle="The Complete Cybersecurity Roadmap: Land a Cybersecurity Job in 10 Months"
+ *   videoId="v7BNtpw53AA"
+ * />
+ * ```
+ *
+ */
+
 import styles from "./styles.module.css";
 
 type YouTubeEmbeddedPlayerProps = {
@@ -27,18 +41,3 @@ const YouTubeEmbeddedPlayer = ({
 };
 
 export default YouTubeEmbeddedPlayer;
-
-/*
-
-# Usage Example
-
-```
-import YouTubeEmbeddedPlayer from "@site/src/components/YouTubeEmbeddedPlayer";
-
-<YouTubeEmbeddedPlayer
-  videoTitle="The Complete Cybersecurity Roadmap: Land a Cybersecurity Job in 10 Months"
-  videoId="v7BNtpw53AA"
-/>
-```
-
-*/

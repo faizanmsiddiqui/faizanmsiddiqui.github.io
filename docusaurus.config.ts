@@ -1,16 +1,58 @@
-import { themes as prismThemes } from "prism-react-renderer";
+// This file runs in Node.js, client-side (browser APIs, JSX...) code won't work
+// here.
+
+import fs from "fs";
+import yaml from "js-yaml";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import { themes as prismThemes } from "prism-react-renderer";
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+interface SiteConfig {
+  title: string;
+  author: string;
+  url: string;
+  baseUrl: string;
+  favicon: string;
+  logo: string;
+  socialCard: string;
+  feeds: {
+    contentDirs: string[];
+    outputDir: string;
+  };
+  tags: {
+    sourceFile: string;
+    destinationDirs: string[];
+    destinationFile: string;
+  };
+}
 
-const favicon = "images/favicon.svg";
-const logo = "images/profile.png";
-const socialCard = "images/social-card.png";
-const title = "Faizan Siddiqui";
-const author = "Faizan Siddiqui";
-const url = "https://faizansiddiqui.me";
-const baseUrl = "";
+const { title, author, url, baseUrl, favicon, logo, socialCard, feeds } =
+  yaml.load(fs.readFileSync("site.config.yaml", "utf8")) as SiteConfig;
+
+const headTags = feeds.contentDirs.flatMap((feed) => [
+  {
+    tagName: "link",
+    attributes: {
+      rel: "alternate",
+      type: "application/rss+xml",
+      href: `/${feed}-rss.xml`,
+      title: `${title} ${
+        feed.charAt(0).toUpperCase() + feed.slice(1)
+      } RSS Feed`,
+    },
+  },
+  {
+    tagName: "link",
+    attributes: {
+      rel: "alternate",
+      type: "application/atom+xml",
+      href: `/${feed}-atom.xml`,
+      title: `${title} ${
+        feed.charAt(0).toUpperCase() + feed.slice(1)
+      } Atom Feed`,
+    },
+  },
+]);
 
 const config: Config = {
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -18,16 +60,25 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+  title: title,
   url: url,
   baseUrl: baseUrl + "/",
 
   favicon: favicon,
-  title: title,
 
+  headTags: headTags,
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
   },
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "throw",
+    },
+    mermaid: true,
+  },
+  onBrokenLinks: "throw",
 
   presets: [
     [
@@ -160,38 +211,6 @@ const config: Config = {
     ],
   ],
 
-  headTags: [
-    // Refactor: Add dynamic feed links generation when more content sections
-    // with feeds are added
-    {
-      tagName: "link",
-      attributes: {
-        rel: "alternate",
-        type: "application/rss+xml",
-        href: "/blog-rss.xml",
-        title: `${title} Blog RSS Feed`,
-      },
-    },
-    {
-      tagName: "link",
-      attributes: {
-        rel: "alternate",
-        type: "application/atom+xml",
-        href: "/blog-atom.xml",
-        title: `${title} Blog Atom Feed`,
-      },
-    },
-  ],
-
-  markdown: {
-    hooks: {
-      onBrokenMarkdownLinks: "throw",
-    },
-    mermaid: true,
-  },
-
-  onBrokenLinks: "throw",
-
   themes: [
     "@docusaurus/theme-mermaid",
     "plugin-image-zoom",
@@ -205,16 +224,6 @@ const config: Config = {
         indexBlog: false,
         indexDocs: true,
         indexPages: true,
-        docsRouteBasePath: [
-          "/articles",
-          "/blog",
-          "/attributions",
-          "/",
-          "/notes",
-          "/projects",
-          "/publications",
-          "/snippets",
-        ],
         docsDir: [
           "articles",
           "attributions",
@@ -224,6 +233,16 @@ const config: Config = {
           "projects",
           "publications",
           "snippets",
+        ],
+        docsRouteBasePath: [
+          "/articles",
+          "/attributions",
+          "/blog",
+          "/",
+          "/notes",
+          "/projects",
+          "/publications",
+          "/snippets",
         ],
       },
     ],
@@ -240,6 +259,13 @@ const config: Config = {
         autoCollapseCategories: true,
       },
     },
+    image: socialCard,
+    imageZoom: {
+      selector: ".markdown img",
+      options: {
+        background: "#1b1b1d",
+      },
+    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
@@ -251,13 +277,6 @@ const config: Config = {
         "shell-session",
       ],
     },
-    imageZoom: {
-      selector: ".markdown img",
-      options: {
-        background: "#1b1b1d",
-      },
-    },
-    image: socialCard,
     navbar: {
       title: title,
       logo: {
@@ -265,11 +284,11 @@ const config: Config = {
         src: logo,
       },
       items: [
-        // {
-        //   position: "right",
-        //   label: "Articles",
-        //   to: "/articles/",
-        // },
+        {
+          position: "right",
+          label: "Articles",
+          to: "/articles/",
+        },
         {
           position: "right",
           label: "Blog",
@@ -282,13 +301,18 @@ const config: Config = {
         },
         {
           position: "right",
-          label: "Projects",
-          to: "/projects/",
+          label: "Publications",
+          to: "/publications/",
         },
         {
           position: "right",
-          label: "Publications",
-          to: "/publications/",
+          type: "html",
+          value: '<div class="navbar-separator"></div>',
+        },
+        {
+          position: "right",
+          label: "Projects",
+          to: "/projects/",
         },
         {
           position: "right",

@@ -1,4 +1,4 @@
-import { Construction } from "@site/src/assets/kit";
+import { Construction } from "@site/src/assets/custom";
 import styles from "./styles.module.css";
 
 function ConstructionAnimation() {

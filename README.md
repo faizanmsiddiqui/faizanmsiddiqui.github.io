@@ -1,8 +1,9 @@
 # imfsiddiqui.github.io
 
-![Social card](/static/images/social-card.png)
+Hello, I'm Faizan Siddiqui, an engineer and researcher based in Finland. Welcome
+to my personal corner on the web, where I share my journey, writings, and
+thoughts on technology, life, and more. Whether you're here to explore my work,
+read my writings, or simply learn a bit about me, I hope you find something
+interesting and inspiring.
 
-This repository contains the source code for my personal website, featuring my
-portfolio, blog, and contact information. It serves as a platform to showcase my
-work and share insights. Feel free to explore my projects, read my posts, and
-reach out. Feedback, and suggestions are always welcome!
+![Social card](/static/images/social-card.png)
