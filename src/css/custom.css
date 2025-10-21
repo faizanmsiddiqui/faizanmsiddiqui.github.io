@@ -125,6 +125,21 @@ details.danger {
   text-align: center;
 }
 
+.navbar-separator {
+  width: 1px;
+  height: 24px;
+  background-color: var(--ifm-color-emphasis-300);
+}
+
+/* Switch to horizontal separator on tablet and mobile */
+@media (max-width: 996px) {
+  .navbar-separator {
+    width: 100%;
+    height: 1px;
+    margin: 0.5rem 0;
+  }
+}
+
 .no-ligatures {
   font-variant-ligatures: none;
 }
