@@ -309,6 +309,11 @@ const config: Config = {
         },
         {
           position: "right",
+          type: "html",
+          value: '<div class="navbar-separator"></div>',
+        },
+        {
+          position: "right",
           label: "Publications",
           to: "/publications/",
         },
