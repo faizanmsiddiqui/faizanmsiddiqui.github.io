@@ -36,7 +36,6 @@ const sidebar: SidebarsConfig = {
                 id: "software-and-system-engineering/git/index",
               },
               items: [
-                "software-and-system-engineering/git/what-is-git/index",
                 "software-and-system-engineering/git/hello-git/index",
                 "software-and-system-engineering/git/commands-cheat-sheet/index",
                 "software-and-system-engineering/git/glossary/index",
