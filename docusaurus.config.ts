@@ -187,24 +187,32 @@ const config: Config = {
       {
         redirects: [
           {
-            to: "/notes/basement/docker-versus-podman-a-comparison/",
-            from: ["/writings/pages/docker-versus-podman-a-comparison/"],
+            to: "/articles/docker-versus-podman-a-comparison/",
+            from: [
+              "/notes/basement/docker-versus-podman-a-comparison/",
+              "/writings/pages/docker-versus-podman-a-comparison/",
+            ],
           },
           {
-            to: "/notes/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
+            to: "/articles/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
             from: [
+              "/notes/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
               "/writings/pages/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
             ],
           },
           {
-            to: "/notes/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
+            to: "/articles/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
             from: [
+              "/notes/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
               "/writings/pages/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
             ],
           },
           {
-            to: "/notes/basement/virtualbox-on-windows-11-beginners-guide/",
-            from: ["/writings/pages/virtualbox-on-windows-11-beginners-guide/"],
+            to: "/articles/virtualbox-on-windows-11-beginners-guide/",
+            from: [
+              "/notes/basement/virtualbox-on-windows-11-beginners-guide/",
+              "/writings/pages/virtualbox-on-windows-11-beginners-guide/",
+            ],
           },
         ],
       },
