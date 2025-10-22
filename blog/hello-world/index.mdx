@@ -1,8 +1,7 @@
 ---
 title: Hello, World!
 description:
-  A brief introduction to my writing journey and what to expect in future
-  articles.
+  A brief introduction to my writing journey and what to expect in future.
 date: 2025-07-31T00:00:00Z
 tags:
   - announcement
@@ -15,6 +14,7 @@ image: ./featured-image.png
 import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 import {
   Books,
+  PageFacingUp,
   WritingHandDefault,
 } from "@site/src/assets/noto-emoji-unicode-16";
 import { IconMedium } from "@site/src/components/IconSize";
@@ -29,12 +29,10 @@ import { IconMedium } from "@site/src/components/IconSize";
 
 :::info
 
-This is my first article, and I'm excited to share it with you. It's an
+This is my first official post, and I'm excited to share it with you. It's an
 introduction to my writing journey and what you can expect moving forward.
 
 :::
-
-{/* truncate */}
 
 As is tradition in the programming world, the first program we write is often a
 simple **"Hello, World!"**[^hello] to kick things off. So what better title to
@@ -55,9 +53,9 @@ So here I am, finally beginning my writing journey.
 
 I'm planning to write about all sorts of topics related to **Science,
 Technology, Engineering, and Mathematics (STEM)**[^stem], especially drawing
-from my background in Software Engineering, Networking and System
-Administration, Infrastructure, DevOps, Cloud Computing, Information Security,
-and Project and Product Management.
+from my background in Software and System Engineering, DevOps and
+Infrastructure, Full-Stack Web Development, Information Security, Embedded
+Systems, Multimedia, and Project and Product Management.
 
 Lately, I've been exploring Artificial Intelligence (AI), Gamification, and
 Human-Computer Interaction (HCI), and I'm curious about how they can blend with
@@ -68,8 +66,17 @@ practical ways.
 
 You can expect a mix of technical and non-technical articles, blog-style posts,
 how-to guides, personal notes (which I think might help others too), opinions,
-tips, tricks, and tutorials. You can find my writings in following two places on
+tips, tricks, and tutorials. You can find my writings in following places on
 this site:
+
+<InfoCardHorizontal
+  to="/articles/"
+  graphics={
+    <PageFacingUp width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="Articles"
+  description="Technical articles, how-to guides, tips, tricks, and tutorials."
+/>
 
 <InfoCardHorizontal
   to="/blog/"
@@ -84,7 +91,7 @@ this site:
   to="/notes/"
   graphics={<Books width={IconMedium.width} height={IconMedium.height} />}
   title="Notes"
-  description="Technical articles, how-to guides, tips, tricks, and tutorials."
+  description="Personal notes, study materials, and summaries on various subjects."
 />
 
 I'll try to mention the intended audience for each piece so it's clear who might
@@ -94,8 +101,8 @@ just the way I like to read myself.
 ## Final Words
 
 That's all for now. I hope you find the content useful and interesting. If
-you've got feedback or suggestions, feel free to reach out to me via
-[**Email**](mailto:imfsiddiqui@yahoo.com) or
+you've got feedback or suggestions, feel free to reach out to me via email at
+[**imfsiddiqui@yahoo.com**](mailto:imfsiddiqui@yahoo.com) or on
 [**LinkedIn**](https://www.linkedin.com/in/imfsiddiqui). I'd love to hear from
 you.
 
@@ -114,4 +121,4 @@ Enjoy the content, and happy reading!
     Science, Technology, Engineering, and Mathematics, also known as STEM, is a
     term used to group together related technical disciplines of science,
     technology, engineering, and mathematics. Learn more:
-    [**Science, technology, engineering, and mathematics - Wikipedia**](https://en.wikipedia.org/wiki/Science,_technology,_engineering,_and_mathematics)
+    [**Science, Technology, Engineering, and Mathematics - Wikipedia**](https://en.wikipedia.org/wiki/Science,_technology,_engineering,_and_mathematics)
