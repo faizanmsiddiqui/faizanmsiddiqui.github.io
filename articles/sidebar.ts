@@ -10,6 +10,7 @@ const sidebar: SidebarsConfig = {
         id: "index",
       },
       items: [
+        "hello-git/index",
         "what-is-git/index",
         "guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/index",
         "guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/index",
