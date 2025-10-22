@@ -12,8 +12,8 @@ const sidebar: SidebarsConfig = {
       items: [
         "hello-git/index",
         "what-is-git/index",
-        "guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/index",
-        "guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/index",
+        "open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/index",
+        "open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/index",
         "virtualbox-on-windows-11-beginners-guide/index",
       ],
     },

@@ -194,15 +194,17 @@ const config: Config = {
             ],
           },
           {
-            to: "/articles/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
+            to: "/articles/open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
             from: [
+              "/articles/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
               "/notes/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
               "/writings/pages/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
             ],
           },
           {
-            to: "/articles/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
+            to: "/articles/open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
             from: [
+              "/articles/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
               "/notes/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
               "/writings/pages/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
             ],
