@@ -178,20 +178,6 @@ const sidebar: SidebarsConfig = {
         //     },
         //   ],
         // },
-        {
-          type: "category",
-          label: "Basement",
-          link: {
-            type: "doc",
-            id: "basement/index",
-          },
-          items: [
-            "basement/docker-versus-podman-a-comparison/index",
-            "basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/index",
-            "basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/index",
-            "basement/virtualbox-on-windows-11-beginners-guide/index",
-          ],
-        },
       ],
     },
   ],
