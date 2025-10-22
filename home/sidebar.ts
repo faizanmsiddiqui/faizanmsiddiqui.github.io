@@ -13,15 +13,6 @@ const sidebar: SidebarsConfig = {
     },
     // {
     //   type: "category",
-    //   label: "About",
-    //   link: {
-    //     type: "doc",
-    //     id: "about/index",
-    //   },
-    //   items: [],
-    // },
-    // {
-    //   type: "category",
     //   label: "Resume",
     //   link: {
     //     type: "doc",
