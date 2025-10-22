@@ -25,6 +25,12 @@
   color: var(--ifm-link-color);
 }
 
+.date {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--ifm-color-gray-600);
+}
+
 .description {
-  margin: 0.25rem 0 0;
+  margin: 0;
 }
