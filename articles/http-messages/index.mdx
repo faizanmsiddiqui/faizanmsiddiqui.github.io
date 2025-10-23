@@ -4,27 +4,21 @@ description:
   An in-depth look at HTTP request and response messages, their structure, and
   components.
 date: 2025-10-01T10:54:27Z
+image: ./featured-image.png
 ---
 
 # HTTP Messages
+
+<div className="center-image-and-caption">
+
+![HTTP request and response](./featured-image.png)
+
+</div>
 
 HTTP communication relies on **messages**, which fall into two types:
 **requests** sent by clients and **responses** sent by servers. Each message
 consists of a **start line**, a set of **headers**, an optional **body**, and a
 **terminating sequence**.
-
-<div className="center-image-and-caption">
-
-```mermaid
-sequenceDiagram
-  participant Client
-  participant Server
-
-  Client->>+Server: HTTP Request Message (e.g., GET /index.html)
-  Server-->>-Client: HTTP Response Message (200 OK + HTML content)
-```
-
-</div>
 
 <div className="center-text center-table">
 
