@@ -11,15 +11,6 @@ const sidebar: SidebarsConfig = {
       },
       items: [],
     },
-    // {
-    //   type: "category",
-    //   label: "Resume",
-    //   link: {
-    //     type: "doc",
-    //     id: "resume/index",
-    //   },
-    //   items: [],
-    // },
     {
       type: "category",
       label: "Socials",
