@@ -10,6 +10,10 @@ const sidebar: SidebarsConfig = {
         id: "index",
       },
       items: [
+        "http-messages/index",
+        "understanding-https/index",
+        "what-is-http/index",
+        "comments-in-rust/index",
         "what-is-rust/index",
         "hello-git/index",
         "what-is-git/index",
