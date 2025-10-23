@@ -14,6 +14,7 @@ const sidebar: SidebarsConfig = {
         "understanding-https/index",
         "what-is-http/index",
         "comments-in-rust/index",
+        "hello-rust/index",
         "what-is-rust/index",
         "hello-git/index",
         "what-is-git/index",
