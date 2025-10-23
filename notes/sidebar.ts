@@ -88,7 +88,6 @@ const sidebar: SidebarsConfig = {
                 id: "programming-and-development/rust/index",
               },
               items: [
-                "programming-and-development/rust/what-is-rust/index",
                 "programming-and-development/rust/hello-rust/index",
                 "programming-and-development/rust/comments/index",
                 "programming-and-development/rust/data-types/index",

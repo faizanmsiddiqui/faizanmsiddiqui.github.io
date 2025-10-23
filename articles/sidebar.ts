@@ -10,6 +10,7 @@ const sidebar: SidebarsConfig = {
         id: "index",
       },
       items: [
+        "what-is-rust/index",
         "hello-git/index",
         "what-is-git/index",
         "open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/index",
