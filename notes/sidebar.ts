@@ -12,37 +12,21 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "category",
-          label: "Software and System Engineering",
+          label: "Git",
           link: {
             type: "doc",
-            id: "software-and-system-engineering/index",
+            id: "git/index",
           },
-          collapsed: false,
-          items: [
-            {
-              type: "category",
-              label: "Git",
-              link: {
-                type: "doc",
-                id: "software-and-system-engineering/git/index",
-              },
-              items: [
-                "software-and-system-engineering/git/commands-cheat-sheet/index",
-                "software-and-system-engineering/git/glossary/index",
-              ],
-            },
-            {
-              type: "category",
-              label: "PowerShell",
-              link: {
-                type: "doc",
-                id: "software-and-system-engineering/powershell/index",
-              },
-              items: [
-                "software-and-system-engineering/powershell/bash-to-powershell-commands-cheat-sheet/index",
-              ],
-            },
-          ],
+          items: ["git/commands-cheat-sheet/index", "git/glossary/index"],
+        },
+        {
+          type: "category",
+          label: "PowerShell",
+          link: {
+            type: "doc",
+            id: "powershell/index",
+          },
+          items: ["powershell/bash-to-powershell-commands-cheat-sheet/index"],
         },
       ],
     },

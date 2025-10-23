@@ -4,18 +4,8 @@ description: Personal notes, study materials, and summaries on various subjects.
 date: 2025-08-05T13:01:29Z
 ---
 
-import {
-  Books,
-  Brain,
-  DetectiveDefault,
-  Memo,
-  SatelliteAntenna,
-  VideoGame,
-} from "@site/src/assets/noto-emoji-unicode-16";
-import {
-  ArtistDefault,
-  TechnologistDefault,
-} from "@site/src/assets/noto-emoji-unicode-17";
+import { Books } from "@site/src/assets/noto-emoji-unicode-16";
+import { GitOriginal, PowerShellOriginal } from "@site/src/assets/devicon";
 import { LaptopFlat, RobotFlat } from "@site/src/assets/fluentui-emoji";
 import { IconExtraLarge, IconMedium } from "@site/src/components/IconSize";
 import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
@@ -31,10 +21,17 @@ import InfoCardHorizontal from "@site/src/components/InfoCardHorizontal";
 Personal notes, study materials, and summaries on various subjects.
 
 <InfoCardHorizontal
-  to="/notes/software-and-system-engineering/"
+  to="/notes/git/"
+  graphics={<GitOriginal width={IconMedium.width} height={IconMedium.height} />}
+  title="Git"
+  description="A collection of Git resources and guides."
+/>
+
+<InfoCardHorizontal
+  to="/notes/powershell/"
   graphics={
-    <TechnologistDefault width={IconMedium.width} height={IconMedium.height} />
+    <PowerShellOriginal width={IconMedium.width} height={IconMedium.height} />
   }
-  title="Software and System Engineering"
-  description="Principles, methodologies, best practices, and tools for designing, building, and maintaining software systems."
+  title="PowerShell"
+  description="A collection of PowerShell resources and guides."
 />
