@@ -13,6 +13,8 @@ const sidebar: SidebarsConfig = {
         "http-messages/index",
         "understanding-https/index",
         "what-is-http/index",
+        "more-data-types-in-rust/index",
+        "basic-data-types-in-rust/index",
         "comments-in-rust/index",
         "hello-rust/index",
         "what-is-rust/index",
