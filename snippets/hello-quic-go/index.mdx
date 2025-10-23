@@ -1,8 +1,8 @@
 ---
 title: Hello, quic-go!
 description:
-  A simple example demonstrating QUIC communication using the `quic-go` library
-  in Go.
+  A simple example demonstrating QUIC communication using the quic-go library in
+  Go.
 date: 2025-10-03T21:20:58Z
 ---
 
@@ -136,6 +136,15 @@ import (
     quic "github.com/quic-go/quic-go"
 )
 
+// Load TLS cert + key
+func generateTLSConfig() *tls.Config {
+    cert, err := tls.LoadX509KeyPair("cert.pem", "key.pem")
+    if err != nil {
+        log.Fatal(err)
+    }
+    return &tls.Config{Certificates: []tls.Certificate{cert}}
+}
+
 func main() {
     // TLS config
     tlsConfig := generateTLSConfig()
@@ -174,15 +183,6 @@ func main() {
             log.Fatal(err)
         }
     }
-}
-
-// Load TLS cert + key
-func generateTLSConfig() *tls.Config {
-    cert, err := tls.LoadX509KeyPair("cert.pem", "key.pem")
-    if err != nil {
-        log.Fatal(err)
-    }
-    return &tls.Config{Certificates: []tls.Certificate{cert}}
 }
 ```
 
