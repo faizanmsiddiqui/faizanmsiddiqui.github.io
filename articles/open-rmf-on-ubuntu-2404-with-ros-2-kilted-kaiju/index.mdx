@@ -53,7 +53,7 @@ environment (such as a Docker container), the locale may be something minimal
 like POSIX. You can test with the following settings, but any UTF-8-supported
 locale should work.
 
-```shell
+```shell title="Terminal"
 # Check for UTF-8 support
 locale
 
@@ -70,7 +70,7 @@ locale
 
 ### Install Build Tools
 
-```shell
+```shell title="Terminal"
 sudo apt update
 sudo apt upgrade -y
 sudo apt install -y build-essential
@@ -84,7 +84,7 @@ First, ensure that the
 [**Ubuntu Universe Repository**](https://help.ubuntu.com/community/Repositories/Ubuntu)
 is enabled:
 
-```shell
+```shell title="Terminal"
 sudo apt install -y software-properties-common
 sudo add-apt-repository -y universe
 ```
@@ -94,7 +94,7 @@ Install the
 package, which provides keys and APT source configuration for the ROS
 repositories:
 
-```shell
+```shell title="Terminal"
 sudo apt update
 sudo apt install -y curl
 export ROS_APT_SOURCE_VERSION=$(curl -s https://api.github.com/repos/ros-infrastructure/ros-apt-source/releases/latest | grep -F "tag_name" | awk -F\" '{print $4}')
@@ -107,7 +107,7 @@ sudo apt install -y /tmp/ros2-apt-source.deb
 As we need to build ROS packages and perform other development tasks, install
 the development tools:
 
-```shell
+```shell title="Terminal"
 sudo apt update
 sudo apt install -y ros-dev-tools
 ```
@@ -117,7 +117,7 @@ sudo apt install -y ros-dev-tools
 To install the desktop version of ROS 2 (includes ROS, RViz, demos, and
 tutorials):
 
-```shell
+```shell title="Terminal"
 sudo apt update
 sudo apt upgrade -y
 sudo apt install -y ros-kilted-desktop
@@ -128,7 +128,7 @@ sudo apt install -y ros-kilted-desktop
 Set up your shell environment by sourcing the following file. To make it
 persistent, add it to your `.bashrc`:
 
-```shell
+```shell title="Terminal"
 source /opt/ros/kilted/setup.bash
 ```
 
@@ -145,14 +145,14 @@ As `ros-kilted-desktop` has been installed, you can run some example nodes.
 
 In one terminal, source the setup file and run a C++ `talker`:
 
-```shell
+```shell title="Terminal"
 source /opt/ros/kilted/setup.bash
 ros2 run demo_nodes_cpp talker
 ```
 
 In another terminal, source the setup file and run a Python `listener`:
 
-```shell
+```shell title="Terminal"
 source /opt/ros/kilted/setup.bash
 ros2 run demo_nodes_py listener
 ```
@@ -166,7 +166,7 @@ them. This verifies that both the C++ and Python APIs are functioning correctly.
 
 Install all **non-ROS** dependencies of Open-RMF packages:
 
-```shell
+```shell title="Terminal"
 sudo apt update
 sudo apt upgrade -y
 sudo apt install -y python3-fastapi \
@@ -182,7 +182,7 @@ sudo apt install -y python3-fastapi \
 [**`rosdep`**](http://wiki.ros.org/rosdep) helps you easily install system
 dependencies for source code packages.
 
-```shell
+```shell title="Terminal"
 # Run this only the first time
 sudo rosdep init
 
@@ -195,7 +195,7 @@ rosdep update
 `colcon mixin` help configure `colcon` for easier builds using predefined
 settings.
 
-```shell
+```shell title="Terminal"
 colcon mixin add default https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml
 colcon mixin update default
 ```
@@ -204,7 +204,7 @@ colcon mixin update default
 
 Install the core Open-RMF Debian packages via `apt`.
 
-```shell
+```shell title="Terminal"
 sudo apt update
 sudo apt install -y ros-kilted-rmf-dev
 ```
@@ -218,7 +218,7 @@ additional tooling, clone the full source repositories below.
 
 :::
 
-```shell
+```shell title="Terminal"
 # Setup directories
 cd ~/
 mkdir -p ~/rmf_ws/src
@@ -260,7 +260,7 @@ These repositories include demos and packages such as:
 
 Before building, make sure to source the correct ROS and workspace environments:
 
-```shell
+```shell title="Terminal"
 # Source ROS environment
 source /opt/ros/kilted/setup.bash
 
@@ -279,7 +279,7 @@ colcon build
 
 To verify the installation, launch the RMF Gazebo office demo:
 
-```shell
+```shell title="Terminal"
 # Go to the RMF workspace
 cd ~/rmf_ws
 
@@ -301,7 +301,7 @@ backend and frontend services.
 
 Clone the `rmf-web` repository to your home directory:
 
-```shell
+```shell title="Terminal"
 cd ~/
 git clone https://github.com/open-rmf/rmf-web.git
 cd ~/rmf-web
@@ -311,7 +311,7 @@ cd ~/rmf-web
 
 `pnpm` is an efficient package manager used for managing Node.js packages.
 
-```shell
+```shell title="Terminal"
 curl -fsSL https://get.pnpm.io/install.sh | bash -
 source ~/.bashrc
 pnpm env use --global lts  # This will install the latest LTS version of Node.js
@@ -328,7 +328,7 @@ profile like `.bashrc` or `.zshrc`.
 
 Install Python 3's `pip` and `venv` modules (needed for ROS-related tooling):
 
-```shell
+```shell title="Terminal"
 sudo apt install -y python3-pip python3-venv
 ```
 
@@ -336,7 +336,7 @@ sudo apt install -y python3-pip python3-venv
 
 Use `pnpm` to install the required JavaScript/TypeScript dependencies:
 
-```shell
+```shell title="Terminal"
 cd ~/rmf-web
 pnpm install
 ```
@@ -353,7 +353,7 @@ servers. Open **two separate terminal windows/tabs** and follow the steps below.
 Open a new terminal window. The backend powers the API used by the dashboard
 frontend.
 
-```shell
+```shell title="Terminal"
 # Source ROS 2 and RMF workspace environments
 source /opt/ros/kilted/setup.bash
 source ~/rmf_ws/install/setup.bash
@@ -376,7 +376,7 @@ Any changes to the backend code will require restarting this server.
 In **another terminal window**, start the frontend (dashboard) for live
 development.
 
-```shell
+```shell title="Terminal"
 # Source ROS 2 and RMF workspace environments
 source /opt/ros/kilted/setup.bash
 source ~/rmf_ws/install/setup.bash
@@ -422,7 +422,7 @@ If prompted with a login screen:
 
 ### Terminal 1: Start the Backend
 
-```shell
+```shell title="Terminal"
 # Source ROS 2 and RMF workspace environments
 source /opt/ros/kilted/setup.bash
 source ~/rmf_ws/install/setup.bash
@@ -436,7 +436,7 @@ pnpm start
 
 ### Terminal 2: Start the Frontend
 
-```shell
+```shell title="Terminal"
 # Source ROS 2 and RMF workspace environments
 source /opt/ros/kilted/setup.bash
 source ~/rmf_ws/install/setup.bash
@@ -452,7 +452,7 @@ pnpm start:example examples/demo
 
 For Gazebo only:
 
-```shell
+```shell title="Terminal"
 # Source ROS 2 and RMF workspace environments
 source /opt/ros/kilted/setup.bash
 source ~/rmf_ws/install/setup.bash
@@ -462,7 +462,7 @@ ros2 launch rmf_demos_gz office.launch.xml
 
 For Gazebo **with web browser support**:
 
-```shell
+```shell title="Terminal"
 # Source ROS 2 and RMF workspace environments
 source /opt/ros/kilted/setup.bash
 source ~/rmf_ws/install/setup.bash
@@ -473,7 +473,7 @@ ros2 launch rmf_demos_gz office.launch.xml \
 
 ### Terminal 4: Send Tasks
 
-```shell
+```shell title="Terminal"
 # Source ROS 2 and RMF workspace environments
 source /opt/ros/kilted/setup.bash
 source ~/rmf_ws/install/setup.bash
