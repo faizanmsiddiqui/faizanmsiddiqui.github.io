@@ -102,7 +102,6 @@ const config: Config = {
         routeBasePath: "/articles",
         sidebarPath: require.resolve("./articles/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -113,7 +112,6 @@ const config: Config = {
         routeBasePath: "/attributions",
         sidebarPath: require.resolve("./attributions/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -124,7 +122,6 @@ const config: Config = {
         routeBasePath: "/blog",
         sidebarPath: require.resolve("./blog/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -135,7 +132,6 @@ const config: Config = {
         routeBasePath: "/",
         sidebarPath: require.resolve("./home/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -146,7 +142,6 @@ const config: Config = {
         routeBasePath: "/notes",
         sidebarPath: require.resolve("./notes/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -157,7 +152,6 @@ const config: Config = {
         routeBasePath: "/projects",
         sidebarPath: require.resolve("./projects/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -168,7 +162,6 @@ const config: Config = {
         routeBasePath: "/publications",
         sidebarPath: require.resolve("./publications/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -179,7 +172,6 @@ const config: Config = {
         routeBasePath: "/snippets",
         sidebarPath: require.resolve("./snippets/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
