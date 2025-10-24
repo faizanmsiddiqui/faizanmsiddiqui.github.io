@@ -5,9 +5,9 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "prebuild": "node scripts/feeds.js --generate && node scripts/tags.js --generate",
+    "prebuild": "node src/scripts/feeds.js --generate && node src/scripts/tags.js --generate",
     "build": "docusaurus build",
-    "postbuild": "node scripts/feeds.js --remove && node scripts/tags.js --remove",
+    "postbuild": "node src/scripts/feeds.js --remove && node src/scripts/tags.js --remove",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

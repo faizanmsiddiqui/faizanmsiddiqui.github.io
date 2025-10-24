@@ -3,16 +3,56 @@ announcement:
   permalink: /announcement
   description: Contents related to announcements and important updates.
 
+apis:
+  label: APIs
+  permalink: /apis
+  description: Contents related to Application Programming Interfaces (APIs).
+
+beginner-guide:
+  label: Beginner Guide
+  permalink: /beginner-guide
+  description: Contents related to beginner guides for various topics.
+
+cargo:
+  label: Cargo
+  permalink: /cargo
+  description: Contents related to Cargo, the Rust package manager.
+
+code-style:
+  label: Code Style
+  permalink: /code-style
+  description: Contents related to code style guidelines and best practices.
+
+collaboration:
+  label: Collaboration
+  permalink: /collaboration
+  description: Contents related to collaboration in software development.
+
+comments:
+  label: Comments
+  permalink: /comments
+  description: Contents related to code comments and documentation.
+
 comparison:
   label: Comparison
   permalink: /comparison
   description:
     Contents related to comparisons between different technologies or tools.
 
+concurrency:
+  label: Concurrency
+  permalink: /concurrency
+  description: Contents related to concurrent programming and techniques.
+
 containerization:
   label: Containerization
   permalink: /containerization
   description: Contents related to containerization technologies.
+
+data-types:
+  label: Data Types
+  permalink: /data-types
+  description: Contents related to various data types in programming.
 
 design:
   label: Design
@@ -23,6 +63,11 @@ development-tools:
   label: Development Tools
   permalink: /development-tools
   description: Contents related to various development tools and environments.
+
+distributed-vcs:
+  label: Distributed VCS
+  permalink: /distributed-vcs
+  description: Contents related to distributed version control systems.
 
 docker:
   label: Docker
@@ -39,15 +84,55 @@ fonts:
   permalink: /fonts
   description: Contents related to typography, font design, and usage.
 
+getting-started:
+  label: Getting Started
+  permalink: /getting-started
+  description: Contents related to getting started guides for various topics.
+
+git-basics:
+  label: Git Basics
+  permalink: /git-basics
+  description: Contents related to the basics of Git version control.
+
+git:
+  label: Git
+  permalink: /git
+  description: Contents related to Git version control system.
+
 graphics:
   label: Graphics
   permalink: /graphics
   description: Contents related to graphics design, tools, and techniques.
 
+hello-world:
+  label: Hello World
+  permalink: /hello-world
+  description: Contents related to "Hello World" programs in various languages.
+
 how-to:
   label: How To
   permalink: /how-to
   description: Contents related to how-to guides and tutorials.
+
+http-messages:
+  label: HTTP Messages
+  permalink: /http-messages
+  description: Contents related to HTTP messages.
+
+http-request:
+  label: HTTP Request
+  permalink: /http-request
+  description: Contents related to HTTP requests.
+
+http-response:
+  label: HTTP Response
+  permalink: /http-response
+  description: Contents related to HTTP responses.
+
+http:
+  label: HTTP
+  permalink: /http
+  description: Contents related to the Hypertext Transfer Protocol (HTTP).
 
 hypervisor:
   label: Hypervisor
@@ -59,16 +144,32 @@ icons:
   permalink: /icons
   description: Contents related to icons, their design, libraries, and usage.
 
+installation:
+  label: Installation
+  permalink: /installation
+  description: Contents related to software and system installation processes.
+
 installation-guide:
   label: Installation Guide
   permalink: /installation-guide
   description:
     Contents related to installation guides for various software and systems.
 
+memory-safety:
+  label: Memory Safety
+  permalink: /memory-safety
+  description: Contents related to memory safety in programming.
+
 motivation:
   label: Motivation
   permalink: /motivation
   description: Contents related to motivation and inspiration.
+
+networking:
+  label: Networking
+  permalink: /networking
+  description:
+    Contents related to computer networking concepts and technologies.
 
 news:
   label: News
@@ -92,6 +193,12 @@ podman:
   permalink: /podman
   description: Contents related to Podman, a container management tool.
 
+primitives:
+  label: Primitives
+  permalink: /primitives
+  description:
+    Contents related to primitive data types and operations in programming.
+
 productivity:
   label: Productivity
   permalink: /productivity
@@ -103,6 +210,11 @@ programming:
   description:
     Contents related to programming languages, paradigms, best practices, and
     tools.
+
+programming-basics:
+  label: Programming Basics
+  permalink: /programming-basics
+  description: Contents related to the basics of programming.
 
 robotics:
   label: Robotics
@@ -118,6 +230,21 @@ ros2:
     Contents related to ROS 2 (Robot Operating System), a flexible framework for
     writing robot software.
 
+rust:
+  label: Rust
+  permalink: /rust
+  description: Contents related to the Rust programming language.
+
+rustup:
+  label: Rustup
+  permalink: /rustup
+  description: Contents related to Rustup, the Rust toolchain installer.
+
+slices:
+  label: Slices
+  permalink: /slices
+  description: Contents related to slices in programming languages like Rust.
+
 software-development:
   label: Software Development
   permalink: /software-development
@@ -125,10 +252,36 @@ software-development:
     Contents related to software development practices, methodologies, and
     tools.
 
+ssl-certificates:
+  label: SSL Certificates
+  permalink: /ssl-certificates
+  description: Contents related to SSL certificates and their management.
+
+strings:
+  label: Strings
+  permalink: /strings
+  description:
+    Contents related to string data types and operations in programming.
+
+syntax:
+  label: Syntax
+  permalink: /syntax
+  description: Contents related to programming language syntax and rules.
+
+systems-programming:
+  label: Systems Programming
+  permalink: /systems-programming
+  description: Contents related to systems programming concepts and techniques.
+
 text-editors:
   label: Text Editors
   permalink: /text-editors
   description: Contents related to text editors and their usage.
+
+tls:
+  label: TLS
+  permalink: /tls
+  description: Contents related to Transport Layer Security (TLS) protocol.
 
 tutorial:
   label: Tutorial
@@ -151,6 +304,17 @@ user-interface:
   permalink: /user-interface
   description: Contents related to user interface design, principles, and tools.
 
+vectors:
+  label: Vectors
+  permalink: /vectors
+  description:
+    Contents related to vector data structures and operations in programming.
+
+version-control:
+  label: Version Control
+  permalink: /version-control
+  description: Contents related to version control systems and practices.
+
 virtualbox:
   label: VirtualBox
   permalink: /virtualbox
@@ -161,6 +325,22 @@ virtualization:
   label: Virtualization
   permalink: /virtualization
   description: Contents related to virtualization technologies.
+
+web-development:
+  label: Web Development
+  permalink: /web-development
+  description: Contents related to web development technologies and practices.
+
+web-protocols:
+  label: Web Protocols
+  permalink: /web-protocols
+  description:
+    Contents related to web protocols such as HTTP, HTTPS, FTP, and others.
+
+web-security:
+  label: Web Security
+  permalink: /web-security
+  description: Contents related to web security practices and technologies.
 
 windows-11:
   label: Windows 11

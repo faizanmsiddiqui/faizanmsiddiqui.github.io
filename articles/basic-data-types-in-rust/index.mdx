@@ -1,0 +1,246 @@
+---
+title: Basic Data Types in Rust
+description:
+  Overview of Rust's built-in data types, including scalar and compound types.
+date: 2025-09-24T18:41:17Z
+tags:
+  - rust
+  - data-types
+  - primitives
+  - beginner-guide
+  - programming-basics
+image: ./featured-image.jpg
+---
+
+# Basic Data Types in Rust
+
+<div className="center-image-and-caption">
+
+![Rust programming language banner](./featured-image.jpg)
+
+</div>
+
+:::tip[Documentation]
+
+- [**The Rust Programming Language: Data Types**](https://doc.rust-lang.org/book/ch03-02-data-types.html)
+
+:::
+
+Rust is a statically typed language, which means that all variables must have a
+known type at compile time. Rust provides a variety of built-in data types that
+can be broadly categorized into scalar and compound types.
+
+## Scalar Types
+
+:::tip[Documentation]
+
+- [**The Rust Programming Language: Scalar Types**](https://doc.rust-lang.org/book/ch03-02-data-types.html#scalar-types)
+
+:::
+
+Scalar types, also known as primitive types, represent a single value. Rust has
+four primary scalar types:
+
+- Integer
+- Floating-Point
+- Boolean
+- Character
+
+### Integer
+
+Integer type represent whole numbers without any fractional parts. The default
+integer type is `i32` due to its balance between range and performance. However,
+Rust provides several integer types with varying signedness and sizes.
+
+#### Signed
+
+Signed integers can represent both positive and negative values. The signed
+integer types in Rust are:
+
+- `i8`: 8-bit
+- `i16`: 16-bit
+- `i32`: 32-bit
+- `i64`: 64-bit
+- `i128`: 128-bit
+- `isize`: Pointer-sized, depends on the architecture
+
+```rust title="main.rs"
+fn main() {
+    // 8-bit signed integer: negative
+    let x: i8 = -42;
+    println!("Integer: {}", x);
+
+    // 16-bit signed integer: positive
+    let y: i16 = 42;
+    println!("Integer: {}", y);
+}
+```
+
+#### Unsigned
+
+Unsigned integers can only represent non-negative values. The unsigned integer
+types in Rust are:
+
+- `u8`: 8-bit
+- `u16`: 16-bit
+- `u32`: 32-bit
+- `u64`: 64-bit
+- `u128`: 128-bit
+- `usize`: Pointer-sized, depends on the architecture
+
+```rust title="main.rs"
+fn main() {
+    // 8-bit unsigned integer
+    let x: u8 = 255;
+    println!("Integer: {}", x);
+}
+```
+
+#### Range
+
+Each integer type has a specific range of values it can represent, determined by
+its signedness and size. For example, an `i8` can represent values from -128 to
+127, while a `u8` can represent values from 0 to 255.
+
+<div className="center-text center-table">
+
+| **Type** | **Size (bits)** |                                                                                                   **Range** |
+| :------- | :-------------: | ----------------------------------------------------------------------------------------------------------: |
+| `i8`     |        8        |                                                                                                 -128 to 127 |
+| `i16`    |       16        |                                                                                           -32,768 to 32,767 |
+| `i32`    |       32        |                                                                             -2,147,483,648 to 2,147,483,647 |
+| `i64`    |       64        |                                                     -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
+| `i128`   |       128       | -170,141,183,460,469,231,731,687,303,715,884,105,728 to 170,141,183,460,469,231,731,687,303,715,884,105,727 |
+| `u8`     |        8        |                                                                                                    0 to 255 |
+| `u16`    |       16        |                                                                                                 0 to 65,535 |
+| `u32`    |       32        |                                                                                          0 to 4,294,967,295 |
+| `u64`    |       64        |                                                                             0 to 18,446,744,073,709,551,615 |
+| `u128`   |       128       |                                                    0 to 340,282,366,920,938,463,463,374,607,431,768,211,455 |
+
+</div>
+
+### Floating-Point
+
+Floating-point types represent numbers with fractional parts. The default
+floating-point type is `f64` due to its balance between range and precision.
+However, Rust provides two floating-point types:
+
+- `f32`: 32-bit
+- `f64`: 64-bit
+
+```rust title="main.rs"
+fn main() {
+    // 32-bit floating-point
+    let x: f32 = 3.14;
+    println!("Float: {}", x);
+
+    // 64-bit floating-point
+    let y: f64 = 2.718281828459045;
+    println!("Float: {}", y);
+}
+```
+
+#### Range and Representation
+
+In Rust, floating-point numbers are represented according to the
+[**IEEE 754**](https://en.wikipedia.org/wiki/IEEE_754) standard.
+
+### Boolean
+
+Boolean type represents a value that can be either `true` or `false`, denoted by
+the `bool` type.
+
+```rust title="main.rs"
+fn main() {
+    // Boolean true
+    let is_rust_fun: bool = true;
+    println!("Is Rust fun? {}", is_rust_fun);
+
+    // Boolean false
+    let is_sky_green: bool = false;
+    println!("Is the sky green? {}", is_sky_green);
+}
+```
+
+### Character
+
+Character type represents a single Unicode scalar value, denoted by the `char`
+type. It can represent a wide range of characters, including letters, digits,
+symbols, and emojis.
+
+```rust title="main.rs"
+fn main() {
+    // Character 'R' (letter)
+    let letter: char = 'R';
+    println!("Character: {}", letter);
+
+    // Character '😊' (emoji)
+    let emoji: char = '😊';
+    println!("Emoji: {}", emoji);
+
+    // Character '©' (special symbol)
+    let special_char: char = '©';
+    println!("Special Character: {}", special_char);
+}
+```
+
+## Compound Types
+
+:::tip[Documentation]
+
+- [**The Rust Programming Language: Compound Types**](https://doc.rust-lang.org/book/ch03-02-data-types.html#compound-types)
+
+:::
+
+Compound types can group multiple values into one type. Rust has two primary
+compound types: arrays and tuples.
+
+### Arrays
+
+An array is a fixed-size collection of values of the same type. Arrays are
+created using square brackets `[]` and have a fixed length.
+
+```rust title="main.rs"
+fn main() {
+    // Array of three 32-bit integers
+    let array_var: [i32; 3] = [1, 2, 3];
+    println!("Array: {:?}", array_var);
+    println!("Array length: {}", array_var.len());
+    println!("First element: {}", array_var[0]);
+    println!("Second element: {}", array_var[1]);
+    println!("Third element: {}", array_var[2]);
+    println!("Last element: {}", array_var[array_var.len() - 1]);
+
+    // If array is empty, accessing the last element with length - 1 will cause
+    // a panic. To avoid that, we can use the `last` method with `unwrap_or` to
+    // provide a default value.
+    println!("Last element: {}", array_var.last().unwrap_or(&-1));
+}
+```
+
+### Tuples
+
+A tuple is a fixed-size collection of values of different types. Tuples are
+created using parentheses `()` and can hold a mix of types.
+
+```rust title="main.rs"
+fn main() {
+    // Tuple containing an integer, a floating-point number, and a character
+    let tuple_var: (i32, f64, char) = (42, 3.14, 'R');
+    println!("Tuple: {:?}", tuple_var);
+    println!("First element: {}", tuple_var.0);
+    println!("Second element: {}", tuple_var.1);
+    println!("Third element: {}", tuple_var.2);
+}
+```
+
+:::info
+
+Rust also supports more complex data types such as structs and enums, which
+allow for more advanced data modeling. However, these are user-defined types
+rather than built-in types. Rust also provides other data types like slices,
+vectors, strings, and hash maps for more dynamic and flexible data handling.
+Details on these are in the
+[**More Data Types in Rust**](/articles/more-data-types-in-rust/) article.
+
+:::

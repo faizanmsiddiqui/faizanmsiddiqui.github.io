@@ -102,7 +102,6 @@ const config: Config = {
         routeBasePath: "/articles",
         sidebarPath: require.resolve("./articles/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -113,7 +112,6 @@ const config: Config = {
         routeBasePath: "/attributions",
         sidebarPath: require.resolve("./attributions/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -124,7 +122,6 @@ const config: Config = {
         routeBasePath: "/blog",
         sidebarPath: require.resolve("./blog/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -135,7 +132,6 @@ const config: Config = {
         routeBasePath: "/",
         sidebarPath: require.resolve("./home/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -146,7 +142,6 @@ const config: Config = {
         routeBasePath: "/notes",
         sidebarPath: require.resolve("./notes/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -157,7 +152,6 @@ const config: Config = {
         routeBasePath: "/projects",
         sidebarPath: require.resolve("./projects/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -168,7 +162,6 @@ const config: Config = {
         routeBasePath: "/publications",
         sidebarPath: require.resolve("./publications/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -179,7 +172,6 @@ const config: Config = {
         routeBasePath: "/snippets",
         sidebarPath: require.resolve("./snippets/sidebar.ts"),
         breadcrumbs: false,
-        showLastUpdateTime: true,
       },
     ],
     [
@@ -187,24 +179,34 @@ const config: Config = {
       {
         redirects: [
           {
-            to: "/notes/basement/docker-versus-podman-a-comparison/",
-            from: ["/writings/pages/docker-versus-podman-a-comparison/"],
+            to: "/articles/docker-versus-podman-a-comparison/",
+            from: [
+              "/notes/basement/docker-versus-podman-a-comparison/",
+              "/writings/pages/docker-versus-podman-a-comparison/",
+            ],
           },
           {
-            to: "/notes/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
+            to: "/articles/open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
             from: [
+              "/articles/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
+              "/notes/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
               "/writings/pages/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/",
             ],
           },
           {
-            to: "/notes/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
+            to: "/articles/open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
             from: [
+              "/articles/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
+              "/notes/basement/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
               "/writings/pages/guide-to-install-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/",
             ],
           },
           {
-            to: "/notes/basement/virtualbox-on-windows-11-beginners-guide/",
-            from: ["/writings/pages/virtualbox-on-windows-11-beginners-guide/"],
+            to: "/articles/virtualbox-on-windows-11-beginners-guide/",
+            from: [
+              "/notes/basement/virtualbox-on-windows-11-beginners-guide/",
+              "/writings/pages/virtualbox-on-windows-11-beginners-guide/",
+            ],
           },
         ],
       },
@@ -298,6 +300,11 @@ const config: Config = {
           position: "right",
           label: "Notes",
           to: "/notes/",
+        },
+        {
+          position: "right",
+          type: "html",
+          value: '<div class="navbar-separator"></div>',
         },
         {
           position: "right",

@@ -1,9 +1,9 @@
 ---
 title: Faizan Siddiqui
 description:
-  I'm Faizan Siddiqui, a passionate engineer and tech enthusiast. Welcome to my
-  personal website, where I share my journey, thoughts, writings, and more.
-  Explore the site to learn more about me and my work, and feel free to connect!
+  Welcome to my personal website, where I share my journey, thoughts, writings,
+  and more. Explore the site to learn more about me and my work, and feel free
+  to connect!
 date: 2025-09-25T16:51:47Z
 ---
 
@@ -14,6 +14,7 @@ import {
   Bullseye,
   CardIndexDividers,
   Email,
+  PageFacingUp,
   Telephone,
   WritingHandDefault,
 } from "@site/src/assets/noto-emoji-unicode-16";
@@ -46,21 +47,33 @@ something interesting and inspiring.
 
 With around **10 years of experience**, I've worked in Software and System
 Engineering, DevOps and Infrastructure, Full-Stack Web Development, Information
-Security, Embedded Systems, and Multimedia. I enjoy designing, building, and
-securing solutions that make a difference.
+Security, Embedded Systems, Multimedia, and Project and Product Management. I
+enjoy designing, building, and securing solutions that make a difference.
 
 I hold a **master's degree in Computer Science** and am currently pursuing a
 second **master's degree in Information Security**. I believe in learning as a
 lifelong journey, and I enjoy sharing my experience and insights along the way.
 
-Thank you for visiting. Feel free to browse around, explore about me and my
-writings: [**Blog**](/blog/) and [**Notes**](/notes/), and connect with me via
-email at **[imfsiddiqui@yahoo.com](mailto:imfsiddiqui@yahoo.com)** or on
-[**LinkedIn**](https://www.linkedin.com/in/imfsiddiqui).
+Thank you for visiting. Feel free to browse around, explore about me, my
+writings ([**Articles**](/articles/), [**Blog**](/blog/), and
+[**Notes**](/notes/)), and my work ([**Projects**](/projects/) and
+[**Snippets**](/snippets/)). Connect with me via email at
+[**imfsiddiqui@yahoo.com**](mailto:imfsiddiqui@yahoo.com), on
+[**LinkedIn**](https://www.linkedin.com/in/imfsiddiqui), or through
+[**other social platforms**](/socials/).
 
 ## Navigation Guide
 
 Explore different sections of this website through the links below:
+
+<InfoCardHorizontal
+  to="/articles/"
+  graphics={
+    <PageFacingUp width={IconMedium.width} height={IconMedium.height} />
+  }
+  title="Articles"
+  description="Technical articles, how-to guides, tips, tricks, and tutorials."
+/>
 
 <InfoCardHorizontal
   to="/blog/"
@@ -75,15 +88,10 @@ Explore different sections of this website through the links below:
   to="/notes/"
   graphics={<Books width={IconMedium.width} height={IconMedium.height} />}
   title="Notes"
-  description="Technical articles, how-to guides, tips, tricks, and tutorials."
+  description="Personal notes, study materials, and summaries on various subjects."
 />
 
-<InfoCardHorizontal
-  to="/projects/"
-  graphics={<Bullseye width={IconMedium.width} height={IconMedium.height} />}
-  title="Projects"
-  description="Showcase of personal and professional projects."
-/>
+---
 
 <InfoCardHorizontal
   to="/publications/"
@@ -92,6 +100,15 @@ Explore different sections of this website through the links below:
   }
   title="Publications"
   description="Research papers, articles, and other scholarly works."
+/>
+
+---
+
+<InfoCardHorizontal
+  to="/projects/"
+  graphics={<Bullseye width={IconMedium.width} height={IconMedium.height} />}
+  title="Projects"
+  description="Showcase of personal and professional projects."
 />
 
 <InfoCardHorizontal
@@ -113,6 +130,7 @@ page for more options:
   graphics={<Email width={IconMedium.width} height={IconMedium.height} />}
   title="Email"
   description="imfsiddiqui@yahoo.com"
+  backgroundColor="var(--ifm-color-success-contrast-background)"
 />
 
 <InfoCardHorizontal
@@ -120,7 +138,10 @@ page for more options:
   graphics={<LinkedIn width={IconMedium.width} height={IconMedium.height} />}
   title="LinkedIn"
   description="in/imfsiddiqui"
+  backgroundColor="var(--ifm-color-success-contrast-background)"
 />
+
+---
 
 <InfoCardHorizontal
   to="/socials/"
