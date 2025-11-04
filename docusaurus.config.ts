@@ -202,6 +202,12 @@ const config: Config = {
             ],
           },
           {
+            to: "/articles/tags/rust/",
+            from: [
+              "/notes/programming-and-development/rust/"
+            ]
+          },
+          {
             to: "/articles/virtualbox-on-windows-11-beginners-guide/",
             from: [
               "/notes/basement/virtualbox-on-windows-11-beginners-guide/",
