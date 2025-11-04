@@ -32,9 +32,9 @@ networking:
   description: Contents about computer networking concepts and technologies.
 
 open-rmf:
-  label: Open RMF
+  label: Open-RMF
   permalink: /open-rmf
-  description: Contents about Open Robotics Middleware Framework (Open RMF).
+  description: Contents about Open Robotics Middleware Framework (Open-RMF).
 
 personal-note:
   label: Personal Note
