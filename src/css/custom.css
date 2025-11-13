@@ -5,7 +5,6 @@
  */
 
 /* Import font files */
-@import url("fonts/fira-sans.css");
 @import url("fonts/jetbrains-mono.css");
 @import url("fonts/roboto.css");
 
@@ -25,11 +24,10 @@
 
   /* Infima default font families */
   --ifm-font-family-base: "Roboto", sans-serif;
-  --ifm-heading-font-family: "Fira Sans", sans-serif;
+  --ifm-heading-font-family: "Roboto", sans-serif;
   --ifm-font-family-monospace: "JetBrains Mono", monospace;
 
   /* Infima default font sizes */
-  --ifm-font-size-base: 17.5px;
   --ifm-code-font-size: 100%;
 }
 
