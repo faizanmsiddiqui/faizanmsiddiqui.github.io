@@ -7,6 +7,8 @@ categories: [Cheat Sheet, PowerShell]
 tags: [bash, cheat-sheet, commands, powershell, reference]
 ---
 
+<!-- markdownlint-disable MD033 MD056 MD060 -->
+
 ## File & Directory Navigation
 
 | **Description**                 | **Bash Command**   | **PowerShell Equivalent**                          | **Notes**                                               |
