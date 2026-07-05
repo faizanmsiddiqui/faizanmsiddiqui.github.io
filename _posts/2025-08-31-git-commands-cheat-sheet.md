@@ -3,7 +3,7 @@ title: Git Commands Cheat Sheet
 description: A quick reference guide of common Git commands.
 author: faizan
 date: 2025-08-31 09:12:31 +0300
-categories: [Cheat Sheet, Git]
+categories: [Reference, Git]
 tags: [cheat-sheet, commands, git, reference]
 ---
 
