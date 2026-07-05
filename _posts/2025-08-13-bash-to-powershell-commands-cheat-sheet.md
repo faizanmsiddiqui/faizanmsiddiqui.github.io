@@ -3,8 +3,8 @@ title: "Bash to PowerShell: Commands Cheat Sheet"
 description: A quick reference guide of common Bash commands and their PowerShell equivalents.
 author: faizan
 date: 2025-08-13 00:00:00 +0300
-categories: [Notes, Cheat Sheet]
-tags: [bash, powershell]
+categories: [Cheat Sheet, PowerShell]
+tags: [bash, cheat-sheet, commands, powershell, reference]
 ---
 
 ## File & Directory Navigation
