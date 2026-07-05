@@ -3,8 +3,8 @@ title: Git Glossary
 description: A glossary of common Git terms and concepts.
 author: faizan
 date: 2025-08-30 16:54:17 +0300
-categories: [Reference, Git]
-tags: [glossary, git, reference]
+categories: [Reference, Software Development]
+tags: [glossary, git, reference, software-development]
 ---
 
 A glossary of common Git terms and concepts to help understand the terminology
