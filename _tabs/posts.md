@@ -1,5 +1,5 @@
 ---
 layout: archives
-icon: fas fa-archive
+icon: fa-regular fa-pen-to-square
 order: 2
 ---
