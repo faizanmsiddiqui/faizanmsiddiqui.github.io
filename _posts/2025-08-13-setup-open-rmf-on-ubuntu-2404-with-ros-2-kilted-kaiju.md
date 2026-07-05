@@ -173,7 +173,7 @@ sudo apt install -y python3-fastapi \
 
 ### Setup and Update `rosdep`
 
-[**`rosdep`**](http://wiki.ros.org/rosdep) helps you easily install system
+[**`rosdep`**](https://wiki.ros.org/rosdep) helps you easily install system
 dependencies for source code packages.
 
 ```shell
