@@ -347,8 +347,8 @@ are missing in Jazzy.
 
 **Details**
 
-- **https://github.com/open-rmf/rmf-web/issues/1029**
-- **https://github.com/open-rmf/rmf-web/issues/1041**
+- <https://github.com/open-rmf/rmf-web/issues/1029>
+- <https://github.com/open-rmf/rmf-web/issues/1041>
 
 </blockquote>
 
@@ -398,7 +398,7 @@ cd ~/rmf-web/rmf_dep/
 colcon build
 ```
 
-</blockquote>danger
+<blockquote class="prompt-danger" markdown="1">**INFO**
 
 Always `source` this new path: `~/rmf-web/rmf_dep/install/setup.bash` when
 required. Don't add this in `.bashrc`, otherwise, Gazebo stops working due to
