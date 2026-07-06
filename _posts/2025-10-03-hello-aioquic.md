@@ -45,7 +45,7 @@ Go version: [**Hello, quic-go!**](/posts/hello-quic-go/)
 
 ### QUIC Client Server Communication
 
-![quic communication screenshot](/assets/img/posts/hello-aioquic/quic-communication.png)
+![quic client server communication screenshot](/assets/img/posts/hello-aioquic/quic-communication.png)
 
 ## Use Cases
 

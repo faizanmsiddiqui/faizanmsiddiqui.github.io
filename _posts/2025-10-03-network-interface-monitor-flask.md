@@ -44,15 +44,15 @@ PyQt5 version:
 
 ### All Interface Disconnected
 
-![all disconnected interfaces screenshot](/assets/img/posts/network-interface-monitor-flask/all-disconnected.png)
+![all interface disconnected screenshot](/assets/img/posts/network-interface-monitor-flask/all-interface-disconnected.png)
 
 ### wlan0 Connected
 
-![wlan0 connected interface screenshot](/assets/img/posts/network-interface-monitor-flask/wlan0-connected.png)
+![wlan0 connected screenshot](/assets/img/posts/network-interface-monitor-flask/wlan0-connected.png)
 
 ### eth0 Connected
 
-![eth0 connected interface screenshot](/assets/img/posts/network-interface-monitor-flask/eth0-connected.png)
+![eth0 connected screenshot](/assets/img/posts/network-interface-monitor-flask/eth0-connected.png)
 
 ## Use Cases
 

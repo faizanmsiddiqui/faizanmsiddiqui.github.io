@@ -43,7 +43,7 @@ Python version: [**Hello, aioquic!**](/posts/hello-aioquic/)
 
 ### QUIC Client Server Communication
 
-![quic communication screenshot](/assets/img/posts/hello-quic-go/quic-communication.png)
+![quic client server communication screenshot](/assets/img/posts/hello-quic-go/quic-communication.png)
 
 ## Use Cases
 
