@@ -24,7 +24,9 @@ image:
 | Clone with SSH                  | `git clone <url>`             | Clones using SSH for authentication.<br /><br />Example: `git clone git@github.com:github/docs.git`                                |
 | Clone into specific directory   | `git clone <url> <directory>` | Clones into a specified directory.<br /><br />Example: `git clone https://github.com/github/docs.git github-docs`                  |
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 HTTPS is common method for cloning repositories, while SSH is often used for
 contributors with write access. There is also a difference in URL format between
@@ -39,7 +41,9 @@ the two methods.
 
 ## Configuration
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 `--global` applies the setting for all repositories for the current user.
 Omitting it sets the configuration for the current repository only, but requires

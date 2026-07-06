@@ -16,7 +16,9 @@ image:
 
 <!-- markdownlint-disable MD033 MD036 -->
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 This article provides step-by-step instructions to install Open-RMF on Ubuntu
 24.04 with ROS 2 Jazzy Jalisco. Most of the content is copied from the previous
@@ -131,7 +133,9 @@ persistent, add it to your `.bashrc`:
 source /opt/ros/jazzy/setup.bash
 ```
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 Replace `.bash` with your shell if you are not using Bash. Options include:
 `setup.bash`, `setup.sh`, `setup.zsh`.
@@ -210,7 +214,9 @@ sudo apt install -y ros-jazzy-rmf-dev
 
 ### Install Demos and Other Packages
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 The above installation only installs core Open-RMF packages. To run demos and
 additional tooling, clone the full source repositories below.
@@ -341,7 +347,9 @@ This step is not required in Kilted, but Jazzy does not have the required
 messages (dependencies) for `rmf-web`. Therefore, we need to do a few extra
 steps.
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 Cloning repositories from Kilted branch because required messages (dependencies)
 are missing in Jazzy.
@@ -399,7 +407,9 @@ cd ~/rmf-web/rmf_dep/
 colcon build
 ```
 
-<blockquote class="prompt-danger" markdown="1">**INFO**
+<blockquote class="prompt-danger" markdown="1">
+
+**DANGER**
 
 Always `source` this new path: `~/rmf-web/rmf_dep/install/setup.bash` when
 required. Don't add this in `.bashrc`, otherwise, Gazebo stops working due to
@@ -417,7 +427,9 @@ source ~/.bashrc
 pnpm env use --global lts  # This will install the latest LTS version of Node.js
 ```
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 You may need to restart your terminal or add the `pnpm` path to your shell
 profile like `.bashrc` or `.zshrc`.
@@ -465,7 +477,9 @@ cd ~/rmf-web/packages/api-server
 pnpm start
 ```
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 Any changes to the backend code will require restarting this server.
 
@@ -488,7 +502,9 @@ cd ~/rmf-web/packages/rmf-dashboard-framework
 pnpm start:example examples/demo
 ```
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 The frontend rebuilds on changes, but you may need to refresh the browser to see
 updates.
@@ -500,21 +516,23 @@ updates.
 Once both backend and frontend are running, open your browser and navigate to:
 `http://localhost:5173`
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 **Login Credentials**
 
 If prompted with a login screen:
 
-- **Username**: `admin`
-- **Password**: `admin`
+- Username: `admin`
+- Password: `admin`
 
 ---
 
 **Ports Used**
 
-- **Backend (API Server)**: `http://localhost:8000`
-- **Frontend (Dashboard)**: `http://localhost:5173`
+- Backend (API Server): `http://localhost:8000`
+- Frontend (Dashboard): `http://localhost:5173`
 
 </blockquote>
 

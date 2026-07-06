@@ -16,7 +16,9 @@ image:
 
 <!-- markdownlint-disable MD033 MD036 -->
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 This article provides step-by-step instructions to install Open-RMF on Ubuntu
 24.04 with ROS 2 Kilted Kaiju. Keep in mind that this article assumes you have a
@@ -127,7 +129,9 @@ persistent, add it to your `.bashrc`:
 source /opt/ros/kilted/setup.bash
 ```
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 Replace `.bash` with your shell if you are not using Bash. Options include:
 `setup.bash`, `setup.sh`, `setup.zsh`.
@@ -206,7 +210,9 @@ sudo apt install -y ros-kilted-rmf-dev
 
 ### Install Demos and Other Packages
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 The above installation only installs core Open-RMF packages. To run demos and
 additional tooling, clone the full source repositories below.
@@ -312,7 +318,9 @@ source ~/.bashrc
 pnpm env use --global lts  # This will install the latest LTS version of Node.js
 ```
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 You may need to restart your terminal or add the `pnpm` path to your shell
 profile like `.bashrc` or `.zshrc`.
@@ -360,7 +368,9 @@ cd ~/rmf-web/packages/api-server
 pnpm start
 ```
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 Any changes to the backend code will require restarting this server.
 
@@ -383,7 +393,9 @@ cd ~/rmf-web/packages/rmf-dashboard-framework
 pnpm start:example examples/demo
 ```
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 The frontend rebuilds on changes, but you may need to refresh the browser to see
 updates.
@@ -395,21 +407,23 @@ updates.
 Once both backend and frontend are running, open your browser and navigate to:
 `http://localhost:5173`
 
-<blockquote class="prompt-info" markdown="1">**INFO**
+<blockquote class="prompt-info" markdown="1">
+
+**INFO**
 
 **Login Credentials**
 
 If prompted with a login screen:
 
-- **Username**: `admin`
-- **Password**: `admin`
+- Username: `admin`
+- Password: `admin`
 
 ---
 
 **Ports Used**
 
-- **Backend (API Server)**: `http://localhost:8000`
-- **Frontend (Dashboard)**: `http://localhost:5173`
+- Backend (API Server): `http://localhost:8000`
+- Frontend (Dashboard): `http://localhost:5173`
 
 </blockquote>
 
