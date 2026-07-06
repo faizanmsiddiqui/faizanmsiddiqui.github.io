@@ -41,9 +41,15 @@ Flask version:
 
 ## Screenshots
 
+### All Interface Disconnected
+
 ![all disconnected interfaces screenshot](/assets/img/posts/network-interface-monitor-pyqt5/all-disconnected.png)
 
+### wlan0 Connected
+
 ![wlan0 connected interface screenshot](/assets/img/posts/network-interface-monitor-pyqt5/wlan0-connected.png)
+
+### eth0 Connected
 
 ![eth0 connected interface screenshot](/assets/img/posts/network-interface-monitor-pyqt5/eth0-connected.png)
 
