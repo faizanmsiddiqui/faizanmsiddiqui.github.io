@@ -5,6 +5,11 @@ author: faizan
 date: 2025-08-31 09:12:31 +0300
 categories: [Reference, Software Development]
 tags: [cheat-sheet, commands, git, reference, software-development]
+image:
+  path: /assets/img/posts/git-commands-cheat-sheet/featured-image.png
+  thumb: /assets/img/posts/git-commands-cheat-sheet/featured-image-thumbnail.png
+  lqip: /assets/img/posts/git-commands-cheat-sheet/featured-image-thumbnail.png
+  alt: Git commands quick reference cheat sheet with common version control commands and workflow categories
 ---
 
 <!-- markdownlint-disable MD033 MD036 -->

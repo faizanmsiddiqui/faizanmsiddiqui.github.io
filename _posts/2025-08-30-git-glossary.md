@@ -5,6 +5,11 @@ author: faizan
 date: 2025-08-30 16:54:17 +0300
 categories: [Reference, Software Development]
 tags: [glossary, git, reference, software-development]
+image:
+  path: /assets/img/posts/git-glossary/featured-image.png
+  thumb: /assets/img/posts/git-glossary/featured-image-thumbnail.png
+  lqip: /assets/img/posts/git-glossary/featured-image-thumbnail.png
+  alt: Git glossary illustration with common Git terms, a terminal, and a commit graph
 ---
 
 A glossary of common Git terms and concepts to help understand the terminology

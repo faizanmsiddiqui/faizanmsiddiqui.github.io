@@ -5,6 +5,11 @@ author: faizan
 date: 2025-08-13 00:00:00 +0300
 categories: [Reference, Scripting]
 tags: [bash, cheat-sheet, commands, powershell, reference, scripting]
+image:
+  path: /assets/img/posts/bash-to-powershell-commands-cheat-sheet/featured-image.png
+  thumb: /assets/img/posts/bash-to-powershell-commands-cheat-sheet/featured-image-thumbnail.png
+  lqip: /assets/img/posts/bash-to-powershell-commands-cheat-sheet/featured-image-thumbnail.png
+  alt: Bash to PowerShell commands cheat sheet with side-by-side command comparison
 ---
 
 <!-- markdownlint-disable MD033 MD056 MD060 -->
