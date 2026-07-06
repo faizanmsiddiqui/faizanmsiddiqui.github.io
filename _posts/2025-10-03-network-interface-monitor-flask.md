@@ -11,7 +11,6 @@ image:
   path: /assets/img/posts/network-interface-monitor-flask/featured-image.png
   thumb: /assets/img/posts/network-interface-monitor-flask/featured-image-thumbnail.png
   lqip: /assets/img/posts/network-interface-monitor-flask/featured-image-thumbnail.png
-  alt: 
 ---
 
 <!-- markdownlint-disable MD033 MD036 -->

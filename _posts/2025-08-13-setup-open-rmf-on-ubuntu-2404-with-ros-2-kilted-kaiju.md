@@ -11,7 +11,6 @@ image:
   path: /assets/img/posts/setup-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/featured-image.png
   thumb: /assets/img/posts/setup-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/featured-image-thumbnail.png
   lqip: /assets/img/posts/setup-open-rmf-on-ubuntu-2404-with-ros-2-kilted-kaiju/featured-image-thumbnail.png
-  alt: Ubuntu, ROS Kilted Kaiju, and Open-RMF as the software stack for autonomous robotics
 ---
 
 <!-- markdownlint-disable MD033 MD036 -->

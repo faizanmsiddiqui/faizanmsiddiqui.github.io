@@ -11,7 +11,6 @@ image:
   path: /assets/img/posts/hello-quic-go/featured-image.png
   thumb: /assets/img/posts/hello-quic-go/featured-image-thumbnail.png
   lqip: /assets/img/posts/hello-quic-go/featured-image-thumbnail.png
-  alt: Go client and server communicating securely over QUIC
 ---
 
 <!-- markdownlint-disable MD033 MD036 -->

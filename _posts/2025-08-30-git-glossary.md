@@ -9,7 +9,6 @@ image:
   path: /assets/img/posts/git-glossary/featured-image.png
   thumb: /assets/img/posts/git-glossary/featured-image-thumbnail.png
   lqip: /assets/img/posts/git-glossary/featured-image-thumbnail.png
-  alt: Git glossary illustration with common Git terms, a terminal, and a commit graph
 ---
 
 A glossary of common Git terms and concepts to help understand the terminology

@@ -11,7 +11,6 @@ image:
   path: /assets/img/posts/setup-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/featured-image.png
   thumb: /assets/img/posts/setup-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/featured-image-thumbnail.png
   lqip: /assets/img/posts/setup-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/featured-image-thumbnail.png
-  alt: Ubuntu, ROS 2 Jazzy Jalisco, and Open-RMF robotics software ecosystem
 ---
 
 <!-- markdownlint-disable MD033 MD036 -->

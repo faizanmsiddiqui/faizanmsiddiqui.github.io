@@ -9,7 +9,6 @@ image:
   path: /assets/img/posts/bash-to-powershell-commands-cheat-sheet/featured-image.png
   thumb: /assets/img/posts/bash-to-powershell-commands-cheat-sheet/featured-image-thumbnail.png
   lqip: /assets/img/posts/bash-to-powershell-commands-cheat-sheet/featured-image-thumbnail.png
-  alt: Bash to PowerShell commands cheat sheet with side-by-side command comparison
 ---
 
 <!-- markdownlint-disable MD033 MD056 MD060 -->
