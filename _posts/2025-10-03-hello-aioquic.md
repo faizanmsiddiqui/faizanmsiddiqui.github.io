@@ -45,7 +45,6 @@ Go version: [**Hello, quic-go!**](/posts/hello-quic-go/)
 ## Screenshots
 
 ![quic communication screenshot](/assets/img/posts/hello-aioquic/quic-communication.png)
-_quic communication screenshot_
 
 ## Use Cases
 

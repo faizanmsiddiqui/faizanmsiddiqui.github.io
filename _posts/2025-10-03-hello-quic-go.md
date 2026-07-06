@@ -43,7 +43,6 @@ Python version: [**Hello, aioquic!**](/posts/hello-aioquic/)
 ## Screenshots
 
 ![quic communication screenshot](/assets/img/posts/hello-quic-go/quic-communication.png)
-_quic communication screenshot_
 
 ## Use Cases
 
