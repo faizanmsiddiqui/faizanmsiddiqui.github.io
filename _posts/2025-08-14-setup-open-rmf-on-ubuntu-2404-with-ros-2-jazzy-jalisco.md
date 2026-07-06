@@ -9,8 +9,9 @@ categories: [Guide, Robotics]
 tags: [guide, linux, open-rmf, robotics, ros, ros2, ubuntu]
 image:
   path: /assets/img/posts/setup-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/featured-image.png
-  lqip: /assets/img/posts/setup-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/featured-image.png
-  alt: Ubuntu, ROS, and Open-RMF logos
+  thumb: /assets/img/posts/setup-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/featured-image-thumbnail.png
+  lqip: /assets/img/posts/setup-open-rmf-on-ubuntu-2404-with-ros-2-jazzy-jalisco/featured-image-thumbnail.png
+  alt: Ubuntu, ROS 2 Jazzy Jalisco, and Open-RMF robotics software ecosystem
 ---
 
 <!-- markdownlint-disable MD033 MD036 -->
