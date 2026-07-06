@@ -11,7 +11,7 @@ image:
   path: /assets/img/posts/hello-aioquic/featured-image.png
   thumb: /assets/img/posts/hello-aioquic/featured-image-thumbnail.png
   lqip: /assets/img/posts/hello-aioquic/featured-image-thumbnail.png
-  alt:
+  alt: Python QUIC client and server communicating securely using the aioquic library
 ---
 
 <!-- markdownlint-disable MD033 MD036 -->
