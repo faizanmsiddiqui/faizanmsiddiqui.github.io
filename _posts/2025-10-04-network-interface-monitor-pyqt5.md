@@ -4,7 +4,7 @@ description:
   A simple PyQt5 application that monitors and displays the status of physical
   network interfaces on a machine.
 author: faizan
-date: 2025-10-03 17:12:30 +0300
+date: 2025-10-04 17:12:30 +0300
 categories: [Project, Mini Project]
 tags: [mini-project, monitoring, networking, project, pyqt, python, qt]
 image:

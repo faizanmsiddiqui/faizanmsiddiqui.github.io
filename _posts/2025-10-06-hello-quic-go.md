@@ -4,7 +4,7 @@ description:
   A simple example demonstrating QUIC communication using the quic-go library in
   Go.
 author: faizan
-date: 2025-10-03 21:20:58 +0300
+date: 2025-10-06 21:20:58 +0300
 categories: [Project, Mini Project]
 tags: [go, golang, mini-project, networking, project, quic-go]
 image:

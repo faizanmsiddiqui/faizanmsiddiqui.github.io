@@ -4,7 +4,7 @@ description:
   A simple example of using the aioquic library to implement a QUIC client and
   server in Python.
 author: faizan
-date: 2025-10-03 20:07:24 +0300
+date: 2025-10-05 20:07:24 +0300
 categories: [Project, Mini Project]
 tags: [aioquic, mini-project, networking, project, python]
 image:

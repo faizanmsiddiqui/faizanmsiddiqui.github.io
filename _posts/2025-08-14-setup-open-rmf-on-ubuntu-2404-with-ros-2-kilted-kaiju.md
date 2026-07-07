@@ -4,7 +4,7 @@ description:
   A comprehensive guide to install Open-RMF on Ubuntu 24.04 with ROS 2 Kilted
   Kaiju, including setup, dependencies, and running demos.
 author: faizan
-date: 2025-08-13 00:00:00 +0300
+date: 2025-08-14 00:00:00 +0300
 categories: [Guide, Robotics]
 tags: [guide, linux, open-rmf, robotics, ros, ros2, ubuntu]
 image:
