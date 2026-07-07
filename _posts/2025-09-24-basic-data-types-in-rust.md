@@ -3,8 +3,8 @@ title: Basic Data Types in Rust
 description: Overview of Rust's built-in data types, including scalar and compound types.
 author: faizan
 date: 2025-09-24 18:41:17 +0300
-categories: [Articles, Programming]
-tags: [articles, coding, data-types, language, programming, rust]
+categories: [Article, Programming]
+tags: [article, coding, data-types, language, programming, rust]
 image:
   path: /assets/img/posts/basic-data-types-in-rust/featured-image.png
   thumb: /assets/img/posts/basic-data-types-in-rust/featured-image-thumbnail.png

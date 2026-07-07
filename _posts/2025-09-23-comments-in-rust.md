@@ -3,8 +3,8 @@ title: Comments in Rust
 description: Overview of comments in the Rust programming language.
 author: faizan
 date: 2025-09-23 16:46:13 +0300
-categories: [Articles, Programming]
-tags: [articles, coding, commenting, language, programming, rust]
+categories: [Article, Programming]
+tags: [article, coding, commenting, language, programming, rust]
 image:
   path: /assets/img/posts/comments-in-rust/featured-image.png
   thumb: /assets/img/posts/comments-in-rust/featured-image-thumbnail.png

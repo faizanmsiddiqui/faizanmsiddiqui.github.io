@@ -3,8 +3,8 @@ title: More Data Types in Rust
 description: Overview of additional data types in Rust.
 author: faizan
 date: 2025-09-25 08:58:24 +0300
-categories: [Articles, Programming]
-tags: [articles, coding, data-types, language, programming, rust]
+categories: [Article, Programming]
+tags: [article, coding, data-types, language, programming, rust]
 image:
   path: /assets/img/posts/more-data-types-in-rust/featured-image.png
   thumb: /assets/img/posts/more-data-types-in-rust/featured-image-thumbnail.png
