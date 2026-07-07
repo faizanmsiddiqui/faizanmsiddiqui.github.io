@@ -4,7 +4,7 @@ description: A quick reference guide of common Git commands.
 author: faizan
 date: 2025-08-31 09:12:31 +0300
 categories: [Reference, Software Development]
-tags: [cheat-sheet, commands, git, reference, software-development]
+tags: [cheat-sheet, commands, git, reference, software-development, version-control-system]
 image:
   path: /assets/img/posts/git-commands-cheat-sheet/featured-image.png
   thumb: /assets/img/posts/git-commands-cheat-sheet/featured-image-thumbnail.png
