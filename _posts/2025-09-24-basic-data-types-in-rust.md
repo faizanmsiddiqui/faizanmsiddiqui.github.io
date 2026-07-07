@@ -4,7 +4,7 @@ description: Overview of Rust's built-in data types, including scalar and compou
 author: faizan
 date: 2025-09-24 18:41:17 +0300
 categories: [Articles, Programming]
-tags: [articles, data-types, programming, rust]
+tags: [articles, coding, data-types, language, programming, rust]
 image:
   path: /assets/img/posts/basic-data-types-in-rust/featured-image.png
   thumb: /assets/img/posts/basic-data-types-in-rust/featured-image-thumbnail.png

@@ -4,7 +4,7 @@ description: Overview of additional data types in Rust.
 author: faizan
 date: 2025-09-25 08:58:24 +0300
 categories: [Articles, Programming]
-tags: [articles, data-types, programming, rust]
+tags: [articles, coding, data-types, language, programming, rust]
 image:
   path: /assets/img/posts/more-data-types-in-rust/featured-image.png
   thumb: /assets/img/posts/more-data-types-in-rust/featured-image-thumbnail.png
