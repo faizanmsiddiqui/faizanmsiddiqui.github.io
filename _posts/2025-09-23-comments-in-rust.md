@@ -2,7 +2,7 @@
 title: Comments in Rust
 description: Overview of comments in the Rust programming language.
 author: faizan
-date: 2025-09-22 16:46:13 +0300
+date: 2025-09-23 16:46:13 +0300
 categories: [Articles, Programming]
 tags: [articles, coding, commenting, language, programming, rust]
 image:
