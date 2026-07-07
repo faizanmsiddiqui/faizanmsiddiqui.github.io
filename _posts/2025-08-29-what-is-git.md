@@ -2,7 +2,7 @@
 title: What is Git?
 description: An introduction to Git, its purpose, and its key features and terminologies.
 author: faizan
-date: 2025-08-30 09:27:19 +0300
+date: 2025-08-29 09:27:19 +0300
 categories: [Article, Software Development]
 tags: [article, git, software-development, version-control-system]
 image:
